@@ -9,6 +9,7 @@ import 'package:circle_sync/features/on_boarding/UI/on_boarding_1.dart';
 import 'package:circle_sync/features/on_boarding/UI/on_boarding_3.dart';
 import 'package:circle_sync/features/signup/logic/cubit/sign_up_cubit.dart';
 import 'package:circle_sync/features/signup/ui/signup_screen.dart';
+import 'package:circle_sync/features/signup/ui/welcome_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -26,6 +27,10 @@ class AppRouter {
         case Routes.onBoarding3:
         return MaterialPageRoute(
           builder: (_) => const OnBoardingScreen3(),
+        );
+        case Routes.welcome:
+        return MaterialPageRoute(
+          builder: (_) => const WelcomeScreen(),
         );
       case Routes.login:
         return MaterialPageRoute(
