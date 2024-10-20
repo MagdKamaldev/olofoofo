@@ -1,9 +1,11 @@
+import 'package:circle_sync/core/helpers/extensions.dart';
+import 'package:circle_sync/core/routing/routes.dart';
 import 'package:circle_sync/core/themes/text_styles/text_styles.dart';
 import 'package:circle_sync/core/widgets/button.dart';
 import 'package:flutter/material.dart';
 
-class OnBoardingScreen extends StatelessWidget {
-  const OnBoardingScreen({super.key});
+class OnBoardingScreen1 extends StatelessWidget {
+  const OnBoardingScreen1({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +42,9 @@ class OnBoardingScreen extends StatelessWidget {
                     height: MediaQuery.of(context).size.height * 0.03,
                   ),
                   AppButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      context.pushNamed(Routes.onBoarding2);
+                    },
                     text: "Next",
                     isWhite: false,
                   ),
@@ -48,7 +52,9 @@ class OnBoardingScreen extends StatelessWidget {
                     height: MediaQuery.of(context).size.height * 0.015,
                   ),
                   AppButton(
-                    onPressed: () {},
+                    onPressed: () {
+                       context.pushNamed(Routes.login);
+                    },
                     text: "Skip",
                     isWhite: true,
                   ),
@@ -60,7 +66,9 @@ class OnBoardingScreen extends StatelessWidget {
                     children: [
                     const Text("Already have an account?",style: TextStyles.font14Medium,),
                     const SizedBox(width: 10,),
-                    Text("Sign In",style: TextStyles.font14Medium.copyWith(color: Colors.black45),)
+                    GestureDetector(onTap: (){
+                       context.pushNamed(Routes.login);
+                    },child: Text("Sign In",style: TextStyles.font14Medium.copyWith(color: Colors.black45),))
                   ],)
                 ],
               ),
