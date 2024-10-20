@@ -4,7 +4,6 @@ import 'package:circle_sync/core/routing/routes.dart';
 import 'package:circle_sync/core/themes/colors/colors.dart';
 import 'package:circle_sync/core/themes/text_styles/text_styles.dart';
 import 'package:circle_sync/core/widgets/button.dart';
-import 'package:circle_sync/core/widgets/logo.dart';
 import 'package:circle_sync/features/login/logic/cubit/login_cubit.dart';
 import 'package:circle_sync/features/login/ui/email_and_password.dart';
 import 'package:circle_sync/features/login/ui/login_bloc_listener.dart';
@@ -18,47 +17,73 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+      ),
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: SafeArea(
           child: SizedBox(
             width: size.width,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                verticalSpace(40),
-                const Logo(),
-                verticalSpace(40),
-                const Text(
-                  "Sign In",
-              //    style: TextStyles.heading2,
-                ),
-                verticalSpace(40),
-                const EmailAndPassword(),
-                verticalSpace(size.height * 0.1),
-                AppButton(
+            child: Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  verticalSpace(40),
+                  const Text(
+                    "Sign In",
+                    style: TextStyles.font20SemiBold,
+                  ),
+                  verticalSpace(20),
+                  Text(
+                    "Enter your credentials",
+                    style:
+                        TextStyles.font16Medium.copyWith(color: Colors.black54),
+                  ),
+                  verticalSpace(40),
+                  const EmailAndPassword(),
+                   verticalSpace(10),
+                    Align(
+                      alignment: Alignment.centerRight,
+                      child:  TextButton(
+                        onPressed: (){},
+                        child: Text(
+                      "Forgot Password?",
+                      style: TextStyles.font14Medium.copyWith(color: ColorManager.primary,),
+                                        ),
+                    ),),
+                  verticalSpace(size.height * 0.15),
+                  AppButton(
                     onPressed: () {
                       validateAndLogin(context);
                     },
-                    text: "Sign In", isWhite: true,),
-                verticalSpace(30),
-                const Text(
-                  "Don't have an account?",
-               //   style: TextStyles.body,
-                ),
-                verticalSpace(10),
-                TextButton(
-                  child: Text("Sign Up",
-                   //   style: TextStyles.body.copyWith(
-                 //       color: ColorManager.primary,
-                  //    )
+                    text: "Done",
+                    isWhite: false,
                   ),
-                  onPressed: () {
-                    context.pushNamed(Routes.signUp);
-                  },
-                ),
-                const LoginBlocListener(),
-              ],
+                  verticalSpace(20),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Text(
+                        "Don't have an account?",
+                        style: TextStyles.font14Medium,
+                      ),
+                      TextButton(
+                        child: Text(
+                          "Sign Up",
+                          style: TextStyles.font14Medium.copyWith(
+                              color: ColorManager.primary, ),
+                        ),
+                        onPressed: () {
+                          context.pushNamed(Routes.signUp);
+                        },
+                      ),
+                    ],
+                  ),
+                  const LoginBlocListener(),
+                ],
+              ),
             ),
           ),
         ),

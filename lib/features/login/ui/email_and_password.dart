@@ -1,4 +1,5 @@
 import 'package:circle_sync/core/helpers/spacing.dart';
+import 'package:circle_sync/core/themes/text_styles/text_styles.dart';
 import 'package:circle_sync/core/widgets/tff.dart';
 import 'package:circle_sync/features/login/logic/cubit/login_cubit.dart';
 import 'package:flutter/material.dart';
@@ -14,18 +15,21 @@ class EmailAndPassword extends StatelessWidget {
     return Form(
       key: loginCubit.formKey,
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          const Text("Email",style: TextStyles.font14Medium,),
+          verticalSpace(10),
           AppTextField(
             isPassword: false,
             controller: loginCubit.mailController,
-            hintText: "Enter your email address",
             keyboardType: TextInputType.emailAddress,
           ),
-          verticalSpace(35),
+          verticalSpace(20),
+          const Text("Password",style: TextStyles.font14Medium,),
+          verticalSpace(10),
           AppTextField(
             isPassword: true,
             controller: loginCubit.passwordController,
-            hintText: "Enter your password",
             keyboardType: TextInputType.visiblePassword,
           ),
         ],
