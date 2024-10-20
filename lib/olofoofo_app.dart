@@ -19,7 +19,7 @@ class OlofoofoApp extends StatelessWidget {
           useMaterial3: true,
         ),
          onGenerateRoute: appRouter.generateRoute,
-              initialRoute: isLoggedInUser? Routes.home: Routes.onBoarding,
+              initialRoute: isLoggedInUser? Routes.home: Routes.onBoarding1,
             )
       );
   }
