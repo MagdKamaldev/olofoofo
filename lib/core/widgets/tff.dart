@@ -1,18 +1,15 @@
 // ignore_for_file: library_private_types_in_public_api
-
-import 'package:circle_sync/core/themes/text_styles/text_styles.dart';
+import 'package:circle_sync/core/themes/colors/colors.dart';
 import 'package:flutter/material.dart';
 
 class AppTextField extends StatefulWidget {
   final TextEditingController controller;
-  final String hintText;
   final TextInputType keyboardType;
   final bool isPassword;
 
   const AppTextField({
     super.key,
     required this.controller,
-    required this.hintText,
     required this.keyboardType,
     required this.isPassword,
   });
@@ -41,16 +38,12 @@ class _AppTextFieldState extends State<AppTextField> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                height: 65,
+                height: 55,
                 decoration: ShapeDecoration(
-                  gradient: LinearGradient(
-                    begin: const Alignment(0.00, -1.00),
-                    end: const Alignment(0, 1),
-                    colors: [Colors.white, Colors.white.withOpacity(0)],
-                  ),
+                  color: const Color(0xFFF5F5F5),
                   shape: RoundedRectangleBorder(
-                    side: const BorderSide(width: 1, color: Color(0xFFAAB0B7)),
-                    borderRadius: BorderRadius.circular(8),
+                    side: const BorderSide(width: 1, color: ColorManager.primary),
+                    borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 child: Center(
@@ -79,10 +72,8 @@ class _AppTextFieldState extends State<AppTextField> {
                             )
                           : null,
                       border: InputBorder.none,
-                      hintText: widget.hintText,
-                    //  hintStyle: TextStyles.heading2.copyWith(
-                     //   color: const Color(0xFFAAB0B7),
-                    //  ),
+                   //   hintText: widget.hintText,
+
                       contentPadding: const EdgeInsets.symmetric(
                           vertical: 20, horizontal: 20),
                       errorStyle: const TextStyle(height: 0),

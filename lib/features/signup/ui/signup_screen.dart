@@ -1,10 +1,7 @@
 import 'package:circle_sync/core/helpers/extensions.dart';
 import 'package:circle_sync/core/helpers/spacing.dart';
 import 'package:circle_sync/core/routing/routes.dart';
-import 'package:circle_sync/core/themes/colors/colors.dart';
-import 'package:circle_sync/core/themes/text_styles/text_styles.dart';
 import 'package:circle_sync/core/widgets/button.dart';
-import 'package:circle_sync/core/widgets/logo.dart';
 import 'package:circle_sync/core/widgets/tff.dart';
 import 'package:circle_sync/features/signup/logic/cubit/sign_up_cubit.dart';
 import 'package:circle_sync/features/signup/ui/sign_up_bloc_listener.dart';
@@ -19,6 +16,9 @@ class SignUpScreen extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     final signUpCubit = context.read<SignUpCubit>();
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+      ),
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: SafeArea(
@@ -29,7 +29,7 @@ class SignUpScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  const Logo(),
+                //  const Logo(),
                   const Text(
                     "Sign Up",
                   //  style: TextStyles.heading2,
@@ -38,28 +38,28 @@ class SignUpScreen extends StatelessWidget {
                   AppTextField(
                     isPassword: false,
                     controller: signUpCubit.firstNameController,
-                    hintText: "First Name",
+                 //   hintText: "First Name",
                     keyboardType: TextInputType.text,
                   ),
                   verticalSpace(20),
                   AppTextField(
                     isPassword: false,
                     controller: signUpCubit.lastNameController,
-                    hintText: "Last Name",
+                  //  hintText: "Last Name",
                     keyboardType: TextInputType.text,
                   ),
                   verticalSpace(20),
                   AppTextField(
                     isPassword: false,
                     controller: signUpCubit.mailController,
-                    hintText: "Email",
+                //    hintText: "Email",
                     keyboardType: TextInputType.emailAddress,
                   ),
                   verticalSpace(20),
                   AppTextField(
                     isPassword: true,
                     controller: signUpCubit.passwordController,
-                    hintText: "Password",
+                  //  hintText: "Password",
                     keyboardType: TextInputType.visiblePassword,
                   ),
                   verticalSpace(size.height * 0.1),
