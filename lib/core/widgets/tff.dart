@@ -42,7 +42,8 @@ class _AppTextFieldState extends State<AppTextField> {
                 decoration: ShapeDecoration(
                   color: const Color(0xFFF5F5F5),
                   shape: RoundedRectangleBorder(
-                    side: const BorderSide(width: 1, color: ColorManager.primary),
+                    side:
+                        const BorderSide(width: 1, color: ColorManager.primary),
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
@@ -72,8 +73,6 @@ class _AppTextFieldState extends State<AppTextField> {
                             )
                           : null,
                       border: InputBorder.none,
-                   //   hintText: widget.hintText,
-
                       contentPadding: const EdgeInsets.symmetric(
                           vertical: 20, horizontal: 20),
                       errorStyle: const TextStyle(height: 0),

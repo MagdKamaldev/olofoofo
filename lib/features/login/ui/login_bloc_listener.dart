@@ -42,31 +42,32 @@ class LoginBlocListener extends StatelessWidget {
   }
 
   void _setupErrorState(BuildContext context, String error) {
-    Navigator.of(context).pop();
-    showDialog(
-      context: context,
-      builder: (context) => AlertDialog(
-        icon: const Icon(
-          Icons.error,
-          color: Colors.red,
-          size: 32,
-        ),
-        content: Text(
-          error,
-       //   style: TextStyles.heading2,
-        ),
-        actions: [
-          TextButton(
-            onPressed: () {
-              Navigator.of(context).pop();
-            },
-            child: const Text(
-              'Got it',
-          //    style: TextStyles.heading2,
-            ),
-          ),
-        ],
+  Navigator.of(context).pop();
+  showDialog(
+    context: context,
+    builder: (context) => AlertDialog(
+      icon: const Icon(
+        Icons.error,
+        color: Colors.red,
+        size: 32,
       ),
-    );
-  }
+      content: Text(
+        error,
+        textAlign: TextAlign.center,  // Center the error text
+        style: TextStyles.font14Medium.copyWith(color: Colors.red),
+      ),
+      actions: [
+        TextButton(
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+          child: Text(
+            'Got it',
+            style: TextStyles.font14Medium.copyWith(color: ColorManager.primary),
+          ),
+        ),
+      ],
+    ),
+  );
+}
 }
