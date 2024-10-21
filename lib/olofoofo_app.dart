@@ -1,6 +1,6 @@
 import 'package:circle_sync/core/routing/app_router.dart';
 import 'package:circle_sync/core/routing/routes.dart';
-import 'package:circle_sync/main.dart';
+import 'package:circle_sync/main_development.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
