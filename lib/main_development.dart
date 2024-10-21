@@ -5,6 +5,7 @@ import 'package:circle_sync/core/helpers/shared_pref_helper.dart';
 import 'package:circle_sync/core/routing/app_router.dart';
 import 'package:circle_sync/olofoofo_app.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 bool isLoggedInUser = false;
 
@@ -21,6 +22,7 @@ checkIfLoggedIn() async {
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
+  await ScreenUtil.ensureScreenSize();
   setUpGetIt();
   await checkIfLoggedIn();
   runApp(OlofoofoApp(
