@@ -6,12 +6,14 @@ class AppTextField extends StatefulWidget {
   final TextEditingController controller;
   final TextInputType keyboardType;
   final bool isPassword;
+   final Function(String?) validator;
 
   const AppTextField({
     super.key,
     required this.controller,
     required this.keyboardType,
     required this.isPassword,
+    required this.validator,
   });
 
   @override
@@ -27,12 +29,9 @@ class _AppTextFieldState extends State<AppTextField> {
     return SizedBox(
       width: size.width * 0.9,
       child: FormField<String>(
-        validator: (String? value) {
-          if (value == null || value.isEmpty) {
-            return "Please enter a valid value";
-          }
-          return null;
-        },
+        validator: (value) {
+        return widget.validator(value);
+      },
         builder: (FormFieldState<String> field) {
           return Column(
             crossAxisAlignment: CrossAxisAlignment.start,
