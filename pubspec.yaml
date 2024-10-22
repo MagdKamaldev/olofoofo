@@ -2,7 +2,7 @@ name: circle_sync
 description: "A new Flutter project."
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
-version: 1.0.0+1
+version: 1.0.2+1
 
 environment:
   sdk: '>=3.4.1 <4.0.0'
@@ -30,6 +30,7 @@ dependencies:
   build_runner: ^2.4.11
   shared_preferences: ^2.2.3
   flutter_native_splash: ^2.4.1
+  firebase_core: ^3.6.0
 
 dev_dependencies:
   flutter_test:

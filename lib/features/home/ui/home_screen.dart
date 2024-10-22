@@ -3,7 +3,6 @@ import 'package:circle_sync/core/helpers/extensions.dart';
 import 'package:circle_sync/core/helpers/shared_pref_helper.dart';
 import 'package:circle_sync/core/routing/routes.dart';
 import 'package:circle_sync/core/themes/colors/colors.dart';
-import 'package:circle_sync/core/widgets/logo.dart';
 import 'package:circle_sync/features/home/cubit/home_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -17,7 +16,7 @@ class HomeScreen extends StatelessWidget {
     return BlocBuilder<HomeCubit, HomeState>(
       builder: (context, state) => Scaffold(
         appBar: AppBar(
-          title: const Logo(),
+         // title: const Logo(),
           centerTitle: true,
           toolbarHeight: size.height * 0.14,
         ),
