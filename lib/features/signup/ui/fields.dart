@@ -8,15 +8,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class Fields extends StatefulWidget {
-  const Fields({super.key});
+  final Function(bool) onValidationChanged; // Callback to notify validation state
+
+  const Fields({super.key, required this.onValidationChanged});
 
   @override
   State<Fields> createState() => _FieldsState();
 }
 
 class _FieldsState extends State<Fields> {
-
-   bool hasLowercase = false;
+  bool hasLowercase = false;
   bool hasUppercase = false;
   bool hasSpecialCharacters = false;
   bool hasNumber = false;
@@ -31,18 +32,21 @@ class _FieldsState extends State<Fields> {
     setupPasswordControllerListener();
   }
 
-   void setupPasswordControllerListener() {
+  void setupPasswordControllerListener() {
     passwordController.addListener(() {
       setState(() {
         hasLowercase = AppRegex.hasLowerCase(passwordController.text);
         hasUppercase = AppRegex.hasUpperCase(passwordController.text);
-        hasSpecialCharacters =
-            AppRegex.hasSpecialCharacter(passwordController.text);
+        hasSpecialCharacters = AppRegex.hasSpecialCharacter(passwordController.text);
         hasNumber = AppRegex.hasNumber(passwordController.text);
         hasMinLength = AppRegex.hasMinLength(passwordController.text);
+
+        // Notify parent widget if password is valid or not
+        widget.onValidationChanged(hasLowercase && hasUppercase && hasSpecialCharacters && hasNumber && hasMinLength);
       });
     });
   }
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -56,9 +60,14 @@ class _FieldsState extends State<Fields> {
         ),
         verticalSpace(10),
         AppTextField(
+          validator: (p0) {
+            if (p0 == null || p0.isEmpty) {
+              return "First name is required";
+            }
+            return null;
+          },
           isPassword: false,
           controller: signUpCubit.firstNameController,
-          //   hintText: "First Name",
           keyboardType: TextInputType.text,
         ),
         verticalSpace(20),
@@ -68,9 +77,14 @@ class _FieldsState extends State<Fields> {
         ),
         verticalSpace(10),
         AppTextField(
+          validator: (p0) {
+            if (p0 == null || p0.isEmpty) {
+              return "Last name is required";
+            }
+            return null;
+          },
           isPassword: false,
           controller: signUpCubit.lastNameController,
-          //  hintText: "Last Name",
           keyboardType: TextInputType.text,
         ),
         verticalSpace(20),
@@ -80,6 +94,13 @@ class _FieldsState extends State<Fields> {
         ),
         verticalSpace(10),
         AppTextField(
+           validator: (value) {
+              if (value == null ||
+                  value.isEmpty ||
+                  !AppRegex.isEmailValid(value)) {
+                return 'Please enter a valid email';
+              }
+            },
           isPassword: false,
           controller: signUpCubit.mailController,
           keyboardType: TextInputType.emailAddress,
@@ -91,25 +112,45 @@ class _FieldsState extends State<Fields> {
         ),
         verticalSpace(10),
         AppTextField(
+          validator: (p0) {
+            if (p0 == null || p0.isEmpty) {
+              return "Password is required";
+            }
+            if (!hasLowercase) {
+              return "Password must contain at least one lowercase letter";
+            }
+            if (!hasUppercase) {
+              return "Password must contain at least one uppercase letter";
+            }
+            if (!hasSpecialCharacters) {
+              return "Password must contain at least one special character";
+            }
+            if (!hasNumber) {
+              return "Password must contain at least one number";
+            }
+            if (!hasMinLength) {
+              return "Password must be at least eight characters long";
+            }
+            return null;
+          },
           isPassword: true,
           controller: signUpCubit.passwordController,
-          //  hintText: "Password",
           keyboardType: TextInputType.visiblePassword,
         ),
         verticalSpace(size.height * 0.04),
-          PasswordValidations(
-            hasLowerCase: hasLowercase,
-            hasUpperCase: hasUppercase,
-            hasSpecialCharacters: hasSpecialCharacters,
-            hasDigits: hasNumber,
-            hasMinimumLength: hasMinLength,
-          ),
-          verticalSpace(size.height * 0.04),
+        PasswordValidations(
+          hasLowerCase: hasLowercase,
+          hasUpperCase: hasUppercase,
+          hasSpecialCharacters: hasSpecialCharacters,
+          hasDigits: hasNumber,
+          hasMinimumLength: hasMinLength,
+        ),
+        verticalSpace(size.height * 0.04),
       ],
     );
   }
 
-   @override
+  @override
   void dispose() {
     passwordController.dispose();
     super.dispose();

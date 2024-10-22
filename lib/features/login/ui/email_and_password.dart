@@ -1,3 +1,4 @@
+import 'package:circle_sync/core/helpers/app_regex.dart';
 import 'package:circle_sync/core/helpers/spacing.dart';
 import 'package:circle_sync/core/themes/text_styles/text_styles.dart';
 import 'package:circle_sync/core/widgets/tff.dart';
@@ -20,6 +21,13 @@ class EmailAndPassword extends StatelessWidget {
           const Text("Email",style: TextStyles.font14Medium,),
           verticalSpace(10),
           AppTextField(
+             validator: (value) {
+              if (value == null ||
+                  value.isEmpty ||
+                  !AppRegex.isEmailValid(value)) {
+                return 'Please enter a valid email';
+              }
+            },
             isPassword: false,
             controller: loginCubit.mailController,
             keyboardType: TextInputType.emailAddress,
@@ -28,6 +36,11 @@ class EmailAndPassword extends StatelessWidget {
           const Text("Password",style: TextStyles.font14Medium,),
           verticalSpace(10),
           AppTextField(
+            validator: (value) {
+              if (value == null || value.isEmpty) {
+                return 'Password is required';
+              }
+            },
             isPassword: true,
             controller: loginCubit.passwordController,
             keyboardType: TextInputType.visiblePassword,

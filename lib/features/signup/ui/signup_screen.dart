@@ -10,13 +10,20 @@ import 'package:circle_sync/features/signup/ui/sign_up_bloc_listener.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class SignUpScreen extends StatelessWidget {
+class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
 
+  @override
+  SignUpScreenState createState() => SignUpScreenState();
+}
+
+class SignUpScreenState extends State<SignUpScreen> {
+  bool isPasswordValid = false;
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     final signUpCubit = context.read<SignUpCubit>();
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
@@ -33,7 +40,6 @@ class SignUpScreen extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                   
                     const Text(
                       "Sign Up",
                       style: TextStyles.font20SemiBold,
@@ -41,38 +47,48 @@ class SignUpScreen extends StatelessWidget {
                     verticalSpace(15),
                     Text(
                       "Enter your credentials",
-                      style:
-                          TextStyles.font16Medium.copyWith(color: Colors.black54),
+                      style: TextStyles.font16Medium
+                          .copyWith(color: Colors.black54),
                     ),
-                  verticalSpace(size.height * 0.04),
-                   const Fields(),
+                    verticalSpace(size.height * 0.04),
+                    Fields(
+                      onValidationChanged: (isValid) {
+                        setState(() {
+                          isPasswordValid =
+                              isValid;
+                        });
+                      },
+                    ),
                     AppButton(
-                      isWhite: false,
-                        onPressed: () {
-                          validateAndSignUp(context);
-                        },
-                        text: "Sign Up"),
+                      isWhite:
+                          !isPasswordValid,
+                      onPressed: () {
+                        isPasswordValid ? validateAndSignUp(context) : null;
+                      },
+                      text: "Sign Up",
+                    ),
                     verticalSpace(size.height * 0.02),
-                   Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      const Text(
-                        "Already have an account?",
-                        style: TextStyles.font14Medium,
-                      ),
-                      TextButton(
-                        child: Text(
-                          "Sign In",
-                          style: TextStyles.font14Medium.copyWith(
-                              color: ColorManager.primary, ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const Text(
+                          "Already have an account?",
+                          style: TextStyles.font14Medium,
                         ),
-                        onPressed: () {
-                          context.pushNamed(Routes.login);
-                        },
-                      ),
-                    ],
-                  ),
-                  const SignUpBlocListener(),
+                        TextButton(
+                          child: Text(
+                            "Sign In",
+                            style: TextStyles.font14Medium.copyWith(
+                              color: ColorManager.primary,
+                            ),
+                          ),
+                          onPressed: () {
+                            context.pushNamed(Routes.login);
+                          },
+                        ),
+                      ],
+                    ),
+                    const SignUpBlocListener(),
                   ],
                 ),
               ),
