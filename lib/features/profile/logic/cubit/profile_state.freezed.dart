@@ -84,6 +84,9 @@ class _$ProfileStateCopyWithImpl<T, $Res, $Val extends ProfileState<T>>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of ProfileState
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -100,6 +103,9 @@ class __$$InitialImplCopyWithImpl<T, $Res>
   __$$InitialImplCopyWithImpl(
       _$InitialImpl<T> _value, $Res Function(_$InitialImpl<T>) _then)
       : super(_value, _then);
+
+  /// Create a copy of ProfileState
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -214,6 +220,9 @@ class __$$GetProfileLoadingImplCopyWithImpl<T, $Res>
   __$$GetProfileLoadingImplCopyWithImpl(_$GetProfileLoadingImpl<T> _value,
       $Res Function(_$GetProfileLoadingImpl<T>) _then)
       : super(_value, _then);
+
+  /// Create a copy of ProfileState
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -332,6 +341,8 @@ class __$$GetProfileSuccessImplCopyWithImpl<T, $Res>
       $Res Function(_$GetProfileSuccessImpl<T>) _then)
       : super(_value, _then);
 
+  /// Create a copy of ProfileState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -371,7 +382,9 @@ class _$GetProfileSuccessImpl<T> implements GetProfileSuccess<T> {
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(data));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ProfileState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$GetProfileSuccessImplCopyWith<T, _$GetProfileSuccessImpl<T>>
@@ -458,7 +471,10 @@ abstract class GetProfileSuccess<T> implements ProfileState<T> {
   const factory GetProfileSuccess(final T data) = _$GetProfileSuccessImpl<T>;
 
   T get data;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ProfileState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$GetProfileSuccessImplCopyWith<T, _$GetProfileSuccessImpl<T>>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -480,6 +496,8 @@ class __$$GetProfileErrorImplCopyWithImpl<T, $Res>
       $Res Function(_$GetProfileErrorImpl<T>) _then)
       : super(_value, _then);
 
+  /// Create a copy of ProfileState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -518,7 +536,9 @@ class _$GetProfileErrorImpl<T> implements GetProfileError<T> {
   @override
   int get hashCode => Object.hash(runtimeType, error);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ProfileState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$GetProfileErrorImplCopyWith<T, _$GetProfileErrorImpl<T>> get copyWith =>
@@ -605,7 +625,10 @@ abstract class GetProfileError<T> implements ProfileState<T> {
       _$GetProfileErrorImpl<T>;
 
   String get error;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ProfileState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$GetProfileErrorImplCopyWith<T, _$GetProfileErrorImpl<T>> get copyWith =>
       throw _privateConstructorUsedError;
 }
