@@ -43,16 +43,19 @@ class LoginScreen extends StatelessWidget {
                   ),
                   verticalSpace(40),
                   const EmailAndPassword(),
-                   verticalSpace(10),
-                    Align(
-                      alignment: Alignment.centerRight,
-                      child:  TextButton(
-                        onPressed: (){},
-                        child: Text(
-                      "Forgot Password?",
-                      style: TextStyles.font14Medium.copyWith(color: ColorManager.primary,),
-                                        ),
-                    ),),
+                  verticalSpace(10),
+                  Align(
+                    alignment: Alignment.centerRight,
+                    child: TextButton(
+                      onPressed: () {},
+                      child: Text(
+                        "Forgot Password?",
+                        style: TextStyles.font14Medium.copyWith(
+                          color: ColorManager.primary,
+                        ),
+                      ),
+                    ),
+                  ),
                   verticalSpace(size.height * 0.15),
                   AppButton(
                     onPressed: () {
@@ -73,7 +76,8 @@ class LoginScreen extends StatelessWidget {
                         child: Text(
                           "Sign Up",
                           style: TextStyles.font14Medium.copyWith(
-                              color: ColorManager.primary, ),
+                            color: ColorManager.primary,
+                          ),
                         ),
                         onPressed: () {
                           context.pushNamed(Routes.signUp);
