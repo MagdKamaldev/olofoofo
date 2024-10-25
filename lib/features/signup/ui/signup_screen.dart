@@ -54,14 +54,12 @@ class SignUpScreenState extends State<SignUpScreen> {
                     Fields(
                       onValidationChanged: (isValid) {
                         setState(() {
-                          isPasswordValid =
-                              isValid;
+                          isPasswordValid = isValid;
                         });
                       },
                     ),
                     AppButton(
-                      isWhite:
-                          !isPasswordValid,
+                      isWhite: false,
                       onPressed: () {
                         isPasswordValid ? validateAndSignUp(context) : null;
                       },

@@ -6,7 +6,6 @@ import 'package:circle_sync/core/widgets/button.dart';
 import 'package:circle_sync/features/profile/data/models/profile_response_model.dart';
 import 'package:circle_sync/features/profile/logic/cubit/profile_state.dart';
 import 'package:circle_sync/features/profile/logic/cubit/proflie_cubit.dart';
-import 'package:circle_sync/features/profile/post_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -71,21 +70,21 @@ class ProfileScreen extends StatelessWidget {
                       color: ColorManager.primary,
                     ),
                     verticalSpace(size.height * 0.04),
-                    ListView.separated(
-                      physics:
-                          NeverScrollableScrollPhysics(), // Disables scrolling for ListView
-                      shrinkWrap:
-                          true, // Allows ListView to size itself based on children
-                      itemBuilder: (context, index) => PostItem(
-                        userName: user.user!.firstName!,
-                        imageUrl: user.user!.profileImg ?? "",
-                        postContent: user.user!.posts![index].content!,
-                        likesCount: user.user!.posts![index].likesCount!,
-                        commentsCount: user.user!.posts![index].commentsCount!,
-                      ),
-                      separatorBuilder: (context, index) => verticalSpace(20),
-                      itemCount: user.user!.posts!.length,
-                    ),
+                    // ListView.separated(
+                    //   physics:
+                    //       NeverScrollableScrollPhysics(), // Disables scrolling for ListView
+                    //   shrinkWrap:
+                    //       true, // Allows ListView to size itself based on children
+                    //   itemBuilder: (context, index) => PostItem(
+                    //     userName: user.user!.firstName!,
+                    //     imageUrl: user.user!.profileImg ?? "",
+                    //     postContent: user.user!.posts![index].content!,
+                    //     likesCount: user.user!.posts![index].likesCount!,
+                    //     commentsCount: user.user!.posts![index].commentsCount!,
+                    //   ),
+                    //   separatorBuilder: (context, index) => verticalSpace(20),
+                    //   itemCount: user.user!.posts!.length,
+                    // ),
                   ],
                 ),
               );
