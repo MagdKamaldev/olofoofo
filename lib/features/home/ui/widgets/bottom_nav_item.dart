@@ -1,4 +1,4 @@
-import 'package:circle_sync/features/home/cubit/home_cubit.dart';
+import 'package:circle_sync/features/home/logic/home_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';

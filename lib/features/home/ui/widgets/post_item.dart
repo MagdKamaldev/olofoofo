@@ -9,7 +9,7 @@ import 'package:flutter_svg/svg.dart';
 
 class PostItem extends StatelessWidget {
   final String profileImage;
-  final String postImage;
+  final String ? postImage;
   final String userName;
   final String postCaption;
   final String time;
@@ -19,7 +19,7 @@ class PostItem extends StatelessWidget {
   const PostItem(
       {super.key,
       required this.profileImage,
-      required this.postImage,
+      this.postImage,
       required this.userName,
       required this.postCaption,
       required this.likes,
@@ -33,7 +33,7 @@ class PostItem extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 15),
       child: Container(
         width: double.infinity,
-        height: 360,
+        height: 330.h,
         decoration: BoxDecoration(
           color: ColorManager.backgroundGrey.withOpacity(0.5),
           borderRadius: BorderRadius.circular(20),
@@ -51,6 +51,7 @@ class PostItem extends StatelessWidget {
                     ),
                     horizontalSpace(15),
                     Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
                           userName,
@@ -70,7 +71,11 @@ class PostItem extends StatelessWidget {
                   style:
                       TextStyles.font12regular.copyWith(color: Colors.black54),
                 ),
+                if(postImage!= null)
                 verticalSpace(10),
+                postImage == null
+                    ? Container()
+                    :
                 Container(
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.black),
@@ -79,7 +84,7 @@ class PostItem extends StatelessWidget {
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(20),
                     child: Image.network(
-                      postImage,
+                      postImage!,
                       fit: BoxFit.cover,
                       width: double.infinity,
                       height: 170,
