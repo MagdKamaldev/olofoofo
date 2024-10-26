@@ -1,4 +1,6 @@
+import 'package:circle_sync/core/themes/text_styles/text_styles.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class StoryItem extends StatelessWidget {
   final String? storyImageUrl;
@@ -22,8 +24,8 @@ class StoryItem extends StatelessWidget {
           children: [
             // Story Background Image or Placeholder with Black Border
             Container(
-              width: 100,
-              height: 150,
+              width: 90.w,
+              height: 150.h,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(12),
                 border: Border.all(color: Colors.black, width: 1),
@@ -62,11 +64,7 @@ class StoryItem extends StatelessWidget {
         // User Name Text
         Text(
           userName,
-          style: const TextStyle(
-            fontSize: 14,
-            fontWeight: FontWeight.bold,
-            overflow: TextOverflow.ellipsis,
-          ),
+          style: TextStyles.font12regular,
           maxLines: 1,
         ),
       ],

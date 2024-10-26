@@ -1,6 +1,6 @@
 import 'package:circle_sync/core/di/dependency_injection.dart';
 import 'package:circle_sync/core/routing/routes.dart';
-import 'package:circle_sync/features/home/cubit/home_cubit.dart';
+import 'package:circle_sync/features/home/logic/home_cubit.dart';
 import 'package:circle_sync/features/home/ui/home_layout.dart';
 import 'package:circle_sync/features/login/logic/cubit/login_cubit.dart';
 import 'package:circle_sync/features/login/ui/login_screen.dart';
@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class AppRouter {
-  Route generateRoute(RouteSettings settings) {
+  Route ? generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case Routes.onBoarding1:
         return MaterialPageRoute(
@@ -53,14 +53,8 @@ class AppRouter {
             child: const HomeLayout(),
           ),
         );
-      default:
-        return MaterialPageRoute(
-          builder: (_) => Scaffold(
-            body: Center(
-              child: Text('No route defined for ${settings.name}'),
-            ),
-          ),
-        );
+      default: null;
     }
+    return null;
   }
 }
