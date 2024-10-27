@@ -23,6 +23,9 @@ mixin _$HomeState {
     required TResult Function(List<Post> posts) postsLoaded,
     required TResult Function(ErrorHandler errorHandler) postsError,
     required TResult Function(int index) changeScreen,
+    required TResult Function() postLoading,
+    required TResult Function(Post post) postLoaded,
+    required TResult Function(ErrorHandler errorHandler) postError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -32,6 +35,9 @@ mixin _$HomeState {
     TResult? Function(List<Post> posts)? postsLoaded,
     TResult? Function(ErrorHandler errorHandler)? postsError,
     TResult? Function(int index)? changeScreen,
+    TResult? Function()? postLoading,
+    TResult? Function(Post post)? postLoaded,
+    TResult? Function(ErrorHandler errorHandler)? postError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -41,6 +47,9 @@ mixin _$HomeState {
     TResult Function(List<Post> posts)? postsLoaded,
     TResult Function(ErrorHandler errorHandler)? postsError,
     TResult Function(int index)? changeScreen,
+    TResult Function()? postLoading,
+    TResult Function(Post post)? postLoaded,
+    TResult Function(ErrorHandler errorHandler)? postError,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -51,6 +60,9 @@ mixin _$HomeState {
     required TResult Function(PostsLoaded value) postsLoaded,
     required TResult Function(PostsError value) postsError,
     required TResult Function(ChangeScreen value) changeScreen,
+    required TResult Function(PostLoading value) postLoading,
+    required TResult Function(PostLoaded value) postLoaded,
+    required TResult Function(PostError value) postError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -60,6 +72,9 @@ mixin _$HomeState {
     TResult? Function(PostsLoaded value)? postsLoaded,
     TResult? Function(PostsError value)? postsError,
     TResult? Function(ChangeScreen value)? changeScreen,
+    TResult? Function(PostLoading value)? postLoading,
+    TResult? Function(PostLoaded value)? postLoaded,
+    TResult? Function(PostError value)? postError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -69,6 +84,9 @@ mixin _$HomeState {
     TResult Function(PostsLoaded value)? postsLoaded,
     TResult Function(PostsError value)? postsError,
     TResult Function(ChangeScreen value)? changeScreen,
+    TResult Function(PostLoading value)? postLoading,
+    TResult Function(PostLoaded value)? postLoaded,
+    TResult Function(PostError value)? postError,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -140,6 +158,9 @@ class _$InitialImpl implements _Initial {
     required TResult Function(List<Post> posts) postsLoaded,
     required TResult Function(ErrorHandler errorHandler) postsError,
     required TResult Function(int index) changeScreen,
+    required TResult Function() postLoading,
+    required TResult Function(Post post) postLoaded,
+    required TResult Function(ErrorHandler errorHandler) postError,
   }) {
     return initial();
   }
@@ -152,6 +173,9 @@ class _$InitialImpl implements _Initial {
     TResult? Function(List<Post> posts)? postsLoaded,
     TResult? Function(ErrorHandler errorHandler)? postsError,
     TResult? Function(int index)? changeScreen,
+    TResult? Function()? postLoading,
+    TResult? Function(Post post)? postLoaded,
+    TResult? Function(ErrorHandler errorHandler)? postError,
   }) {
     return initial?.call();
   }
@@ -164,6 +188,9 @@ class _$InitialImpl implements _Initial {
     TResult Function(List<Post> posts)? postsLoaded,
     TResult Function(ErrorHandler errorHandler)? postsError,
     TResult Function(int index)? changeScreen,
+    TResult Function()? postLoading,
+    TResult Function(Post post)? postLoaded,
+    TResult Function(ErrorHandler errorHandler)? postError,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -180,6 +207,9 @@ class _$InitialImpl implements _Initial {
     required TResult Function(PostsLoaded value) postsLoaded,
     required TResult Function(PostsError value) postsError,
     required TResult Function(ChangeScreen value) changeScreen,
+    required TResult Function(PostLoading value) postLoading,
+    required TResult Function(PostLoaded value) postLoaded,
+    required TResult Function(PostError value) postError,
   }) {
     return initial(this);
   }
@@ -192,6 +222,9 @@ class _$InitialImpl implements _Initial {
     TResult? Function(PostsLoaded value)? postsLoaded,
     TResult? Function(PostsError value)? postsError,
     TResult? Function(ChangeScreen value)? changeScreen,
+    TResult? Function(PostLoading value)? postLoading,
+    TResult? Function(PostLoaded value)? postLoaded,
+    TResult? Function(PostError value)? postError,
   }) {
     return initial?.call(this);
   }
@@ -204,6 +237,9 @@ class _$InitialImpl implements _Initial {
     TResult Function(PostsLoaded value)? postsLoaded,
     TResult Function(PostsError value)? postsError,
     TResult Function(ChangeScreen value)? changeScreen,
+    TResult Function(PostLoading value)? postLoading,
+    TResult Function(PostLoaded value)? postLoaded,
+    TResult Function(PostError value)? postError,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -263,6 +299,9 @@ class _$PostsLoadingImpl implements PostsLoading {
     required TResult Function(List<Post> posts) postsLoaded,
     required TResult Function(ErrorHandler errorHandler) postsError,
     required TResult Function(int index) changeScreen,
+    required TResult Function() postLoading,
+    required TResult Function(Post post) postLoaded,
+    required TResult Function(ErrorHandler errorHandler) postError,
   }) {
     return postsLoading();
   }
@@ -275,6 +314,9 @@ class _$PostsLoadingImpl implements PostsLoading {
     TResult? Function(List<Post> posts)? postsLoaded,
     TResult? Function(ErrorHandler errorHandler)? postsError,
     TResult? Function(int index)? changeScreen,
+    TResult? Function()? postLoading,
+    TResult? Function(Post post)? postLoaded,
+    TResult? Function(ErrorHandler errorHandler)? postError,
   }) {
     return postsLoading?.call();
   }
@@ -287,6 +329,9 @@ class _$PostsLoadingImpl implements PostsLoading {
     TResult Function(List<Post> posts)? postsLoaded,
     TResult Function(ErrorHandler errorHandler)? postsError,
     TResult Function(int index)? changeScreen,
+    TResult Function()? postLoading,
+    TResult Function(Post post)? postLoaded,
+    TResult Function(ErrorHandler errorHandler)? postError,
     required TResult orElse(),
   }) {
     if (postsLoading != null) {
@@ -303,6 +348,9 @@ class _$PostsLoadingImpl implements PostsLoading {
     required TResult Function(PostsLoaded value) postsLoaded,
     required TResult Function(PostsError value) postsError,
     required TResult Function(ChangeScreen value) changeScreen,
+    required TResult Function(PostLoading value) postLoading,
+    required TResult Function(PostLoaded value) postLoaded,
+    required TResult Function(PostError value) postError,
   }) {
     return postsLoading(this);
   }
@@ -315,6 +363,9 @@ class _$PostsLoadingImpl implements PostsLoading {
     TResult? Function(PostsLoaded value)? postsLoaded,
     TResult? Function(PostsError value)? postsError,
     TResult? Function(ChangeScreen value)? changeScreen,
+    TResult? Function(PostLoading value)? postLoading,
+    TResult? Function(PostLoaded value)? postLoaded,
+    TResult? Function(PostError value)? postError,
   }) {
     return postsLoading?.call(this);
   }
@@ -327,6 +378,9 @@ class _$PostsLoadingImpl implements PostsLoading {
     TResult Function(PostsLoaded value)? postsLoaded,
     TResult Function(PostsError value)? postsError,
     TResult Function(ChangeScreen value)? changeScreen,
+    TResult Function(PostLoading value)? postLoading,
+    TResult Function(PostLoaded value)? postLoaded,
+    TResult Function(PostError value)? postError,
     required TResult orElse(),
   }) {
     if (postsLoading != null) {
@@ -419,6 +473,9 @@ class _$PostsLoadedImpl implements PostsLoaded {
     required TResult Function(List<Post> posts) postsLoaded,
     required TResult Function(ErrorHandler errorHandler) postsError,
     required TResult Function(int index) changeScreen,
+    required TResult Function() postLoading,
+    required TResult Function(Post post) postLoaded,
+    required TResult Function(ErrorHandler errorHandler) postError,
   }) {
     return postsLoaded(posts);
   }
@@ -431,6 +488,9 @@ class _$PostsLoadedImpl implements PostsLoaded {
     TResult? Function(List<Post> posts)? postsLoaded,
     TResult? Function(ErrorHandler errorHandler)? postsError,
     TResult? Function(int index)? changeScreen,
+    TResult? Function()? postLoading,
+    TResult? Function(Post post)? postLoaded,
+    TResult? Function(ErrorHandler errorHandler)? postError,
   }) {
     return postsLoaded?.call(posts);
   }
@@ -443,6 +503,9 @@ class _$PostsLoadedImpl implements PostsLoaded {
     TResult Function(List<Post> posts)? postsLoaded,
     TResult Function(ErrorHandler errorHandler)? postsError,
     TResult Function(int index)? changeScreen,
+    TResult Function()? postLoading,
+    TResult Function(Post post)? postLoaded,
+    TResult Function(ErrorHandler errorHandler)? postError,
     required TResult orElse(),
   }) {
     if (postsLoaded != null) {
@@ -459,6 +522,9 @@ class _$PostsLoadedImpl implements PostsLoaded {
     required TResult Function(PostsLoaded value) postsLoaded,
     required TResult Function(PostsError value) postsError,
     required TResult Function(ChangeScreen value) changeScreen,
+    required TResult Function(PostLoading value) postLoading,
+    required TResult Function(PostLoaded value) postLoaded,
+    required TResult Function(PostError value) postError,
   }) {
     return postsLoaded(this);
   }
@@ -471,6 +537,9 @@ class _$PostsLoadedImpl implements PostsLoaded {
     TResult? Function(PostsLoaded value)? postsLoaded,
     TResult? Function(PostsError value)? postsError,
     TResult? Function(ChangeScreen value)? changeScreen,
+    TResult? Function(PostLoading value)? postLoading,
+    TResult? Function(PostLoaded value)? postLoaded,
+    TResult? Function(PostError value)? postError,
   }) {
     return postsLoaded?.call(this);
   }
@@ -483,6 +552,9 @@ class _$PostsLoadedImpl implements PostsLoaded {
     TResult Function(PostsLoaded value)? postsLoaded,
     TResult Function(PostsError value)? postsError,
     TResult Function(ChangeScreen value)? changeScreen,
+    TResult Function(PostLoading value)? postLoading,
+    TResult Function(PostLoaded value)? postLoaded,
+    TResult Function(PostError value)? postError,
     required TResult orElse(),
   }) {
     if (postsLoaded != null) {
@@ -578,6 +650,9 @@ class _$PostsErrorImpl implements PostsError {
     required TResult Function(List<Post> posts) postsLoaded,
     required TResult Function(ErrorHandler errorHandler) postsError,
     required TResult Function(int index) changeScreen,
+    required TResult Function() postLoading,
+    required TResult Function(Post post) postLoaded,
+    required TResult Function(ErrorHandler errorHandler) postError,
   }) {
     return postsError(errorHandler);
   }
@@ -590,6 +665,9 @@ class _$PostsErrorImpl implements PostsError {
     TResult? Function(List<Post> posts)? postsLoaded,
     TResult? Function(ErrorHandler errorHandler)? postsError,
     TResult? Function(int index)? changeScreen,
+    TResult? Function()? postLoading,
+    TResult? Function(Post post)? postLoaded,
+    TResult? Function(ErrorHandler errorHandler)? postError,
   }) {
     return postsError?.call(errorHandler);
   }
@@ -602,6 +680,9 @@ class _$PostsErrorImpl implements PostsError {
     TResult Function(List<Post> posts)? postsLoaded,
     TResult Function(ErrorHandler errorHandler)? postsError,
     TResult Function(int index)? changeScreen,
+    TResult Function()? postLoading,
+    TResult Function(Post post)? postLoaded,
+    TResult Function(ErrorHandler errorHandler)? postError,
     required TResult orElse(),
   }) {
     if (postsError != null) {
@@ -618,6 +699,9 @@ class _$PostsErrorImpl implements PostsError {
     required TResult Function(PostsLoaded value) postsLoaded,
     required TResult Function(PostsError value) postsError,
     required TResult Function(ChangeScreen value) changeScreen,
+    required TResult Function(PostLoading value) postLoading,
+    required TResult Function(PostLoaded value) postLoaded,
+    required TResult Function(PostError value) postError,
   }) {
     return postsError(this);
   }
@@ -630,6 +714,9 @@ class _$PostsErrorImpl implements PostsError {
     TResult? Function(PostsLoaded value)? postsLoaded,
     TResult? Function(PostsError value)? postsError,
     TResult? Function(ChangeScreen value)? changeScreen,
+    TResult? Function(PostLoading value)? postLoading,
+    TResult? Function(PostLoaded value)? postLoaded,
+    TResult? Function(PostError value)? postError,
   }) {
     return postsError?.call(this);
   }
@@ -642,6 +729,9 @@ class _$PostsErrorImpl implements PostsError {
     TResult Function(PostsLoaded value)? postsLoaded,
     TResult Function(PostsError value)? postsError,
     TResult Function(ChangeScreen value)? changeScreen,
+    TResult Function(PostLoading value)? postLoading,
+    TResult Function(PostLoaded value)? postLoaded,
+    TResult Function(PostError value)? postError,
     required TResult orElse(),
   }) {
     if (postsError != null) {
@@ -736,6 +826,9 @@ class _$ChangeScreenImpl implements ChangeScreen {
     required TResult Function(List<Post> posts) postsLoaded,
     required TResult Function(ErrorHandler errorHandler) postsError,
     required TResult Function(int index) changeScreen,
+    required TResult Function() postLoading,
+    required TResult Function(Post post) postLoaded,
+    required TResult Function(ErrorHandler errorHandler) postError,
   }) {
     return changeScreen(index);
   }
@@ -748,6 +841,9 @@ class _$ChangeScreenImpl implements ChangeScreen {
     TResult? Function(List<Post> posts)? postsLoaded,
     TResult? Function(ErrorHandler errorHandler)? postsError,
     TResult? Function(int index)? changeScreen,
+    TResult? Function()? postLoading,
+    TResult? Function(Post post)? postLoaded,
+    TResult? Function(ErrorHandler errorHandler)? postError,
   }) {
     return changeScreen?.call(index);
   }
@@ -760,6 +856,9 @@ class _$ChangeScreenImpl implements ChangeScreen {
     TResult Function(List<Post> posts)? postsLoaded,
     TResult Function(ErrorHandler errorHandler)? postsError,
     TResult Function(int index)? changeScreen,
+    TResult Function()? postLoading,
+    TResult Function(Post post)? postLoaded,
+    TResult Function(ErrorHandler errorHandler)? postError,
     required TResult orElse(),
   }) {
     if (changeScreen != null) {
@@ -776,6 +875,9 @@ class _$ChangeScreenImpl implements ChangeScreen {
     required TResult Function(PostsLoaded value) postsLoaded,
     required TResult Function(PostsError value) postsError,
     required TResult Function(ChangeScreen value) changeScreen,
+    required TResult Function(PostLoading value) postLoading,
+    required TResult Function(PostLoaded value) postLoaded,
+    required TResult Function(PostError value) postError,
   }) {
     return changeScreen(this);
   }
@@ -788,6 +890,9 @@ class _$ChangeScreenImpl implements ChangeScreen {
     TResult? Function(PostsLoaded value)? postsLoaded,
     TResult? Function(PostsError value)? postsError,
     TResult? Function(ChangeScreen value)? changeScreen,
+    TResult? Function(PostLoading value)? postLoading,
+    TResult? Function(PostLoaded value)? postLoaded,
+    TResult? Function(PostError value)? postError,
   }) {
     return changeScreen?.call(this);
   }
@@ -800,6 +905,9 @@ class _$ChangeScreenImpl implements ChangeScreen {
     TResult Function(PostsLoaded value)? postsLoaded,
     TResult Function(PostsError value)? postsError,
     TResult Function(ChangeScreen value)? changeScreen,
+    TResult Function(PostLoading value)? postLoading,
+    TResult Function(PostLoaded value)? postLoaded,
+    TResult Function(PostError value)? postError,
     required TResult orElse(),
   }) {
     if (changeScreen != null) {
@@ -818,5 +926,499 @@ abstract class ChangeScreen implements HomeState {
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ChangeScreenImplCopyWith<_$ChangeScreenImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$PostLoadingImplCopyWith<$Res> {
+  factory _$$PostLoadingImplCopyWith(
+          _$PostLoadingImpl value, $Res Function(_$PostLoadingImpl) then) =
+      __$$PostLoadingImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$PostLoadingImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$PostLoadingImpl>
+    implements _$$PostLoadingImplCopyWith<$Res> {
+  __$$PostLoadingImplCopyWithImpl(
+      _$PostLoadingImpl _value, $Res Function(_$PostLoadingImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$PostLoadingImpl implements PostLoading {
+  const _$PostLoadingImpl();
+
+  @override
+  String toString() {
+    return 'HomeState.postLoading()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$PostLoadingImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() postsLoading,
+    required TResult Function(List<Post> posts) postsLoaded,
+    required TResult Function(ErrorHandler errorHandler) postsError,
+    required TResult Function(int index) changeScreen,
+    required TResult Function() postLoading,
+    required TResult Function(Post post) postLoaded,
+    required TResult Function(ErrorHandler errorHandler) postError,
+  }) {
+    return postLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? postsLoading,
+    TResult? Function(List<Post> posts)? postsLoaded,
+    TResult? Function(ErrorHandler errorHandler)? postsError,
+    TResult? Function(int index)? changeScreen,
+    TResult? Function()? postLoading,
+    TResult? Function(Post post)? postLoaded,
+    TResult? Function(ErrorHandler errorHandler)? postError,
+  }) {
+    return postLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? postsLoading,
+    TResult Function(List<Post> posts)? postsLoaded,
+    TResult Function(ErrorHandler errorHandler)? postsError,
+    TResult Function(int index)? changeScreen,
+    TResult Function()? postLoading,
+    TResult Function(Post post)? postLoaded,
+    TResult Function(ErrorHandler errorHandler)? postError,
+    required TResult orElse(),
+  }) {
+    if (postLoading != null) {
+      return postLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(PostsLoading value) postsLoading,
+    required TResult Function(PostsLoaded value) postsLoaded,
+    required TResult Function(PostsError value) postsError,
+    required TResult Function(ChangeScreen value) changeScreen,
+    required TResult Function(PostLoading value) postLoading,
+    required TResult Function(PostLoaded value) postLoaded,
+    required TResult Function(PostError value) postError,
+  }) {
+    return postLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(PostsLoading value)? postsLoading,
+    TResult? Function(PostsLoaded value)? postsLoaded,
+    TResult? Function(PostsError value)? postsError,
+    TResult? Function(ChangeScreen value)? changeScreen,
+    TResult? Function(PostLoading value)? postLoading,
+    TResult? Function(PostLoaded value)? postLoaded,
+    TResult? Function(PostError value)? postError,
+  }) {
+    return postLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(PostsLoading value)? postsLoading,
+    TResult Function(PostsLoaded value)? postsLoaded,
+    TResult Function(PostsError value)? postsError,
+    TResult Function(ChangeScreen value)? changeScreen,
+    TResult Function(PostLoading value)? postLoading,
+    TResult Function(PostLoaded value)? postLoaded,
+    TResult Function(PostError value)? postError,
+    required TResult orElse(),
+  }) {
+    if (postLoading != null) {
+      return postLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class PostLoading implements HomeState {
+  const factory PostLoading() = _$PostLoadingImpl;
+}
+
+/// @nodoc
+abstract class _$$PostLoadedImplCopyWith<$Res> {
+  factory _$$PostLoadedImplCopyWith(
+          _$PostLoadedImpl value, $Res Function(_$PostLoadedImpl) then) =
+      __$$PostLoadedImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({Post post});
+}
+
+/// @nodoc
+class __$$PostLoadedImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$PostLoadedImpl>
+    implements _$$PostLoadedImplCopyWith<$Res> {
+  __$$PostLoadedImplCopyWithImpl(
+      _$PostLoadedImpl _value, $Res Function(_$PostLoadedImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? post = null,
+  }) {
+    return _then(_$PostLoadedImpl(
+      null == post
+          ? _value.post
+          : post // ignore: cast_nullable_to_non_nullable
+              as Post,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$PostLoadedImpl implements PostLoaded {
+  const _$PostLoadedImpl(this.post);
+
+  @override
+  final Post post;
+
+  @override
+  String toString() {
+    return 'HomeState.postLoaded(post: $post)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$PostLoadedImpl &&
+            (identical(other.post, post) || other.post == post));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, post);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$PostLoadedImplCopyWith<_$PostLoadedImpl> get copyWith =>
+      __$$PostLoadedImplCopyWithImpl<_$PostLoadedImpl>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() postsLoading,
+    required TResult Function(List<Post> posts) postsLoaded,
+    required TResult Function(ErrorHandler errorHandler) postsError,
+    required TResult Function(int index) changeScreen,
+    required TResult Function() postLoading,
+    required TResult Function(Post post) postLoaded,
+    required TResult Function(ErrorHandler errorHandler) postError,
+  }) {
+    return postLoaded(post);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? postsLoading,
+    TResult? Function(List<Post> posts)? postsLoaded,
+    TResult? Function(ErrorHandler errorHandler)? postsError,
+    TResult? Function(int index)? changeScreen,
+    TResult? Function()? postLoading,
+    TResult? Function(Post post)? postLoaded,
+    TResult? Function(ErrorHandler errorHandler)? postError,
+  }) {
+    return postLoaded?.call(post);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? postsLoading,
+    TResult Function(List<Post> posts)? postsLoaded,
+    TResult Function(ErrorHandler errorHandler)? postsError,
+    TResult Function(int index)? changeScreen,
+    TResult Function()? postLoading,
+    TResult Function(Post post)? postLoaded,
+    TResult Function(ErrorHandler errorHandler)? postError,
+    required TResult orElse(),
+  }) {
+    if (postLoaded != null) {
+      return postLoaded(post);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(PostsLoading value) postsLoading,
+    required TResult Function(PostsLoaded value) postsLoaded,
+    required TResult Function(PostsError value) postsError,
+    required TResult Function(ChangeScreen value) changeScreen,
+    required TResult Function(PostLoading value) postLoading,
+    required TResult Function(PostLoaded value) postLoaded,
+    required TResult Function(PostError value) postError,
+  }) {
+    return postLoaded(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(PostsLoading value)? postsLoading,
+    TResult? Function(PostsLoaded value)? postsLoaded,
+    TResult? Function(PostsError value)? postsError,
+    TResult? Function(ChangeScreen value)? changeScreen,
+    TResult? Function(PostLoading value)? postLoading,
+    TResult? Function(PostLoaded value)? postLoaded,
+    TResult? Function(PostError value)? postError,
+  }) {
+    return postLoaded?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(PostsLoading value)? postsLoading,
+    TResult Function(PostsLoaded value)? postsLoaded,
+    TResult Function(PostsError value)? postsError,
+    TResult Function(ChangeScreen value)? changeScreen,
+    TResult Function(PostLoading value)? postLoading,
+    TResult Function(PostLoaded value)? postLoaded,
+    TResult Function(PostError value)? postError,
+    required TResult orElse(),
+  }) {
+    if (postLoaded != null) {
+      return postLoaded(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class PostLoaded implements HomeState {
+  const factory PostLoaded(final Post post) = _$PostLoadedImpl;
+
+  Post get post;
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$PostLoadedImplCopyWith<_$PostLoadedImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$PostErrorImplCopyWith<$Res> {
+  factory _$$PostErrorImplCopyWith(
+          _$PostErrorImpl value, $Res Function(_$PostErrorImpl) then) =
+      __$$PostErrorImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({ErrorHandler errorHandler});
+}
+
+/// @nodoc
+class __$$PostErrorImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$PostErrorImpl>
+    implements _$$PostErrorImplCopyWith<$Res> {
+  __$$PostErrorImplCopyWithImpl(
+      _$PostErrorImpl _value, $Res Function(_$PostErrorImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? errorHandler = null,
+  }) {
+    return _then(_$PostErrorImpl(
+      null == errorHandler
+          ? _value.errorHandler
+          : errorHandler // ignore: cast_nullable_to_non_nullable
+              as ErrorHandler,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$PostErrorImpl implements PostError {
+  const _$PostErrorImpl(this.errorHandler);
+
+  @override
+  final ErrorHandler errorHandler;
+
+  @override
+  String toString() {
+    return 'HomeState.postError(errorHandler: $errorHandler)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$PostErrorImpl &&
+            (identical(other.errorHandler, errorHandler) ||
+                other.errorHandler == errorHandler));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, errorHandler);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$PostErrorImplCopyWith<_$PostErrorImpl> get copyWith =>
+      __$$PostErrorImplCopyWithImpl<_$PostErrorImpl>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() postsLoading,
+    required TResult Function(List<Post> posts) postsLoaded,
+    required TResult Function(ErrorHandler errorHandler) postsError,
+    required TResult Function(int index) changeScreen,
+    required TResult Function() postLoading,
+    required TResult Function(Post post) postLoaded,
+    required TResult Function(ErrorHandler errorHandler) postError,
+  }) {
+    return postError(errorHandler);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? postsLoading,
+    TResult? Function(List<Post> posts)? postsLoaded,
+    TResult? Function(ErrorHandler errorHandler)? postsError,
+    TResult? Function(int index)? changeScreen,
+    TResult? Function()? postLoading,
+    TResult? Function(Post post)? postLoaded,
+    TResult? Function(ErrorHandler errorHandler)? postError,
+  }) {
+    return postError?.call(errorHandler);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? postsLoading,
+    TResult Function(List<Post> posts)? postsLoaded,
+    TResult Function(ErrorHandler errorHandler)? postsError,
+    TResult Function(int index)? changeScreen,
+    TResult Function()? postLoading,
+    TResult Function(Post post)? postLoaded,
+    TResult Function(ErrorHandler errorHandler)? postError,
+    required TResult orElse(),
+  }) {
+    if (postError != null) {
+      return postError(errorHandler);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(PostsLoading value) postsLoading,
+    required TResult Function(PostsLoaded value) postsLoaded,
+    required TResult Function(PostsError value) postsError,
+    required TResult Function(ChangeScreen value) changeScreen,
+    required TResult Function(PostLoading value) postLoading,
+    required TResult Function(PostLoaded value) postLoaded,
+    required TResult Function(PostError value) postError,
+  }) {
+    return postError(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(PostsLoading value)? postsLoading,
+    TResult? Function(PostsLoaded value)? postsLoaded,
+    TResult? Function(PostsError value)? postsError,
+    TResult? Function(ChangeScreen value)? changeScreen,
+    TResult? Function(PostLoading value)? postLoading,
+    TResult? Function(PostLoaded value)? postLoaded,
+    TResult? Function(PostError value)? postError,
+  }) {
+    return postError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(PostsLoading value)? postsLoading,
+    TResult Function(PostsLoaded value)? postsLoaded,
+    TResult Function(PostsError value)? postsError,
+    TResult Function(ChangeScreen value)? changeScreen,
+    TResult Function(PostLoading value)? postLoading,
+    TResult Function(PostLoaded value)? postLoaded,
+    TResult Function(PostError value)? postError,
+    required TResult orElse(),
+  }) {
+    if (postError != null) {
+      return postError(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class PostError implements HomeState {
+  const factory PostError(final ErrorHandler errorHandler) = _$PostErrorImpl;
+
+  ErrorHandler get errorHandler;
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$PostErrorImplCopyWith<_$PostErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -2,6 +2,7 @@ import 'package:circle_sync/core/di/dependency_injection.dart';
 import 'package:circle_sync/core/routing/routes.dart';
 import 'package:circle_sync/features/home/logic/home_cubit.dart';
 import 'package:circle_sync/features/home/ui/home_layout.dart';
+import 'package:circle_sync/features/home/ui/post_details.dart';
 import 'package:circle_sync/features/login/logic/cubit/login_cubit.dart';
 import 'package:circle_sync/features/login/ui/login_screen.dart';
 import 'package:circle_sync/features/on_boarding/UI/on_boarding_2.dart';
@@ -53,6 +54,13 @@ class AppRouter {
             child: const HomeLayout(),
           ),
         );
+  case Routes.post:
+  return MaterialPageRoute(
+    builder: (_) => BlocProvider(
+      create: (context) => getIt<HomeCubit>(),
+      child: PostDetails(id: settings.arguments as String),
+    ),
+  );
       default: null;
     }
     return null;

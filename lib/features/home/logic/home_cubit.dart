@@ -37,4 +37,19 @@ class HomeCubit extends Cubit<HomeState> {
     );
   }
 
+  void getPost(String id) async{
+    emit(const HomeState.postLoading());
+    final response = await _homeRepo.getPost(id);
+    response.when(
+      success: (response) {
+        emit(HomeState.postLoaded(response.post!));
+      },
+      failure: (error) {
+        emit(HomeState.postError(ErrorHandler.handle(error)));
+      },
+    );
+  }
+
+
+
 }
