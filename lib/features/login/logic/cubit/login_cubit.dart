@@ -22,9 +22,9 @@ class LoginCubit extends Cubit<LoginState> {
         email: mailController.text, password: passwordController.text));
     response.when(
       success: (data) async {
-        await saveToken(data.token);
-        await saveUserId(data.userData!.id);
-        DioFactory.setTokenIntoHeaderAfterLogin(data.token??"");
+       await saveToken(data.data!.token ?? '');
+        await saveUserId(data.data!.user!.id ?? '');
+        DioFactory.setTokenIntoHeaderAfterLogin(data.data!.token ?? "");
         emit(LoginState.success(data));
       },
       failure: (error) {

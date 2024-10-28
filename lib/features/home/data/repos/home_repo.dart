@@ -1,7 +1,7 @@
 import 'package:circle_sync/core/networks/api_error_handler.dart';
 import 'package:circle_sync/core/networks/api_result.dart';
 import 'package:circle_sync/features/home/data/apis/home_api_service.dart';
-import 'package:circle_sync/features/home/data/models/post_details_response.dart';
+import 'package:circle_sync/features/home/data/models/home_responses.dart';
 
 
 class HomeRepo {

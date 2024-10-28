@@ -27,9 +27,9 @@ class SignUpCubit extends Cubit<SignUpState> {
         lastName: lastNameController.text));
     response.when(
       success: (data) async {
-        await saveToken(data.token ?? '');
-        await saveUserId(data.userData!.id);
-        DioFactory.setTokenIntoHeaderAfterLogin(data.token ?? "");
+        await saveToken(data.data!.token ?? '');
+        await saveUserId(data.data!.user!.id ?? '');
+        DioFactory.setTokenIntoHeaderAfterLogin(data.data!.token ?? "");
         emit(SignUpState.success(data));
       },
       failure: (error) {

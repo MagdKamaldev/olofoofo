@@ -3,11 +3,10 @@ part 'sign_up_response.g.dart';
 
 @JsonSerializable()
 class SignUpResponse {
-  @JsonKey(name: 'user')
-  UserData? userData;
-  String? token;
+  String? status;
+  Data? data;
 
-  SignUpResponse({this.userData, this.token});
+  SignUpResponse({this.status, this.data});
 
   factory SignUpResponse.fromJson(Map<String, dynamic> json) =>
       _$SignUpResponseFromJson(json);
@@ -16,27 +15,44 @@ class SignUpResponse {
 }
 
 @JsonSerializable()
+class Data {
+  UserData? user;
+  String? token;
+
+  Data({this.user, this.token});
+
+  factory Data.fromJson(Map<String, dynamic> json) =>
+      _$DataFromJson(json);
+
+  Map<String, dynamic> toJson() => _$DataToJson(this);
+}
+
+@JsonSerializable()
 class UserData {
+  @JsonKey(name: '_id')
   String? id;
-  @JsonKey(name: 'firstName')
   String? firstName;
-  @JsonKey(name: 'lastName')
   String? lastName;
-  @JsonKey(name: 'profile_img')
-  String? profileImg;
   String? email;
   String? password;
-  @JsonKey(name: 'createdAt')
+  List<dynamic>? friends;
+  List<dynamic>? friendRequests;
   String? createdAt;
+  String? updatedAt;
+  @JsonKey(name: '__v')
+  int? version;
 
   UserData({
     this.id,
     this.firstName,
     this.lastName,
-    this.profileImg,
     this.email,
     this.password,
+    this.friends,
+    this.friendRequests,
     this.createdAt,
+    this.updatedAt,
+    this.version,
   });
 
   factory UserData.fromJson(Map<String, dynamic> json) =>

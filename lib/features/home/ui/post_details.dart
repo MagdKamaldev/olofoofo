@@ -39,7 +39,7 @@ class PostDetails extends StatelessWidget {
                       likes: post.likesCount ?? 0,
                       comments: post.commentsCount ?? 0,
                       time: post.createdAt ?? DateTime.now().toString(),
-                      isLiked: post.isLiked!,
+                      isLiked: post.isLiked?? false,
                       postId: post.id!,
                     ),
                   ),
@@ -48,10 +48,10 @@ class PostDetails extends StatelessWidget {
                       (context, index) {
                         final comment = post.comments?[index];
                         return CommentItem(
-                          profileImage: comment?.user?.profileImg,
-                          comment: comment?.content ?? "No comment",
-                          time: comment?.createdAt ?? DateTime.now().toString(),
-                          userName: "${comment?.user?.firstName ?? 'Unknown'} ${comment?.user?.lastName ?? ''}",
+                          profileImage: comment!.user![0].profileImg,
+                          comment: comment.content ?? "No comment",
+                          time: comment.createdAt ?? DateTime.now().toString(),
+                          userName: "${comment.user![0].firstName ?? 'Unknown'} ${comment.user![0].lastName ?? ''}",
                         );
                       },
                       childCount: post.comments?.length ?? 0,

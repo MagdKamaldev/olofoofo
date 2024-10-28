@@ -1,5 +1,5 @@
 import 'package:circle_sync/core/networks/api_error_handler.dart';
-import 'package:circle_sync/features/home/data/models/post_details_response.dart';
+import 'package:circle_sync/features/home/data/models/home_responses.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 part 'home_state.freezed.dart';
 
