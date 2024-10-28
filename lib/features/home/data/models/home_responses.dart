@@ -1,14 +1,13 @@
-
 import 'package:json_annotation/json_annotation.dart';
 
-part 'post_details_response.g.dart';
-
+part 'home_responses.g.dart';
 
 @JsonSerializable()
 class HomePostsResponse {
-  List<Post>? posts;
+  String? status;
+  DataPosts? data;
 
-  HomePostsResponse({this.posts});
+  HomePostsResponse({this.status, this.data});
 
   factory HomePostsResponse.fromJson(Map<String, dynamic> json) =>
       _$HomePostsResponseFromJson(json);
@@ -16,12 +15,12 @@ class HomePostsResponse {
   Map<String, dynamic> toJson() => _$HomePostsResponseToJson(this);
 }
 
-
 @JsonSerializable()
 class PostResponse {
-  Post? post;
+  String? status;
+  DataPost? data;
 
-  PostResponse({this.post});
+  PostResponse({this.status, this.data});
 
   factory PostResponse.fromJson(Map<String, dynamic> json) =>
       _$PostResponseFromJson(json);
@@ -30,29 +29,57 @@ class PostResponse {
 }
 
 @JsonSerializable()
+class DataPosts {
+  List<Post>? posts;
+
+  DataPosts({this.posts});
+
+  factory DataPosts.fromJson(Map<String, dynamic> json) =>
+      _$DataPostsFromJson(json);
+
+  Map<String, dynamic> toJson() => _$DataPostsToJson(this);
+}
+
+@JsonSerializable()
+class DataPost {
+  Post? post;
+
+  DataPost({this.post});
+
+  factory DataPost.fromJson(Map<String, dynamic> json) =>
+      _$DataPostFromJson(json);
+
+  Map<String, dynamic> toJson() => _$DataPostToJson(this);
+}
+
+@JsonSerializable()
 class Post {
+  @JsonKey(name: '_id')
   String? id;
   String? content;
-  String? authorId;
   int? likesCount;
   int? commentsCount;
   String? createdAt;
+  String? updatedAt;
   bool? isLiked;
+  List<dynamic>? media; // Assuming media is a list of dynamic for now
   AuthorData? author;
-  
-  // Added comments field
   List<Comment>? comments;
+  @JsonKey(name: '__v')
+  int? version;
 
   Post({
     this.id,
     this.content,
-    this.authorId,
     this.likesCount,
     this.commentsCount,
     this.createdAt,
+    this.updatedAt,
     this.isLiked,
+    this.media,
     this.author,
     this.comments,
+    this.version,
   });
 
   factory Post.fromJson(Map<String, dynamic> json) => _$PostFromJson(json);
@@ -60,10 +87,9 @@ class Post {
   Map<String, dynamic> toJson() => _$PostToJson(this);
 }
 
-
-
 @JsonSerializable()
 class AuthorData {
+  @JsonKey(name: '_id')
   String? id;
   String? firstName;
   String? lastName;
@@ -85,8 +111,9 @@ class AuthorData {
 
 @JsonSerializable()
 class Comment {
+  @JsonKey(name: '_id')
   String? id;
-  UserData? user;
+  List<UserData>? user; // Updated to List<UserData> to handle array structure
   String? content;
   String? createdAt;
 
@@ -100,6 +127,7 @@ class Comment {
 
 @JsonSerializable()
 class UserData {
+  @JsonKey(name: '_id')
   String? id;
   String? firstName;
   String? lastName;

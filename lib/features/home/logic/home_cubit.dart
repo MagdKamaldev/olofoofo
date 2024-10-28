@@ -1,8 +1,10 @@
 import 'package:circle_sync/core/networks/api_error_handler.dart';
+import 'package:circle_sync/features/add_post/ui/add_post_screen.dart';
 import 'package:circle_sync/features/chats/ui/chats_screen.dart';
 import 'package:circle_sync/features/home/data/repos/home_repo.dart';
 import 'package:circle_sync/features/home/logic/home_state.dart';
 import 'package:circle_sync/features/home/ui/home_screen.dart';
+import 'package:circle_sync/features/notifications/ui/notifications_screen.dart';
 import 'package:circle_sync/features/profile/ui/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -13,6 +15,8 @@ class HomeCubit extends Cubit<HomeState> {
   HomeCubit(this._homeRepo) : super(const HomeState.initial());
   List<Widget> screens = [
     const HomeScreen(),
+    const NotificationsScreen(),
+    const AddPostScreen(),
     const ChatsScreen(),
     const ProfileScreen(),
   ];
@@ -29,7 +33,7 @@ class HomeCubit extends Cubit<HomeState> {
     final response = await _homeRepo.getPosts();
     response.when(
       success: (response) {
-        emit(HomeState.postsLoaded(response.posts!));
+        emit(HomeState.postsLoaded(response.data!.posts!));
       },
       failure: (error) {
         emit(HomeState.postsError(ErrorHandler.handle(error)));
@@ -42,7 +46,7 @@ class HomeCubit extends Cubit<HomeState> {
     final response = await _homeRepo.getPost(id);
     response.when(
       success: (response) {
-        emit(HomeState.postLoaded(response.post!));
+        emit(HomeState.postLoaded(response.data!.post!));
       },
       failure: (error) {
         emit(HomeState.postError(ErrorHandler.handle(error)));
