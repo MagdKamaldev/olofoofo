@@ -113,7 +113,7 @@ class AuthorData {
 class Comment {
   @JsonKey(name: '_id')
   String? id;
-  List<UserData>? user; // Updated to List<UserData> to handle array structure
+  List<UserData>? user;
   String? content;
   String? createdAt;
 

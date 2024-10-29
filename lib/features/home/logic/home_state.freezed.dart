@@ -21,11 +21,11 @@ mixin _$HomeState {
     required TResult Function() initial,
     required TResult Function() postsLoading,
     required TResult Function(List<Post> posts) postsLoaded,
-    required TResult Function(ErrorHandler errorHandler) postsError,
+    required TResult Function(ApiErrorModel apiErrorModel) postsError,
     required TResult Function(int index) changeScreen,
     required TResult Function() postLoading,
     required TResult Function(Post post) postLoaded,
-    required TResult Function(ErrorHandler errorHandler) postError,
+    required TResult Function(ApiErrorModel apiErrorModel) postError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -33,11 +33,11 @@ mixin _$HomeState {
     TResult? Function()? initial,
     TResult? Function()? postsLoading,
     TResult? Function(List<Post> posts)? postsLoaded,
-    TResult? Function(ErrorHandler errorHandler)? postsError,
+    TResult? Function(ApiErrorModel apiErrorModel)? postsError,
     TResult? Function(int index)? changeScreen,
     TResult? Function()? postLoading,
     TResult? Function(Post post)? postLoaded,
-    TResult? Function(ErrorHandler errorHandler)? postError,
+    TResult? Function(ApiErrorModel apiErrorModel)? postError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -45,11 +45,11 @@ mixin _$HomeState {
     TResult Function()? initial,
     TResult Function()? postsLoading,
     TResult Function(List<Post> posts)? postsLoaded,
-    TResult Function(ErrorHandler errorHandler)? postsError,
+    TResult Function(ApiErrorModel apiErrorModel)? postsError,
     TResult Function(int index)? changeScreen,
     TResult Function()? postLoading,
     TResult Function(Post post)? postLoaded,
-    TResult Function(ErrorHandler errorHandler)? postError,
+    TResult Function(ApiErrorModel apiErrorModel)? postError,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -156,11 +156,11 @@ class _$InitialImpl implements _Initial {
     required TResult Function() initial,
     required TResult Function() postsLoading,
     required TResult Function(List<Post> posts) postsLoaded,
-    required TResult Function(ErrorHandler errorHandler) postsError,
+    required TResult Function(ApiErrorModel apiErrorModel) postsError,
     required TResult Function(int index) changeScreen,
     required TResult Function() postLoading,
     required TResult Function(Post post) postLoaded,
-    required TResult Function(ErrorHandler errorHandler) postError,
+    required TResult Function(ApiErrorModel apiErrorModel) postError,
   }) {
     return initial();
   }
@@ -171,11 +171,11 @@ class _$InitialImpl implements _Initial {
     TResult? Function()? initial,
     TResult? Function()? postsLoading,
     TResult? Function(List<Post> posts)? postsLoaded,
-    TResult? Function(ErrorHandler errorHandler)? postsError,
+    TResult? Function(ApiErrorModel apiErrorModel)? postsError,
     TResult? Function(int index)? changeScreen,
     TResult? Function()? postLoading,
     TResult? Function(Post post)? postLoaded,
-    TResult? Function(ErrorHandler errorHandler)? postError,
+    TResult? Function(ApiErrorModel apiErrorModel)? postError,
   }) {
     return initial?.call();
   }
@@ -186,11 +186,11 @@ class _$InitialImpl implements _Initial {
     TResult Function()? initial,
     TResult Function()? postsLoading,
     TResult Function(List<Post> posts)? postsLoaded,
-    TResult Function(ErrorHandler errorHandler)? postsError,
+    TResult Function(ApiErrorModel apiErrorModel)? postsError,
     TResult Function(int index)? changeScreen,
     TResult Function()? postLoading,
     TResult Function(Post post)? postLoaded,
-    TResult Function(ErrorHandler errorHandler)? postError,
+    TResult Function(ApiErrorModel apiErrorModel)? postError,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -297,11 +297,11 @@ class _$PostsLoadingImpl implements PostsLoading {
     required TResult Function() initial,
     required TResult Function() postsLoading,
     required TResult Function(List<Post> posts) postsLoaded,
-    required TResult Function(ErrorHandler errorHandler) postsError,
+    required TResult Function(ApiErrorModel apiErrorModel) postsError,
     required TResult Function(int index) changeScreen,
     required TResult Function() postLoading,
     required TResult Function(Post post) postLoaded,
-    required TResult Function(ErrorHandler errorHandler) postError,
+    required TResult Function(ApiErrorModel apiErrorModel) postError,
   }) {
     return postsLoading();
   }
@@ -312,11 +312,11 @@ class _$PostsLoadingImpl implements PostsLoading {
     TResult? Function()? initial,
     TResult? Function()? postsLoading,
     TResult? Function(List<Post> posts)? postsLoaded,
-    TResult? Function(ErrorHandler errorHandler)? postsError,
+    TResult? Function(ApiErrorModel apiErrorModel)? postsError,
     TResult? Function(int index)? changeScreen,
     TResult? Function()? postLoading,
     TResult? Function(Post post)? postLoaded,
-    TResult? Function(ErrorHandler errorHandler)? postError,
+    TResult? Function(ApiErrorModel apiErrorModel)? postError,
   }) {
     return postsLoading?.call();
   }
@@ -327,11 +327,11 @@ class _$PostsLoadingImpl implements PostsLoading {
     TResult Function()? initial,
     TResult Function()? postsLoading,
     TResult Function(List<Post> posts)? postsLoaded,
-    TResult Function(ErrorHandler errorHandler)? postsError,
+    TResult Function(ApiErrorModel apiErrorModel)? postsError,
     TResult Function(int index)? changeScreen,
     TResult Function()? postLoading,
     TResult Function(Post post)? postLoaded,
-    TResult Function(ErrorHandler errorHandler)? postError,
+    TResult Function(ApiErrorModel apiErrorModel)? postError,
     required TResult orElse(),
   }) {
     if (postsLoading != null) {
@@ -471,11 +471,11 @@ class _$PostsLoadedImpl implements PostsLoaded {
     required TResult Function() initial,
     required TResult Function() postsLoading,
     required TResult Function(List<Post> posts) postsLoaded,
-    required TResult Function(ErrorHandler errorHandler) postsError,
+    required TResult Function(ApiErrorModel apiErrorModel) postsError,
     required TResult Function(int index) changeScreen,
     required TResult Function() postLoading,
     required TResult Function(Post post) postLoaded,
-    required TResult Function(ErrorHandler errorHandler) postError,
+    required TResult Function(ApiErrorModel apiErrorModel) postError,
   }) {
     return postsLoaded(posts);
   }
@@ -486,11 +486,11 @@ class _$PostsLoadedImpl implements PostsLoaded {
     TResult? Function()? initial,
     TResult? Function()? postsLoading,
     TResult? Function(List<Post> posts)? postsLoaded,
-    TResult? Function(ErrorHandler errorHandler)? postsError,
+    TResult? Function(ApiErrorModel apiErrorModel)? postsError,
     TResult? Function(int index)? changeScreen,
     TResult? Function()? postLoading,
     TResult? Function(Post post)? postLoaded,
-    TResult? Function(ErrorHandler errorHandler)? postError,
+    TResult? Function(ApiErrorModel apiErrorModel)? postError,
   }) {
     return postsLoaded?.call(posts);
   }
@@ -501,11 +501,11 @@ class _$PostsLoadedImpl implements PostsLoaded {
     TResult Function()? initial,
     TResult Function()? postsLoading,
     TResult Function(List<Post> posts)? postsLoaded,
-    TResult Function(ErrorHandler errorHandler)? postsError,
+    TResult Function(ApiErrorModel apiErrorModel)? postsError,
     TResult Function(int index)? changeScreen,
     TResult Function()? postLoading,
     TResult Function(Post post)? postLoaded,
-    TResult Function(ErrorHandler errorHandler)? postError,
+    TResult Function(ApiErrorModel apiErrorModel)? postError,
     required TResult orElse(),
   }) {
     if (postsLoaded != null) {
@@ -582,7 +582,7 @@ abstract class _$$PostsErrorImplCopyWith<$Res> {
           _$PostsErrorImpl value, $Res Function(_$PostsErrorImpl) then) =
       __$$PostsErrorImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({ErrorHandler errorHandler});
+  $Res call({ApiErrorModel apiErrorModel});
 }
 
 /// @nodoc
@@ -598,13 +598,13 @@ class __$$PostsErrorImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? errorHandler = null,
+    Object? apiErrorModel = null,
   }) {
     return _then(_$PostsErrorImpl(
-      null == errorHandler
-          ? _value.errorHandler
-          : errorHandler // ignore: cast_nullable_to_non_nullable
-              as ErrorHandler,
+      null == apiErrorModel
+          ? _value.apiErrorModel
+          : apiErrorModel // ignore: cast_nullable_to_non_nullable
+              as ApiErrorModel,
     ));
   }
 }
@@ -612,14 +612,14 @@ class __$$PostsErrorImplCopyWithImpl<$Res>
 /// @nodoc
 
 class _$PostsErrorImpl implements PostsError {
-  const _$PostsErrorImpl(this.errorHandler);
+  const _$PostsErrorImpl(this.apiErrorModel);
 
   @override
-  final ErrorHandler errorHandler;
+  final ApiErrorModel apiErrorModel;
 
   @override
   String toString() {
-    return 'HomeState.postsError(errorHandler: $errorHandler)';
+    return 'HomeState.postsError(apiErrorModel: $apiErrorModel)';
   }
 
   @override
@@ -627,12 +627,12 @@ class _$PostsErrorImpl implements PostsError {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$PostsErrorImpl &&
-            (identical(other.errorHandler, errorHandler) ||
-                other.errorHandler == errorHandler));
+            (identical(other.apiErrorModel, apiErrorModel) ||
+                other.apiErrorModel == apiErrorModel));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, errorHandler);
+  int get hashCode => Object.hash(runtimeType, apiErrorModel);
 
   /// Create a copy of HomeState
   /// with the given fields replaced by the non-null parameter values.
@@ -648,13 +648,13 @@ class _$PostsErrorImpl implements PostsError {
     required TResult Function() initial,
     required TResult Function() postsLoading,
     required TResult Function(List<Post> posts) postsLoaded,
-    required TResult Function(ErrorHandler errorHandler) postsError,
+    required TResult Function(ApiErrorModel apiErrorModel) postsError,
     required TResult Function(int index) changeScreen,
     required TResult Function() postLoading,
     required TResult Function(Post post) postLoaded,
-    required TResult Function(ErrorHandler errorHandler) postError,
+    required TResult Function(ApiErrorModel apiErrorModel) postError,
   }) {
-    return postsError(errorHandler);
+    return postsError(apiErrorModel);
   }
 
   @override
@@ -663,13 +663,13 @@ class _$PostsErrorImpl implements PostsError {
     TResult? Function()? initial,
     TResult? Function()? postsLoading,
     TResult? Function(List<Post> posts)? postsLoaded,
-    TResult? Function(ErrorHandler errorHandler)? postsError,
+    TResult? Function(ApiErrorModel apiErrorModel)? postsError,
     TResult? Function(int index)? changeScreen,
     TResult? Function()? postLoading,
     TResult? Function(Post post)? postLoaded,
-    TResult? Function(ErrorHandler errorHandler)? postError,
+    TResult? Function(ApiErrorModel apiErrorModel)? postError,
   }) {
-    return postsError?.call(errorHandler);
+    return postsError?.call(apiErrorModel);
   }
 
   @override
@@ -678,15 +678,15 @@ class _$PostsErrorImpl implements PostsError {
     TResult Function()? initial,
     TResult Function()? postsLoading,
     TResult Function(List<Post> posts)? postsLoaded,
-    TResult Function(ErrorHandler errorHandler)? postsError,
+    TResult Function(ApiErrorModel apiErrorModel)? postsError,
     TResult Function(int index)? changeScreen,
     TResult Function()? postLoading,
     TResult Function(Post post)? postLoaded,
-    TResult Function(ErrorHandler errorHandler)? postError,
+    TResult Function(ApiErrorModel apiErrorModel)? postError,
     required TResult orElse(),
   }) {
     if (postsError != null) {
-      return postsError(errorHandler);
+      return postsError(apiErrorModel);
     }
     return orElse();
   }
@@ -742,9 +742,10 @@ class _$PostsErrorImpl implements PostsError {
 }
 
 abstract class PostsError implements HomeState {
-  const factory PostsError(final ErrorHandler errorHandler) = _$PostsErrorImpl;
+  const factory PostsError(final ApiErrorModel apiErrorModel) =
+      _$PostsErrorImpl;
 
-  ErrorHandler get errorHandler;
+  ApiErrorModel get apiErrorModel;
 
   /// Create a copy of HomeState
   /// with the given fields replaced by the non-null parameter values.
@@ -824,11 +825,11 @@ class _$ChangeScreenImpl implements ChangeScreen {
     required TResult Function() initial,
     required TResult Function() postsLoading,
     required TResult Function(List<Post> posts) postsLoaded,
-    required TResult Function(ErrorHandler errorHandler) postsError,
+    required TResult Function(ApiErrorModel apiErrorModel) postsError,
     required TResult Function(int index) changeScreen,
     required TResult Function() postLoading,
     required TResult Function(Post post) postLoaded,
-    required TResult Function(ErrorHandler errorHandler) postError,
+    required TResult Function(ApiErrorModel apiErrorModel) postError,
   }) {
     return changeScreen(index);
   }
@@ -839,11 +840,11 @@ class _$ChangeScreenImpl implements ChangeScreen {
     TResult? Function()? initial,
     TResult? Function()? postsLoading,
     TResult? Function(List<Post> posts)? postsLoaded,
-    TResult? Function(ErrorHandler errorHandler)? postsError,
+    TResult? Function(ApiErrorModel apiErrorModel)? postsError,
     TResult? Function(int index)? changeScreen,
     TResult? Function()? postLoading,
     TResult? Function(Post post)? postLoaded,
-    TResult? Function(ErrorHandler errorHandler)? postError,
+    TResult? Function(ApiErrorModel apiErrorModel)? postError,
   }) {
     return changeScreen?.call(index);
   }
@@ -854,11 +855,11 @@ class _$ChangeScreenImpl implements ChangeScreen {
     TResult Function()? initial,
     TResult Function()? postsLoading,
     TResult Function(List<Post> posts)? postsLoaded,
-    TResult Function(ErrorHandler errorHandler)? postsError,
+    TResult Function(ApiErrorModel apiErrorModel)? postsError,
     TResult Function(int index)? changeScreen,
     TResult Function()? postLoading,
     TResult Function(Post post)? postLoaded,
-    TResult Function(ErrorHandler errorHandler)? postError,
+    TResult Function(ApiErrorModel apiErrorModel)? postError,
     required TResult orElse(),
   }) {
     if (changeScreen != null) {
@@ -973,11 +974,11 @@ class _$PostLoadingImpl implements PostLoading {
     required TResult Function() initial,
     required TResult Function() postsLoading,
     required TResult Function(List<Post> posts) postsLoaded,
-    required TResult Function(ErrorHandler errorHandler) postsError,
+    required TResult Function(ApiErrorModel apiErrorModel) postsError,
     required TResult Function(int index) changeScreen,
     required TResult Function() postLoading,
     required TResult Function(Post post) postLoaded,
-    required TResult Function(ErrorHandler errorHandler) postError,
+    required TResult Function(ApiErrorModel apiErrorModel) postError,
   }) {
     return postLoading();
   }
@@ -988,11 +989,11 @@ class _$PostLoadingImpl implements PostLoading {
     TResult? Function()? initial,
     TResult? Function()? postsLoading,
     TResult? Function(List<Post> posts)? postsLoaded,
-    TResult? Function(ErrorHandler errorHandler)? postsError,
+    TResult? Function(ApiErrorModel apiErrorModel)? postsError,
     TResult? Function(int index)? changeScreen,
     TResult? Function()? postLoading,
     TResult? Function(Post post)? postLoaded,
-    TResult? Function(ErrorHandler errorHandler)? postError,
+    TResult? Function(ApiErrorModel apiErrorModel)? postError,
   }) {
     return postLoading?.call();
   }
@@ -1003,11 +1004,11 @@ class _$PostLoadingImpl implements PostLoading {
     TResult Function()? initial,
     TResult Function()? postsLoading,
     TResult Function(List<Post> posts)? postsLoaded,
-    TResult Function(ErrorHandler errorHandler)? postsError,
+    TResult Function(ApiErrorModel apiErrorModel)? postsError,
     TResult Function(int index)? changeScreen,
     TResult Function()? postLoading,
     TResult Function(Post post)? postLoaded,
-    TResult Function(ErrorHandler errorHandler)? postError,
+    TResult Function(ApiErrorModel apiErrorModel)? postError,
     required TResult orElse(),
   }) {
     if (postLoading != null) {
@@ -1141,11 +1142,11 @@ class _$PostLoadedImpl implements PostLoaded {
     required TResult Function() initial,
     required TResult Function() postsLoading,
     required TResult Function(List<Post> posts) postsLoaded,
-    required TResult Function(ErrorHandler errorHandler) postsError,
+    required TResult Function(ApiErrorModel apiErrorModel) postsError,
     required TResult Function(int index) changeScreen,
     required TResult Function() postLoading,
     required TResult Function(Post post) postLoaded,
-    required TResult Function(ErrorHandler errorHandler) postError,
+    required TResult Function(ApiErrorModel apiErrorModel) postError,
   }) {
     return postLoaded(post);
   }
@@ -1156,11 +1157,11 @@ class _$PostLoadedImpl implements PostLoaded {
     TResult? Function()? initial,
     TResult? Function()? postsLoading,
     TResult? Function(List<Post> posts)? postsLoaded,
-    TResult? Function(ErrorHandler errorHandler)? postsError,
+    TResult? Function(ApiErrorModel apiErrorModel)? postsError,
     TResult? Function(int index)? changeScreen,
     TResult? Function()? postLoading,
     TResult? Function(Post post)? postLoaded,
-    TResult? Function(ErrorHandler errorHandler)? postError,
+    TResult? Function(ApiErrorModel apiErrorModel)? postError,
   }) {
     return postLoaded?.call(post);
   }
@@ -1171,11 +1172,11 @@ class _$PostLoadedImpl implements PostLoaded {
     TResult Function()? initial,
     TResult Function()? postsLoading,
     TResult Function(List<Post> posts)? postsLoaded,
-    TResult Function(ErrorHandler errorHandler)? postsError,
+    TResult Function(ApiErrorModel apiErrorModel)? postsError,
     TResult Function(int index)? changeScreen,
     TResult Function()? postLoading,
     TResult Function(Post post)? postLoaded,
-    TResult Function(ErrorHandler errorHandler)? postError,
+    TResult Function(ApiErrorModel apiErrorModel)? postError,
     required TResult orElse(),
   }) {
     if (postLoaded != null) {
@@ -1252,7 +1253,7 @@ abstract class _$$PostErrorImplCopyWith<$Res> {
           _$PostErrorImpl value, $Res Function(_$PostErrorImpl) then) =
       __$$PostErrorImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({ErrorHandler errorHandler});
+  $Res call({ApiErrorModel apiErrorModel});
 }
 
 /// @nodoc
@@ -1268,13 +1269,13 @@ class __$$PostErrorImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? errorHandler = null,
+    Object? apiErrorModel = null,
   }) {
     return _then(_$PostErrorImpl(
-      null == errorHandler
-          ? _value.errorHandler
-          : errorHandler // ignore: cast_nullable_to_non_nullable
-              as ErrorHandler,
+      null == apiErrorModel
+          ? _value.apiErrorModel
+          : apiErrorModel // ignore: cast_nullable_to_non_nullable
+              as ApiErrorModel,
     ));
   }
 }
@@ -1282,14 +1283,14 @@ class __$$PostErrorImplCopyWithImpl<$Res>
 /// @nodoc
 
 class _$PostErrorImpl implements PostError {
-  const _$PostErrorImpl(this.errorHandler);
+  const _$PostErrorImpl(this.apiErrorModel);
 
   @override
-  final ErrorHandler errorHandler;
+  final ApiErrorModel apiErrorModel;
 
   @override
   String toString() {
-    return 'HomeState.postError(errorHandler: $errorHandler)';
+    return 'HomeState.postError(apiErrorModel: $apiErrorModel)';
   }
 
   @override
@@ -1297,12 +1298,12 @@ class _$PostErrorImpl implements PostError {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$PostErrorImpl &&
-            (identical(other.errorHandler, errorHandler) ||
-                other.errorHandler == errorHandler));
+            (identical(other.apiErrorModel, apiErrorModel) ||
+                other.apiErrorModel == apiErrorModel));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, errorHandler);
+  int get hashCode => Object.hash(runtimeType, apiErrorModel);
 
   /// Create a copy of HomeState
   /// with the given fields replaced by the non-null parameter values.
@@ -1318,13 +1319,13 @@ class _$PostErrorImpl implements PostError {
     required TResult Function() initial,
     required TResult Function() postsLoading,
     required TResult Function(List<Post> posts) postsLoaded,
-    required TResult Function(ErrorHandler errorHandler) postsError,
+    required TResult Function(ApiErrorModel apiErrorModel) postsError,
     required TResult Function(int index) changeScreen,
     required TResult Function() postLoading,
     required TResult Function(Post post) postLoaded,
-    required TResult Function(ErrorHandler errorHandler) postError,
+    required TResult Function(ApiErrorModel apiErrorModel) postError,
   }) {
-    return postError(errorHandler);
+    return postError(apiErrorModel);
   }
 
   @override
@@ -1333,13 +1334,13 @@ class _$PostErrorImpl implements PostError {
     TResult? Function()? initial,
     TResult? Function()? postsLoading,
     TResult? Function(List<Post> posts)? postsLoaded,
-    TResult? Function(ErrorHandler errorHandler)? postsError,
+    TResult? Function(ApiErrorModel apiErrorModel)? postsError,
     TResult? Function(int index)? changeScreen,
     TResult? Function()? postLoading,
     TResult? Function(Post post)? postLoaded,
-    TResult? Function(ErrorHandler errorHandler)? postError,
+    TResult? Function(ApiErrorModel apiErrorModel)? postError,
   }) {
-    return postError?.call(errorHandler);
+    return postError?.call(apiErrorModel);
   }
 
   @override
@@ -1348,15 +1349,15 @@ class _$PostErrorImpl implements PostError {
     TResult Function()? initial,
     TResult Function()? postsLoading,
     TResult Function(List<Post> posts)? postsLoaded,
-    TResult Function(ErrorHandler errorHandler)? postsError,
+    TResult Function(ApiErrorModel apiErrorModel)? postsError,
     TResult Function(int index)? changeScreen,
     TResult Function()? postLoading,
     TResult Function(Post post)? postLoaded,
-    TResult Function(ErrorHandler errorHandler)? postError,
+    TResult Function(ApiErrorModel apiErrorModel)? postError,
     required TResult orElse(),
   }) {
     if (postError != null) {
-      return postError(errorHandler);
+      return postError(apiErrorModel);
     }
     return orElse();
   }
@@ -1412,9 +1413,9 @@ class _$PostErrorImpl implements PostError {
 }
 
 abstract class PostError implements HomeState {
-  const factory PostError(final ErrorHandler errorHandler) = _$PostErrorImpl;
+  const factory PostError(final ApiErrorModel apiErrorModel) = _$PostErrorImpl;
 
-  ErrorHandler get errorHandler;
+  ApiErrorModel get apiErrorModel;
 
   /// Create a copy of HomeState
   /// with the given fields replaced by the non-null parameter values.

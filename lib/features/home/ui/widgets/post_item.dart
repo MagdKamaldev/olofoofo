@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:circle_sync/core/helpers/extensions.dart';
 import 'package:circle_sync/core/helpers/spacing.dart';
 import 'package:circle_sync/core/helpers/time_ago.dart';
@@ -35,10 +37,10 @@ class PostItem extends StatefulWidget {
   });
 
   @override
-  _PostItemState createState() => _PostItemState();
+  PostItemState createState() => PostItemState();
 }
 
-class _PostItemState extends State<PostItem> {
+class PostItemState extends State<PostItem> {
   bool _isExpanded = false;
 
   @override

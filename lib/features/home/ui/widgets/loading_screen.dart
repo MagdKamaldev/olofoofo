@@ -13,10 +13,10 @@ class ShimmerScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             verticalSpace(16),
-            StoryShimmer(), // Shimmer for stories
+            const StoryShimmer(), // Shimmer for stories
             verticalSpace(16),
             // Repeat the post shimmer a few times to simulate loading multiple posts
-            for (int i = 0; i < 3; i++) PostShimmer(),
+            for (int i = 0; i < 3; i++) const PostShimmer(),
           ],
         ),
     );

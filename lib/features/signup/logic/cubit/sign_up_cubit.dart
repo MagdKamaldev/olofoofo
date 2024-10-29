@@ -32,8 +32,8 @@ class SignUpCubit extends Cubit<SignUpState> {
         DioFactory.setTokenIntoHeaderAfterLogin(data.data!.token ?? "");
         emit(SignUpState.success(data));
       },
-      failure: (error) {
-        emit(SignUpState.failure(error: error.apiErrorModel.message ?? ""));
+      failure: (apiErrorModel) {
+        emit(SignUpState.failure(apiErrorModel));
       },
     );
   }

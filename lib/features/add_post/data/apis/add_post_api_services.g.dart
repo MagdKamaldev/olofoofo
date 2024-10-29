@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'home_api_service.dart';
+part of 'add_post_api_services.dart';
 
 // **************************************************************************
 // RetrofitGenerator
@@ -8,8 +8,8 @@ part of 'home_api_service.dart';
 
 // ignore_for_file: unnecessary_brace_in_string_interps,no_leading_underscores_for_local_identifiers,unused_element
 
-class _HomeApiService implements HomeApiService {
-  _HomeApiService(
+class _AddPostApiService implements AddPostApiService {
+  _AddPostApiService(
     this._dio, {
     this.baseUrl,
     this.errorLogger,
@@ -24,13 +24,15 @@ class _HomeApiService implements HomeApiService {
   final ParseErrorLogger? errorLogger;
 
   @override
-  Future<HomePostsResponse> getPosts() async {
+  Future<CreatePostResponse> createPost(
+      CreatePostRequestBody createPostRequestBody) async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
-    const Map<String, dynamic>? _data = null;
-    final _options = _setStreamType<HomePostsResponse>(Options(
-      method: 'GET',
+    final _data = <String, dynamic>{};
+    _data.addAll(createPostRequestBody.toJson());
+    final _options = _setStreamType<CreatePostResponse>(Options(
+      method: 'POST',
       headers: _headers,
       extra: _extra,
     )
@@ -46,42 +48,9 @@ class _HomeApiService implements HomeApiService {
           baseUrl,
         )));
     final _result = await _dio.fetch<Map<String, dynamic>>(_options);
-    late HomePostsResponse _value;
+    late CreatePostResponse _value;
     try {
-      _value = HomePostsResponse.fromJson(_result.data!);
-    } on Object catch (e, s) {
-      errorLogger?.logError(e, s, _options);
-      rethrow;
-    }
-    return _value;
-  }
-
-  @override
-  Future<PostResponse> getPost(String postId) async {
-    final _extra = <String, dynamic>{};
-    final queryParameters = <String, dynamic>{};
-    final _headers = <String, dynamic>{};
-    const Map<String, dynamic>? _data = null;
-    final _options = _setStreamType<PostResponse>(Options(
-      method: 'GET',
-      headers: _headers,
-      extra: _extra,
-    )
-        .compose(
-          _dio.options,
-          '/posts/${postId}',
-          queryParameters: queryParameters,
-          data: _data,
-        )
-        .copyWith(
-            baseUrl: _combineBaseUrls(
-          _dio.options.baseUrl,
-          baseUrl,
-        )));
-    final _result = await _dio.fetch<Map<String, dynamic>>(_options);
-    late PostResponse _value;
-    try {
-      _value = PostResponse.fromJson(_result.data!);
+      _value = CreatePostResponse.fromJson(_result.data!);
     } on Object catch (e, s) {
       errorLogger?.logError(e, s, _options);
       rethrow;

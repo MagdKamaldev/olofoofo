@@ -13,7 +13,7 @@ class HomeRepo {
       final response = await _homeApiService.getPosts();
       return ApiResult.success(response);
     } catch (error) {
-      return ApiResult.failure(ErrorHandler.handle(error));
+      return ApiResult.failure(ApiErrorHandler.handle(error)!);
     }
   }
 
@@ -22,7 +22,7 @@ class HomeRepo {
       final response = await _homeApiService.getPost(postId);
       return ApiResult.success(response);
     } catch (error) {
-      return ApiResult.failure(ErrorHandler.handle(error));
+      return ApiResult.failure(ApiErrorHandler.handle(error)!);
     }
   }
 }
