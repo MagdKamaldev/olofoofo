@@ -20,9 +20,8 @@ class ProfileCubit extends Cubit<ProfileState> {
         user = data;
         emit(ProfileState.getProfileSuccess(data));
       },
-      failure: (error) {
-        emit(ProfileState.getProfilefailure(
-            error: error.apiErrorModel.message ?? ""));
+      failure: (apiErrorModel) {
+        emit(ProfileState.getProfilefailure(apiErrorModel));
       },
     );
   }

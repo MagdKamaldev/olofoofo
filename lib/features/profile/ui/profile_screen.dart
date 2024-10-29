@@ -1,7 +1,6 @@
 import 'package:circle_sync/core/di/dependency_injection.dart';
 import 'package:circle_sync/core/helpers/spacing.dart';
 import 'package:circle_sync/core/themes/colors/colors.dart';
-import 'package:circle_sync/core/themes/text_styles/text_styles.dart';
 import 'package:circle_sync/core/widgets/button.dart';
 import 'package:circle_sync/features/profile/data/models/profile_response_model.dart';
 import 'package:circle_sync/features/profile/logic/cubit/profile_state.dart';

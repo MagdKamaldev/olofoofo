@@ -1,17 +1,19 @@
-import 'package:circle_sync/core/routing/routes.dart';
+import 'package:circle_sync/core/helpers/extensions.dart';
 import 'package:circle_sync/core/themes/colors/colors.dart';
 import 'package:circle_sync/core/themes/text_styles/text_styles.dart';
-import 'package:circle_sync/features/signup/logic/cubit/sign_up_cubit.dart';
-import 'package:circle_sync/features/signup/logic/cubit/sign_up_state.dart';
+import 'package:circle_sync/core/widgets/done_animation.dart';
+import 'package:circle_sync/features/add_post/logic/cubit/add_post_cubit.dart';
+import 'package:circle_sync/features/add_post/logic/cubit/add_post_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../core/routing/routes.dart';
 
-class SignUpBlocListener extends StatelessWidget {
-  const SignUpBlocListener({super.key});
+class AddPostBlocListener extends StatelessWidget {
+  const AddPostBlocListener({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return BlocListener<SignUpCubit, SignUpState>(
+    return BlocListener<AddPostCubit, AddPostState>(
       listenWhen: (previous, current) =>
           current is Loading || current is Success || current is Error,
       listener: (context, state) {
@@ -27,9 +29,13 @@ class SignUpBlocListener extends StatelessWidget {
                 ),
               );
             },
-            success: (signUpResponse) {
-              Navigator.of(context).pop();
-              Navigator.of(context).pushReplacementNamed(Routes.welcome);
+          success: (addPostResponse) {
+            Navigator.pop(context);
+          showDoneDialog(context);
+          Future.delayed(const Duration(seconds: 3), () {
+             // ignore: use_build_context_synchronously
+             context.pushReplacementNamed(Routes.home);
+          });
             },
             failure: (error) {
               _setupErrorState(context, error.message!);
@@ -41,7 +47,7 @@ class SignUpBlocListener extends StatelessWidget {
     );
   }
 
- void _setupErrorState(BuildContext context, String error) {
+  void _setupErrorState(BuildContext context, String error) {
   Navigator.of(context).pop();
   showDialog(
     context: context,

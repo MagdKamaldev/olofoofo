@@ -1,4 +1,3 @@
-import 'package:circle_sync/core/networks/api_error_handler.dart';
 import 'package:circle_sync/features/add_post/ui/add_post_screen.dart';
 import 'package:circle_sync/features/chats/ui/chats_screen.dart';
 import 'package:circle_sync/features/home/data/repos/home_repo.dart';
@@ -35,8 +34,8 @@ class HomeCubit extends Cubit<HomeState> {
       success: (response) {
         emit(HomeState.postsLoaded(response.data!.posts!));
       },
-      failure: (error) {
-        emit(HomeState.postsError(ErrorHandler.handle(error)));
+      failure: (apiErrorModel) {
+        emit(HomeState.postsError(apiErrorModel));
       },
     );
   }
@@ -48,8 +47,8 @@ class HomeCubit extends Cubit<HomeState> {
       success: (response) {
         emit(HomeState.postLoaded(response.data!.post!));
       },
-      failure: (error) {
-        emit(HomeState.postError(ErrorHandler.handle(error)));
+      failure: (apiErrorModel) {
+        emit(HomeState.postError(apiErrorModel));
       },
     );
   }
