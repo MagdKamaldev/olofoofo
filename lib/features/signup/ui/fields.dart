@@ -8,8 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class Fields extends StatefulWidget {
-  final Function(bool) onValidationChanged; // Callback to notify validation state
-
+  final Function(bool) onValidationChanged;
   const Fields({super.key, required this.onValidationChanged});
 
   @override

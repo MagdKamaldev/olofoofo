@@ -1,0 +1,29 @@
+{
+    "project_info": {
+      "project_number": "1055515917924",
+      "project_id": "olofoofo-d428f",
+      "storage_bucket": "olofoofo-d428f.appspot.com"
+    },
+    "client": [
+      {
+        "client_info": {
+          "mobilesdk_app_id": "1:1055515917924:android:8dab76429e483097dca971",
+          "android_client_info": {
+            "package_name": "com.example.olof"
+          }
+        },
+        "oauth_client": [],
+        "api_key": [
+          {
+            "current_key": "AIzaSyDyAhSrI6mPU43wwASvLOhrytWeda3YgfI"
+          }
+        ],
+        "services": {
+          "appinvite_service": {
+            "other_platform_oauth_client": []
+          }
+        }
+      }
+    ],
+    "configuration_version": "1"
+  }
