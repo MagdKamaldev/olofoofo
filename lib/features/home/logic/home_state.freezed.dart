@@ -32,6 +32,13 @@ mixin _$HomeState {
     required TResult Function() unlikePostLoading,
     required TResult Function() unlikePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) unlikePostError,
+    required TResult Function() commentLoading,
+    required TResult Function(List<Comment> comments) localCommentAdded,
+    required TResult Function() commentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) commentError,
+    required TResult Function() deleteCommentLoading,
+    required TResult Function() deleteCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -50,6 +57,13 @@ mixin _$HomeState {
     TResult? Function()? unlikePostLoading,
     TResult? Function()? unlikePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult? Function()? commentLoading,
+    TResult? Function(List<Comment> comments)? localCommentAdded,
+    TResult? Function()? commentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult? Function()? deleteCommentLoading,
+    TResult? Function()? deleteCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -68,6 +82,13 @@ mixin _$HomeState {
     TResult Function()? unlikePostLoading,
     TResult Function()? unlikePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult Function()? commentLoading,
+    TResult Function(List<Comment> comments)? localCommentAdded,
+    TResult Function()? commentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult Function()? deleteCommentLoading,
+    TResult Function()? deleteCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -87,6 +108,13 @@ mixin _$HomeState {
     required TResult Function(UnlikePostLoading value) unlikePostLoading,
     required TResult Function(UnlikePostSuccess value) unlikePostSuccess,
     required TResult Function(UnlikePostError value) unlikePostError,
+    required TResult Function(CommentLoading value) commentLoading,
+    required TResult Function(LocalCommentAdded value) localCommentAdded,
+    required TResult Function(CommentSuccess value) commentSuccess,
+    required TResult Function(CommentError value) commentError,
+    required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
+    required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
+    required TResult Function(DeleteCommentError value) deleteCommentError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -105,6 +133,13 @@ mixin _$HomeState {
     TResult? Function(UnlikePostLoading value)? unlikePostLoading,
     TResult? Function(UnlikePostSuccess value)? unlikePostSuccess,
     TResult? Function(UnlikePostError value)? unlikePostError,
+    TResult? Function(CommentLoading value)? commentLoading,
+    TResult? Function(LocalCommentAdded value)? localCommentAdded,
+    TResult? Function(CommentSuccess value)? commentSuccess,
+    TResult? Function(CommentError value)? commentError,
+    TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult? Function(DeleteCommentError value)? deleteCommentError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -123,6 +158,13 @@ mixin _$HomeState {
     TResult Function(UnlikePostLoading value)? unlikePostLoading,
     TResult Function(UnlikePostSuccess value)? unlikePostSuccess,
     TResult Function(UnlikePostError value)? unlikePostError,
+    TResult Function(CommentLoading value)? commentLoading,
+    TResult Function(LocalCommentAdded value)? localCommentAdded,
+    TResult Function(CommentSuccess value)? commentSuccess,
+    TResult Function(CommentError value)? commentError,
+    TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult Function(DeleteCommentError value)? deleteCommentError,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -169,12 +211,18 @@ class __$$InitialImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$InitialImpl implements _Initial {
+class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
   const _$InitialImpl();
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'HomeState.initial()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties.add(DiagnosticsProperty('type', 'HomeState.initial'));
   }
 
   @override
@@ -203,6 +251,13 @@ class _$InitialImpl implements _Initial {
     required TResult Function() unlikePostLoading,
     required TResult Function() unlikePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) unlikePostError,
+    required TResult Function() commentLoading,
+    required TResult Function(List<Comment> comments) localCommentAdded,
+    required TResult Function() commentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) commentError,
+    required TResult Function() deleteCommentLoading,
+    required TResult Function() deleteCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
   }) {
     return initial();
   }
@@ -224,6 +279,13 @@ class _$InitialImpl implements _Initial {
     TResult? Function()? unlikePostLoading,
     TResult? Function()? unlikePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult? Function()? commentLoading,
+    TResult? Function(List<Comment> comments)? localCommentAdded,
+    TResult? Function()? commentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult? Function()? deleteCommentLoading,
+    TResult? Function()? deleteCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
   }) {
     return initial?.call();
   }
@@ -245,6 +307,13 @@ class _$InitialImpl implements _Initial {
     TResult Function()? unlikePostLoading,
     TResult Function()? unlikePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult Function()? commentLoading,
+    TResult Function(List<Comment> comments)? localCommentAdded,
+    TResult Function()? commentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult Function()? deleteCommentLoading,
+    TResult Function()? deleteCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -270,6 +339,13 @@ class _$InitialImpl implements _Initial {
     required TResult Function(UnlikePostLoading value) unlikePostLoading,
     required TResult Function(UnlikePostSuccess value) unlikePostSuccess,
     required TResult Function(UnlikePostError value) unlikePostError,
+    required TResult Function(CommentLoading value) commentLoading,
+    required TResult Function(LocalCommentAdded value) localCommentAdded,
+    required TResult Function(CommentSuccess value) commentSuccess,
+    required TResult Function(CommentError value) commentError,
+    required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
+    required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
+    required TResult Function(DeleteCommentError value) deleteCommentError,
   }) {
     return initial(this);
   }
@@ -291,6 +367,13 @@ class _$InitialImpl implements _Initial {
     TResult? Function(UnlikePostLoading value)? unlikePostLoading,
     TResult? Function(UnlikePostSuccess value)? unlikePostSuccess,
     TResult? Function(UnlikePostError value)? unlikePostError,
+    TResult? Function(CommentLoading value)? commentLoading,
+    TResult? Function(LocalCommentAdded value)? localCommentAdded,
+    TResult? Function(CommentSuccess value)? commentSuccess,
+    TResult? Function(CommentError value)? commentError,
+    TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult? Function(DeleteCommentError value)? deleteCommentError,
   }) {
     return initial?.call(this);
   }
@@ -312,6 +395,13 @@ class _$InitialImpl implements _Initial {
     TResult Function(UnlikePostLoading value)? unlikePostLoading,
     TResult Function(UnlikePostSuccess value)? unlikePostSuccess,
     TResult Function(UnlikePostError value)? unlikePostError,
+    TResult Function(CommentLoading value)? commentLoading,
+    TResult Function(LocalCommentAdded value)? localCommentAdded,
+    TResult Function(CommentSuccess value)? commentSuccess,
+    TResult Function(CommentError value)? commentError,
+    TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult Function(DeleteCommentError value)? deleteCommentError,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -346,12 +436,18 @@ class __$$PostsLoadingImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$PostsLoadingImpl implements PostsLoading {
+class _$PostsLoadingImpl with DiagnosticableTreeMixin implements PostsLoading {
   const _$PostsLoadingImpl();
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'HomeState.postsLoading()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties.add(DiagnosticsProperty('type', 'HomeState.postsLoading'));
   }
 
   @override
@@ -380,6 +476,13 @@ class _$PostsLoadingImpl implements PostsLoading {
     required TResult Function() unlikePostLoading,
     required TResult Function() unlikePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) unlikePostError,
+    required TResult Function() commentLoading,
+    required TResult Function(List<Comment> comments) localCommentAdded,
+    required TResult Function() commentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) commentError,
+    required TResult Function() deleteCommentLoading,
+    required TResult Function() deleteCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
   }) {
     return postsLoading();
   }
@@ -401,6 +504,13 @@ class _$PostsLoadingImpl implements PostsLoading {
     TResult? Function()? unlikePostLoading,
     TResult? Function()? unlikePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult? Function()? commentLoading,
+    TResult? Function(List<Comment> comments)? localCommentAdded,
+    TResult? Function()? commentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult? Function()? deleteCommentLoading,
+    TResult? Function()? deleteCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
   }) {
     return postsLoading?.call();
   }
@@ -422,6 +532,13 @@ class _$PostsLoadingImpl implements PostsLoading {
     TResult Function()? unlikePostLoading,
     TResult Function()? unlikePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult Function()? commentLoading,
+    TResult Function(List<Comment> comments)? localCommentAdded,
+    TResult Function()? commentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult Function()? deleteCommentLoading,
+    TResult Function()? deleteCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
     required TResult orElse(),
   }) {
     if (postsLoading != null) {
@@ -447,6 +564,13 @@ class _$PostsLoadingImpl implements PostsLoading {
     required TResult Function(UnlikePostLoading value) unlikePostLoading,
     required TResult Function(UnlikePostSuccess value) unlikePostSuccess,
     required TResult Function(UnlikePostError value) unlikePostError,
+    required TResult Function(CommentLoading value) commentLoading,
+    required TResult Function(LocalCommentAdded value) localCommentAdded,
+    required TResult Function(CommentSuccess value) commentSuccess,
+    required TResult Function(CommentError value) commentError,
+    required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
+    required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
+    required TResult Function(DeleteCommentError value) deleteCommentError,
   }) {
     return postsLoading(this);
   }
@@ -468,6 +592,13 @@ class _$PostsLoadingImpl implements PostsLoading {
     TResult? Function(UnlikePostLoading value)? unlikePostLoading,
     TResult? Function(UnlikePostSuccess value)? unlikePostSuccess,
     TResult? Function(UnlikePostError value)? unlikePostError,
+    TResult? Function(CommentLoading value)? commentLoading,
+    TResult? Function(LocalCommentAdded value)? localCommentAdded,
+    TResult? Function(CommentSuccess value)? commentSuccess,
+    TResult? Function(CommentError value)? commentError,
+    TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult? Function(DeleteCommentError value)? deleteCommentError,
   }) {
     return postsLoading?.call(this);
   }
@@ -489,6 +620,13 @@ class _$PostsLoadingImpl implements PostsLoading {
     TResult Function(UnlikePostLoading value)? unlikePostLoading,
     TResult Function(UnlikePostSuccess value)? unlikePostSuccess,
     TResult Function(UnlikePostError value)? unlikePostError,
+    TResult Function(CommentLoading value)? commentLoading,
+    TResult Function(LocalCommentAdded value)? localCommentAdded,
+    TResult Function(CommentSuccess value)? commentSuccess,
+    TResult Function(CommentError value)? commentError,
+    TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult Function(DeleteCommentError value)? deleteCommentError,
     required TResult orElse(),
   }) {
     if (postsLoading != null) {
@@ -537,7 +675,7 @@ class __$$PostsLoadedImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$PostsLoadedImpl implements PostsLoaded {
+class _$PostsLoadedImpl with DiagnosticableTreeMixin implements PostsLoaded {
   const _$PostsLoadedImpl(final List<Post> posts) : _posts = posts;
 
   final List<Post> _posts;
@@ -549,8 +687,16 @@ class _$PostsLoadedImpl implements PostsLoaded {
   }
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'HomeState.postsLoaded(posts: $posts)';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+      ..add(DiagnosticsProperty('type', 'HomeState.postsLoaded'))
+      ..add(DiagnosticsProperty('posts', posts));
   }
 
   @override
@@ -590,6 +736,13 @@ class _$PostsLoadedImpl implements PostsLoaded {
     required TResult Function() unlikePostLoading,
     required TResult Function() unlikePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) unlikePostError,
+    required TResult Function() commentLoading,
+    required TResult Function(List<Comment> comments) localCommentAdded,
+    required TResult Function() commentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) commentError,
+    required TResult Function() deleteCommentLoading,
+    required TResult Function() deleteCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
   }) {
     return postsLoaded(posts);
   }
@@ -611,6 +764,13 @@ class _$PostsLoadedImpl implements PostsLoaded {
     TResult? Function()? unlikePostLoading,
     TResult? Function()? unlikePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult? Function()? commentLoading,
+    TResult? Function(List<Comment> comments)? localCommentAdded,
+    TResult? Function()? commentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult? Function()? deleteCommentLoading,
+    TResult? Function()? deleteCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
   }) {
     return postsLoaded?.call(posts);
   }
@@ -632,6 +792,13 @@ class _$PostsLoadedImpl implements PostsLoaded {
     TResult Function()? unlikePostLoading,
     TResult Function()? unlikePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult Function()? commentLoading,
+    TResult Function(List<Comment> comments)? localCommentAdded,
+    TResult Function()? commentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult Function()? deleteCommentLoading,
+    TResult Function()? deleteCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
     required TResult orElse(),
   }) {
     if (postsLoaded != null) {
@@ -657,6 +824,13 @@ class _$PostsLoadedImpl implements PostsLoaded {
     required TResult Function(UnlikePostLoading value) unlikePostLoading,
     required TResult Function(UnlikePostSuccess value) unlikePostSuccess,
     required TResult Function(UnlikePostError value) unlikePostError,
+    required TResult Function(CommentLoading value) commentLoading,
+    required TResult Function(LocalCommentAdded value) localCommentAdded,
+    required TResult Function(CommentSuccess value) commentSuccess,
+    required TResult Function(CommentError value) commentError,
+    required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
+    required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
+    required TResult Function(DeleteCommentError value) deleteCommentError,
   }) {
     return postsLoaded(this);
   }
@@ -678,6 +852,13 @@ class _$PostsLoadedImpl implements PostsLoaded {
     TResult? Function(UnlikePostLoading value)? unlikePostLoading,
     TResult? Function(UnlikePostSuccess value)? unlikePostSuccess,
     TResult? Function(UnlikePostError value)? unlikePostError,
+    TResult? Function(CommentLoading value)? commentLoading,
+    TResult? Function(LocalCommentAdded value)? localCommentAdded,
+    TResult? Function(CommentSuccess value)? commentSuccess,
+    TResult? Function(CommentError value)? commentError,
+    TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult? Function(DeleteCommentError value)? deleteCommentError,
   }) {
     return postsLoaded?.call(this);
   }
@@ -699,6 +880,13 @@ class _$PostsLoadedImpl implements PostsLoaded {
     TResult Function(UnlikePostLoading value)? unlikePostLoading,
     TResult Function(UnlikePostSuccess value)? unlikePostSuccess,
     TResult Function(UnlikePostError value)? unlikePostError,
+    TResult Function(CommentLoading value)? commentLoading,
+    TResult Function(LocalCommentAdded value)? localCommentAdded,
+    TResult Function(CommentSuccess value)? commentSuccess,
+    TResult Function(CommentError value)? commentError,
+    TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult Function(DeleteCommentError value)? deleteCommentError,
     required TResult orElse(),
   }) {
     if (postsLoaded != null) {
@@ -755,15 +943,23 @@ class __$$PostsErrorImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$PostsErrorImpl implements PostsError {
+class _$PostsErrorImpl with DiagnosticableTreeMixin implements PostsError {
   const _$PostsErrorImpl(this.apiErrorModel);
 
   @override
   final ApiErrorModel apiErrorModel;
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'HomeState.postsError(apiErrorModel: $apiErrorModel)';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+      ..add(DiagnosticsProperty('type', 'HomeState.postsError'))
+      ..add(DiagnosticsProperty('apiErrorModel', apiErrorModel));
   }
 
   @override
@@ -803,6 +999,13 @@ class _$PostsErrorImpl implements PostsError {
     required TResult Function() unlikePostLoading,
     required TResult Function() unlikePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) unlikePostError,
+    required TResult Function() commentLoading,
+    required TResult Function(List<Comment> comments) localCommentAdded,
+    required TResult Function() commentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) commentError,
+    required TResult Function() deleteCommentLoading,
+    required TResult Function() deleteCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
   }) {
     return postsError(apiErrorModel);
   }
@@ -824,6 +1027,13 @@ class _$PostsErrorImpl implements PostsError {
     TResult? Function()? unlikePostLoading,
     TResult? Function()? unlikePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult? Function()? commentLoading,
+    TResult? Function(List<Comment> comments)? localCommentAdded,
+    TResult? Function()? commentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult? Function()? deleteCommentLoading,
+    TResult? Function()? deleteCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
   }) {
     return postsError?.call(apiErrorModel);
   }
@@ -845,6 +1055,13 @@ class _$PostsErrorImpl implements PostsError {
     TResult Function()? unlikePostLoading,
     TResult Function()? unlikePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult Function()? commentLoading,
+    TResult Function(List<Comment> comments)? localCommentAdded,
+    TResult Function()? commentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult Function()? deleteCommentLoading,
+    TResult Function()? deleteCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
     required TResult orElse(),
   }) {
     if (postsError != null) {
@@ -870,6 +1087,13 @@ class _$PostsErrorImpl implements PostsError {
     required TResult Function(UnlikePostLoading value) unlikePostLoading,
     required TResult Function(UnlikePostSuccess value) unlikePostSuccess,
     required TResult Function(UnlikePostError value) unlikePostError,
+    required TResult Function(CommentLoading value) commentLoading,
+    required TResult Function(LocalCommentAdded value) localCommentAdded,
+    required TResult Function(CommentSuccess value) commentSuccess,
+    required TResult Function(CommentError value) commentError,
+    required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
+    required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
+    required TResult Function(DeleteCommentError value) deleteCommentError,
   }) {
     return postsError(this);
   }
@@ -891,6 +1115,13 @@ class _$PostsErrorImpl implements PostsError {
     TResult? Function(UnlikePostLoading value)? unlikePostLoading,
     TResult? Function(UnlikePostSuccess value)? unlikePostSuccess,
     TResult? Function(UnlikePostError value)? unlikePostError,
+    TResult? Function(CommentLoading value)? commentLoading,
+    TResult? Function(LocalCommentAdded value)? localCommentAdded,
+    TResult? Function(CommentSuccess value)? commentSuccess,
+    TResult? Function(CommentError value)? commentError,
+    TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult? Function(DeleteCommentError value)? deleteCommentError,
   }) {
     return postsError?.call(this);
   }
@@ -912,6 +1143,13 @@ class _$PostsErrorImpl implements PostsError {
     TResult Function(UnlikePostLoading value)? unlikePostLoading,
     TResult Function(UnlikePostSuccess value)? unlikePostSuccess,
     TResult Function(UnlikePostError value)? unlikePostError,
+    TResult Function(CommentLoading value)? commentLoading,
+    TResult Function(LocalCommentAdded value)? localCommentAdded,
+    TResult Function(CommentSuccess value)? commentSuccess,
+    TResult Function(CommentError value)? commentError,
+    TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult Function(DeleteCommentError value)? deleteCommentError,
     required TResult orElse(),
   }) {
     if (postsError != null) {
@@ -969,15 +1207,23 @@ class __$$ChangeScreenImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$ChangeScreenImpl implements ChangeScreen {
+class _$ChangeScreenImpl with DiagnosticableTreeMixin implements ChangeScreen {
   const _$ChangeScreenImpl(this.index);
 
   @override
   final int index;
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'HomeState.changeScreen(index: $index)';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+      ..add(DiagnosticsProperty('type', 'HomeState.changeScreen'))
+      ..add(DiagnosticsProperty('index', index));
   }
 
   @override
@@ -1016,6 +1262,13 @@ class _$ChangeScreenImpl implements ChangeScreen {
     required TResult Function() unlikePostLoading,
     required TResult Function() unlikePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) unlikePostError,
+    required TResult Function() commentLoading,
+    required TResult Function(List<Comment> comments) localCommentAdded,
+    required TResult Function() commentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) commentError,
+    required TResult Function() deleteCommentLoading,
+    required TResult Function() deleteCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
   }) {
     return changeScreen(index);
   }
@@ -1037,6 +1290,13 @@ class _$ChangeScreenImpl implements ChangeScreen {
     TResult? Function()? unlikePostLoading,
     TResult? Function()? unlikePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult? Function()? commentLoading,
+    TResult? Function(List<Comment> comments)? localCommentAdded,
+    TResult? Function()? commentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult? Function()? deleteCommentLoading,
+    TResult? Function()? deleteCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
   }) {
     return changeScreen?.call(index);
   }
@@ -1058,6 +1318,13 @@ class _$ChangeScreenImpl implements ChangeScreen {
     TResult Function()? unlikePostLoading,
     TResult Function()? unlikePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult Function()? commentLoading,
+    TResult Function(List<Comment> comments)? localCommentAdded,
+    TResult Function()? commentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult Function()? deleteCommentLoading,
+    TResult Function()? deleteCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
     required TResult orElse(),
   }) {
     if (changeScreen != null) {
@@ -1083,6 +1350,13 @@ class _$ChangeScreenImpl implements ChangeScreen {
     required TResult Function(UnlikePostLoading value) unlikePostLoading,
     required TResult Function(UnlikePostSuccess value) unlikePostSuccess,
     required TResult Function(UnlikePostError value) unlikePostError,
+    required TResult Function(CommentLoading value) commentLoading,
+    required TResult Function(LocalCommentAdded value) localCommentAdded,
+    required TResult Function(CommentSuccess value) commentSuccess,
+    required TResult Function(CommentError value) commentError,
+    required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
+    required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
+    required TResult Function(DeleteCommentError value) deleteCommentError,
   }) {
     return changeScreen(this);
   }
@@ -1104,6 +1378,13 @@ class _$ChangeScreenImpl implements ChangeScreen {
     TResult? Function(UnlikePostLoading value)? unlikePostLoading,
     TResult? Function(UnlikePostSuccess value)? unlikePostSuccess,
     TResult? Function(UnlikePostError value)? unlikePostError,
+    TResult? Function(CommentLoading value)? commentLoading,
+    TResult? Function(LocalCommentAdded value)? localCommentAdded,
+    TResult? Function(CommentSuccess value)? commentSuccess,
+    TResult? Function(CommentError value)? commentError,
+    TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult? Function(DeleteCommentError value)? deleteCommentError,
   }) {
     return changeScreen?.call(this);
   }
@@ -1125,6 +1406,13 @@ class _$ChangeScreenImpl implements ChangeScreen {
     TResult Function(UnlikePostLoading value)? unlikePostLoading,
     TResult Function(UnlikePostSuccess value)? unlikePostSuccess,
     TResult Function(UnlikePostError value)? unlikePostError,
+    TResult Function(CommentLoading value)? commentLoading,
+    TResult Function(LocalCommentAdded value)? localCommentAdded,
+    TResult Function(CommentSuccess value)? commentSuccess,
+    TResult Function(CommentError value)? commentError,
+    TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult Function(DeleteCommentError value)? deleteCommentError,
     required TResult orElse(),
   }) {
     if (changeScreen != null) {
@@ -1167,12 +1455,18 @@ class __$$PostLoadingImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$PostLoadingImpl implements PostLoading {
+class _$PostLoadingImpl with DiagnosticableTreeMixin implements PostLoading {
   const _$PostLoadingImpl();
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'HomeState.postLoading()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties.add(DiagnosticsProperty('type', 'HomeState.postLoading'));
   }
 
   @override
@@ -1201,6 +1495,13 @@ class _$PostLoadingImpl implements PostLoading {
     required TResult Function() unlikePostLoading,
     required TResult Function() unlikePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) unlikePostError,
+    required TResult Function() commentLoading,
+    required TResult Function(List<Comment> comments) localCommentAdded,
+    required TResult Function() commentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) commentError,
+    required TResult Function() deleteCommentLoading,
+    required TResult Function() deleteCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
   }) {
     return postLoading();
   }
@@ -1222,6 +1523,13 @@ class _$PostLoadingImpl implements PostLoading {
     TResult? Function()? unlikePostLoading,
     TResult? Function()? unlikePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult? Function()? commentLoading,
+    TResult? Function(List<Comment> comments)? localCommentAdded,
+    TResult? Function()? commentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult? Function()? deleteCommentLoading,
+    TResult? Function()? deleteCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
   }) {
     return postLoading?.call();
   }
@@ -1243,6 +1551,13 @@ class _$PostLoadingImpl implements PostLoading {
     TResult Function()? unlikePostLoading,
     TResult Function()? unlikePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult Function()? commentLoading,
+    TResult Function(List<Comment> comments)? localCommentAdded,
+    TResult Function()? commentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult Function()? deleteCommentLoading,
+    TResult Function()? deleteCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
     required TResult orElse(),
   }) {
     if (postLoading != null) {
@@ -1268,6 +1583,13 @@ class _$PostLoadingImpl implements PostLoading {
     required TResult Function(UnlikePostLoading value) unlikePostLoading,
     required TResult Function(UnlikePostSuccess value) unlikePostSuccess,
     required TResult Function(UnlikePostError value) unlikePostError,
+    required TResult Function(CommentLoading value) commentLoading,
+    required TResult Function(LocalCommentAdded value) localCommentAdded,
+    required TResult Function(CommentSuccess value) commentSuccess,
+    required TResult Function(CommentError value) commentError,
+    required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
+    required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
+    required TResult Function(DeleteCommentError value) deleteCommentError,
   }) {
     return postLoading(this);
   }
@@ -1289,6 +1611,13 @@ class _$PostLoadingImpl implements PostLoading {
     TResult? Function(UnlikePostLoading value)? unlikePostLoading,
     TResult? Function(UnlikePostSuccess value)? unlikePostSuccess,
     TResult? Function(UnlikePostError value)? unlikePostError,
+    TResult? Function(CommentLoading value)? commentLoading,
+    TResult? Function(LocalCommentAdded value)? localCommentAdded,
+    TResult? Function(CommentSuccess value)? commentSuccess,
+    TResult? Function(CommentError value)? commentError,
+    TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult? Function(DeleteCommentError value)? deleteCommentError,
   }) {
     return postLoading?.call(this);
   }
@@ -1310,6 +1639,13 @@ class _$PostLoadingImpl implements PostLoading {
     TResult Function(UnlikePostLoading value)? unlikePostLoading,
     TResult Function(UnlikePostSuccess value)? unlikePostSuccess,
     TResult Function(UnlikePostError value)? unlikePostError,
+    TResult Function(CommentLoading value)? commentLoading,
+    TResult Function(LocalCommentAdded value)? localCommentAdded,
+    TResult Function(CommentSuccess value)? commentSuccess,
+    TResult Function(CommentError value)? commentError,
+    TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult Function(DeleteCommentError value)? deleteCommentError,
     required TResult orElse(),
   }) {
     if (postLoading != null) {
@@ -1358,15 +1694,23 @@ class __$$PostLoadedImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$PostLoadedImpl implements PostLoaded {
+class _$PostLoadedImpl with DiagnosticableTreeMixin implements PostLoaded {
   const _$PostLoadedImpl(this.post);
 
   @override
   final Post post;
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'HomeState.postLoaded(post: $post)';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+      ..add(DiagnosticsProperty('type', 'HomeState.postLoaded'))
+      ..add(DiagnosticsProperty('post', post));
   }
 
   @override
@@ -1405,6 +1749,13 @@ class _$PostLoadedImpl implements PostLoaded {
     required TResult Function() unlikePostLoading,
     required TResult Function() unlikePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) unlikePostError,
+    required TResult Function() commentLoading,
+    required TResult Function(List<Comment> comments) localCommentAdded,
+    required TResult Function() commentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) commentError,
+    required TResult Function() deleteCommentLoading,
+    required TResult Function() deleteCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
   }) {
     return postLoaded(post);
   }
@@ -1426,6 +1777,13 @@ class _$PostLoadedImpl implements PostLoaded {
     TResult? Function()? unlikePostLoading,
     TResult? Function()? unlikePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult? Function()? commentLoading,
+    TResult? Function(List<Comment> comments)? localCommentAdded,
+    TResult? Function()? commentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult? Function()? deleteCommentLoading,
+    TResult? Function()? deleteCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
   }) {
     return postLoaded?.call(post);
   }
@@ -1447,6 +1805,13 @@ class _$PostLoadedImpl implements PostLoaded {
     TResult Function()? unlikePostLoading,
     TResult Function()? unlikePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult Function()? commentLoading,
+    TResult Function(List<Comment> comments)? localCommentAdded,
+    TResult Function()? commentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult Function()? deleteCommentLoading,
+    TResult Function()? deleteCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
     required TResult orElse(),
   }) {
     if (postLoaded != null) {
@@ -1472,6 +1837,13 @@ class _$PostLoadedImpl implements PostLoaded {
     required TResult Function(UnlikePostLoading value) unlikePostLoading,
     required TResult Function(UnlikePostSuccess value) unlikePostSuccess,
     required TResult Function(UnlikePostError value) unlikePostError,
+    required TResult Function(CommentLoading value) commentLoading,
+    required TResult Function(LocalCommentAdded value) localCommentAdded,
+    required TResult Function(CommentSuccess value) commentSuccess,
+    required TResult Function(CommentError value) commentError,
+    required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
+    required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
+    required TResult Function(DeleteCommentError value) deleteCommentError,
   }) {
     return postLoaded(this);
   }
@@ -1493,6 +1865,13 @@ class _$PostLoadedImpl implements PostLoaded {
     TResult? Function(UnlikePostLoading value)? unlikePostLoading,
     TResult? Function(UnlikePostSuccess value)? unlikePostSuccess,
     TResult? Function(UnlikePostError value)? unlikePostError,
+    TResult? Function(CommentLoading value)? commentLoading,
+    TResult? Function(LocalCommentAdded value)? localCommentAdded,
+    TResult? Function(CommentSuccess value)? commentSuccess,
+    TResult? Function(CommentError value)? commentError,
+    TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult? Function(DeleteCommentError value)? deleteCommentError,
   }) {
     return postLoaded?.call(this);
   }
@@ -1514,6 +1893,13 @@ class _$PostLoadedImpl implements PostLoaded {
     TResult Function(UnlikePostLoading value)? unlikePostLoading,
     TResult Function(UnlikePostSuccess value)? unlikePostSuccess,
     TResult Function(UnlikePostError value)? unlikePostError,
+    TResult Function(CommentLoading value)? commentLoading,
+    TResult Function(LocalCommentAdded value)? localCommentAdded,
+    TResult Function(CommentSuccess value)? commentSuccess,
+    TResult Function(CommentError value)? commentError,
+    TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult Function(DeleteCommentError value)? deleteCommentError,
     required TResult orElse(),
   }) {
     if (postLoaded != null) {
@@ -1570,15 +1956,23 @@ class __$$PostErrorImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$PostErrorImpl implements PostError {
+class _$PostErrorImpl with DiagnosticableTreeMixin implements PostError {
   const _$PostErrorImpl(this.apiErrorModel);
 
   @override
   final ApiErrorModel apiErrorModel;
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'HomeState.postError(apiErrorModel: $apiErrorModel)';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+      ..add(DiagnosticsProperty('type', 'HomeState.postError'))
+      ..add(DiagnosticsProperty('apiErrorModel', apiErrorModel));
   }
 
   @override
@@ -1618,6 +2012,13 @@ class _$PostErrorImpl implements PostError {
     required TResult Function() unlikePostLoading,
     required TResult Function() unlikePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) unlikePostError,
+    required TResult Function() commentLoading,
+    required TResult Function(List<Comment> comments) localCommentAdded,
+    required TResult Function() commentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) commentError,
+    required TResult Function() deleteCommentLoading,
+    required TResult Function() deleteCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
   }) {
     return postError(apiErrorModel);
   }
@@ -1639,6 +2040,13 @@ class _$PostErrorImpl implements PostError {
     TResult? Function()? unlikePostLoading,
     TResult? Function()? unlikePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult? Function()? commentLoading,
+    TResult? Function(List<Comment> comments)? localCommentAdded,
+    TResult? Function()? commentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult? Function()? deleteCommentLoading,
+    TResult? Function()? deleteCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
   }) {
     return postError?.call(apiErrorModel);
   }
@@ -1660,6 +2068,13 @@ class _$PostErrorImpl implements PostError {
     TResult Function()? unlikePostLoading,
     TResult Function()? unlikePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult Function()? commentLoading,
+    TResult Function(List<Comment> comments)? localCommentAdded,
+    TResult Function()? commentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult Function()? deleteCommentLoading,
+    TResult Function()? deleteCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
     required TResult orElse(),
   }) {
     if (postError != null) {
@@ -1685,6 +2100,13 @@ class _$PostErrorImpl implements PostError {
     required TResult Function(UnlikePostLoading value) unlikePostLoading,
     required TResult Function(UnlikePostSuccess value) unlikePostSuccess,
     required TResult Function(UnlikePostError value) unlikePostError,
+    required TResult Function(CommentLoading value) commentLoading,
+    required TResult Function(LocalCommentAdded value) localCommentAdded,
+    required TResult Function(CommentSuccess value) commentSuccess,
+    required TResult Function(CommentError value) commentError,
+    required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
+    required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
+    required TResult Function(DeleteCommentError value) deleteCommentError,
   }) {
     return postError(this);
   }
@@ -1706,6 +2128,13 @@ class _$PostErrorImpl implements PostError {
     TResult? Function(UnlikePostLoading value)? unlikePostLoading,
     TResult? Function(UnlikePostSuccess value)? unlikePostSuccess,
     TResult? Function(UnlikePostError value)? unlikePostError,
+    TResult? Function(CommentLoading value)? commentLoading,
+    TResult? Function(LocalCommentAdded value)? localCommentAdded,
+    TResult? Function(CommentSuccess value)? commentSuccess,
+    TResult? Function(CommentError value)? commentError,
+    TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult? Function(DeleteCommentError value)? deleteCommentError,
   }) {
     return postError?.call(this);
   }
@@ -1727,6 +2156,13 @@ class _$PostErrorImpl implements PostError {
     TResult Function(UnlikePostLoading value)? unlikePostLoading,
     TResult Function(UnlikePostSuccess value)? unlikePostSuccess,
     TResult Function(UnlikePostError value)? unlikePostError,
+    TResult Function(CommentLoading value)? commentLoading,
+    TResult Function(LocalCommentAdded value)? localCommentAdded,
+    TResult Function(CommentSuccess value)? commentSuccess,
+    TResult Function(CommentError value)? commentError,
+    TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult Function(DeleteCommentError value)? deleteCommentError,
     required TResult orElse(),
   }) {
     if (postError != null) {
@@ -1769,12 +2205,20 @@ class __$$LikePostLoadingImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$LikePostLoadingImpl implements LikePostLoading {
+class _$LikePostLoadingImpl
+    with DiagnosticableTreeMixin
+    implements LikePostLoading {
   const _$LikePostLoadingImpl();
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'HomeState.likePostLoading()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties.add(DiagnosticsProperty('type', 'HomeState.likePostLoading'));
   }
 
   @override
@@ -1803,6 +2247,13 @@ class _$LikePostLoadingImpl implements LikePostLoading {
     required TResult Function() unlikePostLoading,
     required TResult Function() unlikePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) unlikePostError,
+    required TResult Function() commentLoading,
+    required TResult Function(List<Comment> comments) localCommentAdded,
+    required TResult Function() commentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) commentError,
+    required TResult Function() deleteCommentLoading,
+    required TResult Function() deleteCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
   }) {
     return likePostLoading();
   }
@@ -1824,6 +2275,13 @@ class _$LikePostLoadingImpl implements LikePostLoading {
     TResult? Function()? unlikePostLoading,
     TResult? Function()? unlikePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult? Function()? commentLoading,
+    TResult? Function(List<Comment> comments)? localCommentAdded,
+    TResult? Function()? commentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult? Function()? deleteCommentLoading,
+    TResult? Function()? deleteCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
   }) {
     return likePostLoading?.call();
   }
@@ -1845,6 +2303,13 @@ class _$LikePostLoadingImpl implements LikePostLoading {
     TResult Function()? unlikePostLoading,
     TResult Function()? unlikePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult Function()? commentLoading,
+    TResult Function(List<Comment> comments)? localCommentAdded,
+    TResult Function()? commentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult Function()? deleteCommentLoading,
+    TResult Function()? deleteCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
     required TResult orElse(),
   }) {
     if (likePostLoading != null) {
@@ -1870,6 +2335,13 @@ class _$LikePostLoadingImpl implements LikePostLoading {
     required TResult Function(UnlikePostLoading value) unlikePostLoading,
     required TResult Function(UnlikePostSuccess value) unlikePostSuccess,
     required TResult Function(UnlikePostError value) unlikePostError,
+    required TResult Function(CommentLoading value) commentLoading,
+    required TResult Function(LocalCommentAdded value) localCommentAdded,
+    required TResult Function(CommentSuccess value) commentSuccess,
+    required TResult Function(CommentError value) commentError,
+    required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
+    required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
+    required TResult Function(DeleteCommentError value) deleteCommentError,
   }) {
     return likePostLoading(this);
   }
@@ -1891,6 +2363,13 @@ class _$LikePostLoadingImpl implements LikePostLoading {
     TResult? Function(UnlikePostLoading value)? unlikePostLoading,
     TResult? Function(UnlikePostSuccess value)? unlikePostSuccess,
     TResult? Function(UnlikePostError value)? unlikePostError,
+    TResult? Function(CommentLoading value)? commentLoading,
+    TResult? Function(LocalCommentAdded value)? localCommentAdded,
+    TResult? Function(CommentSuccess value)? commentSuccess,
+    TResult? Function(CommentError value)? commentError,
+    TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult? Function(DeleteCommentError value)? deleteCommentError,
   }) {
     return likePostLoading?.call(this);
   }
@@ -1912,6 +2391,13 @@ class _$LikePostLoadingImpl implements LikePostLoading {
     TResult Function(UnlikePostLoading value)? unlikePostLoading,
     TResult Function(UnlikePostSuccess value)? unlikePostSuccess,
     TResult Function(UnlikePostError value)? unlikePostError,
+    TResult Function(CommentLoading value)? commentLoading,
+    TResult Function(LocalCommentAdded value)? localCommentAdded,
+    TResult Function(CommentSuccess value)? commentSuccess,
+    TResult Function(CommentError value)? commentError,
+    TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult Function(DeleteCommentError value)? deleteCommentError,
     required TResult orElse(),
   }) {
     if (likePostLoading != null) {
@@ -1946,12 +2432,20 @@ class __$$LikePostSuccessImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$LikePostSuccessImpl implements LikePostSuccess {
+class _$LikePostSuccessImpl
+    with DiagnosticableTreeMixin
+    implements LikePostSuccess {
   const _$LikePostSuccessImpl();
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'HomeState.likePostSuccess()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties.add(DiagnosticsProperty('type', 'HomeState.likePostSuccess'));
   }
 
   @override
@@ -1980,6 +2474,13 @@ class _$LikePostSuccessImpl implements LikePostSuccess {
     required TResult Function() unlikePostLoading,
     required TResult Function() unlikePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) unlikePostError,
+    required TResult Function() commentLoading,
+    required TResult Function(List<Comment> comments) localCommentAdded,
+    required TResult Function() commentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) commentError,
+    required TResult Function() deleteCommentLoading,
+    required TResult Function() deleteCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
   }) {
     return likePostSuccess();
   }
@@ -2001,6 +2502,13 @@ class _$LikePostSuccessImpl implements LikePostSuccess {
     TResult? Function()? unlikePostLoading,
     TResult? Function()? unlikePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult? Function()? commentLoading,
+    TResult? Function(List<Comment> comments)? localCommentAdded,
+    TResult? Function()? commentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult? Function()? deleteCommentLoading,
+    TResult? Function()? deleteCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
   }) {
     return likePostSuccess?.call();
   }
@@ -2022,6 +2530,13 @@ class _$LikePostSuccessImpl implements LikePostSuccess {
     TResult Function()? unlikePostLoading,
     TResult Function()? unlikePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult Function()? commentLoading,
+    TResult Function(List<Comment> comments)? localCommentAdded,
+    TResult Function()? commentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult Function()? deleteCommentLoading,
+    TResult Function()? deleteCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
     required TResult orElse(),
   }) {
     if (likePostSuccess != null) {
@@ -2047,6 +2562,13 @@ class _$LikePostSuccessImpl implements LikePostSuccess {
     required TResult Function(UnlikePostLoading value) unlikePostLoading,
     required TResult Function(UnlikePostSuccess value) unlikePostSuccess,
     required TResult Function(UnlikePostError value) unlikePostError,
+    required TResult Function(CommentLoading value) commentLoading,
+    required TResult Function(LocalCommentAdded value) localCommentAdded,
+    required TResult Function(CommentSuccess value) commentSuccess,
+    required TResult Function(CommentError value) commentError,
+    required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
+    required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
+    required TResult Function(DeleteCommentError value) deleteCommentError,
   }) {
     return likePostSuccess(this);
   }
@@ -2068,6 +2590,13 @@ class _$LikePostSuccessImpl implements LikePostSuccess {
     TResult? Function(UnlikePostLoading value)? unlikePostLoading,
     TResult? Function(UnlikePostSuccess value)? unlikePostSuccess,
     TResult? Function(UnlikePostError value)? unlikePostError,
+    TResult? Function(CommentLoading value)? commentLoading,
+    TResult? Function(LocalCommentAdded value)? localCommentAdded,
+    TResult? Function(CommentSuccess value)? commentSuccess,
+    TResult? Function(CommentError value)? commentError,
+    TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult? Function(DeleteCommentError value)? deleteCommentError,
   }) {
     return likePostSuccess?.call(this);
   }
@@ -2089,6 +2618,13 @@ class _$LikePostSuccessImpl implements LikePostSuccess {
     TResult Function(UnlikePostLoading value)? unlikePostLoading,
     TResult Function(UnlikePostSuccess value)? unlikePostSuccess,
     TResult Function(UnlikePostError value)? unlikePostError,
+    TResult Function(CommentLoading value)? commentLoading,
+    TResult Function(LocalCommentAdded value)? localCommentAdded,
+    TResult Function(CommentSuccess value)? commentSuccess,
+    TResult Function(CommentError value)? commentError,
+    TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult Function(DeleteCommentError value)? deleteCommentError,
     required TResult orElse(),
   }) {
     if (likePostSuccess != null) {
@@ -2137,15 +2673,25 @@ class __$$LikePostErrorImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$LikePostErrorImpl implements LikePostError {
+class _$LikePostErrorImpl
+    with DiagnosticableTreeMixin
+    implements LikePostError {
   const _$LikePostErrorImpl(this.apiErrorModel);
 
   @override
   final ApiErrorModel apiErrorModel;
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'HomeState.likePostError(apiErrorModel: $apiErrorModel)';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+      ..add(DiagnosticsProperty('type', 'HomeState.likePostError'))
+      ..add(DiagnosticsProperty('apiErrorModel', apiErrorModel));
   }
 
   @override
@@ -2185,6 +2731,13 @@ class _$LikePostErrorImpl implements LikePostError {
     required TResult Function() unlikePostLoading,
     required TResult Function() unlikePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) unlikePostError,
+    required TResult Function() commentLoading,
+    required TResult Function(List<Comment> comments) localCommentAdded,
+    required TResult Function() commentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) commentError,
+    required TResult Function() deleteCommentLoading,
+    required TResult Function() deleteCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
   }) {
     return likePostError(apiErrorModel);
   }
@@ -2206,6 +2759,13 @@ class _$LikePostErrorImpl implements LikePostError {
     TResult? Function()? unlikePostLoading,
     TResult? Function()? unlikePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult? Function()? commentLoading,
+    TResult? Function(List<Comment> comments)? localCommentAdded,
+    TResult? Function()? commentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult? Function()? deleteCommentLoading,
+    TResult? Function()? deleteCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
   }) {
     return likePostError?.call(apiErrorModel);
   }
@@ -2227,6 +2787,13 @@ class _$LikePostErrorImpl implements LikePostError {
     TResult Function()? unlikePostLoading,
     TResult Function()? unlikePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult Function()? commentLoading,
+    TResult Function(List<Comment> comments)? localCommentAdded,
+    TResult Function()? commentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult Function()? deleteCommentLoading,
+    TResult Function()? deleteCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
     required TResult orElse(),
   }) {
     if (likePostError != null) {
@@ -2252,6 +2819,13 @@ class _$LikePostErrorImpl implements LikePostError {
     required TResult Function(UnlikePostLoading value) unlikePostLoading,
     required TResult Function(UnlikePostSuccess value) unlikePostSuccess,
     required TResult Function(UnlikePostError value) unlikePostError,
+    required TResult Function(CommentLoading value) commentLoading,
+    required TResult Function(LocalCommentAdded value) localCommentAdded,
+    required TResult Function(CommentSuccess value) commentSuccess,
+    required TResult Function(CommentError value) commentError,
+    required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
+    required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
+    required TResult Function(DeleteCommentError value) deleteCommentError,
   }) {
     return likePostError(this);
   }
@@ -2273,6 +2847,13 @@ class _$LikePostErrorImpl implements LikePostError {
     TResult? Function(UnlikePostLoading value)? unlikePostLoading,
     TResult? Function(UnlikePostSuccess value)? unlikePostSuccess,
     TResult? Function(UnlikePostError value)? unlikePostError,
+    TResult? Function(CommentLoading value)? commentLoading,
+    TResult? Function(LocalCommentAdded value)? localCommentAdded,
+    TResult? Function(CommentSuccess value)? commentSuccess,
+    TResult? Function(CommentError value)? commentError,
+    TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult? Function(DeleteCommentError value)? deleteCommentError,
   }) {
     return likePostError?.call(this);
   }
@@ -2294,6 +2875,13 @@ class _$LikePostErrorImpl implements LikePostError {
     TResult Function(UnlikePostLoading value)? unlikePostLoading,
     TResult Function(UnlikePostSuccess value)? unlikePostSuccess,
     TResult Function(UnlikePostError value)? unlikePostError,
+    TResult Function(CommentLoading value)? commentLoading,
+    TResult Function(LocalCommentAdded value)? localCommentAdded,
+    TResult Function(CommentSuccess value)? commentSuccess,
+    TResult Function(CommentError value)? commentError,
+    TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult Function(DeleteCommentError value)? deleteCommentError,
     required TResult orElse(),
   }) {
     if (likePostError != null) {
@@ -2337,12 +2925,20 @@ class __$$UnlikePostLoadingImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$UnlikePostLoadingImpl implements UnlikePostLoading {
+class _$UnlikePostLoadingImpl
+    with DiagnosticableTreeMixin
+    implements UnlikePostLoading {
   const _$UnlikePostLoadingImpl();
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'HomeState.unlikePostLoading()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties.add(DiagnosticsProperty('type', 'HomeState.unlikePostLoading'));
   }
 
   @override
@@ -2371,6 +2967,13 @@ class _$UnlikePostLoadingImpl implements UnlikePostLoading {
     required TResult Function() unlikePostLoading,
     required TResult Function() unlikePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) unlikePostError,
+    required TResult Function() commentLoading,
+    required TResult Function(List<Comment> comments) localCommentAdded,
+    required TResult Function() commentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) commentError,
+    required TResult Function() deleteCommentLoading,
+    required TResult Function() deleteCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
   }) {
     return unlikePostLoading();
   }
@@ -2392,6 +2995,13 @@ class _$UnlikePostLoadingImpl implements UnlikePostLoading {
     TResult? Function()? unlikePostLoading,
     TResult? Function()? unlikePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult? Function()? commentLoading,
+    TResult? Function(List<Comment> comments)? localCommentAdded,
+    TResult? Function()? commentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult? Function()? deleteCommentLoading,
+    TResult? Function()? deleteCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
   }) {
     return unlikePostLoading?.call();
   }
@@ -2413,6 +3023,13 @@ class _$UnlikePostLoadingImpl implements UnlikePostLoading {
     TResult Function()? unlikePostLoading,
     TResult Function()? unlikePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult Function()? commentLoading,
+    TResult Function(List<Comment> comments)? localCommentAdded,
+    TResult Function()? commentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult Function()? deleteCommentLoading,
+    TResult Function()? deleteCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
     required TResult orElse(),
   }) {
     if (unlikePostLoading != null) {
@@ -2438,6 +3055,13 @@ class _$UnlikePostLoadingImpl implements UnlikePostLoading {
     required TResult Function(UnlikePostLoading value) unlikePostLoading,
     required TResult Function(UnlikePostSuccess value) unlikePostSuccess,
     required TResult Function(UnlikePostError value) unlikePostError,
+    required TResult Function(CommentLoading value) commentLoading,
+    required TResult Function(LocalCommentAdded value) localCommentAdded,
+    required TResult Function(CommentSuccess value) commentSuccess,
+    required TResult Function(CommentError value) commentError,
+    required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
+    required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
+    required TResult Function(DeleteCommentError value) deleteCommentError,
   }) {
     return unlikePostLoading(this);
   }
@@ -2459,6 +3083,13 @@ class _$UnlikePostLoadingImpl implements UnlikePostLoading {
     TResult? Function(UnlikePostLoading value)? unlikePostLoading,
     TResult? Function(UnlikePostSuccess value)? unlikePostSuccess,
     TResult? Function(UnlikePostError value)? unlikePostError,
+    TResult? Function(CommentLoading value)? commentLoading,
+    TResult? Function(LocalCommentAdded value)? localCommentAdded,
+    TResult? Function(CommentSuccess value)? commentSuccess,
+    TResult? Function(CommentError value)? commentError,
+    TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult? Function(DeleteCommentError value)? deleteCommentError,
   }) {
     return unlikePostLoading?.call(this);
   }
@@ -2480,6 +3111,13 @@ class _$UnlikePostLoadingImpl implements UnlikePostLoading {
     TResult Function(UnlikePostLoading value)? unlikePostLoading,
     TResult Function(UnlikePostSuccess value)? unlikePostSuccess,
     TResult Function(UnlikePostError value)? unlikePostError,
+    TResult Function(CommentLoading value)? commentLoading,
+    TResult Function(LocalCommentAdded value)? localCommentAdded,
+    TResult Function(CommentSuccess value)? commentSuccess,
+    TResult Function(CommentError value)? commentError,
+    TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult Function(DeleteCommentError value)? deleteCommentError,
     required TResult orElse(),
   }) {
     if (unlikePostLoading != null) {
@@ -2514,12 +3152,20 @@ class __$$UnlikePostSuccessImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$UnlikePostSuccessImpl implements UnlikePostSuccess {
+class _$UnlikePostSuccessImpl
+    with DiagnosticableTreeMixin
+    implements UnlikePostSuccess {
   const _$UnlikePostSuccessImpl();
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'HomeState.unlikePostSuccess()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties.add(DiagnosticsProperty('type', 'HomeState.unlikePostSuccess'));
   }
 
   @override
@@ -2548,6 +3194,13 @@ class _$UnlikePostSuccessImpl implements UnlikePostSuccess {
     required TResult Function() unlikePostLoading,
     required TResult Function() unlikePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) unlikePostError,
+    required TResult Function() commentLoading,
+    required TResult Function(List<Comment> comments) localCommentAdded,
+    required TResult Function() commentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) commentError,
+    required TResult Function() deleteCommentLoading,
+    required TResult Function() deleteCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
   }) {
     return unlikePostSuccess();
   }
@@ -2569,6 +3222,13 @@ class _$UnlikePostSuccessImpl implements UnlikePostSuccess {
     TResult? Function()? unlikePostLoading,
     TResult? Function()? unlikePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult? Function()? commentLoading,
+    TResult? Function(List<Comment> comments)? localCommentAdded,
+    TResult? Function()? commentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult? Function()? deleteCommentLoading,
+    TResult? Function()? deleteCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
   }) {
     return unlikePostSuccess?.call();
   }
@@ -2590,6 +3250,13 @@ class _$UnlikePostSuccessImpl implements UnlikePostSuccess {
     TResult Function()? unlikePostLoading,
     TResult Function()? unlikePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult Function()? commentLoading,
+    TResult Function(List<Comment> comments)? localCommentAdded,
+    TResult Function()? commentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult Function()? deleteCommentLoading,
+    TResult Function()? deleteCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
     required TResult orElse(),
   }) {
     if (unlikePostSuccess != null) {
@@ -2615,6 +3282,13 @@ class _$UnlikePostSuccessImpl implements UnlikePostSuccess {
     required TResult Function(UnlikePostLoading value) unlikePostLoading,
     required TResult Function(UnlikePostSuccess value) unlikePostSuccess,
     required TResult Function(UnlikePostError value) unlikePostError,
+    required TResult Function(CommentLoading value) commentLoading,
+    required TResult Function(LocalCommentAdded value) localCommentAdded,
+    required TResult Function(CommentSuccess value) commentSuccess,
+    required TResult Function(CommentError value) commentError,
+    required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
+    required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
+    required TResult Function(DeleteCommentError value) deleteCommentError,
   }) {
     return unlikePostSuccess(this);
   }
@@ -2636,6 +3310,13 @@ class _$UnlikePostSuccessImpl implements UnlikePostSuccess {
     TResult? Function(UnlikePostLoading value)? unlikePostLoading,
     TResult? Function(UnlikePostSuccess value)? unlikePostSuccess,
     TResult? Function(UnlikePostError value)? unlikePostError,
+    TResult? Function(CommentLoading value)? commentLoading,
+    TResult? Function(LocalCommentAdded value)? localCommentAdded,
+    TResult? Function(CommentSuccess value)? commentSuccess,
+    TResult? Function(CommentError value)? commentError,
+    TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult? Function(DeleteCommentError value)? deleteCommentError,
   }) {
     return unlikePostSuccess?.call(this);
   }
@@ -2657,6 +3338,13 @@ class _$UnlikePostSuccessImpl implements UnlikePostSuccess {
     TResult Function(UnlikePostLoading value)? unlikePostLoading,
     TResult Function(UnlikePostSuccess value)? unlikePostSuccess,
     TResult Function(UnlikePostError value)? unlikePostError,
+    TResult Function(CommentLoading value)? commentLoading,
+    TResult Function(LocalCommentAdded value)? localCommentAdded,
+    TResult Function(CommentSuccess value)? commentSuccess,
+    TResult Function(CommentError value)? commentError,
+    TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult Function(DeleteCommentError value)? deleteCommentError,
     required TResult orElse(),
   }) {
     if (unlikePostSuccess != null) {
@@ -2705,15 +3393,25 @@ class __$$UnlikePostErrorImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$UnlikePostErrorImpl implements UnlikePostError {
+class _$UnlikePostErrorImpl
+    with DiagnosticableTreeMixin
+    implements UnlikePostError {
   const _$UnlikePostErrorImpl(this.apiErrorModel);
 
   @override
   final ApiErrorModel apiErrorModel;
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'HomeState.unlikePostError(apiErrorModel: $apiErrorModel)';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+      ..add(DiagnosticsProperty('type', 'HomeState.unlikePostError'))
+      ..add(DiagnosticsProperty('apiErrorModel', apiErrorModel));
   }
 
   @override
@@ -2754,6 +3452,13 @@ class _$UnlikePostErrorImpl implements UnlikePostError {
     required TResult Function() unlikePostLoading,
     required TResult Function() unlikePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) unlikePostError,
+    required TResult Function() commentLoading,
+    required TResult Function(List<Comment> comments) localCommentAdded,
+    required TResult Function() commentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) commentError,
+    required TResult Function() deleteCommentLoading,
+    required TResult Function() deleteCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
   }) {
     return unlikePostError(apiErrorModel);
   }
@@ -2775,6 +3480,13 @@ class _$UnlikePostErrorImpl implements UnlikePostError {
     TResult? Function()? unlikePostLoading,
     TResult? Function()? unlikePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult? Function()? commentLoading,
+    TResult? Function(List<Comment> comments)? localCommentAdded,
+    TResult? Function()? commentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult? Function()? deleteCommentLoading,
+    TResult? Function()? deleteCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
   }) {
     return unlikePostError?.call(apiErrorModel);
   }
@@ -2796,6 +3508,13 @@ class _$UnlikePostErrorImpl implements UnlikePostError {
     TResult Function()? unlikePostLoading,
     TResult Function()? unlikePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult Function()? commentLoading,
+    TResult Function(List<Comment> comments)? localCommentAdded,
+    TResult Function()? commentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult Function()? deleteCommentLoading,
+    TResult Function()? deleteCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
     required TResult orElse(),
   }) {
     if (unlikePostError != null) {
@@ -2821,6 +3540,13 @@ class _$UnlikePostErrorImpl implements UnlikePostError {
     required TResult Function(UnlikePostLoading value) unlikePostLoading,
     required TResult Function(UnlikePostSuccess value) unlikePostSuccess,
     required TResult Function(UnlikePostError value) unlikePostError,
+    required TResult Function(CommentLoading value) commentLoading,
+    required TResult Function(LocalCommentAdded value) localCommentAdded,
+    required TResult Function(CommentSuccess value) commentSuccess,
+    required TResult Function(CommentError value) commentError,
+    required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
+    required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
+    required TResult Function(DeleteCommentError value) deleteCommentError,
   }) {
     return unlikePostError(this);
   }
@@ -2842,6 +3568,13 @@ class _$UnlikePostErrorImpl implements UnlikePostError {
     TResult? Function(UnlikePostLoading value)? unlikePostLoading,
     TResult? Function(UnlikePostSuccess value)? unlikePostSuccess,
     TResult? Function(UnlikePostError value)? unlikePostError,
+    TResult? Function(CommentLoading value)? commentLoading,
+    TResult? Function(LocalCommentAdded value)? localCommentAdded,
+    TResult? Function(CommentSuccess value)? commentSuccess,
+    TResult? Function(CommentError value)? commentError,
+    TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult? Function(DeleteCommentError value)? deleteCommentError,
   }) {
     return unlikePostError?.call(this);
   }
@@ -2863,6 +3596,13 @@ class _$UnlikePostErrorImpl implements UnlikePostError {
     TResult Function(UnlikePostLoading value)? unlikePostLoading,
     TResult Function(UnlikePostSuccess value)? unlikePostSuccess,
     TResult Function(UnlikePostError value)? unlikePostError,
+    TResult Function(CommentLoading value)? commentLoading,
+    TResult Function(LocalCommentAdded value)? localCommentAdded,
+    TResult Function(CommentSuccess value)? commentSuccess,
+    TResult Function(CommentError value)? commentError,
+    TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult Function(DeleteCommentError value)? deleteCommentError,
     required TResult orElse(),
   }) {
     if (unlikePostError != null) {
@@ -2882,5 +3622,1721 @@ abstract class UnlikePostError implements HomeState {
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$UnlikePostErrorImplCopyWith<_$UnlikePostErrorImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$CommentLoadingImplCopyWith<$Res> {
+  factory _$$CommentLoadingImplCopyWith(_$CommentLoadingImpl value,
+          $Res Function(_$CommentLoadingImpl) then) =
+      __$$CommentLoadingImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$CommentLoadingImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$CommentLoadingImpl>
+    implements _$$CommentLoadingImplCopyWith<$Res> {
+  __$$CommentLoadingImplCopyWithImpl(
+      _$CommentLoadingImpl _value, $Res Function(_$CommentLoadingImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$CommentLoadingImpl
+    with DiagnosticableTreeMixin
+    implements CommentLoading {
+  const _$CommentLoadingImpl();
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'HomeState.commentLoading()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties.add(DiagnosticsProperty('type', 'HomeState.commentLoading'));
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$CommentLoadingImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() postsLoading,
+    required TResult Function(List<Post> posts) postsLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) postsError,
+    required TResult Function(int index) changeScreen,
+    required TResult Function() postLoading,
+    required TResult Function(Post post) postLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) postError,
+    required TResult Function() likePostLoading,
+    required TResult Function() likePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) likePostError,
+    required TResult Function() unlikePostLoading,
+    required TResult Function() unlikePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) unlikePostError,
+    required TResult Function() commentLoading,
+    required TResult Function(List<Comment> comments) localCommentAdded,
+    required TResult Function() commentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) commentError,
+    required TResult Function() deleteCommentLoading,
+    required TResult Function() deleteCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+  }) {
+    return commentLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? postsLoading,
+    TResult? Function(List<Post> posts)? postsLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? postsError,
+    TResult? Function(int index)? changeScreen,
+    TResult? Function()? postLoading,
+    TResult? Function(Post post)? postLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? postError,
+    TResult? Function()? likePostLoading,
+    TResult? Function()? likePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? likePostError,
+    TResult? Function()? unlikePostLoading,
+    TResult? Function()? unlikePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult? Function()? commentLoading,
+    TResult? Function(List<Comment> comments)? localCommentAdded,
+    TResult? Function()? commentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult? Function()? deleteCommentLoading,
+    TResult? Function()? deleteCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+  }) {
+    return commentLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? postsLoading,
+    TResult Function(List<Post> posts)? postsLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? postsError,
+    TResult Function(int index)? changeScreen,
+    TResult Function()? postLoading,
+    TResult Function(Post post)? postLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? postError,
+    TResult Function()? likePostLoading,
+    TResult Function()? likePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? likePostError,
+    TResult Function()? unlikePostLoading,
+    TResult Function()? unlikePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult Function()? commentLoading,
+    TResult Function(List<Comment> comments)? localCommentAdded,
+    TResult Function()? commentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult Function()? deleteCommentLoading,
+    TResult Function()? deleteCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    required TResult orElse(),
+  }) {
+    if (commentLoading != null) {
+      return commentLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(PostsLoading value) postsLoading,
+    required TResult Function(PostsLoaded value) postsLoaded,
+    required TResult Function(PostsError value) postsError,
+    required TResult Function(ChangeScreen value) changeScreen,
+    required TResult Function(PostLoading value) postLoading,
+    required TResult Function(PostLoaded value) postLoaded,
+    required TResult Function(PostError value) postError,
+    required TResult Function(LikePostLoading value) likePostLoading,
+    required TResult Function(LikePostSuccess value) likePostSuccess,
+    required TResult Function(LikePostError value) likePostError,
+    required TResult Function(UnlikePostLoading value) unlikePostLoading,
+    required TResult Function(UnlikePostSuccess value) unlikePostSuccess,
+    required TResult Function(UnlikePostError value) unlikePostError,
+    required TResult Function(CommentLoading value) commentLoading,
+    required TResult Function(LocalCommentAdded value) localCommentAdded,
+    required TResult Function(CommentSuccess value) commentSuccess,
+    required TResult Function(CommentError value) commentError,
+    required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
+    required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
+    required TResult Function(DeleteCommentError value) deleteCommentError,
+  }) {
+    return commentLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(PostsLoading value)? postsLoading,
+    TResult? Function(PostsLoaded value)? postsLoaded,
+    TResult? Function(PostsError value)? postsError,
+    TResult? Function(ChangeScreen value)? changeScreen,
+    TResult? Function(PostLoading value)? postLoading,
+    TResult? Function(PostLoaded value)? postLoaded,
+    TResult? Function(PostError value)? postError,
+    TResult? Function(LikePostLoading value)? likePostLoading,
+    TResult? Function(LikePostSuccess value)? likePostSuccess,
+    TResult? Function(LikePostError value)? likePostError,
+    TResult? Function(UnlikePostLoading value)? unlikePostLoading,
+    TResult? Function(UnlikePostSuccess value)? unlikePostSuccess,
+    TResult? Function(UnlikePostError value)? unlikePostError,
+    TResult? Function(CommentLoading value)? commentLoading,
+    TResult? Function(LocalCommentAdded value)? localCommentAdded,
+    TResult? Function(CommentSuccess value)? commentSuccess,
+    TResult? Function(CommentError value)? commentError,
+    TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult? Function(DeleteCommentError value)? deleteCommentError,
+  }) {
+    return commentLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(PostsLoading value)? postsLoading,
+    TResult Function(PostsLoaded value)? postsLoaded,
+    TResult Function(PostsError value)? postsError,
+    TResult Function(ChangeScreen value)? changeScreen,
+    TResult Function(PostLoading value)? postLoading,
+    TResult Function(PostLoaded value)? postLoaded,
+    TResult Function(PostError value)? postError,
+    TResult Function(LikePostLoading value)? likePostLoading,
+    TResult Function(LikePostSuccess value)? likePostSuccess,
+    TResult Function(LikePostError value)? likePostError,
+    TResult Function(UnlikePostLoading value)? unlikePostLoading,
+    TResult Function(UnlikePostSuccess value)? unlikePostSuccess,
+    TResult Function(UnlikePostError value)? unlikePostError,
+    TResult Function(CommentLoading value)? commentLoading,
+    TResult Function(LocalCommentAdded value)? localCommentAdded,
+    TResult Function(CommentSuccess value)? commentSuccess,
+    TResult Function(CommentError value)? commentError,
+    TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult Function(DeleteCommentError value)? deleteCommentError,
+    required TResult orElse(),
+  }) {
+    if (commentLoading != null) {
+      return commentLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class CommentLoading implements HomeState {
+  const factory CommentLoading() = _$CommentLoadingImpl;
+}
+
+/// @nodoc
+abstract class _$$LocalCommentAddedImplCopyWith<$Res> {
+  factory _$$LocalCommentAddedImplCopyWith(_$LocalCommentAddedImpl value,
+          $Res Function(_$LocalCommentAddedImpl) then) =
+      __$$LocalCommentAddedImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({List<Comment> comments});
+}
+
+/// @nodoc
+class __$$LocalCommentAddedImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$LocalCommentAddedImpl>
+    implements _$$LocalCommentAddedImplCopyWith<$Res> {
+  __$$LocalCommentAddedImplCopyWithImpl(_$LocalCommentAddedImpl _value,
+      $Res Function(_$LocalCommentAddedImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? comments = null,
+  }) {
+    return _then(_$LocalCommentAddedImpl(
+      null == comments
+          ? _value._comments
+          : comments // ignore: cast_nullable_to_non_nullable
+              as List<Comment>,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$LocalCommentAddedImpl
+    with DiagnosticableTreeMixin
+    implements LocalCommentAdded {
+  const _$LocalCommentAddedImpl(final List<Comment> comments)
+      : _comments = comments;
+
+  final List<Comment> _comments;
+  @override
+  List<Comment> get comments {
+    if (_comments is EqualUnmodifiableListView) return _comments;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_comments);
+  }
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'HomeState.localCommentAdded(comments: $comments)';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+      ..add(DiagnosticsProperty('type', 'HomeState.localCommentAdded'))
+      ..add(DiagnosticsProperty('comments', comments));
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$LocalCommentAddedImpl &&
+            const DeepCollectionEquality().equals(other._comments, _comments));
+  }
+
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(_comments));
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$LocalCommentAddedImplCopyWith<_$LocalCommentAddedImpl> get copyWith =>
+      __$$LocalCommentAddedImplCopyWithImpl<_$LocalCommentAddedImpl>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() postsLoading,
+    required TResult Function(List<Post> posts) postsLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) postsError,
+    required TResult Function(int index) changeScreen,
+    required TResult Function() postLoading,
+    required TResult Function(Post post) postLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) postError,
+    required TResult Function() likePostLoading,
+    required TResult Function() likePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) likePostError,
+    required TResult Function() unlikePostLoading,
+    required TResult Function() unlikePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) unlikePostError,
+    required TResult Function() commentLoading,
+    required TResult Function(List<Comment> comments) localCommentAdded,
+    required TResult Function() commentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) commentError,
+    required TResult Function() deleteCommentLoading,
+    required TResult Function() deleteCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+  }) {
+    return localCommentAdded(comments);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? postsLoading,
+    TResult? Function(List<Post> posts)? postsLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? postsError,
+    TResult? Function(int index)? changeScreen,
+    TResult? Function()? postLoading,
+    TResult? Function(Post post)? postLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? postError,
+    TResult? Function()? likePostLoading,
+    TResult? Function()? likePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? likePostError,
+    TResult? Function()? unlikePostLoading,
+    TResult? Function()? unlikePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult? Function()? commentLoading,
+    TResult? Function(List<Comment> comments)? localCommentAdded,
+    TResult? Function()? commentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult? Function()? deleteCommentLoading,
+    TResult? Function()? deleteCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+  }) {
+    return localCommentAdded?.call(comments);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? postsLoading,
+    TResult Function(List<Post> posts)? postsLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? postsError,
+    TResult Function(int index)? changeScreen,
+    TResult Function()? postLoading,
+    TResult Function(Post post)? postLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? postError,
+    TResult Function()? likePostLoading,
+    TResult Function()? likePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? likePostError,
+    TResult Function()? unlikePostLoading,
+    TResult Function()? unlikePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult Function()? commentLoading,
+    TResult Function(List<Comment> comments)? localCommentAdded,
+    TResult Function()? commentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult Function()? deleteCommentLoading,
+    TResult Function()? deleteCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    required TResult orElse(),
+  }) {
+    if (localCommentAdded != null) {
+      return localCommentAdded(comments);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(PostsLoading value) postsLoading,
+    required TResult Function(PostsLoaded value) postsLoaded,
+    required TResult Function(PostsError value) postsError,
+    required TResult Function(ChangeScreen value) changeScreen,
+    required TResult Function(PostLoading value) postLoading,
+    required TResult Function(PostLoaded value) postLoaded,
+    required TResult Function(PostError value) postError,
+    required TResult Function(LikePostLoading value) likePostLoading,
+    required TResult Function(LikePostSuccess value) likePostSuccess,
+    required TResult Function(LikePostError value) likePostError,
+    required TResult Function(UnlikePostLoading value) unlikePostLoading,
+    required TResult Function(UnlikePostSuccess value) unlikePostSuccess,
+    required TResult Function(UnlikePostError value) unlikePostError,
+    required TResult Function(CommentLoading value) commentLoading,
+    required TResult Function(LocalCommentAdded value) localCommentAdded,
+    required TResult Function(CommentSuccess value) commentSuccess,
+    required TResult Function(CommentError value) commentError,
+    required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
+    required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
+    required TResult Function(DeleteCommentError value) deleteCommentError,
+  }) {
+    return localCommentAdded(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(PostsLoading value)? postsLoading,
+    TResult? Function(PostsLoaded value)? postsLoaded,
+    TResult? Function(PostsError value)? postsError,
+    TResult? Function(ChangeScreen value)? changeScreen,
+    TResult? Function(PostLoading value)? postLoading,
+    TResult? Function(PostLoaded value)? postLoaded,
+    TResult? Function(PostError value)? postError,
+    TResult? Function(LikePostLoading value)? likePostLoading,
+    TResult? Function(LikePostSuccess value)? likePostSuccess,
+    TResult? Function(LikePostError value)? likePostError,
+    TResult? Function(UnlikePostLoading value)? unlikePostLoading,
+    TResult? Function(UnlikePostSuccess value)? unlikePostSuccess,
+    TResult? Function(UnlikePostError value)? unlikePostError,
+    TResult? Function(CommentLoading value)? commentLoading,
+    TResult? Function(LocalCommentAdded value)? localCommentAdded,
+    TResult? Function(CommentSuccess value)? commentSuccess,
+    TResult? Function(CommentError value)? commentError,
+    TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult? Function(DeleteCommentError value)? deleteCommentError,
+  }) {
+    return localCommentAdded?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(PostsLoading value)? postsLoading,
+    TResult Function(PostsLoaded value)? postsLoaded,
+    TResult Function(PostsError value)? postsError,
+    TResult Function(ChangeScreen value)? changeScreen,
+    TResult Function(PostLoading value)? postLoading,
+    TResult Function(PostLoaded value)? postLoaded,
+    TResult Function(PostError value)? postError,
+    TResult Function(LikePostLoading value)? likePostLoading,
+    TResult Function(LikePostSuccess value)? likePostSuccess,
+    TResult Function(LikePostError value)? likePostError,
+    TResult Function(UnlikePostLoading value)? unlikePostLoading,
+    TResult Function(UnlikePostSuccess value)? unlikePostSuccess,
+    TResult Function(UnlikePostError value)? unlikePostError,
+    TResult Function(CommentLoading value)? commentLoading,
+    TResult Function(LocalCommentAdded value)? localCommentAdded,
+    TResult Function(CommentSuccess value)? commentSuccess,
+    TResult Function(CommentError value)? commentError,
+    TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult Function(DeleteCommentError value)? deleteCommentError,
+    required TResult orElse(),
+  }) {
+    if (localCommentAdded != null) {
+      return localCommentAdded(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class LocalCommentAdded implements HomeState {
+  const factory LocalCommentAdded(final List<Comment> comments) =
+      _$LocalCommentAddedImpl;
+
+  List<Comment> get comments;
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$LocalCommentAddedImplCopyWith<_$LocalCommentAddedImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$CommentSuccessImplCopyWith<$Res> {
+  factory _$$CommentSuccessImplCopyWith(_$CommentSuccessImpl value,
+          $Res Function(_$CommentSuccessImpl) then) =
+      __$$CommentSuccessImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$CommentSuccessImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$CommentSuccessImpl>
+    implements _$$CommentSuccessImplCopyWith<$Res> {
+  __$$CommentSuccessImplCopyWithImpl(
+      _$CommentSuccessImpl _value, $Res Function(_$CommentSuccessImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$CommentSuccessImpl
+    with DiagnosticableTreeMixin
+    implements CommentSuccess {
+  const _$CommentSuccessImpl();
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'HomeState.commentSuccess()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties.add(DiagnosticsProperty('type', 'HomeState.commentSuccess'));
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$CommentSuccessImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() postsLoading,
+    required TResult Function(List<Post> posts) postsLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) postsError,
+    required TResult Function(int index) changeScreen,
+    required TResult Function() postLoading,
+    required TResult Function(Post post) postLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) postError,
+    required TResult Function() likePostLoading,
+    required TResult Function() likePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) likePostError,
+    required TResult Function() unlikePostLoading,
+    required TResult Function() unlikePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) unlikePostError,
+    required TResult Function() commentLoading,
+    required TResult Function(List<Comment> comments) localCommentAdded,
+    required TResult Function() commentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) commentError,
+    required TResult Function() deleteCommentLoading,
+    required TResult Function() deleteCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+  }) {
+    return commentSuccess();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? postsLoading,
+    TResult? Function(List<Post> posts)? postsLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? postsError,
+    TResult? Function(int index)? changeScreen,
+    TResult? Function()? postLoading,
+    TResult? Function(Post post)? postLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? postError,
+    TResult? Function()? likePostLoading,
+    TResult? Function()? likePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? likePostError,
+    TResult? Function()? unlikePostLoading,
+    TResult? Function()? unlikePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult? Function()? commentLoading,
+    TResult? Function(List<Comment> comments)? localCommentAdded,
+    TResult? Function()? commentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult? Function()? deleteCommentLoading,
+    TResult? Function()? deleteCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+  }) {
+    return commentSuccess?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? postsLoading,
+    TResult Function(List<Post> posts)? postsLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? postsError,
+    TResult Function(int index)? changeScreen,
+    TResult Function()? postLoading,
+    TResult Function(Post post)? postLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? postError,
+    TResult Function()? likePostLoading,
+    TResult Function()? likePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? likePostError,
+    TResult Function()? unlikePostLoading,
+    TResult Function()? unlikePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult Function()? commentLoading,
+    TResult Function(List<Comment> comments)? localCommentAdded,
+    TResult Function()? commentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult Function()? deleteCommentLoading,
+    TResult Function()? deleteCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    required TResult orElse(),
+  }) {
+    if (commentSuccess != null) {
+      return commentSuccess();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(PostsLoading value) postsLoading,
+    required TResult Function(PostsLoaded value) postsLoaded,
+    required TResult Function(PostsError value) postsError,
+    required TResult Function(ChangeScreen value) changeScreen,
+    required TResult Function(PostLoading value) postLoading,
+    required TResult Function(PostLoaded value) postLoaded,
+    required TResult Function(PostError value) postError,
+    required TResult Function(LikePostLoading value) likePostLoading,
+    required TResult Function(LikePostSuccess value) likePostSuccess,
+    required TResult Function(LikePostError value) likePostError,
+    required TResult Function(UnlikePostLoading value) unlikePostLoading,
+    required TResult Function(UnlikePostSuccess value) unlikePostSuccess,
+    required TResult Function(UnlikePostError value) unlikePostError,
+    required TResult Function(CommentLoading value) commentLoading,
+    required TResult Function(LocalCommentAdded value) localCommentAdded,
+    required TResult Function(CommentSuccess value) commentSuccess,
+    required TResult Function(CommentError value) commentError,
+    required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
+    required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
+    required TResult Function(DeleteCommentError value) deleteCommentError,
+  }) {
+    return commentSuccess(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(PostsLoading value)? postsLoading,
+    TResult? Function(PostsLoaded value)? postsLoaded,
+    TResult? Function(PostsError value)? postsError,
+    TResult? Function(ChangeScreen value)? changeScreen,
+    TResult? Function(PostLoading value)? postLoading,
+    TResult? Function(PostLoaded value)? postLoaded,
+    TResult? Function(PostError value)? postError,
+    TResult? Function(LikePostLoading value)? likePostLoading,
+    TResult? Function(LikePostSuccess value)? likePostSuccess,
+    TResult? Function(LikePostError value)? likePostError,
+    TResult? Function(UnlikePostLoading value)? unlikePostLoading,
+    TResult? Function(UnlikePostSuccess value)? unlikePostSuccess,
+    TResult? Function(UnlikePostError value)? unlikePostError,
+    TResult? Function(CommentLoading value)? commentLoading,
+    TResult? Function(LocalCommentAdded value)? localCommentAdded,
+    TResult? Function(CommentSuccess value)? commentSuccess,
+    TResult? Function(CommentError value)? commentError,
+    TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult? Function(DeleteCommentError value)? deleteCommentError,
+  }) {
+    return commentSuccess?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(PostsLoading value)? postsLoading,
+    TResult Function(PostsLoaded value)? postsLoaded,
+    TResult Function(PostsError value)? postsError,
+    TResult Function(ChangeScreen value)? changeScreen,
+    TResult Function(PostLoading value)? postLoading,
+    TResult Function(PostLoaded value)? postLoaded,
+    TResult Function(PostError value)? postError,
+    TResult Function(LikePostLoading value)? likePostLoading,
+    TResult Function(LikePostSuccess value)? likePostSuccess,
+    TResult Function(LikePostError value)? likePostError,
+    TResult Function(UnlikePostLoading value)? unlikePostLoading,
+    TResult Function(UnlikePostSuccess value)? unlikePostSuccess,
+    TResult Function(UnlikePostError value)? unlikePostError,
+    TResult Function(CommentLoading value)? commentLoading,
+    TResult Function(LocalCommentAdded value)? localCommentAdded,
+    TResult Function(CommentSuccess value)? commentSuccess,
+    TResult Function(CommentError value)? commentError,
+    TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult Function(DeleteCommentError value)? deleteCommentError,
+    required TResult orElse(),
+  }) {
+    if (commentSuccess != null) {
+      return commentSuccess(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class CommentSuccess implements HomeState {
+  const factory CommentSuccess() = _$CommentSuccessImpl;
+}
+
+/// @nodoc
+abstract class _$$CommentErrorImplCopyWith<$Res> {
+  factory _$$CommentErrorImplCopyWith(
+          _$CommentErrorImpl value, $Res Function(_$CommentErrorImpl) then) =
+      __$$CommentErrorImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({ApiErrorModel apiErrorModel});
+}
+
+/// @nodoc
+class __$$CommentErrorImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$CommentErrorImpl>
+    implements _$$CommentErrorImplCopyWith<$Res> {
+  __$$CommentErrorImplCopyWithImpl(
+      _$CommentErrorImpl _value, $Res Function(_$CommentErrorImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? apiErrorModel = null,
+  }) {
+    return _then(_$CommentErrorImpl(
+      null == apiErrorModel
+          ? _value.apiErrorModel
+          : apiErrorModel // ignore: cast_nullable_to_non_nullable
+              as ApiErrorModel,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$CommentErrorImpl with DiagnosticableTreeMixin implements CommentError {
+  const _$CommentErrorImpl(this.apiErrorModel);
+
+  @override
+  final ApiErrorModel apiErrorModel;
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'HomeState.commentError(apiErrorModel: $apiErrorModel)';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+      ..add(DiagnosticsProperty('type', 'HomeState.commentError'))
+      ..add(DiagnosticsProperty('apiErrorModel', apiErrorModel));
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$CommentErrorImpl &&
+            (identical(other.apiErrorModel, apiErrorModel) ||
+                other.apiErrorModel == apiErrorModel));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, apiErrorModel);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$CommentErrorImplCopyWith<_$CommentErrorImpl> get copyWith =>
+      __$$CommentErrorImplCopyWithImpl<_$CommentErrorImpl>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() postsLoading,
+    required TResult Function(List<Post> posts) postsLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) postsError,
+    required TResult Function(int index) changeScreen,
+    required TResult Function() postLoading,
+    required TResult Function(Post post) postLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) postError,
+    required TResult Function() likePostLoading,
+    required TResult Function() likePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) likePostError,
+    required TResult Function() unlikePostLoading,
+    required TResult Function() unlikePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) unlikePostError,
+    required TResult Function() commentLoading,
+    required TResult Function(List<Comment> comments) localCommentAdded,
+    required TResult Function() commentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) commentError,
+    required TResult Function() deleteCommentLoading,
+    required TResult Function() deleteCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+  }) {
+    return commentError(apiErrorModel);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? postsLoading,
+    TResult? Function(List<Post> posts)? postsLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? postsError,
+    TResult? Function(int index)? changeScreen,
+    TResult? Function()? postLoading,
+    TResult? Function(Post post)? postLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? postError,
+    TResult? Function()? likePostLoading,
+    TResult? Function()? likePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? likePostError,
+    TResult? Function()? unlikePostLoading,
+    TResult? Function()? unlikePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult? Function()? commentLoading,
+    TResult? Function(List<Comment> comments)? localCommentAdded,
+    TResult? Function()? commentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult? Function()? deleteCommentLoading,
+    TResult? Function()? deleteCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+  }) {
+    return commentError?.call(apiErrorModel);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? postsLoading,
+    TResult Function(List<Post> posts)? postsLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? postsError,
+    TResult Function(int index)? changeScreen,
+    TResult Function()? postLoading,
+    TResult Function(Post post)? postLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? postError,
+    TResult Function()? likePostLoading,
+    TResult Function()? likePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? likePostError,
+    TResult Function()? unlikePostLoading,
+    TResult Function()? unlikePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult Function()? commentLoading,
+    TResult Function(List<Comment> comments)? localCommentAdded,
+    TResult Function()? commentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult Function()? deleteCommentLoading,
+    TResult Function()? deleteCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    required TResult orElse(),
+  }) {
+    if (commentError != null) {
+      return commentError(apiErrorModel);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(PostsLoading value) postsLoading,
+    required TResult Function(PostsLoaded value) postsLoaded,
+    required TResult Function(PostsError value) postsError,
+    required TResult Function(ChangeScreen value) changeScreen,
+    required TResult Function(PostLoading value) postLoading,
+    required TResult Function(PostLoaded value) postLoaded,
+    required TResult Function(PostError value) postError,
+    required TResult Function(LikePostLoading value) likePostLoading,
+    required TResult Function(LikePostSuccess value) likePostSuccess,
+    required TResult Function(LikePostError value) likePostError,
+    required TResult Function(UnlikePostLoading value) unlikePostLoading,
+    required TResult Function(UnlikePostSuccess value) unlikePostSuccess,
+    required TResult Function(UnlikePostError value) unlikePostError,
+    required TResult Function(CommentLoading value) commentLoading,
+    required TResult Function(LocalCommentAdded value) localCommentAdded,
+    required TResult Function(CommentSuccess value) commentSuccess,
+    required TResult Function(CommentError value) commentError,
+    required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
+    required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
+    required TResult Function(DeleteCommentError value) deleteCommentError,
+  }) {
+    return commentError(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(PostsLoading value)? postsLoading,
+    TResult? Function(PostsLoaded value)? postsLoaded,
+    TResult? Function(PostsError value)? postsError,
+    TResult? Function(ChangeScreen value)? changeScreen,
+    TResult? Function(PostLoading value)? postLoading,
+    TResult? Function(PostLoaded value)? postLoaded,
+    TResult? Function(PostError value)? postError,
+    TResult? Function(LikePostLoading value)? likePostLoading,
+    TResult? Function(LikePostSuccess value)? likePostSuccess,
+    TResult? Function(LikePostError value)? likePostError,
+    TResult? Function(UnlikePostLoading value)? unlikePostLoading,
+    TResult? Function(UnlikePostSuccess value)? unlikePostSuccess,
+    TResult? Function(UnlikePostError value)? unlikePostError,
+    TResult? Function(CommentLoading value)? commentLoading,
+    TResult? Function(LocalCommentAdded value)? localCommentAdded,
+    TResult? Function(CommentSuccess value)? commentSuccess,
+    TResult? Function(CommentError value)? commentError,
+    TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult? Function(DeleteCommentError value)? deleteCommentError,
+  }) {
+    return commentError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(PostsLoading value)? postsLoading,
+    TResult Function(PostsLoaded value)? postsLoaded,
+    TResult Function(PostsError value)? postsError,
+    TResult Function(ChangeScreen value)? changeScreen,
+    TResult Function(PostLoading value)? postLoading,
+    TResult Function(PostLoaded value)? postLoaded,
+    TResult Function(PostError value)? postError,
+    TResult Function(LikePostLoading value)? likePostLoading,
+    TResult Function(LikePostSuccess value)? likePostSuccess,
+    TResult Function(LikePostError value)? likePostError,
+    TResult Function(UnlikePostLoading value)? unlikePostLoading,
+    TResult Function(UnlikePostSuccess value)? unlikePostSuccess,
+    TResult Function(UnlikePostError value)? unlikePostError,
+    TResult Function(CommentLoading value)? commentLoading,
+    TResult Function(LocalCommentAdded value)? localCommentAdded,
+    TResult Function(CommentSuccess value)? commentSuccess,
+    TResult Function(CommentError value)? commentError,
+    TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult Function(DeleteCommentError value)? deleteCommentError,
+    required TResult orElse(),
+  }) {
+    if (commentError != null) {
+      return commentError(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class CommentError implements HomeState {
+  const factory CommentError(final ApiErrorModel apiErrorModel) =
+      _$CommentErrorImpl;
+
+  ApiErrorModel get apiErrorModel;
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$CommentErrorImplCopyWith<_$CommentErrorImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$DeleteCommentLoadingImplCopyWith<$Res> {
+  factory _$$DeleteCommentLoadingImplCopyWith(_$DeleteCommentLoadingImpl value,
+          $Res Function(_$DeleteCommentLoadingImpl) then) =
+      __$$DeleteCommentLoadingImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$DeleteCommentLoadingImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$DeleteCommentLoadingImpl>
+    implements _$$DeleteCommentLoadingImplCopyWith<$Res> {
+  __$$DeleteCommentLoadingImplCopyWithImpl(_$DeleteCommentLoadingImpl _value,
+      $Res Function(_$DeleteCommentLoadingImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$DeleteCommentLoadingImpl
+    with DiagnosticableTreeMixin
+    implements DeleteCommentLoading {
+  const _$DeleteCommentLoadingImpl();
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'HomeState.deleteCommentLoading()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+        .add(DiagnosticsProperty('type', 'HomeState.deleteCommentLoading'));
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$DeleteCommentLoadingImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() postsLoading,
+    required TResult Function(List<Post> posts) postsLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) postsError,
+    required TResult Function(int index) changeScreen,
+    required TResult Function() postLoading,
+    required TResult Function(Post post) postLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) postError,
+    required TResult Function() likePostLoading,
+    required TResult Function() likePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) likePostError,
+    required TResult Function() unlikePostLoading,
+    required TResult Function() unlikePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) unlikePostError,
+    required TResult Function() commentLoading,
+    required TResult Function(List<Comment> comments) localCommentAdded,
+    required TResult Function() commentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) commentError,
+    required TResult Function() deleteCommentLoading,
+    required TResult Function() deleteCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+  }) {
+    return deleteCommentLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? postsLoading,
+    TResult? Function(List<Post> posts)? postsLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? postsError,
+    TResult? Function(int index)? changeScreen,
+    TResult? Function()? postLoading,
+    TResult? Function(Post post)? postLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? postError,
+    TResult? Function()? likePostLoading,
+    TResult? Function()? likePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? likePostError,
+    TResult? Function()? unlikePostLoading,
+    TResult? Function()? unlikePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult? Function()? commentLoading,
+    TResult? Function(List<Comment> comments)? localCommentAdded,
+    TResult? Function()? commentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult? Function()? deleteCommentLoading,
+    TResult? Function()? deleteCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+  }) {
+    return deleteCommentLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? postsLoading,
+    TResult Function(List<Post> posts)? postsLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? postsError,
+    TResult Function(int index)? changeScreen,
+    TResult Function()? postLoading,
+    TResult Function(Post post)? postLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? postError,
+    TResult Function()? likePostLoading,
+    TResult Function()? likePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? likePostError,
+    TResult Function()? unlikePostLoading,
+    TResult Function()? unlikePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult Function()? commentLoading,
+    TResult Function(List<Comment> comments)? localCommentAdded,
+    TResult Function()? commentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult Function()? deleteCommentLoading,
+    TResult Function()? deleteCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    required TResult orElse(),
+  }) {
+    if (deleteCommentLoading != null) {
+      return deleteCommentLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(PostsLoading value) postsLoading,
+    required TResult Function(PostsLoaded value) postsLoaded,
+    required TResult Function(PostsError value) postsError,
+    required TResult Function(ChangeScreen value) changeScreen,
+    required TResult Function(PostLoading value) postLoading,
+    required TResult Function(PostLoaded value) postLoaded,
+    required TResult Function(PostError value) postError,
+    required TResult Function(LikePostLoading value) likePostLoading,
+    required TResult Function(LikePostSuccess value) likePostSuccess,
+    required TResult Function(LikePostError value) likePostError,
+    required TResult Function(UnlikePostLoading value) unlikePostLoading,
+    required TResult Function(UnlikePostSuccess value) unlikePostSuccess,
+    required TResult Function(UnlikePostError value) unlikePostError,
+    required TResult Function(CommentLoading value) commentLoading,
+    required TResult Function(LocalCommentAdded value) localCommentAdded,
+    required TResult Function(CommentSuccess value) commentSuccess,
+    required TResult Function(CommentError value) commentError,
+    required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
+    required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
+    required TResult Function(DeleteCommentError value) deleteCommentError,
+  }) {
+    return deleteCommentLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(PostsLoading value)? postsLoading,
+    TResult? Function(PostsLoaded value)? postsLoaded,
+    TResult? Function(PostsError value)? postsError,
+    TResult? Function(ChangeScreen value)? changeScreen,
+    TResult? Function(PostLoading value)? postLoading,
+    TResult? Function(PostLoaded value)? postLoaded,
+    TResult? Function(PostError value)? postError,
+    TResult? Function(LikePostLoading value)? likePostLoading,
+    TResult? Function(LikePostSuccess value)? likePostSuccess,
+    TResult? Function(LikePostError value)? likePostError,
+    TResult? Function(UnlikePostLoading value)? unlikePostLoading,
+    TResult? Function(UnlikePostSuccess value)? unlikePostSuccess,
+    TResult? Function(UnlikePostError value)? unlikePostError,
+    TResult? Function(CommentLoading value)? commentLoading,
+    TResult? Function(LocalCommentAdded value)? localCommentAdded,
+    TResult? Function(CommentSuccess value)? commentSuccess,
+    TResult? Function(CommentError value)? commentError,
+    TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult? Function(DeleteCommentError value)? deleteCommentError,
+  }) {
+    return deleteCommentLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(PostsLoading value)? postsLoading,
+    TResult Function(PostsLoaded value)? postsLoaded,
+    TResult Function(PostsError value)? postsError,
+    TResult Function(ChangeScreen value)? changeScreen,
+    TResult Function(PostLoading value)? postLoading,
+    TResult Function(PostLoaded value)? postLoaded,
+    TResult Function(PostError value)? postError,
+    TResult Function(LikePostLoading value)? likePostLoading,
+    TResult Function(LikePostSuccess value)? likePostSuccess,
+    TResult Function(LikePostError value)? likePostError,
+    TResult Function(UnlikePostLoading value)? unlikePostLoading,
+    TResult Function(UnlikePostSuccess value)? unlikePostSuccess,
+    TResult Function(UnlikePostError value)? unlikePostError,
+    TResult Function(CommentLoading value)? commentLoading,
+    TResult Function(LocalCommentAdded value)? localCommentAdded,
+    TResult Function(CommentSuccess value)? commentSuccess,
+    TResult Function(CommentError value)? commentError,
+    TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult Function(DeleteCommentError value)? deleteCommentError,
+    required TResult orElse(),
+  }) {
+    if (deleteCommentLoading != null) {
+      return deleteCommentLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class DeleteCommentLoading implements HomeState {
+  const factory DeleteCommentLoading() = _$DeleteCommentLoadingImpl;
+}
+
+/// @nodoc
+abstract class _$$DeleteCommentSuccessImplCopyWith<$Res> {
+  factory _$$DeleteCommentSuccessImplCopyWith(_$DeleteCommentSuccessImpl value,
+          $Res Function(_$DeleteCommentSuccessImpl) then) =
+      __$$DeleteCommentSuccessImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$DeleteCommentSuccessImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$DeleteCommentSuccessImpl>
+    implements _$$DeleteCommentSuccessImplCopyWith<$Res> {
+  __$$DeleteCommentSuccessImplCopyWithImpl(_$DeleteCommentSuccessImpl _value,
+      $Res Function(_$DeleteCommentSuccessImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$DeleteCommentSuccessImpl
+    with DiagnosticableTreeMixin
+    implements DeleteCommentSuccess {
+  const _$DeleteCommentSuccessImpl();
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'HomeState.deleteCommentSuccess()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+        .add(DiagnosticsProperty('type', 'HomeState.deleteCommentSuccess'));
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$DeleteCommentSuccessImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() postsLoading,
+    required TResult Function(List<Post> posts) postsLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) postsError,
+    required TResult Function(int index) changeScreen,
+    required TResult Function() postLoading,
+    required TResult Function(Post post) postLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) postError,
+    required TResult Function() likePostLoading,
+    required TResult Function() likePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) likePostError,
+    required TResult Function() unlikePostLoading,
+    required TResult Function() unlikePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) unlikePostError,
+    required TResult Function() commentLoading,
+    required TResult Function(List<Comment> comments) localCommentAdded,
+    required TResult Function() commentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) commentError,
+    required TResult Function() deleteCommentLoading,
+    required TResult Function() deleteCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+  }) {
+    return deleteCommentSuccess();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? postsLoading,
+    TResult? Function(List<Post> posts)? postsLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? postsError,
+    TResult? Function(int index)? changeScreen,
+    TResult? Function()? postLoading,
+    TResult? Function(Post post)? postLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? postError,
+    TResult? Function()? likePostLoading,
+    TResult? Function()? likePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? likePostError,
+    TResult? Function()? unlikePostLoading,
+    TResult? Function()? unlikePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult? Function()? commentLoading,
+    TResult? Function(List<Comment> comments)? localCommentAdded,
+    TResult? Function()? commentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult? Function()? deleteCommentLoading,
+    TResult? Function()? deleteCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+  }) {
+    return deleteCommentSuccess?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? postsLoading,
+    TResult Function(List<Post> posts)? postsLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? postsError,
+    TResult Function(int index)? changeScreen,
+    TResult Function()? postLoading,
+    TResult Function(Post post)? postLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? postError,
+    TResult Function()? likePostLoading,
+    TResult Function()? likePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? likePostError,
+    TResult Function()? unlikePostLoading,
+    TResult Function()? unlikePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult Function()? commentLoading,
+    TResult Function(List<Comment> comments)? localCommentAdded,
+    TResult Function()? commentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult Function()? deleteCommentLoading,
+    TResult Function()? deleteCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    required TResult orElse(),
+  }) {
+    if (deleteCommentSuccess != null) {
+      return deleteCommentSuccess();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(PostsLoading value) postsLoading,
+    required TResult Function(PostsLoaded value) postsLoaded,
+    required TResult Function(PostsError value) postsError,
+    required TResult Function(ChangeScreen value) changeScreen,
+    required TResult Function(PostLoading value) postLoading,
+    required TResult Function(PostLoaded value) postLoaded,
+    required TResult Function(PostError value) postError,
+    required TResult Function(LikePostLoading value) likePostLoading,
+    required TResult Function(LikePostSuccess value) likePostSuccess,
+    required TResult Function(LikePostError value) likePostError,
+    required TResult Function(UnlikePostLoading value) unlikePostLoading,
+    required TResult Function(UnlikePostSuccess value) unlikePostSuccess,
+    required TResult Function(UnlikePostError value) unlikePostError,
+    required TResult Function(CommentLoading value) commentLoading,
+    required TResult Function(LocalCommentAdded value) localCommentAdded,
+    required TResult Function(CommentSuccess value) commentSuccess,
+    required TResult Function(CommentError value) commentError,
+    required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
+    required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
+    required TResult Function(DeleteCommentError value) deleteCommentError,
+  }) {
+    return deleteCommentSuccess(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(PostsLoading value)? postsLoading,
+    TResult? Function(PostsLoaded value)? postsLoaded,
+    TResult? Function(PostsError value)? postsError,
+    TResult? Function(ChangeScreen value)? changeScreen,
+    TResult? Function(PostLoading value)? postLoading,
+    TResult? Function(PostLoaded value)? postLoaded,
+    TResult? Function(PostError value)? postError,
+    TResult? Function(LikePostLoading value)? likePostLoading,
+    TResult? Function(LikePostSuccess value)? likePostSuccess,
+    TResult? Function(LikePostError value)? likePostError,
+    TResult? Function(UnlikePostLoading value)? unlikePostLoading,
+    TResult? Function(UnlikePostSuccess value)? unlikePostSuccess,
+    TResult? Function(UnlikePostError value)? unlikePostError,
+    TResult? Function(CommentLoading value)? commentLoading,
+    TResult? Function(LocalCommentAdded value)? localCommentAdded,
+    TResult? Function(CommentSuccess value)? commentSuccess,
+    TResult? Function(CommentError value)? commentError,
+    TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult? Function(DeleteCommentError value)? deleteCommentError,
+  }) {
+    return deleteCommentSuccess?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(PostsLoading value)? postsLoading,
+    TResult Function(PostsLoaded value)? postsLoaded,
+    TResult Function(PostsError value)? postsError,
+    TResult Function(ChangeScreen value)? changeScreen,
+    TResult Function(PostLoading value)? postLoading,
+    TResult Function(PostLoaded value)? postLoaded,
+    TResult Function(PostError value)? postError,
+    TResult Function(LikePostLoading value)? likePostLoading,
+    TResult Function(LikePostSuccess value)? likePostSuccess,
+    TResult Function(LikePostError value)? likePostError,
+    TResult Function(UnlikePostLoading value)? unlikePostLoading,
+    TResult Function(UnlikePostSuccess value)? unlikePostSuccess,
+    TResult Function(UnlikePostError value)? unlikePostError,
+    TResult Function(CommentLoading value)? commentLoading,
+    TResult Function(LocalCommentAdded value)? localCommentAdded,
+    TResult Function(CommentSuccess value)? commentSuccess,
+    TResult Function(CommentError value)? commentError,
+    TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult Function(DeleteCommentError value)? deleteCommentError,
+    required TResult orElse(),
+  }) {
+    if (deleteCommentSuccess != null) {
+      return deleteCommentSuccess(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class DeleteCommentSuccess implements HomeState {
+  const factory DeleteCommentSuccess() = _$DeleteCommentSuccessImpl;
+}
+
+/// @nodoc
+abstract class _$$DeleteCommentErrorImplCopyWith<$Res> {
+  factory _$$DeleteCommentErrorImplCopyWith(_$DeleteCommentErrorImpl value,
+          $Res Function(_$DeleteCommentErrorImpl) then) =
+      __$$DeleteCommentErrorImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({ApiErrorModel apiErrorModel});
+}
+
+/// @nodoc
+class __$$DeleteCommentErrorImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$DeleteCommentErrorImpl>
+    implements _$$DeleteCommentErrorImplCopyWith<$Res> {
+  __$$DeleteCommentErrorImplCopyWithImpl(_$DeleteCommentErrorImpl _value,
+      $Res Function(_$DeleteCommentErrorImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? apiErrorModel = null,
+  }) {
+    return _then(_$DeleteCommentErrorImpl(
+      null == apiErrorModel
+          ? _value.apiErrorModel
+          : apiErrorModel // ignore: cast_nullable_to_non_nullable
+              as ApiErrorModel,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$DeleteCommentErrorImpl
+    with DiagnosticableTreeMixin
+    implements DeleteCommentError {
+  const _$DeleteCommentErrorImpl(this.apiErrorModel);
+
+  @override
+  final ApiErrorModel apiErrorModel;
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'HomeState.deleteCommentError(apiErrorModel: $apiErrorModel)';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+      ..add(DiagnosticsProperty('type', 'HomeState.deleteCommentError'))
+      ..add(DiagnosticsProperty('apiErrorModel', apiErrorModel));
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$DeleteCommentErrorImpl &&
+            (identical(other.apiErrorModel, apiErrorModel) ||
+                other.apiErrorModel == apiErrorModel));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, apiErrorModel);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$DeleteCommentErrorImplCopyWith<_$DeleteCommentErrorImpl> get copyWith =>
+      __$$DeleteCommentErrorImplCopyWithImpl<_$DeleteCommentErrorImpl>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() postsLoading,
+    required TResult Function(List<Post> posts) postsLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) postsError,
+    required TResult Function(int index) changeScreen,
+    required TResult Function() postLoading,
+    required TResult Function(Post post) postLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) postError,
+    required TResult Function() likePostLoading,
+    required TResult Function() likePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) likePostError,
+    required TResult Function() unlikePostLoading,
+    required TResult Function() unlikePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) unlikePostError,
+    required TResult Function() commentLoading,
+    required TResult Function(List<Comment> comments) localCommentAdded,
+    required TResult Function() commentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) commentError,
+    required TResult Function() deleteCommentLoading,
+    required TResult Function() deleteCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+  }) {
+    return deleteCommentError(apiErrorModel);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? postsLoading,
+    TResult? Function(List<Post> posts)? postsLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? postsError,
+    TResult? Function(int index)? changeScreen,
+    TResult? Function()? postLoading,
+    TResult? Function(Post post)? postLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? postError,
+    TResult? Function()? likePostLoading,
+    TResult? Function()? likePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? likePostError,
+    TResult? Function()? unlikePostLoading,
+    TResult? Function()? unlikePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult? Function()? commentLoading,
+    TResult? Function(List<Comment> comments)? localCommentAdded,
+    TResult? Function()? commentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult? Function()? deleteCommentLoading,
+    TResult? Function()? deleteCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+  }) {
+    return deleteCommentError?.call(apiErrorModel);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? postsLoading,
+    TResult Function(List<Post> posts)? postsLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? postsError,
+    TResult Function(int index)? changeScreen,
+    TResult Function()? postLoading,
+    TResult Function(Post post)? postLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? postError,
+    TResult Function()? likePostLoading,
+    TResult Function()? likePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? likePostError,
+    TResult Function()? unlikePostLoading,
+    TResult Function()? unlikePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult Function()? commentLoading,
+    TResult Function(List<Comment> comments)? localCommentAdded,
+    TResult Function()? commentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult Function()? deleteCommentLoading,
+    TResult Function()? deleteCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    required TResult orElse(),
+  }) {
+    if (deleteCommentError != null) {
+      return deleteCommentError(apiErrorModel);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(PostsLoading value) postsLoading,
+    required TResult Function(PostsLoaded value) postsLoaded,
+    required TResult Function(PostsError value) postsError,
+    required TResult Function(ChangeScreen value) changeScreen,
+    required TResult Function(PostLoading value) postLoading,
+    required TResult Function(PostLoaded value) postLoaded,
+    required TResult Function(PostError value) postError,
+    required TResult Function(LikePostLoading value) likePostLoading,
+    required TResult Function(LikePostSuccess value) likePostSuccess,
+    required TResult Function(LikePostError value) likePostError,
+    required TResult Function(UnlikePostLoading value) unlikePostLoading,
+    required TResult Function(UnlikePostSuccess value) unlikePostSuccess,
+    required TResult Function(UnlikePostError value) unlikePostError,
+    required TResult Function(CommentLoading value) commentLoading,
+    required TResult Function(LocalCommentAdded value) localCommentAdded,
+    required TResult Function(CommentSuccess value) commentSuccess,
+    required TResult Function(CommentError value) commentError,
+    required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
+    required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
+    required TResult Function(DeleteCommentError value) deleteCommentError,
+  }) {
+    return deleteCommentError(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(PostsLoading value)? postsLoading,
+    TResult? Function(PostsLoaded value)? postsLoaded,
+    TResult? Function(PostsError value)? postsError,
+    TResult? Function(ChangeScreen value)? changeScreen,
+    TResult? Function(PostLoading value)? postLoading,
+    TResult? Function(PostLoaded value)? postLoaded,
+    TResult? Function(PostError value)? postError,
+    TResult? Function(LikePostLoading value)? likePostLoading,
+    TResult? Function(LikePostSuccess value)? likePostSuccess,
+    TResult? Function(LikePostError value)? likePostError,
+    TResult? Function(UnlikePostLoading value)? unlikePostLoading,
+    TResult? Function(UnlikePostSuccess value)? unlikePostSuccess,
+    TResult? Function(UnlikePostError value)? unlikePostError,
+    TResult? Function(CommentLoading value)? commentLoading,
+    TResult? Function(LocalCommentAdded value)? localCommentAdded,
+    TResult? Function(CommentSuccess value)? commentSuccess,
+    TResult? Function(CommentError value)? commentError,
+    TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult? Function(DeleteCommentError value)? deleteCommentError,
+  }) {
+    return deleteCommentError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(PostsLoading value)? postsLoading,
+    TResult Function(PostsLoaded value)? postsLoaded,
+    TResult Function(PostsError value)? postsError,
+    TResult Function(ChangeScreen value)? changeScreen,
+    TResult Function(PostLoading value)? postLoading,
+    TResult Function(PostLoaded value)? postLoaded,
+    TResult Function(PostError value)? postError,
+    TResult Function(LikePostLoading value)? likePostLoading,
+    TResult Function(LikePostSuccess value)? likePostSuccess,
+    TResult Function(LikePostError value)? likePostError,
+    TResult Function(UnlikePostLoading value)? unlikePostLoading,
+    TResult Function(UnlikePostSuccess value)? unlikePostSuccess,
+    TResult Function(UnlikePostError value)? unlikePostError,
+    TResult Function(CommentLoading value)? commentLoading,
+    TResult Function(LocalCommentAdded value)? localCommentAdded,
+    TResult Function(CommentSuccess value)? commentSuccess,
+    TResult Function(CommentError value)? commentError,
+    TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult Function(DeleteCommentError value)? deleteCommentError,
+    required TResult orElse(),
+  }) {
+    if (deleteCommentError != null) {
+      return deleteCommentError(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class DeleteCommentError implements HomeState {
+  const factory DeleteCommentError(final ApiErrorModel apiErrorModel) =
+      _$DeleteCommentErrorImpl;
+
+  ApiErrorModel get apiErrorModel;
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$DeleteCommentErrorImplCopyWith<_$DeleteCommentErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

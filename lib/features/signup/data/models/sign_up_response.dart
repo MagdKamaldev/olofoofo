@@ -33,6 +33,8 @@ class UserData {
   String? id;
   String? firstName;
   String? lastName;
+  @JsonKey(name: 'profile_img')
+  String ? profileImage;
   String? email;
   String? password;
   List<dynamic>? friends;
@@ -43,6 +45,7 @@ class UserData {
   int? version;
 
   UserData({
+    this.profileImage,
     this.id,
     this.firstName,
     this.lastName,

@@ -1,6 +1,8 @@
 import 'package:circle_sync/core/networks/api_error_handler.dart';
 import 'package:circle_sync/core/networks/api_result.dart';
 import 'package:circle_sync/features/home/data/apis/home_api_service.dart';
+import 'package:circle_sync/features/home/data/models/create_comment_request_body.dart';
+import 'package:circle_sync/features/home/data/models/create_comment_response.dart';
 import 'package:circle_sync/features/home/data/models/home_responses.dart';
 
 
@@ -30,7 +32,7 @@ class HomeRepo {
   Future<ApiResult<void>> likePost(String postId) async {
     try {
       await _homeApiService.likePost(postId);
-      return ApiResult.success(null);
+      return const ApiResult.success(null);
     } catch (error) {
       return ApiResult.failure(ApiErrorHandler.handle(error)!);
     }
@@ -39,7 +41,25 @@ class HomeRepo {
   Future<ApiResult<void>> unlikePost(String postId) async {
     try {
       await _homeApiService.unlikePost(postId);
-      return ApiResult.success(null);
+      return const ApiResult.success(null);
+    } catch (error) {
+      return ApiResult.failure(ApiErrorHandler.handle(error)!);
+    }
+  }
+
+  Future<ApiResult<CommentResponse>> comment(String postId,String comment) async {
+    try {
+      final response = await _homeApiService.comment(postId, CreateCommentRequestBody(content: comment));
+      return ApiResult.success(response);
+    } catch (error) {
+      return ApiResult.failure(ApiErrorHandler.handle(error)!);
+    }
+  }
+
+  Future<ApiResult<void>> deleteComment(String postId, String commentId) async {
+    try {
+      await _homeApiService.deleteComment(postId, commentId,);
+      return const ApiResult.success(null);
     } catch (error) {
       return ApiResult.failure(ApiErrorHandler.handle(error)!);
     }
