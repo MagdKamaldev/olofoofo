@@ -1,5 +1,6 @@
 import 'package:circle_sync/core/networks/api_error_model.dart';
 import 'package:circle_sync/features/home/data/models/home_responses.dart';
+import 'package:flutter/foundation.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 part 'home_state.freezed.dart';
 
@@ -22,5 +23,14 @@ class HomeState with _$HomeState {
   const factory HomeState.unlikePostLoading() = UnlikePostLoading;
   const factory HomeState.unlikePostSuccess() = UnlikePostSuccess;
   const factory HomeState.unlikePostError(ApiErrorModel apiErrorModel) = UnlikePostError;
+
+  const factory HomeState.commentLoading() = CommentLoading;
+  const factory HomeState.localCommentAdded(List<Comment> comments) = LocalCommentAdded;
+  const factory HomeState.commentSuccess() = CommentSuccess;
+  const factory HomeState.commentError(ApiErrorModel apiErrorModel) = CommentError;
+
+  const factory HomeState.deleteCommentLoading() = DeleteCommentLoading;
+  const factory HomeState.deleteCommentSuccess() = DeleteCommentSuccess;
+  const factory HomeState.deleteCommentError(ApiErrorModel apiErrorModel) = DeleteCommentError;
 
 }

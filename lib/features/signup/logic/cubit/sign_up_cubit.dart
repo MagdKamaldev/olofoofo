@@ -29,6 +29,10 @@ class SignUpCubit extends Cubit<SignUpState> {
       success: (data) async {
         await saveToken(data.data!.token ?? '');
         await saveUserId(data.data!.user!.id ?? '');
+         //TODO: change user email to username
+        await saveUserProfileImage(data.data!.user!.email ?? '');
+         await saveFirstName(data.data!.user!.firstName);
+        await saveLastName(data.data!.user!.lastName);
         DioFactory.setTokenIntoHeaderAfterLogin(data.data!.token ?? "");
         emit(SignUpState.success(data));
       },
@@ -46,5 +50,17 @@ class SignUpCubit extends Cubit<SignUpState> {
   saveUserId(String? id) async {
     //save user id to shared preferences
     await SharedPrefHelper.setData(SharedPrefKeys.userId, id);
+  }
+
+  saveUserProfileImage(String? image) async {
+    await SharedPrefHelper.setData(SharedPrefKeys.userProfileImage, image);
+  }
+
+    saveFirstName(String? name) async {
+    await SharedPrefHelper.setData(SharedPrefKeys.firstName, name);
+  }
+
+  saveLastName(String? name) async {
+    await SharedPrefHelper.setData(SharedPrefKeys.lastName, name);
   }
 }
