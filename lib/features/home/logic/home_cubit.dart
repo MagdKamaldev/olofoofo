@@ -53,6 +53,30 @@ class HomeCubit extends Cubit<HomeState> {
     );
   }
 
+  void likePost(String postId) async{
+    emit(const HomeState.likePostLoading());
+    final response = await _homeRepo.likePost(postId);
+    response.when(
+      success: (response) {
+        emit(const HomeState.likePostSuccess());
+      },
+      failure: (apiErrorModel) {
+        emit(HomeState.likePostError(apiErrorModel));
+      },
+    );
+  }
 
+  void unlikePost(String postId) async{
+    emit(const HomeState.unlikePostLoading());
+    final response = await _homeRepo.unlikePost(postId);
+    response.when(
+      success: (response) {
+        emit(const HomeState.unlikePostSuccess());
+      },
+      failure: (apiErrorModel) {
+        emit(HomeState.unlikePostError(apiErrorModel));
+      },
+    );
+  }
 
 }

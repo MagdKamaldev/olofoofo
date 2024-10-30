@@ -6,9 +6,11 @@ import 'package:circle_sync/core/helpers/time_ago.dart';
 import 'package:circle_sync/core/routing/routes.dart';
 import 'package:circle_sync/core/themes/colors/colors.dart';
 import 'package:circle_sync/core/themes/text_styles/text_styles.dart';
+import 'package:circle_sync/features/home/logic/home_cubit.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class PostItem extends StatefulWidget {
   final bool isDetail;
@@ -42,6 +44,39 @@ class PostItem extends StatefulWidget {
 
 class PostItemState extends State<PostItem> {
   bool _isExpanded = false;
+  late bool _isLiked;
+  late int _likes;
+
+  @override
+  void initState() {
+    super.initState();
+    _isLiked = widget.isLiked;
+    _likes = widget.likes;
+  }
+
+  void _toggleLike() {
+    setState(() {
+      _isLiked = !_isLiked;
+      _isLiked ? _likes++ : _likes--;
+    });
+
+    _updateLikeStatusOnServer(context,_isLiked);
+  }
+
+  Future<void> _updateLikeStatusOnServer(BuildContext context,bool isLiked) async {
+    try {
+     if(isLiked){
+       context.read<HomeCubit>().likePost(widget.postId);
+     } else {
+       context.read<HomeCubit>().unlikePost(widget.postId);
+     }
+    } catch (error) {
+      setState(() {
+        _isLiked = !_isLiked;
+        _isLiked ? _likes++ : _likes--;
+      });
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -62,8 +97,10 @@ class PostItemState extends State<PostItem> {
                 children: [
                   CircleAvatar(
                     radius: 23.sp,
-                    backgroundImage: NetworkImage(widget.profileImage ??
-                        "https://static.vecteezy.com/system/resources/thumbnails/005/129/844/small/profile-user-icon-isolated-on-white-background-eps10-free-vector.jpg"),
+                    backgroundImage: NetworkImage(
+                      widget.profileImage ??
+                          "https://static.vecteezy.com/system/resources/thumbnails/005/129/844/small/profile-user-icon-isolated-on-white-background-eps10-free-vector.jpg",
+                    ),
                   ),
                   horizontalSpace(15),
                   Column(
@@ -82,7 +119,6 @@ class PostItemState extends State<PostItem> {
                 ],
               ),
               verticalSpace(20),
-              // Post Caption with Expandable Logic
               GestureDetector(
                 onTap: () {
                   setState(() {
@@ -101,8 +137,7 @@ class PostItemState extends State<PostItem> {
                             if (widget.postCaption.length > 100 && !_isExpanded)
                               const TextSpan(
                                 text: '... See More',
-                                style: TextStyles.font12Medium
-                                    ,
+                                style: TextStyles.font12Medium,
                               ),
                           ],
                         ),
@@ -134,15 +169,20 @@ class PostItemState extends State<PostItem> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  SvgPicture.asset(
-                    "assets/images/Heart.svg",
-                    height: 20.h,
-                    width: 20.w,
-                    fit: BoxFit.cover,
+                  GestureDetector(
+                    onTap: _toggleLike,
+                    child: SvgPicture.asset(
+                      _isLiked
+                          ? "assets/images/Heart_filled.svg"
+                          : "assets/images/Heart.svg",
+                      height: 20.h,
+                      width: 20.w,
+                      fit: BoxFit.cover,
+                    ),
                   ),
                   horizontalSpace(10),
                   Text(
-                    widget.likes.toString(),
+                    _likes.toString(),
                     style: TextStyles.font12Medium,
                   ),
                   horizontalSpace(30),

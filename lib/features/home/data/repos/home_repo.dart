@@ -25,4 +25,23 @@ class HomeRepo {
       return ApiResult.failure(ApiErrorHandler.handle(error)!);
     }
   }
+
+
+  Future<ApiResult<void>> likePost(String postId) async {
+    try {
+      await _homeApiService.likePost(postId);
+      return ApiResult.success(null);
+    } catch (error) {
+      return ApiResult.failure(ApiErrorHandler.handle(error)!);
+    }
+  }
+
+  Future<ApiResult<void>> unlikePost(String postId) async {
+    try {
+      await _homeApiService.unlikePost(postId);
+      return ApiResult.success(null);
+    } catch (error) {
+      return ApiResult.failure(ApiErrorHandler.handle(error)!);
+    }
+  }
 }
