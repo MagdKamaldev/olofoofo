@@ -31,6 +31,8 @@ class Data {
 class UserData {
   @JsonKey(name: '_id')
   String? id;
+  @JsonKey(name: 'profile_img')
+  String ? profileImage;
   String? firstName;
   String? lastName;
   String? email;
@@ -43,6 +45,7 @@ class UserData {
   int? version;
 
   UserData({
+    this.profileImage,
     this.id,
     this.firstName,
     this.lastName,

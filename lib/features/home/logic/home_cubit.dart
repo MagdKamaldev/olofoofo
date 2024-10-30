@@ -92,22 +92,31 @@ class HomeCubit extends Cubit<HomeState> {
     emit(HomeState.localCommentAdded(localComments));
   }
 
-  void removeLocalCommentAndAddRemote(Comment localComment, Comment remoteComment){
+  void removeLocalCommentAndAddRemote(Comment localComment, Comment remoteComment,String firstName,String lastName,String image,String userId){
     localComments.remove(localComment);
     emit(HomeState.localCommentAdded(localComments));
-    comments.add(remoteComment);
+    comments.add(Comment(
+      id: remoteComment.id,
+      content: remoteComment.content,
+      user: [UserData(
+       id: userId,
+        firstName: firstName,
+        lastName: lastName,
+        profileImg: image,
+      ),],
+      createdAt: remoteComment.createdAt,
+    ));
     emit(const HomeState.commentSuccess());
   }
-
  
 
-  void comment(String postId, Comment comment) async{
+  void comment(String postId, Comment comment,String firstName,String lastName,String image, String id) async{
     addLocalComment(comment);
     emit(const HomeState.commentLoading());
     final response = await _homeRepo.comment(postId, comment.content!);
     response.when(
       success: (response) {
-        removeLocalCommentAndAddRemote(comment,response.data.comment);
+        removeLocalCommentAndAddRemote(comment,response.data.comment,firstName,lastName,image,id);
         emit(const HomeState.commentSuccess());
       },
       failure: (apiErrorModel) {

@@ -24,8 +24,7 @@ class LoginCubit extends Cubit<LoginState> {
       success: (data) async {
        await saveToken(data.data!.token ?? '');
         await saveUserId(data.data!.user!.id ?? '');
-        //TODO: change user email to username
-        await saveUserProfileImage(data.data!.user!.email ?? '');
+        await saveUserProfileImage(data.data!.user!.profileImage ?? '');
         await saveFirstName(data.data!.user!.firstName);
         await saveLastName(data.data!.user!.lastName);
         DioFactory.setTokenIntoHeaderAfterLogin(data.data!.token ?? "");

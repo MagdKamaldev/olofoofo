@@ -32,6 +32,8 @@ class PostDetailsState extends State<PostDetails> {
   String lastName = "";
   String image = "";
   String id = "";
+
+  
   void getUserValues() async {
     id = await SharedPrefHelper.getString(
       SharedPrefKeys.userId,
@@ -42,7 +44,9 @@ class PostDetailsState extends State<PostDetails> {
     lastName = await SharedPrefHelper.getString(
       SharedPrefKeys.lastName,
     );
-    //TODO: change user email to image
+    image = await SharedPrefHelper.getString(
+      SharedPrefKeys.userProfileImage,
+    );
   }
 
   @override
@@ -117,7 +121,6 @@ class PostDetailsState extends State<PostDetails> {
                                   // Remove the comment from the local list
                                   setState(() {
                                     comments.removeAt(index);
-
                                   });
                                 },
                               );
@@ -178,8 +181,10 @@ class PostDetailsState extends State<PostDetails> {
                                       profileImg: image,
                                     )],
                                     content: commentController.text,
-                                  ));
-                              commentController.clear();
+                                    
+                                  ),
+                                  firstName,lastName,image,id);
+                              commentController.text = "";
                             }
                           },
                           child: SvgPicture.asset("assets/images/Send.svg"),
