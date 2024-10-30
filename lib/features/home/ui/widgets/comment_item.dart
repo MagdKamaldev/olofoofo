@@ -3,6 +3,7 @@ import 'package:circle_sync/core/helpers/time_ago.dart';
 import 'package:circle_sync/core/themes/text_styles/text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class CommentItem extends StatefulWidget {
   final String? profileImage;
@@ -61,36 +62,48 @@ class CommentItemState extends State<CommentItem> {
                       ],
                     ),
                     verticalSpace(5),
-                    GestureDetector(
-                      onTap: () {
-                        setState(() {
-                          _isExpanded = !_isExpanded;
-                        });
-                      },
-                      child: widget.comment.length > 100
-                          ? RichText(
-                              text: TextSpan(
-                                text: _isExpanded
-                                    ? widget.comment
-                                    : widget.comment.substring(0, 100),
-                                style: TextStyles.font12regular
-                                    .copyWith(color: Colors.black54),
-                                children: [
-                                  if (widget.comment.length > 100 &&
-                                      !_isExpanded)
-                                    const TextSpan(
-                                      text: '... See More',
-                                      style: TextStyles.font12Medium
-                                          ,
-                                    ),
-                                ],
-                              ),
-                            )
-                          : Text(
-                              widget.comment,
-                              style: TextStyles.font12regular
-                                  .copyWith(color: Colors.black54),
-                            ),
+                    Row(
+                      children: [
+                        GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              _isExpanded = !_isExpanded;
+                            });
+                          },
+                          child: widget.comment.length > 100
+                              ? RichText(
+                                  text: TextSpan(
+                                    text: _isExpanded
+                                        ? widget.comment
+                                        : widget.comment.substring(0, 100),
+                                    style: TextStyles.font12regular
+                                        .copyWith(color: Colors.black54),
+                                    children: [
+                                      if (widget.comment.length > 100 &&
+                                          !_isExpanded)
+                                        const TextSpan(
+                                          text: '... See More',
+                                          style: TextStyles.font12Medium
+                                              ,
+                                        ),
+                                    ],
+                                  ),
+                                )
+                              : Text(
+                                  widget.comment,
+                                  style: TextStyles.font12regular
+                                      .copyWith(color: Colors.black54),
+                                ),
+                        ),
+                        const Spacer(),
+                        GestureDetector(
+                          onTap: (){
+                            //TODO; implement delete comment
+                          },
+                          child: SvgPicture.asset("assets/images/Trash.svg"),
+                        ),
+                        horizontalSpace(10),
+                      ],
                     ),
                   ],
                 ),

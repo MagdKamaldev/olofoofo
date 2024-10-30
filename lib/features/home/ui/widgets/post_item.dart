@@ -186,10 +186,15 @@ class PostItemState extends State<PostItem> {
                     style: TextStyles.font12Medium,
                   ),
                   horizontalSpace(30),
-                  SvgPicture.asset(
-                    "assets/images/Chat.svg",
-                    height: 20.h,
-                    width: 20.w,
+                  GestureDetector(
+                    onTap: () {
+                      context.pushNamed(Routes.post, arguments: widget.postId);
+                    },
+                    child: SvgPicture.asset(
+                      "assets/images/Chat.svg",
+                      height: 20.h,
+                      width: 20.w,
+                    ),
                   ),
                   horizontalSpace(10),
                   Text(
