@@ -62,7 +62,7 @@ class Post {
   String? createdAt;
   String? updatedAt;
   bool? isLiked;
-  List<dynamic>? media; // Assuming media is a list of dynamic for now
+  List<dynamic>? media;
   AuthorData? author;
   List<Comment>? comments;
   @JsonKey(name: '__v')

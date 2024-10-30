@@ -46,6 +46,14 @@ class TextStyles {
     fontWeight: FontWeightHelper.medium
   );
 
+
+  static const TextStyle font12semiBold = TextStyle(
+   color: Color(0xFF111111),
+    fontFamily: 'poppins',
+    fontSize: 12,
+    fontWeight: FontWeightHelper.semiBold
+  );
+
   
   static const TextStyle font12regular = TextStyle(
    color: Color(0xFF111111),

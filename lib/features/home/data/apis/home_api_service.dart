@@ -15,4 +15,10 @@ abstract class HomeApiService {
 
   @GET("${HomeApiConstants.post}/{postId}")
 Future<PostResponse> getPost(@Path("postId") String postId);
+
+  @POST(HomeApiConstants.likePost)
+  Future<void> likePost(@Path("postId") String postId);
+
+  @DELETE(HomeApiConstants.unlikePost)
+  Future<void> unlikePost(@Path("postId") String postId);
 }
