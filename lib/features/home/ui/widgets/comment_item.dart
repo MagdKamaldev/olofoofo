@@ -99,8 +99,7 @@ class CommentItem extends StatelessWidget {
                         ),
                         horizontalSpace(10),
                         GestureDetector(
-                          onTap: () {
-                           
+                          onTap: () {                       
                               showDialog(
                                 context: context,
                                 builder: (BuildContext context) {

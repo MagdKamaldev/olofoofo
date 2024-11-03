@@ -90,6 +90,7 @@ class PostDetailsState extends State<PostDetails> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           PostItem(
+                            postUserId: post.author?.id?? "",
                             isDetail: true,
                             profileImage: post.author?.profileImg,
                             userName:

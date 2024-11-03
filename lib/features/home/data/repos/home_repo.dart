@@ -4,6 +4,7 @@ import 'package:circle_sync/features/home/data/apis/home_api_service.dart';
 import 'package:circle_sync/features/home/data/models/create_comment_request_body.dart';
 import 'package:circle_sync/features/home/data/models/create_comment_response.dart';
 import 'package:circle_sync/features/home/data/models/home_responses.dart';
+import 'package:circle_sync/features/home/data/models/update_post_request_body.dart';
 
 
 class HomeRepo {
@@ -59,6 +60,25 @@ class HomeRepo {
   Future<ApiResult<void>> deleteComment(String postId, String commentId) async {
     try {
       await _homeApiService.deleteComment(postId, commentId,);
+      return const ApiResult.success(null);
+    } catch (error) {
+      return ApiResult.failure(ApiErrorHandler.handle(error)!);
+    }
+  }
+
+  Future<ApiResult<void>> updatePost(String postId, String content) async {
+    try {
+      await _homeApiService.updatePost(postId, UpdatePostRequestBody(content: content));
+      return const ApiResult.success(null);
+    } catch (error) {
+      return ApiResult.failure(ApiErrorHandler.handle(error)!);
+    }
+  }
+
+
+  Future<ApiResult<void>> deletePost(String postId) async {
+    try {
+      await _homeApiService.deletePost(postId);
       return const ApiResult.success(null);
     } catch (error) {
       return ApiResult.failure(ApiErrorHandler.handle(error)!);

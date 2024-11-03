@@ -22,7 +22,6 @@ class StoryItem extends StatelessWidget {
           clipBehavior: Clip.none,
           alignment: Alignment.bottomCenter,
           children: [
-            // Story Background Image or Placeholder with Black Border
             Container(
               width: 90.w,
               height: 150.h,
