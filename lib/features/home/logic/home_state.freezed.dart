@@ -39,6 +39,12 @@ mixin _$HomeState {
     required TResult Function() deleteCommentLoading,
     required TResult Function() deleteCommentSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+    required TResult Function() updatePostLoading,
+    required TResult Function() updatePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updatePostError,
+    required TResult Function() deletePostLoading,
+    required TResult Function() deletePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -64,6 +70,12 @@ mixin _$HomeState {
     TResult? Function()? deleteCommentLoading,
     TResult? Function()? deleteCommentSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult? Function()? updatePostLoading,
+    TResult? Function()? updatePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult? Function()? deletePostLoading,
+    TResult? Function()? deletePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -89,6 +101,12 @@ mixin _$HomeState {
     TResult Function()? deleteCommentLoading,
     TResult Function()? deleteCommentSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult Function()? updatePostLoading,
+    TResult Function()? updatePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult Function()? deletePostLoading,
+    TResult Function()? deletePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -115,6 +133,12 @@ mixin _$HomeState {
     required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
     required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
     required TResult Function(DeleteCommentError value) deleteCommentError,
+    required TResult Function(UpdatePostLoading value) updatePostLoading,
+    required TResult Function(UpdatePostSuccess value) updatePostSuccess,
+    required TResult Function(UpdatePostError value) updatePostError,
+    required TResult Function(DeletePostLoading value) deletePostLoading,
+    required TResult Function(DeletePostSuccess value) deletePostSuccess,
+    required TResult Function(DeletePostError value) deletePostError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -140,6 +164,12 @@ mixin _$HomeState {
     TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult? Function(DeleteCommentError value)? deleteCommentError,
+    TResult? Function(UpdatePostLoading value)? updatePostLoading,
+    TResult? Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult? Function(UpdatePostError value)? updatePostError,
+    TResult? Function(DeletePostLoading value)? deletePostLoading,
+    TResult? Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult? Function(DeletePostError value)? deletePostError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -165,6 +195,12 @@ mixin _$HomeState {
     TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult Function(DeleteCommentError value)? deleteCommentError,
+    TResult Function(UpdatePostLoading value)? updatePostLoading,
+    TResult Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult Function(UpdatePostError value)? updatePostError,
+    TResult Function(DeletePostLoading value)? deletePostLoading,
+    TResult Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult Function(DeletePostError value)? deletePostError,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -258,6 +294,12 @@ class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
     required TResult Function() deleteCommentLoading,
     required TResult Function() deleteCommentSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+    required TResult Function() updatePostLoading,
+    required TResult Function() updatePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updatePostError,
+    required TResult Function() deletePostLoading,
+    required TResult Function() deletePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
   }) {
     return initial();
   }
@@ -286,6 +328,12 @@ class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
     TResult? Function()? deleteCommentLoading,
     TResult? Function()? deleteCommentSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult? Function()? updatePostLoading,
+    TResult? Function()? updatePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult? Function()? deletePostLoading,
+    TResult? Function()? deletePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
   }) {
     return initial?.call();
   }
@@ -314,6 +362,12 @@ class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
     TResult Function()? deleteCommentLoading,
     TResult Function()? deleteCommentSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult Function()? updatePostLoading,
+    TResult Function()? updatePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult Function()? deletePostLoading,
+    TResult Function()? deletePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -346,6 +400,12 @@ class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
     required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
     required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
     required TResult Function(DeleteCommentError value) deleteCommentError,
+    required TResult Function(UpdatePostLoading value) updatePostLoading,
+    required TResult Function(UpdatePostSuccess value) updatePostSuccess,
+    required TResult Function(UpdatePostError value) updatePostError,
+    required TResult Function(DeletePostLoading value) deletePostLoading,
+    required TResult Function(DeletePostSuccess value) deletePostSuccess,
+    required TResult Function(DeletePostError value) deletePostError,
   }) {
     return initial(this);
   }
@@ -374,6 +434,12 @@ class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
     TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult? Function(DeleteCommentError value)? deleteCommentError,
+    TResult? Function(UpdatePostLoading value)? updatePostLoading,
+    TResult? Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult? Function(UpdatePostError value)? updatePostError,
+    TResult? Function(DeletePostLoading value)? deletePostLoading,
+    TResult? Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult? Function(DeletePostError value)? deletePostError,
   }) {
     return initial?.call(this);
   }
@@ -402,6 +468,12 @@ class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
     TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult Function(DeleteCommentError value)? deleteCommentError,
+    TResult Function(UpdatePostLoading value)? updatePostLoading,
+    TResult Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult Function(UpdatePostError value)? updatePostError,
+    TResult Function(DeletePostLoading value)? deletePostLoading,
+    TResult Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult Function(DeletePostError value)? deletePostError,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -483,6 +555,12 @@ class _$PostsLoadingImpl with DiagnosticableTreeMixin implements PostsLoading {
     required TResult Function() deleteCommentLoading,
     required TResult Function() deleteCommentSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+    required TResult Function() updatePostLoading,
+    required TResult Function() updatePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updatePostError,
+    required TResult Function() deletePostLoading,
+    required TResult Function() deletePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
   }) {
     return postsLoading();
   }
@@ -511,6 +589,12 @@ class _$PostsLoadingImpl with DiagnosticableTreeMixin implements PostsLoading {
     TResult? Function()? deleteCommentLoading,
     TResult? Function()? deleteCommentSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult? Function()? updatePostLoading,
+    TResult? Function()? updatePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult? Function()? deletePostLoading,
+    TResult? Function()? deletePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
   }) {
     return postsLoading?.call();
   }
@@ -539,6 +623,12 @@ class _$PostsLoadingImpl with DiagnosticableTreeMixin implements PostsLoading {
     TResult Function()? deleteCommentLoading,
     TResult Function()? deleteCommentSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult Function()? updatePostLoading,
+    TResult Function()? updatePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult Function()? deletePostLoading,
+    TResult Function()? deletePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
     required TResult orElse(),
   }) {
     if (postsLoading != null) {
@@ -571,6 +661,12 @@ class _$PostsLoadingImpl with DiagnosticableTreeMixin implements PostsLoading {
     required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
     required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
     required TResult Function(DeleteCommentError value) deleteCommentError,
+    required TResult Function(UpdatePostLoading value) updatePostLoading,
+    required TResult Function(UpdatePostSuccess value) updatePostSuccess,
+    required TResult Function(UpdatePostError value) updatePostError,
+    required TResult Function(DeletePostLoading value) deletePostLoading,
+    required TResult Function(DeletePostSuccess value) deletePostSuccess,
+    required TResult Function(DeletePostError value) deletePostError,
   }) {
     return postsLoading(this);
   }
@@ -599,6 +695,12 @@ class _$PostsLoadingImpl with DiagnosticableTreeMixin implements PostsLoading {
     TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult? Function(DeleteCommentError value)? deleteCommentError,
+    TResult? Function(UpdatePostLoading value)? updatePostLoading,
+    TResult? Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult? Function(UpdatePostError value)? updatePostError,
+    TResult? Function(DeletePostLoading value)? deletePostLoading,
+    TResult? Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult? Function(DeletePostError value)? deletePostError,
   }) {
     return postsLoading?.call(this);
   }
@@ -627,6 +729,12 @@ class _$PostsLoadingImpl with DiagnosticableTreeMixin implements PostsLoading {
     TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult Function(DeleteCommentError value)? deleteCommentError,
+    TResult Function(UpdatePostLoading value)? updatePostLoading,
+    TResult Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult Function(UpdatePostError value)? updatePostError,
+    TResult Function(DeletePostLoading value)? deletePostLoading,
+    TResult Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult Function(DeletePostError value)? deletePostError,
     required TResult orElse(),
   }) {
     if (postsLoading != null) {
@@ -743,6 +851,12 @@ class _$PostsLoadedImpl with DiagnosticableTreeMixin implements PostsLoaded {
     required TResult Function() deleteCommentLoading,
     required TResult Function() deleteCommentSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+    required TResult Function() updatePostLoading,
+    required TResult Function() updatePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updatePostError,
+    required TResult Function() deletePostLoading,
+    required TResult Function() deletePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
   }) {
     return postsLoaded(posts);
   }
@@ -771,6 +885,12 @@ class _$PostsLoadedImpl with DiagnosticableTreeMixin implements PostsLoaded {
     TResult? Function()? deleteCommentLoading,
     TResult? Function()? deleteCommentSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult? Function()? updatePostLoading,
+    TResult? Function()? updatePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult? Function()? deletePostLoading,
+    TResult? Function()? deletePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
   }) {
     return postsLoaded?.call(posts);
   }
@@ -799,6 +919,12 @@ class _$PostsLoadedImpl with DiagnosticableTreeMixin implements PostsLoaded {
     TResult Function()? deleteCommentLoading,
     TResult Function()? deleteCommentSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult Function()? updatePostLoading,
+    TResult Function()? updatePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult Function()? deletePostLoading,
+    TResult Function()? deletePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
     required TResult orElse(),
   }) {
     if (postsLoaded != null) {
@@ -831,6 +957,12 @@ class _$PostsLoadedImpl with DiagnosticableTreeMixin implements PostsLoaded {
     required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
     required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
     required TResult Function(DeleteCommentError value) deleteCommentError,
+    required TResult Function(UpdatePostLoading value) updatePostLoading,
+    required TResult Function(UpdatePostSuccess value) updatePostSuccess,
+    required TResult Function(UpdatePostError value) updatePostError,
+    required TResult Function(DeletePostLoading value) deletePostLoading,
+    required TResult Function(DeletePostSuccess value) deletePostSuccess,
+    required TResult Function(DeletePostError value) deletePostError,
   }) {
     return postsLoaded(this);
   }
@@ -859,6 +991,12 @@ class _$PostsLoadedImpl with DiagnosticableTreeMixin implements PostsLoaded {
     TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult? Function(DeleteCommentError value)? deleteCommentError,
+    TResult? Function(UpdatePostLoading value)? updatePostLoading,
+    TResult? Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult? Function(UpdatePostError value)? updatePostError,
+    TResult? Function(DeletePostLoading value)? deletePostLoading,
+    TResult? Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult? Function(DeletePostError value)? deletePostError,
   }) {
     return postsLoaded?.call(this);
   }
@@ -887,6 +1025,12 @@ class _$PostsLoadedImpl with DiagnosticableTreeMixin implements PostsLoaded {
     TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult Function(DeleteCommentError value)? deleteCommentError,
+    TResult Function(UpdatePostLoading value)? updatePostLoading,
+    TResult Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult Function(UpdatePostError value)? updatePostError,
+    TResult Function(DeletePostLoading value)? deletePostLoading,
+    TResult Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult Function(DeletePostError value)? deletePostError,
     required TResult orElse(),
   }) {
     if (postsLoaded != null) {
@@ -1006,6 +1150,12 @@ class _$PostsErrorImpl with DiagnosticableTreeMixin implements PostsError {
     required TResult Function() deleteCommentLoading,
     required TResult Function() deleteCommentSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+    required TResult Function() updatePostLoading,
+    required TResult Function() updatePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updatePostError,
+    required TResult Function() deletePostLoading,
+    required TResult Function() deletePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
   }) {
     return postsError(apiErrorModel);
   }
@@ -1034,6 +1184,12 @@ class _$PostsErrorImpl with DiagnosticableTreeMixin implements PostsError {
     TResult? Function()? deleteCommentLoading,
     TResult? Function()? deleteCommentSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult? Function()? updatePostLoading,
+    TResult? Function()? updatePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult? Function()? deletePostLoading,
+    TResult? Function()? deletePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
   }) {
     return postsError?.call(apiErrorModel);
   }
@@ -1062,6 +1218,12 @@ class _$PostsErrorImpl with DiagnosticableTreeMixin implements PostsError {
     TResult Function()? deleteCommentLoading,
     TResult Function()? deleteCommentSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult Function()? updatePostLoading,
+    TResult Function()? updatePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult Function()? deletePostLoading,
+    TResult Function()? deletePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
     required TResult orElse(),
   }) {
     if (postsError != null) {
@@ -1094,6 +1256,12 @@ class _$PostsErrorImpl with DiagnosticableTreeMixin implements PostsError {
     required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
     required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
     required TResult Function(DeleteCommentError value) deleteCommentError,
+    required TResult Function(UpdatePostLoading value) updatePostLoading,
+    required TResult Function(UpdatePostSuccess value) updatePostSuccess,
+    required TResult Function(UpdatePostError value) updatePostError,
+    required TResult Function(DeletePostLoading value) deletePostLoading,
+    required TResult Function(DeletePostSuccess value) deletePostSuccess,
+    required TResult Function(DeletePostError value) deletePostError,
   }) {
     return postsError(this);
   }
@@ -1122,6 +1290,12 @@ class _$PostsErrorImpl with DiagnosticableTreeMixin implements PostsError {
     TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult? Function(DeleteCommentError value)? deleteCommentError,
+    TResult? Function(UpdatePostLoading value)? updatePostLoading,
+    TResult? Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult? Function(UpdatePostError value)? updatePostError,
+    TResult? Function(DeletePostLoading value)? deletePostLoading,
+    TResult? Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult? Function(DeletePostError value)? deletePostError,
   }) {
     return postsError?.call(this);
   }
@@ -1150,6 +1324,12 @@ class _$PostsErrorImpl with DiagnosticableTreeMixin implements PostsError {
     TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult Function(DeleteCommentError value)? deleteCommentError,
+    TResult Function(UpdatePostLoading value)? updatePostLoading,
+    TResult Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult Function(UpdatePostError value)? updatePostError,
+    TResult Function(DeletePostLoading value)? deletePostLoading,
+    TResult Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult Function(DeletePostError value)? deletePostError,
     required TResult orElse(),
   }) {
     if (postsError != null) {
@@ -1269,6 +1449,12 @@ class _$ChangeScreenImpl with DiagnosticableTreeMixin implements ChangeScreen {
     required TResult Function() deleteCommentLoading,
     required TResult Function() deleteCommentSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+    required TResult Function() updatePostLoading,
+    required TResult Function() updatePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updatePostError,
+    required TResult Function() deletePostLoading,
+    required TResult Function() deletePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
   }) {
     return changeScreen(index);
   }
@@ -1297,6 +1483,12 @@ class _$ChangeScreenImpl with DiagnosticableTreeMixin implements ChangeScreen {
     TResult? Function()? deleteCommentLoading,
     TResult? Function()? deleteCommentSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult? Function()? updatePostLoading,
+    TResult? Function()? updatePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult? Function()? deletePostLoading,
+    TResult? Function()? deletePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
   }) {
     return changeScreen?.call(index);
   }
@@ -1325,6 +1517,12 @@ class _$ChangeScreenImpl with DiagnosticableTreeMixin implements ChangeScreen {
     TResult Function()? deleteCommentLoading,
     TResult Function()? deleteCommentSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult Function()? updatePostLoading,
+    TResult Function()? updatePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult Function()? deletePostLoading,
+    TResult Function()? deletePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
     required TResult orElse(),
   }) {
     if (changeScreen != null) {
@@ -1357,6 +1555,12 @@ class _$ChangeScreenImpl with DiagnosticableTreeMixin implements ChangeScreen {
     required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
     required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
     required TResult Function(DeleteCommentError value) deleteCommentError,
+    required TResult Function(UpdatePostLoading value) updatePostLoading,
+    required TResult Function(UpdatePostSuccess value) updatePostSuccess,
+    required TResult Function(UpdatePostError value) updatePostError,
+    required TResult Function(DeletePostLoading value) deletePostLoading,
+    required TResult Function(DeletePostSuccess value) deletePostSuccess,
+    required TResult Function(DeletePostError value) deletePostError,
   }) {
     return changeScreen(this);
   }
@@ -1385,6 +1589,12 @@ class _$ChangeScreenImpl with DiagnosticableTreeMixin implements ChangeScreen {
     TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult? Function(DeleteCommentError value)? deleteCommentError,
+    TResult? Function(UpdatePostLoading value)? updatePostLoading,
+    TResult? Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult? Function(UpdatePostError value)? updatePostError,
+    TResult? Function(DeletePostLoading value)? deletePostLoading,
+    TResult? Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult? Function(DeletePostError value)? deletePostError,
   }) {
     return changeScreen?.call(this);
   }
@@ -1413,6 +1623,12 @@ class _$ChangeScreenImpl with DiagnosticableTreeMixin implements ChangeScreen {
     TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult Function(DeleteCommentError value)? deleteCommentError,
+    TResult Function(UpdatePostLoading value)? updatePostLoading,
+    TResult Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult Function(UpdatePostError value)? updatePostError,
+    TResult Function(DeletePostLoading value)? deletePostLoading,
+    TResult Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult Function(DeletePostError value)? deletePostError,
     required TResult orElse(),
   }) {
     if (changeScreen != null) {
@@ -1502,6 +1718,12 @@ class _$PostLoadingImpl with DiagnosticableTreeMixin implements PostLoading {
     required TResult Function() deleteCommentLoading,
     required TResult Function() deleteCommentSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+    required TResult Function() updatePostLoading,
+    required TResult Function() updatePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updatePostError,
+    required TResult Function() deletePostLoading,
+    required TResult Function() deletePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
   }) {
     return postLoading();
   }
@@ -1530,6 +1752,12 @@ class _$PostLoadingImpl with DiagnosticableTreeMixin implements PostLoading {
     TResult? Function()? deleteCommentLoading,
     TResult? Function()? deleteCommentSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult? Function()? updatePostLoading,
+    TResult? Function()? updatePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult? Function()? deletePostLoading,
+    TResult? Function()? deletePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
   }) {
     return postLoading?.call();
   }
@@ -1558,6 +1786,12 @@ class _$PostLoadingImpl with DiagnosticableTreeMixin implements PostLoading {
     TResult Function()? deleteCommentLoading,
     TResult Function()? deleteCommentSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult Function()? updatePostLoading,
+    TResult Function()? updatePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult Function()? deletePostLoading,
+    TResult Function()? deletePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
     required TResult orElse(),
   }) {
     if (postLoading != null) {
@@ -1590,6 +1824,12 @@ class _$PostLoadingImpl with DiagnosticableTreeMixin implements PostLoading {
     required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
     required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
     required TResult Function(DeleteCommentError value) deleteCommentError,
+    required TResult Function(UpdatePostLoading value) updatePostLoading,
+    required TResult Function(UpdatePostSuccess value) updatePostSuccess,
+    required TResult Function(UpdatePostError value) updatePostError,
+    required TResult Function(DeletePostLoading value) deletePostLoading,
+    required TResult Function(DeletePostSuccess value) deletePostSuccess,
+    required TResult Function(DeletePostError value) deletePostError,
   }) {
     return postLoading(this);
   }
@@ -1618,6 +1858,12 @@ class _$PostLoadingImpl with DiagnosticableTreeMixin implements PostLoading {
     TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult? Function(DeleteCommentError value)? deleteCommentError,
+    TResult? Function(UpdatePostLoading value)? updatePostLoading,
+    TResult? Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult? Function(UpdatePostError value)? updatePostError,
+    TResult? Function(DeletePostLoading value)? deletePostLoading,
+    TResult? Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult? Function(DeletePostError value)? deletePostError,
   }) {
     return postLoading?.call(this);
   }
@@ -1646,6 +1892,12 @@ class _$PostLoadingImpl with DiagnosticableTreeMixin implements PostLoading {
     TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult Function(DeleteCommentError value)? deleteCommentError,
+    TResult Function(UpdatePostLoading value)? updatePostLoading,
+    TResult Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult Function(UpdatePostError value)? updatePostError,
+    TResult Function(DeletePostLoading value)? deletePostLoading,
+    TResult Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult Function(DeletePostError value)? deletePostError,
     required TResult orElse(),
   }) {
     if (postLoading != null) {
@@ -1756,6 +2008,12 @@ class _$PostLoadedImpl with DiagnosticableTreeMixin implements PostLoaded {
     required TResult Function() deleteCommentLoading,
     required TResult Function() deleteCommentSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+    required TResult Function() updatePostLoading,
+    required TResult Function() updatePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updatePostError,
+    required TResult Function() deletePostLoading,
+    required TResult Function() deletePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
   }) {
     return postLoaded(post);
   }
@@ -1784,6 +2042,12 @@ class _$PostLoadedImpl with DiagnosticableTreeMixin implements PostLoaded {
     TResult? Function()? deleteCommentLoading,
     TResult? Function()? deleteCommentSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult? Function()? updatePostLoading,
+    TResult? Function()? updatePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult? Function()? deletePostLoading,
+    TResult? Function()? deletePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
   }) {
     return postLoaded?.call(post);
   }
@@ -1812,6 +2076,12 @@ class _$PostLoadedImpl with DiagnosticableTreeMixin implements PostLoaded {
     TResult Function()? deleteCommentLoading,
     TResult Function()? deleteCommentSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult Function()? updatePostLoading,
+    TResult Function()? updatePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult Function()? deletePostLoading,
+    TResult Function()? deletePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
     required TResult orElse(),
   }) {
     if (postLoaded != null) {
@@ -1844,6 +2114,12 @@ class _$PostLoadedImpl with DiagnosticableTreeMixin implements PostLoaded {
     required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
     required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
     required TResult Function(DeleteCommentError value) deleteCommentError,
+    required TResult Function(UpdatePostLoading value) updatePostLoading,
+    required TResult Function(UpdatePostSuccess value) updatePostSuccess,
+    required TResult Function(UpdatePostError value) updatePostError,
+    required TResult Function(DeletePostLoading value) deletePostLoading,
+    required TResult Function(DeletePostSuccess value) deletePostSuccess,
+    required TResult Function(DeletePostError value) deletePostError,
   }) {
     return postLoaded(this);
   }
@@ -1872,6 +2148,12 @@ class _$PostLoadedImpl with DiagnosticableTreeMixin implements PostLoaded {
     TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult? Function(DeleteCommentError value)? deleteCommentError,
+    TResult? Function(UpdatePostLoading value)? updatePostLoading,
+    TResult? Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult? Function(UpdatePostError value)? updatePostError,
+    TResult? Function(DeletePostLoading value)? deletePostLoading,
+    TResult? Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult? Function(DeletePostError value)? deletePostError,
   }) {
     return postLoaded?.call(this);
   }
@@ -1900,6 +2182,12 @@ class _$PostLoadedImpl with DiagnosticableTreeMixin implements PostLoaded {
     TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult Function(DeleteCommentError value)? deleteCommentError,
+    TResult Function(UpdatePostLoading value)? updatePostLoading,
+    TResult Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult Function(UpdatePostError value)? updatePostError,
+    TResult Function(DeletePostLoading value)? deletePostLoading,
+    TResult Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult Function(DeletePostError value)? deletePostError,
     required TResult orElse(),
   }) {
     if (postLoaded != null) {
@@ -2019,6 +2307,12 @@ class _$PostErrorImpl with DiagnosticableTreeMixin implements PostError {
     required TResult Function() deleteCommentLoading,
     required TResult Function() deleteCommentSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+    required TResult Function() updatePostLoading,
+    required TResult Function() updatePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updatePostError,
+    required TResult Function() deletePostLoading,
+    required TResult Function() deletePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
   }) {
     return postError(apiErrorModel);
   }
@@ -2047,6 +2341,12 @@ class _$PostErrorImpl with DiagnosticableTreeMixin implements PostError {
     TResult? Function()? deleteCommentLoading,
     TResult? Function()? deleteCommentSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult? Function()? updatePostLoading,
+    TResult? Function()? updatePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult? Function()? deletePostLoading,
+    TResult? Function()? deletePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
   }) {
     return postError?.call(apiErrorModel);
   }
@@ -2075,6 +2375,12 @@ class _$PostErrorImpl with DiagnosticableTreeMixin implements PostError {
     TResult Function()? deleteCommentLoading,
     TResult Function()? deleteCommentSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult Function()? updatePostLoading,
+    TResult Function()? updatePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult Function()? deletePostLoading,
+    TResult Function()? deletePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
     required TResult orElse(),
   }) {
     if (postError != null) {
@@ -2107,6 +2413,12 @@ class _$PostErrorImpl with DiagnosticableTreeMixin implements PostError {
     required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
     required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
     required TResult Function(DeleteCommentError value) deleteCommentError,
+    required TResult Function(UpdatePostLoading value) updatePostLoading,
+    required TResult Function(UpdatePostSuccess value) updatePostSuccess,
+    required TResult Function(UpdatePostError value) updatePostError,
+    required TResult Function(DeletePostLoading value) deletePostLoading,
+    required TResult Function(DeletePostSuccess value) deletePostSuccess,
+    required TResult Function(DeletePostError value) deletePostError,
   }) {
     return postError(this);
   }
@@ -2135,6 +2447,12 @@ class _$PostErrorImpl with DiagnosticableTreeMixin implements PostError {
     TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult? Function(DeleteCommentError value)? deleteCommentError,
+    TResult? Function(UpdatePostLoading value)? updatePostLoading,
+    TResult? Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult? Function(UpdatePostError value)? updatePostError,
+    TResult? Function(DeletePostLoading value)? deletePostLoading,
+    TResult? Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult? Function(DeletePostError value)? deletePostError,
   }) {
     return postError?.call(this);
   }
@@ -2163,6 +2481,12 @@ class _$PostErrorImpl with DiagnosticableTreeMixin implements PostError {
     TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult Function(DeleteCommentError value)? deleteCommentError,
+    TResult Function(UpdatePostLoading value)? updatePostLoading,
+    TResult Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult Function(UpdatePostError value)? updatePostError,
+    TResult Function(DeletePostLoading value)? deletePostLoading,
+    TResult Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult Function(DeletePostError value)? deletePostError,
     required TResult orElse(),
   }) {
     if (postError != null) {
@@ -2254,6 +2578,12 @@ class _$LikePostLoadingImpl
     required TResult Function() deleteCommentLoading,
     required TResult Function() deleteCommentSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+    required TResult Function() updatePostLoading,
+    required TResult Function() updatePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updatePostError,
+    required TResult Function() deletePostLoading,
+    required TResult Function() deletePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
   }) {
     return likePostLoading();
   }
@@ -2282,6 +2612,12 @@ class _$LikePostLoadingImpl
     TResult? Function()? deleteCommentLoading,
     TResult? Function()? deleteCommentSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult? Function()? updatePostLoading,
+    TResult? Function()? updatePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult? Function()? deletePostLoading,
+    TResult? Function()? deletePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
   }) {
     return likePostLoading?.call();
   }
@@ -2310,6 +2646,12 @@ class _$LikePostLoadingImpl
     TResult Function()? deleteCommentLoading,
     TResult Function()? deleteCommentSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult Function()? updatePostLoading,
+    TResult Function()? updatePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult Function()? deletePostLoading,
+    TResult Function()? deletePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
     required TResult orElse(),
   }) {
     if (likePostLoading != null) {
@@ -2342,6 +2684,12 @@ class _$LikePostLoadingImpl
     required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
     required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
     required TResult Function(DeleteCommentError value) deleteCommentError,
+    required TResult Function(UpdatePostLoading value) updatePostLoading,
+    required TResult Function(UpdatePostSuccess value) updatePostSuccess,
+    required TResult Function(UpdatePostError value) updatePostError,
+    required TResult Function(DeletePostLoading value) deletePostLoading,
+    required TResult Function(DeletePostSuccess value) deletePostSuccess,
+    required TResult Function(DeletePostError value) deletePostError,
   }) {
     return likePostLoading(this);
   }
@@ -2370,6 +2718,12 @@ class _$LikePostLoadingImpl
     TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult? Function(DeleteCommentError value)? deleteCommentError,
+    TResult? Function(UpdatePostLoading value)? updatePostLoading,
+    TResult? Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult? Function(UpdatePostError value)? updatePostError,
+    TResult? Function(DeletePostLoading value)? deletePostLoading,
+    TResult? Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult? Function(DeletePostError value)? deletePostError,
   }) {
     return likePostLoading?.call(this);
   }
@@ -2398,6 +2752,12 @@ class _$LikePostLoadingImpl
     TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult Function(DeleteCommentError value)? deleteCommentError,
+    TResult Function(UpdatePostLoading value)? updatePostLoading,
+    TResult Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult Function(UpdatePostError value)? updatePostError,
+    TResult Function(DeletePostLoading value)? deletePostLoading,
+    TResult Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult Function(DeletePostError value)? deletePostError,
     required TResult orElse(),
   }) {
     if (likePostLoading != null) {
@@ -2481,6 +2841,12 @@ class _$LikePostSuccessImpl
     required TResult Function() deleteCommentLoading,
     required TResult Function() deleteCommentSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+    required TResult Function() updatePostLoading,
+    required TResult Function() updatePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updatePostError,
+    required TResult Function() deletePostLoading,
+    required TResult Function() deletePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
   }) {
     return likePostSuccess();
   }
@@ -2509,6 +2875,12 @@ class _$LikePostSuccessImpl
     TResult? Function()? deleteCommentLoading,
     TResult? Function()? deleteCommentSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult? Function()? updatePostLoading,
+    TResult? Function()? updatePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult? Function()? deletePostLoading,
+    TResult? Function()? deletePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
   }) {
     return likePostSuccess?.call();
   }
@@ -2537,6 +2909,12 @@ class _$LikePostSuccessImpl
     TResult Function()? deleteCommentLoading,
     TResult Function()? deleteCommentSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult Function()? updatePostLoading,
+    TResult Function()? updatePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult Function()? deletePostLoading,
+    TResult Function()? deletePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
     required TResult orElse(),
   }) {
     if (likePostSuccess != null) {
@@ -2569,6 +2947,12 @@ class _$LikePostSuccessImpl
     required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
     required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
     required TResult Function(DeleteCommentError value) deleteCommentError,
+    required TResult Function(UpdatePostLoading value) updatePostLoading,
+    required TResult Function(UpdatePostSuccess value) updatePostSuccess,
+    required TResult Function(UpdatePostError value) updatePostError,
+    required TResult Function(DeletePostLoading value) deletePostLoading,
+    required TResult Function(DeletePostSuccess value) deletePostSuccess,
+    required TResult Function(DeletePostError value) deletePostError,
   }) {
     return likePostSuccess(this);
   }
@@ -2597,6 +2981,12 @@ class _$LikePostSuccessImpl
     TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult? Function(DeleteCommentError value)? deleteCommentError,
+    TResult? Function(UpdatePostLoading value)? updatePostLoading,
+    TResult? Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult? Function(UpdatePostError value)? updatePostError,
+    TResult? Function(DeletePostLoading value)? deletePostLoading,
+    TResult? Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult? Function(DeletePostError value)? deletePostError,
   }) {
     return likePostSuccess?.call(this);
   }
@@ -2625,6 +3015,12 @@ class _$LikePostSuccessImpl
     TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult Function(DeleteCommentError value)? deleteCommentError,
+    TResult Function(UpdatePostLoading value)? updatePostLoading,
+    TResult Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult Function(UpdatePostError value)? updatePostError,
+    TResult Function(DeletePostLoading value)? deletePostLoading,
+    TResult Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult Function(DeletePostError value)? deletePostError,
     required TResult orElse(),
   }) {
     if (likePostSuccess != null) {
@@ -2738,6 +3134,12 @@ class _$LikePostErrorImpl
     required TResult Function() deleteCommentLoading,
     required TResult Function() deleteCommentSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+    required TResult Function() updatePostLoading,
+    required TResult Function() updatePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updatePostError,
+    required TResult Function() deletePostLoading,
+    required TResult Function() deletePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
   }) {
     return likePostError(apiErrorModel);
   }
@@ -2766,6 +3168,12 @@ class _$LikePostErrorImpl
     TResult? Function()? deleteCommentLoading,
     TResult? Function()? deleteCommentSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult? Function()? updatePostLoading,
+    TResult? Function()? updatePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult? Function()? deletePostLoading,
+    TResult? Function()? deletePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
   }) {
     return likePostError?.call(apiErrorModel);
   }
@@ -2794,6 +3202,12 @@ class _$LikePostErrorImpl
     TResult Function()? deleteCommentLoading,
     TResult Function()? deleteCommentSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult Function()? updatePostLoading,
+    TResult Function()? updatePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult Function()? deletePostLoading,
+    TResult Function()? deletePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
     required TResult orElse(),
   }) {
     if (likePostError != null) {
@@ -2826,6 +3240,12 @@ class _$LikePostErrorImpl
     required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
     required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
     required TResult Function(DeleteCommentError value) deleteCommentError,
+    required TResult Function(UpdatePostLoading value) updatePostLoading,
+    required TResult Function(UpdatePostSuccess value) updatePostSuccess,
+    required TResult Function(UpdatePostError value) updatePostError,
+    required TResult Function(DeletePostLoading value) deletePostLoading,
+    required TResult Function(DeletePostSuccess value) deletePostSuccess,
+    required TResult Function(DeletePostError value) deletePostError,
   }) {
     return likePostError(this);
   }
@@ -2854,6 +3274,12 @@ class _$LikePostErrorImpl
     TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult? Function(DeleteCommentError value)? deleteCommentError,
+    TResult? Function(UpdatePostLoading value)? updatePostLoading,
+    TResult? Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult? Function(UpdatePostError value)? updatePostError,
+    TResult? Function(DeletePostLoading value)? deletePostLoading,
+    TResult? Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult? Function(DeletePostError value)? deletePostError,
   }) {
     return likePostError?.call(this);
   }
@@ -2882,6 +3308,12 @@ class _$LikePostErrorImpl
     TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult Function(DeleteCommentError value)? deleteCommentError,
+    TResult Function(UpdatePostLoading value)? updatePostLoading,
+    TResult Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult Function(UpdatePostError value)? updatePostError,
+    TResult Function(DeletePostLoading value)? deletePostLoading,
+    TResult Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult Function(DeletePostError value)? deletePostError,
     required TResult orElse(),
   }) {
     if (likePostError != null) {
@@ -2974,6 +3406,12 @@ class _$UnlikePostLoadingImpl
     required TResult Function() deleteCommentLoading,
     required TResult Function() deleteCommentSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+    required TResult Function() updatePostLoading,
+    required TResult Function() updatePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updatePostError,
+    required TResult Function() deletePostLoading,
+    required TResult Function() deletePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
   }) {
     return unlikePostLoading();
   }
@@ -3002,6 +3440,12 @@ class _$UnlikePostLoadingImpl
     TResult? Function()? deleteCommentLoading,
     TResult? Function()? deleteCommentSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult? Function()? updatePostLoading,
+    TResult? Function()? updatePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult? Function()? deletePostLoading,
+    TResult? Function()? deletePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
   }) {
     return unlikePostLoading?.call();
   }
@@ -3030,6 +3474,12 @@ class _$UnlikePostLoadingImpl
     TResult Function()? deleteCommentLoading,
     TResult Function()? deleteCommentSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult Function()? updatePostLoading,
+    TResult Function()? updatePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult Function()? deletePostLoading,
+    TResult Function()? deletePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
     required TResult orElse(),
   }) {
     if (unlikePostLoading != null) {
@@ -3062,6 +3512,12 @@ class _$UnlikePostLoadingImpl
     required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
     required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
     required TResult Function(DeleteCommentError value) deleteCommentError,
+    required TResult Function(UpdatePostLoading value) updatePostLoading,
+    required TResult Function(UpdatePostSuccess value) updatePostSuccess,
+    required TResult Function(UpdatePostError value) updatePostError,
+    required TResult Function(DeletePostLoading value) deletePostLoading,
+    required TResult Function(DeletePostSuccess value) deletePostSuccess,
+    required TResult Function(DeletePostError value) deletePostError,
   }) {
     return unlikePostLoading(this);
   }
@@ -3090,6 +3546,12 @@ class _$UnlikePostLoadingImpl
     TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult? Function(DeleteCommentError value)? deleteCommentError,
+    TResult? Function(UpdatePostLoading value)? updatePostLoading,
+    TResult? Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult? Function(UpdatePostError value)? updatePostError,
+    TResult? Function(DeletePostLoading value)? deletePostLoading,
+    TResult? Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult? Function(DeletePostError value)? deletePostError,
   }) {
     return unlikePostLoading?.call(this);
   }
@@ -3118,6 +3580,12 @@ class _$UnlikePostLoadingImpl
     TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult Function(DeleteCommentError value)? deleteCommentError,
+    TResult Function(UpdatePostLoading value)? updatePostLoading,
+    TResult Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult Function(UpdatePostError value)? updatePostError,
+    TResult Function(DeletePostLoading value)? deletePostLoading,
+    TResult Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult Function(DeletePostError value)? deletePostError,
     required TResult orElse(),
   }) {
     if (unlikePostLoading != null) {
@@ -3201,6 +3669,12 @@ class _$UnlikePostSuccessImpl
     required TResult Function() deleteCommentLoading,
     required TResult Function() deleteCommentSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+    required TResult Function() updatePostLoading,
+    required TResult Function() updatePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updatePostError,
+    required TResult Function() deletePostLoading,
+    required TResult Function() deletePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
   }) {
     return unlikePostSuccess();
   }
@@ -3229,6 +3703,12 @@ class _$UnlikePostSuccessImpl
     TResult? Function()? deleteCommentLoading,
     TResult? Function()? deleteCommentSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult? Function()? updatePostLoading,
+    TResult? Function()? updatePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult? Function()? deletePostLoading,
+    TResult? Function()? deletePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
   }) {
     return unlikePostSuccess?.call();
   }
@@ -3257,6 +3737,12 @@ class _$UnlikePostSuccessImpl
     TResult Function()? deleteCommentLoading,
     TResult Function()? deleteCommentSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult Function()? updatePostLoading,
+    TResult Function()? updatePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult Function()? deletePostLoading,
+    TResult Function()? deletePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
     required TResult orElse(),
   }) {
     if (unlikePostSuccess != null) {
@@ -3289,6 +3775,12 @@ class _$UnlikePostSuccessImpl
     required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
     required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
     required TResult Function(DeleteCommentError value) deleteCommentError,
+    required TResult Function(UpdatePostLoading value) updatePostLoading,
+    required TResult Function(UpdatePostSuccess value) updatePostSuccess,
+    required TResult Function(UpdatePostError value) updatePostError,
+    required TResult Function(DeletePostLoading value) deletePostLoading,
+    required TResult Function(DeletePostSuccess value) deletePostSuccess,
+    required TResult Function(DeletePostError value) deletePostError,
   }) {
     return unlikePostSuccess(this);
   }
@@ -3317,6 +3809,12 @@ class _$UnlikePostSuccessImpl
     TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult? Function(DeleteCommentError value)? deleteCommentError,
+    TResult? Function(UpdatePostLoading value)? updatePostLoading,
+    TResult? Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult? Function(UpdatePostError value)? updatePostError,
+    TResult? Function(DeletePostLoading value)? deletePostLoading,
+    TResult? Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult? Function(DeletePostError value)? deletePostError,
   }) {
     return unlikePostSuccess?.call(this);
   }
@@ -3345,6 +3843,12 @@ class _$UnlikePostSuccessImpl
     TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult Function(DeleteCommentError value)? deleteCommentError,
+    TResult Function(UpdatePostLoading value)? updatePostLoading,
+    TResult Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult Function(UpdatePostError value)? updatePostError,
+    TResult Function(DeletePostLoading value)? deletePostLoading,
+    TResult Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult Function(DeletePostError value)? deletePostError,
     required TResult orElse(),
   }) {
     if (unlikePostSuccess != null) {
@@ -3459,6 +3963,12 @@ class _$UnlikePostErrorImpl
     required TResult Function() deleteCommentLoading,
     required TResult Function() deleteCommentSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+    required TResult Function() updatePostLoading,
+    required TResult Function() updatePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updatePostError,
+    required TResult Function() deletePostLoading,
+    required TResult Function() deletePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
   }) {
     return unlikePostError(apiErrorModel);
   }
@@ -3487,6 +3997,12 @@ class _$UnlikePostErrorImpl
     TResult? Function()? deleteCommentLoading,
     TResult? Function()? deleteCommentSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult? Function()? updatePostLoading,
+    TResult? Function()? updatePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult? Function()? deletePostLoading,
+    TResult? Function()? deletePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
   }) {
     return unlikePostError?.call(apiErrorModel);
   }
@@ -3515,6 +4031,12 @@ class _$UnlikePostErrorImpl
     TResult Function()? deleteCommentLoading,
     TResult Function()? deleteCommentSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult Function()? updatePostLoading,
+    TResult Function()? updatePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult Function()? deletePostLoading,
+    TResult Function()? deletePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
     required TResult orElse(),
   }) {
     if (unlikePostError != null) {
@@ -3547,6 +4069,12 @@ class _$UnlikePostErrorImpl
     required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
     required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
     required TResult Function(DeleteCommentError value) deleteCommentError,
+    required TResult Function(UpdatePostLoading value) updatePostLoading,
+    required TResult Function(UpdatePostSuccess value) updatePostSuccess,
+    required TResult Function(UpdatePostError value) updatePostError,
+    required TResult Function(DeletePostLoading value) deletePostLoading,
+    required TResult Function(DeletePostSuccess value) deletePostSuccess,
+    required TResult Function(DeletePostError value) deletePostError,
   }) {
     return unlikePostError(this);
   }
@@ -3575,6 +4103,12 @@ class _$UnlikePostErrorImpl
     TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult? Function(DeleteCommentError value)? deleteCommentError,
+    TResult? Function(UpdatePostLoading value)? updatePostLoading,
+    TResult? Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult? Function(UpdatePostError value)? updatePostError,
+    TResult? Function(DeletePostLoading value)? deletePostLoading,
+    TResult? Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult? Function(DeletePostError value)? deletePostError,
   }) {
     return unlikePostError?.call(this);
   }
@@ -3603,6 +4137,12 @@ class _$UnlikePostErrorImpl
     TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult Function(DeleteCommentError value)? deleteCommentError,
+    TResult Function(UpdatePostLoading value)? updatePostLoading,
+    TResult Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult Function(UpdatePostError value)? updatePostError,
+    TResult Function(DeletePostLoading value)? deletePostLoading,
+    TResult Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult Function(DeletePostError value)? deletePostError,
     required TResult orElse(),
   }) {
     if (unlikePostError != null) {
@@ -3695,6 +4235,12 @@ class _$CommentLoadingImpl
     required TResult Function() deleteCommentLoading,
     required TResult Function() deleteCommentSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+    required TResult Function() updatePostLoading,
+    required TResult Function() updatePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updatePostError,
+    required TResult Function() deletePostLoading,
+    required TResult Function() deletePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
   }) {
     return commentLoading();
   }
@@ -3723,6 +4269,12 @@ class _$CommentLoadingImpl
     TResult? Function()? deleteCommentLoading,
     TResult? Function()? deleteCommentSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult? Function()? updatePostLoading,
+    TResult? Function()? updatePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult? Function()? deletePostLoading,
+    TResult? Function()? deletePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
   }) {
     return commentLoading?.call();
   }
@@ -3751,6 +4303,12 @@ class _$CommentLoadingImpl
     TResult Function()? deleteCommentLoading,
     TResult Function()? deleteCommentSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult Function()? updatePostLoading,
+    TResult Function()? updatePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult Function()? deletePostLoading,
+    TResult Function()? deletePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
     required TResult orElse(),
   }) {
     if (commentLoading != null) {
@@ -3783,6 +4341,12 @@ class _$CommentLoadingImpl
     required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
     required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
     required TResult Function(DeleteCommentError value) deleteCommentError,
+    required TResult Function(UpdatePostLoading value) updatePostLoading,
+    required TResult Function(UpdatePostSuccess value) updatePostSuccess,
+    required TResult Function(UpdatePostError value) updatePostError,
+    required TResult Function(DeletePostLoading value) deletePostLoading,
+    required TResult Function(DeletePostSuccess value) deletePostSuccess,
+    required TResult Function(DeletePostError value) deletePostError,
   }) {
     return commentLoading(this);
   }
@@ -3811,6 +4375,12 @@ class _$CommentLoadingImpl
     TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult? Function(DeleteCommentError value)? deleteCommentError,
+    TResult? Function(UpdatePostLoading value)? updatePostLoading,
+    TResult? Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult? Function(UpdatePostError value)? updatePostError,
+    TResult? Function(DeletePostLoading value)? deletePostLoading,
+    TResult? Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult? Function(DeletePostError value)? deletePostError,
   }) {
     return commentLoading?.call(this);
   }
@@ -3839,6 +4409,12 @@ class _$CommentLoadingImpl
     TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult Function(DeleteCommentError value)? deleteCommentError,
+    TResult Function(UpdatePostLoading value)? updatePostLoading,
+    TResult Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult Function(UpdatePostError value)? updatePostError,
+    TResult Function(DeletePostLoading value)? deletePostLoading,
+    TResult Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult Function(DeletePostError value)? deletePostError,
     required TResult orElse(),
   }) {
     if (commentLoading != null) {
@@ -3959,6 +4535,12 @@ class _$LocalCommentAddedImpl
     required TResult Function() deleteCommentLoading,
     required TResult Function() deleteCommentSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+    required TResult Function() updatePostLoading,
+    required TResult Function() updatePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updatePostError,
+    required TResult Function() deletePostLoading,
+    required TResult Function() deletePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
   }) {
     return localCommentAdded(comments);
   }
@@ -3987,6 +4569,12 @@ class _$LocalCommentAddedImpl
     TResult? Function()? deleteCommentLoading,
     TResult? Function()? deleteCommentSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult? Function()? updatePostLoading,
+    TResult? Function()? updatePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult? Function()? deletePostLoading,
+    TResult? Function()? deletePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
   }) {
     return localCommentAdded?.call(comments);
   }
@@ -4015,6 +4603,12 @@ class _$LocalCommentAddedImpl
     TResult Function()? deleteCommentLoading,
     TResult Function()? deleteCommentSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult Function()? updatePostLoading,
+    TResult Function()? updatePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult Function()? deletePostLoading,
+    TResult Function()? deletePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
     required TResult orElse(),
   }) {
     if (localCommentAdded != null) {
@@ -4047,6 +4641,12 @@ class _$LocalCommentAddedImpl
     required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
     required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
     required TResult Function(DeleteCommentError value) deleteCommentError,
+    required TResult Function(UpdatePostLoading value) updatePostLoading,
+    required TResult Function(UpdatePostSuccess value) updatePostSuccess,
+    required TResult Function(UpdatePostError value) updatePostError,
+    required TResult Function(DeletePostLoading value) deletePostLoading,
+    required TResult Function(DeletePostSuccess value) deletePostSuccess,
+    required TResult Function(DeletePostError value) deletePostError,
   }) {
     return localCommentAdded(this);
   }
@@ -4075,6 +4675,12 @@ class _$LocalCommentAddedImpl
     TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult? Function(DeleteCommentError value)? deleteCommentError,
+    TResult? Function(UpdatePostLoading value)? updatePostLoading,
+    TResult? Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult? Function(UpdatePostError value)? updatePostError,
+    TResult? Function(DeletePostLoading value)? deletePostLoading,
+    TResult? Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult? Function(DeletePostError value)? deletePostError,
   }) {
     return localCommentAdded?.call(this);
   }
@@ -4103,6 +4709,12 @@ class _$LocalCommentAddedImpl
     TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult Function(DeleteCommentError value)? deleteCommentError,
+    TResult Function(UpdatePostLoading value)? updatePostLoading,
+    TResult Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult Function(UpdatePostError value)? updatePostError,
+    TResult Function(DeletePostLoading value)? deletePostLoading,
+    TResult Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult Function(DeletePostError value)? deletePostError,
     required TResult orElse(),
   }) {
     if (localCommentAdded != null) {
@@ -4195,6 +4807,12 @@ class _$CommentSuccessImpl
     required TResult Function() deleteCommentLoading,
     required TResult Function() deleteCommentSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+    required TResult Function() updatePostLoading,
+    required TResult Function() updatePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updatePostError,
+    required TResult Function() deletePostLoading,
+    required TResult Function() deletePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
   }) {
     return commentSuccess();
   }
@@ -4223,6 +4841,12 @@ class _$CommentSuccessImpl
     TResult? Function()? deleteCommentLoading,
     TResult? Function()? deleteCommentSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult? Function()? updatePostLoading,
+    TResult? Function()? updatePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult? Function()? deletePostLoading,
+    TResult? Function()? deletePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
   }) {
     return commentSuccess?.call();
   }
@@ -4251,6 +4875,12 @@ class _$CommentSuccessImpl
     TResult Function()? deleteCommentLoading,
     TResult Function()? deleteCommentSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult Function()? updatePostLoading,
+    TResult Function()? updatePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult Function()? deletePostLoading,
+    TResult Function()? deletePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
     required TResult orElse(),
   }) {
     if (commentSuccess != null) {
@@ -4283,6 +4913,12 @@ class _$CommentSuccessImpl
     required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
     required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
     required TResult Function(DeleteCommentError value) deleteCommentError,
+    required TResult Function(UpdatePostLoading value) updatePostLoading,
+    required TResult Function(UpdatePostSuccess value) updatePostSuccess,
+    required TResult Function(UpdatePostError value) updatePostError,
+    required TResult Function(DeletePostLoading value) deletePostLoading,
+    required TResult Function(DeletePostSuccess value) deletePostSuccess,
+    required TResult Function(DeletePostError value) deletePostError,
   }) {
     return commentSuccess(this);
   }
@@ -4311,6 +4947,12 @@ class _$CommentSuccessImpl
     TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult? Function(DeleteCommentError value)? deleteCommentError,
+    TResult? Function(UpdatePostLoading value)? updatePostLoading,
+    TResult? Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult? Function(UpdatePostError value)? updatePostError,
+    TResult? Function(DeletePostLoading value)? deletePostLoading,
+    TResult? Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult? Function(DeletePostError value)? deletePostError,
   }) {
     return commentSuccess?.call(this);
   }
@@ -4339,6 +4981,12 @@ class _$CommentSuccessImpl
     TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult Function(DeleteCommentError value)? deleteCommentError,
+    TResult Function(UpdatePostLoading value)? updatePostLoading,
+    TResult Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult Function(UpdatePostError value)? updatePostError,
+    TResult Function(DeletePostLoading value)? deletePostLoading,
+    TResult Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult Function(DeletePostError value)? deletePostError,
     required TResult orElse(),
   }) {
     if (commentSuccess != null) {
@@ -4450,6 +5098,12 @@ class _$CommentErrorImpl with DiagnosticableTreeMixin implements CommentError {
     required TResult Function() deleteCommentLoading,
     required TResult Function() deleteCommentSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+    required TResult Function() updatePostLoading,
+    required TResult Function() updatePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updatePostError,
+    required TResult Function() deletePostLoading,
+    required TResult Function() deletePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
   }) {
     return commentError(apiErrorModel);
   }
@@ -4478,6 +5132,12 @@ class _$CommentErrorImpl with DiagnosticableTreeMixin implements CommentError {
     TResult? Function()? deleteCommentLoading,
     TResult? Function()? deleteCommentSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult? Function()? updatePostLoading,
+    TResult? Function()? updatePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult? Function()? deletePostLoading,
+    TResult? Function()? deletePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
   }) {
     return commentError?.call(apiErrorModel);
   }
@@ -4506,6 +5166,12 @@ class _$CommentErrorImpl with DiagnosticableTreeMixin implements CommentError {
     TResult Function()? deleteCommentLoading,
     TResult Function()? deleteCommentSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult Function()? updatePostLoading,
+    TResult Function()? updatePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult Function()? deletePostLoading,
+    TResult Function()? deletePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
     required TResult orElse(),
   }) {
     if (commentError != null) {
@@ -4538,6 +5204,12 @@ class _$CommentErrorImpl with DiagnosticableTreeMixin implements CommentError {
     required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
     required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
     required TResult Function(DeleteCommentError value) deleteCommentError,
+    required TResult Function(UpdatePostLoading value) updatePostLoading,
+    required TResult Function(UpdatePostSuccess value) updatePostSuccess,
+    required TResult Function(UpdatePostError value) updatePostError,
+    required TResult Function(DeletePostLoading value) deletePostLoading,
+    required TResult Function(DeletePostSuccess value) deletePostSuccess,
+    required TResult Function(DeletePostError value) deletePostError,
   }) {
     return commentError(this);
   }
@@ -4566,6 +5238,12 @@ class _$CommentErrorImpl with DiagnosticableTreeMixin implements CommentError {
     TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult? Function(DeleteCommentError value)? deleteCommentError,
+    TResult? Function(UpdatePostLoading value)? updatePostLoading,
+    TResult? Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult? Function(UpdatePostError value)? updatePostError,
+    TResult? Function(DeletePostLoading value)? deletePostLoading,
+    TResult? Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult? Function(DeletePostError value)? deletePostError,
   }) {
     return commentError?.call(this);
   }
@@ -4594,6 +5272,12 @@ class _$CommentErrorImpl with DiagnosticableTreeMixin implements CommentError {
     TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult Function(DeleteCommentError value)? deleteCommentError,
+    TResult Function(UpdatePostLoading value)? updatePostLoading,
+    TResult Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult Function(UpdatePostError value)? updatePostError,
+    TResult Function(DeletePostLoading value)? deletePostLoading,
+    TResult Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult Function(DeletePostError value)? deletePostError,
     required TResult orElse(),
   }) {
     if (commentError != null) {
@@ -4688,6 +5372,12 @@ class _$DeleteCommentLoadingImpl
     required TResult Function() deleteCommentLoading,
     required TResult Function() deleteCommentSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+    required TResult Function() updatePostLoading,
+    required TResult Function() updatePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updatePostError,
+    required TResult Function() deletePostLoading,
+    required TResult Function() deletePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
   }) {
     return deleteCommentLoading();
   }
@@ -4716,6 +5406,12 @@ class _$DeleteCommentLoadingImpl
     TResult? Function()? deleteCommentLoading,
     TResult? Function()? deleteCommentSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult? Function()? updatePostLoading,
+    TResult? Function()? updatePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult? Function()? deletePostLoading,
+    TResult? Function()? deletePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
   }) {
     return deleteCommentLoading?.call();
   }
@@ -4744,6 +5440,12 @@ class _$DeleteCommentLoadingImpl
     TResult Function()? deleteCommentLoading,
     TResult Function()? deleteCommentSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult Function()? updatePostLoading,
+    TResult Function()? updatePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult Function()? deletePostLoading,
+    TResult Function()? deletePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
     required TResult orElse(),
   }) {
     if (deleteCommentLoading != null) {
@@ -4776,6 +5478,12 @@ class _$DeleteCommentLoadingImpl
     required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
     required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
     required TResult Function(DeleteCommentError value) deleteCommentError,
+    required TResult Function(UpdatePostLoading value) updatePostLoading,
+    required TResult Function(UpdatePostSuccess value) updatePostSuccess,
+    required TResult Function(UpdatePostError value) updatePostError,
+    required TResult Function(DeletePostLoading value) deletePostLoading,
+    required TResult Function(DeletePostSuccess value) deletePostSuccess,
+    required TResult Function(DeletePostError value) deletePostError,
   }) {
     return deleteCommentLoading(this);
   }
@@ -4804,6 +5512,12 @@ class _$DeleteCommentLoadingImpl
     TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult? Function(DeleteCommentError value)? deleteCommentError,
+    TResult? Function(UpdatePostLoading value)? updatePostLoading,
+    TResult? Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult? Function(UpdatePostError value)? updatePostError,
+    TResult? Function(DeletePostLoading value)? deletePostLoading,
+    TResult? Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult? Function(DeletePostError value)? deletePostError,
   }) {
     return deleteCommentLoading?.call(this);
   }
@@ -4832,6 +5546,12 @@ class _$DeleteCommentLoadingImpl
     TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult Function(DeleteCommentError value)? deleteCommentError,
+    TResult Function(UpdatePostLoading value)? updatePostLoading,
+    TResult Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult Function(UpdatePostError value)? updatePostError,
+    TResult Function(DeletePostLoading value)? deletePostLoading,
+    TResult Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult Function(DeletePostError value)? deletePostError,
     required TResult orElse(),
   }) {
     if (deleteCommentLoading != null) {
@@ -4917,6 +5637,12 @@ class _$DeleteCommentSuccessImpl
     required TResult Function() deleteCommentLoading,
     required TResult Function() deleteCommentSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+    required TResult Function() updatePostLoading,
+    required TResult Function() updatePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updatePostError,
+    required TResult Function() deletePostLoading,
+    required TResult Function() deletePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
   }) {
     return deleteCommentSuccess();
   }
@@ -4945,6 +5671,12 @@ class _$DeleteCommentSuccessImpl
     TResult? Function()? deleteCommentLoading,
     TResult? Function()? deleteCommentSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult? Function()? updatePostLoading,
+    TResult? Function()? updatePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult? Function()? deletePostLoading,
+    TResult? Function()? deletePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
   }) {
     return deleteCommentSuccess?.call();
   }
@@ -4973,6 +5705,12 @@ class _$DeleteCommentSuccessImpl
     TResult Function()? deleteCommentLoading,
     TResult Function()? deleteCommentSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult Function()? updatePostLoading,
+    TResult Function()? updatePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult Function()? deletePostLoading,
+    TResult Function()? deletePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
     required TResult orElse(),
   }) {
     if (deleteCommentSuccess != null) {
@@ -5005,6 +5743,12 @@ class _$DeleteCommentSuccessImpl
     required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
     required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
     required TResult Function(DeleteCommentError value) deleteCommentError,
+    required TResult Function(UpdatePostLoading value) updatePostLoading,
+    required TResult Function(UpdatePostSuccess value) updatePostSuccess,
+    required TResult Function(UpdatePostError value) updatePostError,
+    required TResult Function(DeletePostLoading value) deletePostLoading,
+    required TResult Function(DeletePostSuccess value) deletePostSuccess,
+    required TResult Function(DeletePostError value) deletePostError,
   }) {
     return deleteCommentSuccess(this);
   }
@@ -5033,6 +5777,12 @@ class _$DeleteCommentSuccessImpl
     TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult? Function(DeleteCommentError value)? deleteCommentError,
+    TResult? Function(UpdatePostLoading value)? updatePostLoading,
+    TResult? Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult? Function(UpdatePostError value)? updatePostError,
+    TResult? Function(DeletePostLoading value)? deletePostLoading,
+    TResult? Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult? Function(DeletePostError value)? deletePostError,
   }) {
     return deleteCommentSuccess?.call(this);
   }
@@ -5061,6 +5811,12 @@ class _$DeleteCommentSuccessImpl
     TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult Function(DeleteCommentError value)? deleteCommentError,
+    TResult Function(UpdatePostLoading value)? updatePostLoading,
+    TResult Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult Function(UpdatePostError value)? updatePostError,
+    TResult Function(DeletePostLoading value)? deletePostLoading,
+    TResult Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult Function(DeletePostError value)? deletePostError,
     required TResult orElse(),
   }) {
     if (deleteCommentSuccess != null) {
@@ -5175,6 +5931,12 @@ class _$DeleteCommentErrorImpl
     required TResult Function() deleteCommentLoading,
     required TResult Function() deleteCommentSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+    required TResult Function() updatePostLoading,
+    required TResult Function() updatePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updatePostError,
+    required TResult Function() deletePostLoading,
+    required TResult Function() deletePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
   }) {
     return deleteCommentError(apiErrorModel);
   }
@@ -5203,6 +5965,12 @@ class _$DeleteCommentErrorImpl
     TResult? Function()? deleteCommentLoading,
     TResult? Function()? deleteCommentSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult? Function()? updatePostLoading,
+    TResult? Function()? updatePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult? Function()? deletePostLoading,
+    TResult? Function()? deletePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
   }) {
     return deleteCommentError?.call(apiErrorModel);
   }
@@ -5231,6 +5999,12 @@ class _$DeleteCommentErrorImpl
     TResult Function()? deleteCommentLoading,
     TResult Function()? deleteCommentSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult Function()? updatePostLoading,
+    TResult Function()? updatePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult Function()? deletePostLoading,
+    TResult Function()? deletePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
     required TResult orElse(),
   }) {
     if (deleteCommentError != null) {
@@ -5263,6 +6037,12 @@ class _$DeleteCommentErrorImpl
     required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
     required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
     required TResult Function(DeleteCommentError value) deleteCommentError,
+    required TResult Function(UpdatePostLoading value) updatePostLoading,
+    required TResult Function(UpdatePostSuccess value) updatePostSuccess,
+    required TResult Function(UpdatePostError value) updatePostError,
+    required TResult Function(DeletePostLoading value) deletePostLoading,
+    required TResult Function(DeletePostSuccess value) deletePostSuccess,
+    required TResult Function(DeletePostError value) deletePostError,
   }) {
     return deleteCommentError(this);
   }
@@ -5291,6 +6071,12 @@ class _$DeleteCommentErrorImpl
     TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult? Function(DeleteCommentError value)? deleteCommentError,
+    TResult? Function(UpdatePostLoading value)? updatePostLoading,
+    TResult? Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult? Function(UpdatePostError value)? updatePostError,
+    TResult? Function(DeletePostLoading value)? deletePostLoading,
+    TResult? Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult? Function(DeletePostError value)? deletePostError,
   }) {
     return deleteCommentError?.call(this);
   }
@@ -5319,6 +6105,12 @@ class _$DeleteCommentErrorImpl
     TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
     TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
     TResult Function(DeleteCommentError value)? deleteCommentError,
+    TResult Function(UpdatePostLoading value)? updatePostLoading,
+    TResult Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult Function(UpdatePostError value)? updatePostError,
+    TResult Function(DeletePostLoading value)? deletePostLoading,
+    TResult Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult Function(DeletePostError value)? deletePostError,
     required TResult orElse(),
   }) {
     if (deleteCommentError != null) {
@@ -5338,5 +6130,1663 @@ abstract class DeleteCommentError implements HomeState {
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$DeleteCommentErrorImplCopyWith<_$DeleteCommentErrorImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$UpdatePostLoadingImplCopyWith<$Res> {
+  factory _$$UpdatePostLoadingImplCopyWith(_$UpdatePostLoadingImpl value,
+          $Res Function(_$UpdatePostLoadingImpl) then) =
+      __$$UpdatePostLoadingImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$UpdatePostLoadingImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$UpdatePostLoadingImpl>
+    implements _$$UpdatePostLoadingImplCopyWith<$Res> {
+  __$$UpdatePostLoadingImplCopyWithImpl(_$UpdatePostLoadingImpl _value,
+      $Res Function(_$UpdatePostLoadingImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$UpdatePostLoadingImpl
+    with DiagnosticableTreeMixin
+    implements UpdatePostLoading {
+  const _$UpdatePostLoadingImpl();
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'HomeState.updatePostLoading()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties.add(DiagnosticsProperty('type', 'HomeState.updatePostLoading'));
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$UpdatePostLoadingImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() postsLoading,
+    required TResult Function(List<Post> posts) postsLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) postsError,
+    required TResult Function(int index) changeScreen,
+    required TResult Function() postLoading,
+    required TResult Function(Post post) postLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) postError,
+    required TResult Function() likePostLoading,
+    required TResult Function() likePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) likePostError,
+    required TResult Function() unlikePostLoading,
+    required TResult Function() unlikePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) unlikePostError,
+    required TResult Function() commentLoading,
+    required TResult Function(List<Comment> comments) localCommentAdded,
+    required TResult Function() commentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) commentError,
+    required TResult Function() deleteCommentLoading,
+    required TResult Function() deleteCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+    required TResult Function() updatePostLoading,
+    required TResult Function() updatePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updatePostError,
+    required TResult Function() deletePostLoading,
+    required TResult Function() deletePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+  }) {
+    return updatePostLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? postsLoading,
+    TResult? Function(List<Post> posts)? postsLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? postsError,
+    TResult? Function(int index)? changeScreen,
+    TResult? Function()? postLoading,
+    TResult? Function(Post post)? postLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? postError,
+    TResult? Function()? likePostLoading,
+    TResult? Function()? likePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? likePostError,
+    TResult? Function()? unlikePostLoading,
+    TResult? Function()? unlikePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult? Function()? commentLoading,
+    TResult? Function(List<Comment> comments)? localCommentAdded,
+    TResult? Function()? commentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult? Function()? deleteCommentLoading,
+    TResult? Function()? deleteCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult? Function()? updatePostLoading,
+    TResult? Function()? updatePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult? Function()? deletePostLoading,
+    TResult? Function()? deletePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+  }) {
+    return updatePostLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? postsLoading,
+    TResult Function(List<Post> posts)? postsLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? postsError,
+    TResult Function(int index)? changeScreen,
+    TResult Function()? postLoading,
+    TResult Function(Post post)? postLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? postError,
+    TResult Function()? likePostLoading,
+    TResult Function()? likePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? likePostError,
+    TResult Function()? unlikePostLoading,
+    TResult Function()? unlikePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult Function()? commentLoading,
+    TResult Function(List<Comment> comments)? localCommentAdded,
+    TResult Function()? commentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult Function()? deleteCommentLoading,
+    TResult Function()? deleteCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult Function()? updatePostLoading,
+    TResult Function()? updatePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult Function()? deletePostLoading,
+    TResult Function()? deletePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    required TResult orElse(),
+  }) {
+    if (updatePostLoading != null) {
+      return updatePostLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(PostsLoading value) postsLoading,
+    required TResult Function(PostsLoaded value) postsLoaded,
+    required TResult Function(PostsError value) postsError,
+    required TResult Function(ChangeScreen value) changeScreen,
+    required TResult Function(PostLoading value) postLoading,
+    required TResult Function(PostLoaded value) postLoaded,
+    required TResult Function(PostError value) postError,
+    required TResult Function(LikePostLoading value) likePostLoading,
+    required TResult Function(LikePostSuccess value) likePostSuccess,
+    required TResult Function(LikePostError value) likePostError,
+    required TResult Function(UnlikePostLoading value) unlikePostLoading,
+    required TResult Function(UnlikePostSuccess value) unlikePostSuccess,
+    required TResult Function(UnlikePostError value) unlikePostError,
+    required TResult Function(CommentLoading value) commentLoading,
+    required TResult Function(LocalCommentAdded value) localCommentAdded,
+    required TResult Function(CommentSuccess value) commentSuccess,
+    required TResult Function(CommentError value) commentError,
+    required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
+    required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
+    required TResult Function(DeleteCommentError value) deleteCommentError,
+    required TResult Function(UpdatePostLoading value) updatePostLoading,
+    required TResult Function(UpdatePostSuccess value) updatePostSuccess,
+    required TResult Function(UpdatePostError value) updatePostError,
+    required TResult Function(DeletePostLoading value) deletePostLoading,
+    required TResult Function(DeletePostSuccess value) deletePostSuccess,
+    required TResult Function(DeletePostError value) deletePostError,
+  }) {
+    return updatePostLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(PostsLoading value)? postsLoading,
+    TResult? Function(PostsLoaded value)? postsLoaded,
+    TResult? Function(PostsError value)? postsError,
+    TResult? Function(ChangeScreen value)? changeScreen,
+    TResult? Function(PostLoading value)? postLoading,
+    TResult? Function(PostLoaded value)? postLoaded,
+    TResult? Function(PostError value)? postError,
+    TResult? Function(LikePostLoading value)? likePostLoading,
+    TResult? Function(LikePostSuccess value)? likePostSuccess,
+    TResult? Function(LikePostError value)? likePostError,
+    TResult? Function(UnlikePostLoading value)? unlikePostLoading,
+    TResult? Function(UnlikePostSuccess value)? unlikePostSuccess,
+    TResult? Function(UnlikePostError value)? unlikePostError,
+    TResult? Function(CommentLoading value)? commentLoading,
+    TResult? Function(LocalCommentAdded value)? localCommentAdded,
+    TResult? Function(CommentSuccess value)? commentSuccess,
+    TResult? Function(CommentError value)? commentError,
+    TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult? Function(DeleteCommentError value)? deleteCommentError,
+    TResult? Function(UpdatePostLoading value)? updatePostLoading,
+    TResult? Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult? Function(UpdatePostError value)? updatePostError,
+    TResult? Function(DeletePostLoading value)? deletePostLoading,
+    TResult? Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult? Function(DeletePostError value)? deletePostError,
+  }) {
+    return updatePostLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(PostsLoading value)? postsLoading,
+    TResult Function(PostsLoaded value)? postsLoaded,
+    TResult Function(PostsError value)? postsError,
+    TResult Function(ChangeScreen value)? changeScreen,
+    TResult Function(PostLoading value)? postLoading,
+    TResult Function(PostLoaded value)? postLoaded,
+    TResult Function(PostError value)? postError,
+    TResult Function(LikePostLoading value)? likePostLoading,
+    TResult Function(LikePostSuccess value)? likePostSuccess,
+    TResult Function(LikePostError value)? likePostError,
+    TResult Function(UnlikePostLoading value)? unlikePostLoading,
+    TResult Function(UnlikePostSuccess value)? unlikePostSuccess,
+    TResult Function(UnlikePostError value)? unlikePostError,
+    TResult Function(CommentLoading value)? commentLoading,
+    TResult Function(LocalCommentAdded value)? localCommentAdded,
+    TResult Function(CommentSuccess value)? commentSuccess,
+    TResult Function(CommentError value)? commentError,
+    TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult Function(DeleteCommentError value)? deleteCommentError,
+    TResult Function(UpdatePostLoading value)? updatePostLoading,
+    TResult Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult Function(UpdatePostError value)? updatePostError,
+    TResult Function(DeletePostLoading value)? deletePostLoading,
+    TResult Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult Function(DeletePostError value)? deletePostError,
+    required TResult orElse(),
+  }) {
+    if (updatePostLoading != null) {
+      return updatePostLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class UpdatePostLoading implements HomeState {
+  const factory UpdatePostLoading() = _$UpdatePostLoadingImpl;
+}
+
+/// @nodoc
+abstract class _$$UpdatePostSuccessImplCopyWith<$Res> {
+  factory _$$UpdatePostSuccessImplCopyWith(_$UpdatePostSuccessImpl value,
+          $Res Function(_$UpdatePostSuccessImpl) then) =
+      __$$UpdatePostSuccessImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$UpdatePostSuccessImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$UpdatePostSuccessImpl>
+    implements _$$UpdatePostSuccessImplCopyWith<$Res> {
+  __$$UpdatePostSuccessImplCopyWithImpl(_$UpdatePostSuccessImpl _value,
+      $Res Function(_$UpdatePostSuccessImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$UpdatePostSuccessImpl
+    with DiagnosticableTreeMixin
+    implements UpdatePostSuccess {
+  const _$UpdatePostSuccessImpl();
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'HomeState.updatePostSuccess()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties.add(DiagnosticsProperty('type', 'HomeState.updatePostSuccess'));
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$UpdatePostSuccessImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() postsLoading,
+    required TResult Function(List<Post> posts) postsLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) postsError,
+    required TResult Function(int index) changeScreen,
+    required TResult Function() postLoading,
+    required TResult Function(Post post) postLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) postError,
+    required TResult Function() likePostLoading,
+    required TResult Function() likePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) likePostError,
+    required TResult Function() unlikePostLoading,
+    required TResult Function() unlikePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) unlikePostError,
+    required TResult Function() commentLoading,
+    required TResult Function(List<Comment> comments) localCommentAdded,
+    required TResult Function() commentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) commentError,
+    required TResult Function() deleteCommentLoading,
+    required TResult Function() deleteCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+    required TResult Function() updatePostLoading,
+    required TResult Function() updatePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updatePostError,
+    required TResult Function() deletePostLoading,
+    required TResult Function() deletePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+  }) {
+    return updatePostSuccess();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? postsLoading,
+    TResult? Function(List<Post> posts)? postsLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? postsError,
+    TResult? Function(int index)? changeScreen,
+    TResult? Function()? postLoading,
+    TResult? Function(Post post)? postLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? postError,
+    TResult? Function()? likePostLoading,
+    TResult? Function()? likePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? likePostError,
+    TResult? Function()? unlikePostLoading,
+    TResult? Function()? unlikePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult? Function()? commentLoading,
+    TResult? Function(List<Comment> comments)? localCommentAdded,
+    TResult? Function()? commentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult? Function()? deleteCommentLoading,
+    TResult? Function()? deleteCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult? Function()? updatePostLoading,
+    TResult? Function()? updatePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult? Function()? deletePostLoading,
+    TResult? Function()? deletePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+  }) {
+    return updatePostSuccess?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? postsLoading,
+    TResult Function(List<Post> posts)? postsLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? postsError,
+    TResult Function(int index)? changeScreen,
+    TResult Function()? postLoading,
+    TResult Function(Post post)? postLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? postError,
+    TResult Function()? likePostLoading,
+    TResult Function()? likePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? likePostError,
+    TResult Function()? unlikePostLoading,
+    TResult Function()? unlikePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult Function()? commentLoading,
+    TResult Function(List<Comment> comments)? localCommentAdded,
+    TResult Function()? commentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult Function()? deleteCommentLoading,
+    TResult Function()? deleteCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult Function()? updatePostLoading,
+    TResult Function()? updatePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult Function()? deletePostLoading,
+    TResult Function()? deletePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    required TResult orElse(),
+  }) {
+    if (updatePostSuccess != null) {
+      return updatePostSuccess();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(PostsLoading value) postsLoading,
+    required TResult Function(PostsLoaded value) postsLoaded,
+    required TResult Function(PostsError value) postsError,
+    required TResult Function(ChangeScreen value) changeScreen,
+    required TResult Function(PostLoading value) postLoading,
+    required TResult Function(PostLoaded value) postLoaded,
+    required TResult Function(PostError value) postError,
+    required TResult Function(LikePostLoading value) likePostLoading,
+    required TResult Function(LikePostSuccess value) likePostSuccess,
+    required TResult Function(LikePostError value) likePostError,
+    required TResult Function(UnlikePostLoading value) unlikePostLoading,
+    required TResult Function(UnlikePostSuccess value) unlikePostSuccess,
+    required TResult Function(UnlikePostError value) unlikePostError,
+    required TResult Function(CommentLoading value) commentLoading,
+    required TResult Function(LocalCommentAdded value) localCommentAdded,
+    required TResult Function(CommentSuccess value) commentSuccess,
+    required TResult Function(CommentError value) commentError,
+    required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
+    required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
+    required TResult Function(DeleteCommentError value) deleteCommentError,
+    required TResult Function(UpdatePostLoading value) updatePostLoading,
+    required TResult Function(UpdatePostSuccess value) updatePostSuccess,
+    required TResult Function(UpdatePostError value) updatePostError,
+    required TResult Function(DeletePostLoading value) deletePostLoading,
+    required TResult Function(DeletePostSuccess value) deletePostSuccess,
+    required TResult Function(DeletePostError value) deletePostError,
+  }) {
+    return updatePostSuccess(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(PostsLoading value)? postsLoading,
+    TResult? Function(PostsLoaded value)? postsLoaded,
+    TResult? Function(PostsError value)? postsError,
+    TResult? Function(ChangeScreen value)? changeScreen,
+    TResult? Function(PostLoading value)? postLoading,
+    TResult? Function(PostLoaded value)? postLoaded,
+    TResult? Function(PostError value)? postError,
+    TResult? Function(LikePostLoading value)? likePostLoading,
+    TResult? Function(LikePostSuccess value)? likePostSuccess,
+    TResult? Function(LikePostError value)? likePostError,
+    TResult? Function(UnlikePostLoading value)? unlikePostLoading,
+    TResult? Function(UnlikePostSuccess value)? unlikePostSuccess,
+    TResult? Function(UnlikePostError value)? unlikePostError,
+    TResult? Function(CommentLoading value)? commentLoading,
+    TResult? Function(LocalCommentAdded value)? localCommentAdded,
+    TResult? Function(CommentSuccess value)? commentSuccess,
+    TResult? Function(CommentError value)? commentError,
+    TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult? Function(DeleteCommentError value)? deleteCommentError,
+    TResult? Function(UpdatePostLoading value)? updatePostLoading,
+    TResult? Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult? Function(UpdatePostError value)? updatePostError,
+    TResult? Function(DeletePostLoading value)? deletePostLoading,
+    TResult? Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult? Function(DeletePostError value)? deletePostError,
+  }) {
+    return updatePostSuccess?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(PostsLoading value)? postsLoading,
+    TResult Function(PostsLoaded value)? postsLoaded,
+    TResult Function(PostsError value)? postsError,
+    TResult Function(ChangeScreen value)? changeScreen,
+    TResult Function(PostLoading value)? postLoading,
+    TResult Function(PostLoaded value)? postLoaded,
+    TResult Function(PostError value)? postError,
+    TResult Function(LikePostLoading value)? likePostLoading,
+    TResult Function(LikePostSuccess value)? likePostSuccess,
+    TResult Function(LikePostError value)? likePostError,
+    TResult Function(UnlikePostLoading value)? unlikePostLoading,
+    TResult Function(UnlikePostSuccess value)? unlikePostSuccess,
+    TResult Function(UnlikePostError value)? unlikePostError,
+    TResult Function(CommentLoading value)? commentLoading,
+    TResult Function(LocalCommentAdded value)? localCommentAdded,
+    TResult Function(CommentSuccess value)? commentSuccess,
+    TResult Function(CommentError value)? commentError,
+    TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult Function(DeleteCommentError value)? deleteCommentError,
+    TResult Function(UpdatePostLoading value)? updatePostLoading,
+    TResult Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult Function(UpdatePostError value)? updatePostError,
+    TResult Function(DeletePostLoading value)? deletePostLoading,
+    TResult Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult Function(DeletePostError value)? deletePostError,
+    required TResult orElse(),
+  }) {
+    if (updatePostSuccess != null) {
+      return updatePostSuccess(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class UpdatePostSuccess implements HomeState {
+  const factory UpdatePostSuccess() = _$UpdatePostSuccessImpl;
+}
+
+/// @nodoc
+abstract class _$$UpdatePostErrorImplCopyWith<$Res> {
+  factory _$$UpdatePostErrorImplCopyWith(_$UpdatePostErrorImpl value,
+          $Res Function(_$UpdatePostErrorImpl) then) =
+      __$$UpdatePostErrorImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({ApiErrorModel apiErrorModel});
+}
+
+/// @nodoc
+class __$$UpdatePostErrorImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$UpdatePostErrorImpl>
+    implements _$$UpdatePostErrorImplCopyWith<$Res> {
+  __$$UpdatePostErrorImplCopyWithImpl(
+      _$UpdatePostErrorImpl _value, $Res Function(_$UpdatePostErrorImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? apiErrorModel = null,
+  }) {
+    return _then(_$UpdatePostErrorImpl(
+      null == apiErrorModel
+          ? _value.apiErrorModel
+          : apiErrorModel // ignore: cast_nullable_to_non_nullable
+              as ApiErrorModel,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$UpdatePostErrorImpl
+    with DiagnosticableTreeMixin
+    implements UpdatePostError {
+  const _$UpdatePostErrorImpl(this.apiErrorModel);
+
+  @override
+  final ApiErrorModel apiErrorModel;
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'HomeState.updatePostError(apiErrorModel: $apiErrorModel)';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+      ..add(DiagnosticsProperty('type', 'HomeState.updatePostError'))
+      ..add(DiagnosticsProperty('apiErrorModel', apiErrorModel));
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$UpdatePostErrorImpl &&
+            (identical(other.apiErrorModel, apiErrorModel) ||
+                other.apiErrorModel == apiErrorModel));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, apiErrorModel);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$UpdatePostErrorImplCopyWith<_$UpdatePostErrorImpl> get copyWith =>
+      __$$UpdatePostErrorImplCopyWithImpl<_$UpdatePostErrorImpl>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() postsLoading,
+    required TResult Function(List<Post> posts) postsLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) postsError,
+    required TResult Function(int index) changeScreen,
+    required TResult Function() postLoading,
+    required TResult Function(Post post) postLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) postError,
+    required TResult Function() likePostLoading,
+    required TResult Function() likePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) likePostError,
+    required TResult Function() unlikePostLoading,
+    required TResult Function() unlikePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) unlikePostError,
+    required TResult Function() commentLoading,
+    required TResult Function(List<Comment> comments) localCommentAdded,
+    required TResult Function() commentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) commentError,
+    required TResult Function() deleteCommentLoading,
+    required TResult Function() deleteCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+    required TResult Function() updatePostLoading,
+    required TResult Function() updatePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updatePostError,
+    required TResult Function() deletePostLoading,
+    required TResult Function() deletePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+  }) {
+    return updatePostError(apiErrorModel);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? postsLoading,
+    TResult? Function(List<Post> posts)? postsLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? postsError,
+    TResult? Function(int index)? changeScreen,
+    TResult? Function()? postLoading,
+    TResult? Function(Post post)? postLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? postError,
+    TResult? Function()? likePostLoading,
+    TResult? Function()? likePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? likePostError,
+    TResult? Function()? unlikePostLoading,
+    TResult? Function()? unlikePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult? Function()? commentLoading,
+    TResult? Function(List<Comment> comments)? localCommentAdded,
+    TResult? Function()? commentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult? Function()? deleteCommentLoading,
+    TResult? Function()? deleteCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult? Function()? updatePostLoading,
+    TResult? Function()? updatePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult? Function()? deletePostLoading,
+    TResult? Function()? deletePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+  }) {
+    return updatePostError?.call(apiErrorModel);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? postsLoading,
+    TResult Function(List<Post> posts)? postsLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? postsError,
+    TResult Function(int index)? changeScreen,
+    TResult Function()? postLoading,
+    TResult Function(Post post)? postLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? postError,
+    TResult Function()? likePostLoading,
+    TResult Function()? likePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? likePostError,
+    TResult Function()? unlikePostLoading,
+    TResult Function()? unlikePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult Function()? commentLoading,
+    TResult Function(List<Comment> comments)? localCommentAdded,
+    TResult Function()? commentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult Function()? deleteCommentLoading,
+    TResult Function()? deleteCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult Function()? updatePostLoading,
+    TResult Function()? updatePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult Function()? deletePostLoading,
+    TResult Function()? deletePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    required TResult orElse(),
+  }) {
+    if (updatePostError != null) {
+      return updatePostError(apiErrorModel);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(PostsLoading value) postsLoading,
+    required TResult Function(PostsLoaded value) postsLoaded,
+    required TResult Function(PostsError value) postsError,
+    required TResult Function(ChangeScreen value) changeScreen,
+    required TResult Function(PostLoading value) postLoading,
+    required TResult Function(PostLoaded value) postLoaded,
+    required TResult Function(PostError value) postError,
+    required TResult Function(LikePostLoading value) likePostLoading,
+    required TResult Function(LikePostSuccess value) likePostSuccess,
+    required TResult Function(LikePostError value) likePostError,
+    required TResult Function(UnlikePostLoading value) unlikePostLoading,
+    required TResult Function(UnlikePostSuccess value) unlikePostSuccess,
+    required TResult Function(UnlikePostError value) unlikePostError,
+    required TResult Function(CommentLoading value) commentLoading,
+    required TResult Function(LocalCommentAdded value) localCommentAdded,
+    required TResult Function(CommentSuccess value) commentSuccess,
+    required TResult Function(CommentError value) commentError,
+    required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
+    required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
+    required TResult Function(DeleteCommentError value) deleteCommentError,
+    required TResult Function(UpdatePostLoading value) updatePostLoading,
+    required TResult Function(UpdatePostSuccess value) updatePostSuccess,
+    required TResult Function(UpdatePostError value) updatePostError,
+    required TResult Function(DeletePostLoading value) deletePostLoading,
+    required TResult Function(DeletePostSuccess value) deletePostSuccess,
+    required TResult Function(DeletePostError value) deletePostError,
+  }) {
+    return updatePostError(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(PostsLoading value)? postsLoading,
+    TResult? Function(PostsLoaded value)? postsLoaded,
+    TResult? Function(PostsError value)? postsError,
+    TResult? Function(ChangeScreen value)? changeScreen,
+    TResult? Function(PostLoading value)? postLoading,
+    TResult? Function(PostLoaded value)? postLoaded,
+    TResult? Function(PostError value)? postError,
+    TResult? Function(LikePostLoading value)? likePostLoading,
+    TResult? Function(LikePostSuccess value)? likePostSuccess,
+    TResult? Function(LikePostError value)? likePostError,
+    TResult? Function(UnlikePostLoading value)? unlikePostLoading,
+    TResult? Function(UnlikePostSuccess value)? unlikePostSuccess,
+    TResult? Function(UnlikePostError value)? unlikePostError,
+    TResult? Function(CommentLoading value)? commentLoading,
+    TResult? Function(LocalCommentAdded value)? localCommentAdded,
+    TResult? Function(CommentSuccess value)? commentSuccess,
+    TResult? Function(CommentError value)? commentError,
+    TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult? Function(DeleteCommentError value)? deleteCommentError,
+    TResult? Function(UpdatePostLoading value)? updatePostLoading,
+    TResult? Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult? Function(UpdatePostError value)? updatePostError,
+    TResult? Function(DeletePostLoading value)? deletePostLoading,
+    TResult? Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult? Function(DeletePostError value)? deletePostError,
+  }) {
+    return updatePostError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(PostsLoading value)? postsLoading,
+    TResult Function(PostsLoaded value)? postsLoaded,
+    TResult Function(PostsError value)? postsError,
+    TResult Function(ChangeScreen value)? changeScreen,
+    TResult Function(PostLoading value)? postLoading,
+    TResult Function(PostLoaded value)? postLoaded,
+    TResult Function(PostError value)? postError,
+    TResult Function(LikePostLoading value)? likePostLoading,
+    TResult Function(LikePostSuccess value)? likePostSuccess,
+    TResult Function(LikePostError value)? likePostError,
+    TResult Function(UnlikePostLoading value)? unlikePostLoading,
+    TResult Function(UnlikePostSuccess value)? unlikePostSuccess,
+    TResult Function(UnlikePostError value)? unlikePostError,
+    TResult Function(CommentLoading value)? commentLoading,
+    TResult Function(LocalCommentAdded value)? localCommentAdded,
+    TResult Function(CommentSuccess value)? commentSuccess,
+    TResult Function(CommentError value)? commentError,
+    TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult Function(DeleteCommentError value)? deleteCommentError,
+    TResult Function(UpdatePostLoading value)? updatePostLoading,
+    TResult Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult Function(UpdatePostError value)? updatePostError,
+    TResult Function(DeletePostLoading value)? deletePostLoading,
+    TResult Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult Function(DeletePostError value)? deletePostError,
+    required TResult orElse(),
+  }) {
+    if (updatePostError != null) {
+      return updatePostError(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class UpdatePostError implements HomeState {
+  const factory UpdatePostError(final ApiErrorModel apiErrorModel) =
+      _$UpdatePostErrorImpl;
+
+  ApiErrorModel get apiErrorModel;
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$UpdatePostErrorImplCopyWith<_$UpdatePostErrorImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$DeletePostLoadingImplCopyWith<$Res> {
+  factory _$$DeletePostLoadingImplCopyWith(_$DeletePostLoadingImpl value,
+          $Res Function(_$DeletePostLoadingImpl) then) =
+      __$$DeletePostLoadingImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$DeletePostLoadingImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$DeletePostLoadingImpl>
+    implements _$$DeletePostLoadingImplCopyWith<$Res> {
+  __$$DeletePostLoadingImplCopyWithImpl(_$DeletePostLoadingImpl _value,
+      $Res Function(_$DeletePostLoadingImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$DeletePostLoadingImpl
+    with DiagnosticableTreeMixin
+    implements DeletePostLoading {
+  const _$DeletePostLoadingImpl();
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'HomeState.deletePostLoading()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties.add(DiagnosticsProperty('type', 'HomeState.deletePostLoading'));
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$DeletePostLoadingImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() postsLoading,
+    required TResult Function(List<Post> posts) postsLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) postsError,
+    required TResult Function(int index) changeScreen,
+    required TResult Function() postLoading,
+    required TResult Function(Post post) postLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) postError,
+    required TResult Function() likePostLoading,
+    required TResult Function() likePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) likePostError,
+    required TResult Function() unlikePostLoading,
+    required TResult Function() unlikePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) unlikePostError,
+    required TResult Function() commentLoading,
+    required TResult Function(List<Comment> comments) localCommentAdded,
+    required TResult Function() commentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) commentError,
+    required TResult Function() deleteCommentLoading,
+    required TResult Function() deleteCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+    required TResult Function() updatePostLoading,
+    required TResult Function() updatePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updatePostError,
+    required TResult Function() deletePostLoading,
+    required TResult Function() deletePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+  }) {
+    return deletePostLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? postsLoading,
+    TResult? Function(List<Post> posts)? postsLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? postsError,
+    TResult? Function(int index)? changeScreen,
+    TResult? Function()? postLoading,
+    TResult? Function(Post post)? postLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? postError,
+    TResult? Function()? likePostLoading,
+    TResult? Function()? likePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? likePostError,
+    TResult? Function()? unlikePostLoading,
+    TResult? Function()? unlikePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult? Function()? commentLoading,
+    TResult? Function(List<Comment> comments)? localCommentAdded,
+    TResult? Function()? commentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult? Function()? deleteCommentLoading,
+    TResult? Function()? deleteCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult? Function()? updatePostLoading,
+    TResult? Function()? updatePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult? Function()? deletePostLoading,
+    TResult? Function()? deletePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+  }) {
+    return deletePostLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? postsLoading,
+    TResult Function(List<Post> posts)? postsLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? postsError,
+    TResult Function(int index)? changeScreen,
+    TResult Function()? postLoading,
+    TResult Function(Post post)? postLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? postError,
+    TResult Function()? likePostLoading,
+    TResult Function()? likePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? likePostError,
+    TResult Function()? unlikePostLoading,
+    TResult Function()? unlikePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult Function()? commentLoading,
+    TResult Function(List<Comment> comments)? localCommentAdded,
+    TResult Function()? commentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult Function()? deleteCommentLoading,
+    TResult Function()? deleteCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult Function()? updatePostLoading,
+    TResult Function()? updatePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult Function()? deletePostLoading,
+    TResult Function()? deletePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    required TResult orElse(),
+  }) {
+    if (deletePostLoading != null) {
+      return deletePostLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(PostsLoading value) postsLoading,
+    required TResult Function(PostsLoaded value) postsLoaded,
+    required TResult Function(PostsError value) postsError,
+    required TResult Function(ChangeScreen value) changeScreen,
+    required TResult Function(PostLoading value) postLoading,
+    required TResult Function(PostLoaded value) postLoaded,
+    required TResult Function(PostError value) postError,
+    required TResult Function(LikePostLoading value) likePostLoading,
+    required TResult Function(LikePostSuccess value) likePostSuccess,
+    required TResult Function(LikePostError value) likePostError,
+    required TResult Function(UnlikePostLoading value) unlikePostLoading,
+    required TResult Function(UnlikePostSuccess value) unlikePostSuccess,
+    required TResult Function(UnlikePostError value) unlikePostError,
+    required TResult Function(CommentLoading value) commentLoading,
+    required TResult Function(LocalCommentAdded value) localCommentAdded,
+    required TResult Function(CommentSuccess value) commentSuccess,
+    required TResult Function(CommentError value) commentError,
+    required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
+    required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
+    required TResult Function(DeleteCommentError value) deleteCommentError,
+    required TResult Function(UpdatePostLoading value) updatePostLoading,
+    required TResult Function(UpdatePostSuccess value) updatePostSuccess,
+    required TResult Function(UpdatePostError value) updatePostError,
+    required TResult Function(DeletePostLoading value) deletePostLoading,
+    required TResult Function(DeletePostSuccess value) deletePostSuccess,
+    required TResult Function(DeletePostError value) deletePostError,
+  }) {
+    return deletePostLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(PostsLoading value)? postsLoading,
+    TResult? Function(PostsLoaded value)? postsLoaded,
+    TResult? Function(PostsError value)? postsError,
+    TResult? Function(ChangeScreen value)? changeScreen,
+    TResult? Function(PostLoading value)? postLoading,
+    TResult? Function(PostLoaded value)? postLoaded,
+    TResult? Function(PostError value)? postError,
+    TResult? Function(LikePostLoading value)? likePostLoading,
+    TResult? Function(LikePostSuccess value)? likePostSuccess,
+    TResult? Function(LikePostError value)? likePostError,
+    TResult? Function(UnlikePostLoading value)? unlikePostLoading,
+    TResult? Function(UnlikePostSuccess value)? unlikePostSuccess,
+    TResult? Function(UnlikePostError value)? unlikePostError,
+    TResult? Function(CommentLoading value)? commentLoading,
+    TResult? Function(LocalCommentAdded value)? localCommentAdded,
+    TResult? Function(CommentSuccess value)? commentSuccess,
+    TResult? Function(CommentError value)? commentError,
+    TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult? Function(DeleteCommentError value)? deleteCommentError,
+    TResult? Function(UpdatePostLoading value)? updatePostLoading,
+    TResult? Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult? Function(UpdatePostError value)? updatePostError,
+    TResult? Function(DeletePostLoading value)? deletePostLoading,
+    TResult? Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult? Function(DeletePostError value)? deletePostError,
+  }) {
+    return deletePostLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(PostsLoading value)? postsLoading,
+    TResult Function(PostsLoaded value)? postsLoaded,
+    TResult Function(PostsError value)? postsError,
+    TResult Function(ChangeScreen value)? changeScreen,
+    TResult Function(PostLoading value)? postLoading,
+    TResult Function(PostLoaded value)? postLoaded,
+    TResult Function(PostError value)? postError,
+    TResult Function(LikePostLoading value)? likePostLoading,
+    TResult Function(LikePostSuccess value)? likePostSuccess,
+    TResult Function(LikePostError value)? likePostError,
+    TResult Function(UnlikePostLoading value)? unlikePostLoading,
+    TResult Function(UnlikePostSuccess value)? unlikePostSuccess,
+    TResult Function(UnlikePostError value)? unlikePostError,
+    TResult Function(CommentLoading value)? commentLoading,
+    TResult Function(LocalCommentAdded value)? localCommentAdded,
+    TResult Function(CommentSuccess value)? commentSuccess,
+    TResult Function(CommentError value)? commentError,
+    TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult Function(DeleteCommentError value)? deleteCommentError,
+    TResult Function(UpdatePostLoading value)? updatePostLoading,
+    TResult Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult Function(UpdatePostError value)? updatePostError,
+    TResult Function(DeletePostLoading value)? deletePostLoading,
+    TResult Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult Function(DeletePostError value)? deletePostError,
+    required TResult orElse(),
+  }) {
+    if (deletePostLoading != null) {
+      return deletePostLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class DeletePostLoading implements HomeState {
+  const factory DeletePostLoading() = _$DeletePostLoadingImpl;
+}
+
+/// @nodoc
+abstract class _$$DeletePostSuccessImplCopyWith<$Res> {
+  factory _$$DeletePostSuccessImplCopyWith(_$DeletePostSuccessImpl value,
+          $Res Function(_$DeletePostSuccessImpl) then) =
+      __$$DeletePostSuccessImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$DeletePostSuccessImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$DeletePostSuccessImpl>
+    implements _$$DeletePostSuccessImplCopyWith<$Res> {
+  __$$DeletePostSuccessImplCopyWithImpl(_$DeletePostSuccessImpl _value,
+      $Res Function(_$DeletePostSuccessImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$DeletePostSuccessImpl
+    with DiagnosticableTreeMixin
+    implements DeletePostSuccess {
+  const _$DeletePostSuccessImpl();
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'HomeState.deletePostSuccess()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties.add(DiagnosticsProperty('type', 'HomeState.deletePostSuccess'));
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$DeletePostSuccessImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() postsLoading,
+    required TResult Function(List<Post> posts) postsLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) postsError,
+    required TResult Function(int index) changeScreen,
+    required TResult Function() postLoading,
+    required TResult Function(Post post) postLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) postError,
+    required TResult Function() likePostLoading,
+    required TResult Function() likePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) likePostError,
+    required TResult Function() unlikePostLoading,
+    required TResult Function() unlikePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) unlikePostError,
+    required TResult Function() commentLoading,
+    required TResult Function(List<Comment> comments) localCommentAdded,
+    required TResult Function() commentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) commentError,
+    required TResult Function() deleteCommentLoading,
+    required TResult Function() deleteCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+    required TResult Function() updatePostLoading,
+    required TResult Function() updatePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updatePostError,
+    required TResult Function() deletePostLoading,
+    required TResult Function() deletePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+  }) {
+    return deletePostSuccess();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? postsLoading,
+    TResult? Function(List<Post> posts)? postsLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? postsError,
+    TResult? Function(int index)? changeScreen,
+    TResult? Function()? postLoading,
+    TResult? Function(Post post)? postLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? postError,
+    TResult? Function()? likePostLoading,
+    TResult? Function()? likePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? likePostError,
+    TResult? Function()? unlikePostLoading,
+    TResult? Function()? unlikePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult? Function()? commentLoading,
+    TResult? Function(List<Comment> comments)? localCommentAdded,
+    TResult? Function()? commentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult? Function()? deleteCommentLoading,
+    TResult? Function()? deleteCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult? Function()? updatePostLoading,
+    TResult? Function()? updatePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult? Function()? deletePostLoading,
+    TResult? Function()? deletePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+  }) {
+    return deletePostSuccess?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? postsLoading,
+    TResult Function(List<Post> posts)? postsLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? postsError,
+    TResult Function(int index)? changeScreen,
+    TResult Function()? postLoading,
+    TResult Function(Post post)? postLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? postError,
+    TResult Function()? likePostLoading,
+    TResult Function()? likePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? likePostError,
+    TResult Function()? unlikePostLoading,
+    TResult Function()? unlikePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult Function()? commentLoading,
+    TResult Function(List<Comment> comments)? localCommentAdded,
+    TResult Function()? commentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult Function()? deleteCommentLoading,
+    TResult Function()? deleteCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult Function()? updatePostLoading,
+    TResult Function()? updatePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult Function()? deletePostLoading,
+    TResult Function()? deletePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    required TResult orElse(),
+  }) {
+    if (deletePostSuccess != null) {
+      return deletePostSuccess();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(PostsLoading value) postsLoading,
+    required TResult Function(PostsLoaded value) postsLoaded,
+    required TResult Function(PostsError value) postsError,
+    required TResult Function(ChangeScreen value) changeScreen,
+    required TResult Function(PostLoading value) postLoading,
+    required TResult Function(PostLoaded value) postLoaded,
+    required TResult Function(PostError value) postError,
+    required TResult Function(LikePostLoading value) likePostLoading,
+    required TResult Function(LikePostSuccess value) likePostSuccess,
+    required TResult Function(LikePostError value) likePostError,
+    required TResult Function(UnlikePostLoading value) unlikePostLoading,
+    required TResult Function(UnlikePostSuccess value) unlikePostSuccess,
+    required TResult Function(UnlikePostError value) unlikePostError,
+    required TResult Function(CommentLoading value) commentLoading,
+    required TResult Function(LocalCommentAdded value) localCommentAdded,
+    required TResult Function(CommentSuccess value) commentSuccess,
+    required TResult Function(CommentError value) commentError,
+    required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
+    required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
+    required TResult Function(DeleteCommentError value) deleteCommentError,
+    required TResult Function(UpdatePostLoading value) updatePostLoading,
+    required TResult Function(UpdatePostSuccess value) updatePostSuccess,
+    required TResult Function(UpdatePostError value) updatePostError,
+    required TResult Function(DeletePostLoading value) deletePostLoading,
+    required TResult Function(DeletePostSuccess value) deletePostSuccess,
+    required TResult Function(DeletePostError value) deletePostError,
+  }) {
+    return deletePostSuccess(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(PostsLoading value)? postsLoading,
+    TResult? Function(PostsLoaded value)? postsLoaded,
+    TResult? Function(PostsError value)? postsError,
+    TResult? Function(ChangeScreen value)? changeScreen,
+    TResult? Function(PostLoading value)? postLoading,
+    TResult? Function(PostLoaded value)? postLoaded,
+    TResult? Function(PostError value)? postError,
+    TResult? Function(LikePostLoading value)? likePostLoading,
+    TResult? Function(LikePostSuccess value)? likePostSuccess,
+    TResult? Function(LikePostError value)? likePostError,
+    TResult? Function(UnlikePostLoading value)? unlikePostLoading,
+    TResult? Function(UnlikePostSuccess value)? unlikePostSuccess,
+    TResult? Function(UnlikePostError value)? unlikePostError,
+    TResult? Function(CommentLoading value)? commentLoading,
+    TResult? Function(LocalCommentAdded value)? localCommentAdded,
+    TResult? Function(CommentSuccess value)? commentSuccess,
+    TResult? Function(CommentError value)? commentError,
+    TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult? Function(DeleteCommentError value)? deleteCommentError,
+    TResult? Function(UpdatePostLoading value)? updatePostLoading,
+    TResult? Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult? Function(UpdatePostError value)? updatePostError,
+    TResult? Function(DeletePostLoading value)? deletePostLoading,
+    TResult? Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult? Function(DeletePostError value)? deletePostError,
+  }) {
+    return deletePostSuccess?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(PostsLoading value)? postsLoading,
+    TResult Function(PostsLoaded value)? postsLoaded,
+    TResult Function(PostsError value)? postsError,
+    TResult Function(ChangeScreen value)? changeScreen,
+    TResult Function(PostLoading value)? postLoading,
+    TResult Function(PostLoaded value)? postLoaded,
+    TResult Function(PostError value)? postError,
+    TResult Function(LikePostLoading value)? likePostLoading,
+    TResult Function(LikePostSuccess value)? likePostSuccess,
+    TResult Function(LikePostError value)? likePostError,
+    TResult Function(UnlikePostLoading value)? unlikePostLoading,
+    TResult Function(UnlikePostSuccess value)? unlikePostSuccess,
+    TResult Function(UnlikePostError value)? unlikePostError,
+    TResult Function(CommentLoading value)? commentLoading,
+    TResult Function(LocalCommentAdded value)? localCommentAdded,
+    TResult Function(CommentSuccess value)? commentSuccess,
+    TResult Function(CommentError value)? commentError,
+    TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult Function(DeleteCommentError value)? deleteCommentError,
+    TResult Function(UpdatePostLoading value)? updatePostLoading,
+    TResult Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult Function(UpdatePostError value)? updatePostError,
+    TResult Function(DeletePostLoading value)? deletePostLoading,
+    TResult Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult Function(DeletePostError value)? deletePostError,
+    required TResult orElse(),
+  }) {
+    if (deletePostSuccess != null) {
+      return deletePostSuccess(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class DeletePostSuccess implements HomeState {
+  const factory DeletePostSuccess() = _$DeletePostSuccessImpl;
+}
+
+/// @nodoc
+abstract class _$$DeletePostErrorImplCopyWith<$Res> {
+  factory _$$DeletePostErrorImplCopyWith(_$DeletePostErrorImpl value,
+          $Res Function(_$DeletePostErrorImpl) then) =
+      __$$DeletePostErrorImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({ApiErrorModel apiErrorModel});
+}
+
+/// @nodoc
+class __$$DeletePostErrorImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$DeletePostErrorImpl>
+    implements _$$DeletePostErrorImplCopyWith<$Res> {
+  __$$DeletePostErrorImplCopyWithImpl(
+      _$DeletePostErrorImpl _value, $Res Function(_$DeletePostErrorImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? apiErrorModel = null,
+  }) {
+    return _then(_$DeletePostErrorImpl(
+      null == apiErrorModel
+          ? _value.apiErrorModel
+          : apiErrorModel // ignore: cast_nullable_to_non_nullable
+              as ApiErrorModel,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$DeletePostErrorImpl
+    with DiagnosticableTreeMixin
+    implements DeletePostError {
+  const _$DeletePostErrorImpl(this.apiErrorModel);
+
+  @override
+  final ApiErrorModel apiErrorModel;
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'HomeState.deletePostError(apiErrorModel: $apiErrorModel)';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+      ..add(DiagnosticsProperty('type', 'HomeState.deletePostError'))
+      ..add(DiagnosticsProperty('apiErrorModel', apiErrorModel));
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$DeletePostErrorImpl &&
+            (identical(other.apiErrorModel, apiErrorModel) ||
+                other.apiErrorModel == apiErrorModel));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, apiErrorModel);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$DeletePostErrorImplCopyWith<_$DeletePostErrorImpl> get copyWith =>
+      __$$DeletePostErrorImplCopyWithImpl<_$DeletePostErrorImpl>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() postsLoading,
+    required TResult Function(List<Post> posts) postsLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) postsError,
+    required TResult Function(int index) changeScreen,
+    required TResult Function() postLoading,
+    required TResult Function(Post post) postLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) postError,
+    required TResult Function() likePostLoading,
+    required TResult Function() likePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) likePostError,
+    required TResult Function() unlikePostLoading,
+    required TResult Function() unlikePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) unlikePostError,
+    required TResult Function() commentLoading,
+    required TResult Function(List<Comment> comments) localCommentAdded,
+    required TResult Function() commentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) commentError,
+    required TResult Function() deleteCommentLoading,
+    required TResult Function() deleteCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+    required TResult Function() updatePostLoading,
+    required TResult Function() updatePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updatePostError,
+    required TResult Function() deletePostLoading,
+    required TResult Function() deletePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+  }) {
+    return deletePostError(apiErrorModel);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? postsLoading,
+    TResult? Function(List<Post> posts)? postsLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? postsError,
+    TResult? Function(int index)? changeScreen,
+    TResult? Function()? postLoading,
+    TResult? Function(Post post)? postLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? postError,
+    TResult? Function()? likePostLoading,
+    TResult? Function()? likePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? likePostError,
+    TResult? Function()? unlikePostLoading,
+    TResult? Function()? unlikePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult? Function()? commentLoading,
+    TResult? Function(List<Comment> comments)? localCommentAdded,
+    TResult? Function()? commentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult? Function()? deleteCommentLoading,
+    TResult? Function()? deleteCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult? Function()? updatePostLoading,
+    TResult? Function()? updatePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult? Function()? deletePostLoading,
+    TResult? Function()? deletePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+  }) {
+    return deletePostError?.call(apiErrorModel);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? postsLoading,
+    TResult Function(List<Post> posts)? postsLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? postsError,
+    TResult Function(int index)? changeScreen,
+    TResult Function()? postLoading,
+    TResult Function(Post post)? postLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? postError,
+    TResult Function()? likePostLoading,
+    TResult Function()? likePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? likePostError,
+    TResult Function()? unlikePostLoading,
+    TResult Function()? unlikePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult Function()? commentLoading,
+    TResult Function(List<Comment> comments)? localCommentAdded,
+    TResult Function()? commentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult Function()? deleteCommentLoading,
+    TResult Function()? deleteCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult Function()? updatePostLoading,
+    TResult Function()? updatePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult Function()? deletePostLoading,
+    TResult Function()? deletePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    required TResult orElse(),
+  }) {
+    if (deletePostError != null) {
+      return deletePostError(apiErrorModel);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(PostsLoading value) postsLoading,
+    required TResult Function(PostsLoaded value) postsLoaded,
+    required TResult Function(PostsError value) postsError,
+    required TResult Function(ChangeScreen value) changeScreen,
+    required TResult Function(PostLoading value) postLoading,
+    required TResult Function(PostLoaded value) postLoaded,
+    required TResult Function(PostError value) postError,
+    required TResult Function(LikePostLoading value) likePostLoading,
+    required TResult Function(LikePostSuccess value) likePostSuccess,
+    required TResult Function(LikePostError value) likePostError,
+    required TResult Function(UnlikePostLoading value) unlikePostLoading,
+    required TResult Function(UnlikePostSuccess value) unlikePostSuccess,
+    required TResult Function(UnlikePostError value) unlikePostError,
+    required TResult Function(CommentLoading value) commentLoading,
+    required TResult Function(LocalCommentAdded value) localCommentAdded,
+    required TResult Function(CommentSuccess value) commentSuccess,
+    required TResult Function(CommentError value) commentError,
+    required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
+    required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
+    required TResult Function(DeleteCommentError value) deleteCommentError,
+    required TResult Function(UpdatePostLoading value) updatePostLoading,
+    required TResult Function(UpdatePostSuccess value) updatePostSuccess,
+    required TResult Function(UpdatePostError value) updatePostError,
+    required TResult Function(DeletePostLoading value) deletePostLoading,
+    required TResult Function(DeletePostSuccess value) deletePostSuccess,
+    required TResult Function(DeletePostError value) deletePostError,
+  }) {
+    return deletePostError(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(PostsLoading value)? postsLoading,
+    TResult? Function(PostsLoaded value)? postsLoaded,
+    TResult? Function(PostsError value)? postsError,
+    TResult? Function(ChangeScreen value)? changeScreen,
+    TResult? Function(PostLoading value)? postLoading,
+    TResult? Function(PostLoaded value)? postLoaded,
+    TResult? Function(PostError value)? postError,
+    TResult? Function(LikePostLoading value)? likePostLoading,
+    TResult? Function(LikePostSuccess value)? likePostSuccess,
+    TResult? Function(LikePostError value)? likePostError,
+    TResult? Function(UnlikePostLoading value)? unlikePostLoading,
+    TResult? Function(UnlikePostSuccess value)? unlikePostSuccess,
+    TResult? Function(UnlikePostError value)? unlikePostError,
+    TResult? Function(CommentLoading value)? commentLoading,
+    TResult? Function(LocalCommentAdded value)? localCommentAdded,
+    TResult? Function(CommentSuccess value)? commentSuccess,
+    TResult? Function(CommentError value)? commentError,
+    TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult? Function(DeleteCommentError value)? deleteCommentError,
+    TResult? Function(UpdatePostLoading value)? updatePostLoading,
+    TResult? Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult? Function(UpdatePostError value)? updatePostError,
+    TResult? Function(DeletePostLoading value)? deletePostLoading,
+    TResult? Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult? Function(DeletePostError value)? deletePostError,
+  }) {
+    return deletePostError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(PostsLoading value)? postsLoading,
+    TResult Function(PostsLoaded value)? postsLoaded,
+    TResult Function(PostsError value)? postsError,
+    TResult Function(ChangeScreen value)? changeScreen,
+    TResult Function(PostLoading value)? postLoading,
+    TResult Function(PostLoaded value)? postLoaded,
+    TResult Function(PostError value)? postError,
+    TResult Function(LikePostLoading value)? likePostLoading,
+    TResult Function(LikePostSuccess value)? likePostSuccess,
+    TResult Function(LikePostError value)? likePostError,
+    TResult Function(UnlikePostLoading value)? unlikePostLoading,
+    TResult Function(UnlikePostSuccess value)? unlikePostSuccess,
+    TResult Function(UnlikePostError value)? unlikePostError,
+    TResult Function(CommentLoading value)? commentLoading,
+    TResult Function(LocalCommentAdded value)? localCommentAdded,
+    TResult Function(CommentSuccess value)? commentSuccess,
+    TResult Function(CommentError value)? commentError,
+    TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult Function(DeleteCommentError value)? deleteCommentError,
+    TResult Function(UpdatePostLoading value)? updatePostLoading,
+    TResult Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult Function(UpdatePostError value)? updatePostError,
+    TResult Function(DeletePostLoading value)? deletePostLoading,
+    TResult Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult Function(DeletePostError value)? deletePostError,
+    required TResult orElse(),
+  }) {
+    if (deletePostError != null) {
+      return deletePostError(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class DeletePostError implements HomeState {
+  const factory DeletePostError(final ApiErrorModel apiErrorModel) =
+      _$DeletePostErrorImpl;
+
+  ApiErrorModel get apiErrorModel;
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$DeletePostErrorImplCopyWith<_$DeletePostErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

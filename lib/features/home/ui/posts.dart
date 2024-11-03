@@ -11,12 +11,13 @@ class Posts extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.separated(
       shrinkWrap: true,
-      physics: const NeverScrollableScrollPhysics(), 
+      physics: const NeverScrollableScrollPhysics(),
       itemBuilder: (context, index) => PostItem(
+        postUserId: posts[index].author!.id!,
         isDetail: false,
         postId: posts[index].id!,
         isLiked: posts[index].isLiked ?? false,
-        time: posts[index].createdAt!, 
+        time: posts[index].createdAt!,
         profileImage: posts[index].author?.profileImg,
         userName: "${posts[index].author?.firstName ?? 'User'} ${posts[index].author?.lastName ?? ''}",
         postCaption: posts[index].content ?? "Post Caption",

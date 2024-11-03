@@ -1,3 +1,5 @@
+import 'package:circle_sync/core/helpers/extensions.dart';
+import 'package:circle_sync/core/routing/routes.dart';
 import 'package:circle_sync/features/add_post/ui/add_post_screen.dart';
 import 'package:circle_sync/features/chats/ui/chats_screen.dart';
 import 'package:circle_sync/features/home/data/models/home_responses.dart';
@@ -8,7 +10,6 @@ import 'package:circle_sync/features/notifications/ui/notifications_screen.dart'
 import 'package:circle_sync/features/profile/ui/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 
 class HomeCubit extends Cubit<HomeState> {
   final HomeRepo _homeRepo;
@@ -21,14 +22,14 @@ class HomeCubit extends Cubit<HomeState> {
     const ProfileScreen(),
   ];
 
-  int currentIndex = 0; 
+  int currentIndex = 0;
 
   void changeScreen(int index) {
     currentIndex = index;
     emit(HomeState.changeScreen(index));
   }
 
-  void getPosts() async{
+  void getPosts() async {
     emit(const HomeState.postsLoading());
     final response = await _homeRepo.getPosts();
     response.when(
@@ -43,10 +44,10 @@ class HomeCubit extends Cubit<HomeState> {
 
   Post? post;
 
-   List<Comment> comments = [];
-   List<Comment> localComments = [];
+  List<Comment> comments = [];
+  List<Comment> localComments = [];
 
-  void getPost(String id) async{
+  void getPost(String id) async {
     emit(const HomeState.postLoading());
     final response = await _homeRepo.getPost(id);
     response.when(
@@ -61,7 +62,7 @@ class HomeCubit extends Cubit<HomeState> {
     );
   }
 
-  void likePost(String postId) async{
+  void likePost(String postId) async {
     emit(const HomeState.likePostLoading());
     final response = await _homeRepo.likePost(postId);
     response.when(
@@ -74,7 +75,7 @@ class HomeCubit extends Cubit<HomeState> {
     );
   }
 
-  void unlikePost(String postId) async{
+  void unlikePost(String postId) async {
     emit(const HomeState.unlikePostLoading());
     final response = await _homeRepo.unlikePost(postId);
     response.when(
@@ -87,36 +88,45 @@ class HomeCubit extends Cubit<HomeState> {
     );
   }
 
-  void addLocalComment(Comment comment){
+  void addLocalComment(Comment comment) {
     localComments.add(comment);
     emit(HomeState.localCommentAdded(localComments));
   }
 
-  void removeLocalCommentAndAddRemote(Comment localComment, Comment remoteComment,String firstName,String lastName,String image,String userId){
+  void removeLocalCommentAndAddRemote(
+      Comment localComment,
+      Comment remoteComment,
+      String firstName,
+      String lastName,
+      String image,
+      String userId) {
     localComments.remove(localComment);
     emit(HomeState.localCommentAdded(localComments));
     comments.add(Comment(
       id: remoteComment.id,
       content: remoteComment.content,
-      user: [UserData(
-       id: userId,
-        firstName: firstName,
-        lastName: lastName,
-        profileImg: image,
-      ),],
+      user: [
+        UserData(
+          id: userId,
+          firstName: firstName,
+          lastName: lastName,
+          profileImg: image,
+        ),
+      ],
       createdAt: remoteComment.createdAt,
     ));
     emit(const HomeState.commentSuccess());
   }
- 
 
-  void comment(String postId, Comment comment,String firstName,String lastName,String image, String id) async{
+  void comment(String postId, Comment comment, String firstName,
+      String lastName, String image, String id) async {
     addLocalComment(comment);
     emit(const HomeState.commentLoading());
     final response = await _homeRepo.comment(postId, comment.content!);
     response.when(
       success: (response) {
-        removeLocalCommentAndAddRemote(comment,response.data.comment,firstName,lastName,image,id);
+        removeLocalCommentAndAddRemote(
+            comment, response.data.comment, firstName, lastName, image, id);
         emit(const HomeState.commentSuccess());
       },
       failure: (apiErrorModel) {
@@ -125,7 +135,7 @@ class HomeCubit extends Cubit<HomeState> {
     );
   }
 
-  void deleteComment(String postId, String commentId) async{
+  void deleteComment(String postId, String commentId) async {
     emit(const HomeState.deleteCommentLoading());
     final response = await _homeRepo.deleteComment(postId, commentId);
     response.when(
@@ -138,4 +148,33 @@ class HomeCubit extends Cubit<HomeState> {
     );
   }
 
+  GlobalKey<FormState> updatePostFormKey = GlobalKey<FormState>();
+  TextEditingController updatePostController = TextEditingController();
+
+  void updatePost(String postId, String content,BuildContext context) async {
+    emit(const HomeState.updatePostLoading());
+    final response = await _homeRepo.updatePost(postId, content);
+    response.when(
+      success: (response) {
+        context.pushReplacementNamed(Routes.home);
+        emit(const HomeState.updatePostSuccess());
+      },
+      failure: (apiErrorModel) {
+        emit(HomeState.updatePostError(apiErrorModel));
+      },
+    );
+  }
+
+  Future<void> deletePost(String postId) async {
+    emit(const HomeState.deletePostLoading());
+    final response = await _homeRepo.deletePost(postId);
+    response.when(
+      success: (response) {
+        emit(const HomeState.deletePostSuccess());
+      },
+      failure: (apiErrorModel) {
+        emit(HomeState.deletePostError(apiErrorModel));
+      },
+    );
+  }
 }

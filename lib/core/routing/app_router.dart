@@ -3,6 +3,7 @@ import 'package:circle_sync/core/routing/routes.dart';
 import 'package:circle_sync/features/home/logic/home_cubit.dart';
 import 'package:circle_sync/features/home/ui/home_layout.dart';
 import 'package:circle_sync/features/home/ui/post_details.dart';
+import 'package:circle_sync/features/home/ui/update_post.dart';
 import 'package:circle_sync/features/login/logic/cubit/login_cubit.dart';
 import 'package:circle_sync/features/login/ui/login_screen.dart';
 import 'package:circle_sync/features/on_boarding/UI/on_boarding_2.dart';
@@ -15,21 +16,21 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class AppRouter {
-  Route ? generateRoute(RouteSettings settings) {
+  Route? generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case Routes.onBoarding1:
         return MaterialPageRoute(
           builder: (_) => const OnBoardingScreen1(),
         );
-        case Routes.onBoarding2:
+      case Routes.onBoarding2:
         return MaterialPageRoute(
           builder: (_) => const OnBoardingScreen2(),
         );
-        case Routes.onBoarding3:
+      case Routes.onBoarding3:
         return MaterialPageRoute(
           builder: (_) => const OnBoardingScreen3(),
         );
-        case Routes.welcome:
+      case Routes.welcome:
         return MaterialPageRoute(
           builder: (_) => const WelcomeScreen(),
         );
@@ -48,20 +49,33 @@ class AppRouter {
           ),
         );
       case Routes.home:
-       return MaterialPageRoute(
+        return MaterialPageRoute(
           builder: (_) => BlocProvider(
             create: (context) => getIt<HomeCubit>(),
             child: const HomeLayout(),
           ),
         );
-  case Routes.post:
-  return MaterialPageRoute(
-    builder: (_) => BlocProvider(
-      create: (context) => getIt<HomeCubit>(),
-      child: PostDetails(id: settings.arguments as String),
-    ),
-  );
-      default: null;
+      case Routes.updatePost:
+        return MaterialPageRoute(
+          builder: (_) => BlocProvider(
+            create: (context) => getIt<HomeCubit>(),
+            child: UpdatePostScreen(
+              postId: (settings.arguments as Map<String, dynamic>)['postId']
+                  as String,
+              caption: (settings.arguments as Map<String, dynamic>)['caption']
+                  as String,
+            ),
+          ),
+        );
+      case Routes.post:
+        return MaterialPageRoute(
+          builder: (_) => BlocProvider(
+            create: (context) => getIt<HomeCubit>(),
+            child: PostDetails(id: settings.arguments as String),
+          ),
+        );
+      default:
+        null;
     }
     return null;
   }
