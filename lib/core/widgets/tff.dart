@@ -1,15 +1,17 @@
-// ignore_for_file: library_private_types_in_public_api
 import 'package:circle_sync/core/themes/colors/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AppTextField extends StatefulWidget {
   final TextEditingController controller;
   final TextInputType keyboardType;
   final bool isPassword;
-   final Function(String?) validator;
+  final double? height;
+  final Function(String?) validator;
 
   const AppTextField({
     super.key,
+    this.height,
     required this.controller,
     required this.keyboardType,
     required this.isPassword,
@@ -17,10 +19,10 @@ class AppTextField extends StatefulWidget {
   });
 
   @override
-  _AppTextFieldState createState() => _AppTextFieldState();
+  AppTextFieldState createState() => AppTextFieldState();
 }
 
-class _AppTextFieldState extends State<AppTextField> {
+class AppTextFieldState extends State<AppTextField> {
   bool _isPasswordVisible = false;
 
   @override
@@ -30,52 +32,54 @@ class _AppTextFieldState extends State<AppTextField> {
       width: size.width * 0.9,
       child: FormField<String>(
         validator: (value) {
-        return widget.validator(value);
-      },
+          return widget.validator(value);
+        },
         builder: (FormFieldState<String> field) {
           return Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                height: 55,
+                height: widget.height ?? 55.h,
                 decoration: ShapeDecoration(
-                  color: const Color(0xFFF5F5F5),
+                  color: ColorManager.textFieldBackGround,
                   shape: RoundedRectangleBorder(
-                    side:
-                        const BorderSide(width: 1, color: ColorManager.primary),
+                    side: const BorderSide(width: 1, color: ColorManager.primary),
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
-                child: Center(
-                  child: TextFormField(
-                    keyboardType: widget.keyboardType,
-                    controller: widget.controller,
-                    obscureText: widget.isPassword && !_isPasswordVisible,
-                    onChanged: (value) {
-                      field.didChange(value);
-                    },
-                    decoration: InputDecoration(
-                      suffixIcon: widget.isPassword
-                          ? IconButton(
-                              icon: Icon(
-                                _isPasswordVisible
-                                    ? Icons.visibility_off
-                                    : Icons.visibility,
-                                size: 25,
-                                color: const Color(0xFFAAB0B7),
-                              ),
-                              onPressed: () {
-                                setState(() {
-                                  _isPasswordVisible = !_isPasswordVisible;
-                                });
-                              },
-                            )
-                          : null,
-                      border: InputBorder.none,
-                      contentPadding: const EdgeInsets.symmetric(
-                          vertical: 20, horizontal: 20),
-                      errorStyle: const TextStyle(height: 0),
+                child: TextFormField(
+                  keyboardType: widget.keyboardType,
+                  controller: widget.controller,
+                  obscureText: widget.isPassword && !_isPasswordVisible,
+                  onChanged: (value) {
+                    field.didChange(value);
+                  },
+                  minLines: widget.isPassword ? 1 : (widget.height != null ? null : 1),
+                  maxLines: widget.isPassword ? 1 : (widget.height != null ? null : 5),
+                  textAlignVertical: TextAlignVertical.top,
+                  decoration: InputDecoration(
+                    suffixIcon: widget.isPassword
+                        ? IconButton(
+                            icon: Icon(
+                              _isPasswordVisible
+                                  ? Icons.visibility_off
+                                  : Icons.visibility,
+                              size: 25,
+                              color: ColorManager.appGrey,
+                            ),
+                            onPressed: () {
+                              setState(() {
+                                _isPasswordVisible = !_isPasswordVisible;
+                              });
+                            },
+                          )
+                        : null,
+                    border: InputBorder.none,
+                    contentPadding: EdgeInsets.symmetric(
+                      horizontal: 15,
+                      vertical: widget.height == null ? 15 : 0,
                     ),
+                    errorStyle: const TextStyle(height: 0),
                   ),
                 ),
               ),

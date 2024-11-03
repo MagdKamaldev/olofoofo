@@ -1,4 +1,5 @@
 // ignore_for_file: depend_on_referenced_packages
+import 'package:circle_sync/core/networks/api_error_model.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 part 'profile_state.freezed.dart';
 
@@ -7,5 +8,5 @@ part 'profile_state.freezed.dart';
   const factory ProfileState.initial() = _Initial;
   const factory ProfileState.getProfileLoading() = GetProfileLoading;
   const factory ProfileState.getProfileSuccess(T data) = GetProfileSuccess<T>;
-  const factory ProfileState.getProfilefailure({required String error}) = GetProfileError;
+  const factory ProfileState.getProfilefailure(ApiErrorModel apiErrorModel) = GetProfileError;
  }

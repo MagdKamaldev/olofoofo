@@ -24,11 +24,4 @@ class PostModel {
       _$PostModelFromJson(json);
 
   Map<String, dynamic> toJson() => _$PostModelToJson(this);
-
-  // This is to handle DateTime conversion from and to JSON
-  static DateTime? _dateTimeFromJson(String? date) =>
-      date == null ? null : DateTime.parse(date);
-
-  static String? _dateTimeToJson(DateTime? date) =>
-      date?.toIso8601String();
 }

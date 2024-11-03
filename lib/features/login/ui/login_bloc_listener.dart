@@ -32,7 +32,7 @@ class LoginBlocListener extends StatelessWidget {
               Navigator.of(context).pushReplacementNamed(Routes.home);
             },
             failure: (error) {
-              _setupErrorState(context, error);
+              _setupErrorState(context, error.message.toString());
             },
           );
         });
@@ -53,7 +53,7 @@ class LoginBlocListener extends StatelessWidget {
       ),
       content: Text(
         error,
-        textAlign: TextAlign.center,  // Center the error text
+        textAlign: TextAlign.center, 
         style: TextStyles.font14Medium.copyWith(color: Colors.red),
       ),
       actions: [

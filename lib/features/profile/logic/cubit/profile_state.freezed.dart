@@ -21,7 +21,7 @@ mixin _$ProfileState<T> {
     required TResult Function() initial,
     required TResult Function() getProfileLoading,
     required TResult Function(T data) getProfileSuccess,
-    required TResult Function(String error) getProfilefailure,
+    required TResult Function(ApiErrorModel apiErrorModel) getProfilefailure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -29,7 +29,7 @@ mixin _$ProfileState<T> {
     TResult? Function()? initial,
     TResult? Function()? getProfileLoading,
     TResult? Function(T data)? getProfileSuccess,
-    TResult? Function(String error)? getProfilefailure,
+    TResult? Function(ApiErrorModel apiErrorModel)? getProfilefailure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -37,7 +37,7 @@ mixin _$ProfileState<T> {
     TResult Function()? initial,
     TResult Function()? getProfileLoading,
     TResult Function(T data)? getProfileSuccess,
-    TResult Function(String error)? getProfilefailure,
+    TResult Function(ApiErrorModel apiErrorModel)? getProfilefailure,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -84,6 +84,9 @@ class _$ProfileStateCopyWithImpl<T, $Res, $Val extends ProfileState<T>>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of ProfileState
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -100,6 +103,9 @@ class __$$InitialImplCopyWithImpl<T, $Res>
   __$$InitialImplCopyWithImpl(
       _$InitialImpl<T> _value, $Res Function(_$InitialImpl<T>) _then)
       : super(_value, _then);
+
+  /// Create a copy of ProfileState
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -127,7 +133,7 @@ class _$InitialImpl<T> implements _Initial<T> {
     required TResult Function() initial,
     required TResult Function() getProfileLoading,
     required TResult Function(T data) getProfileSuccess,
-    required TResult Function(String error) getProfilefailure,
+    required TResult Function(ApiErrorModel apiErrorModel) getProfilefailure,
   }) {
     return initial();
   }
@@ -138,7 +144,7 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult? Function()? initial,
     TResult? Function()? getProfileLoading,
     TResult? Function(T data)? getProfileSuccess,
-    TResult? Function(String error)? getProfilefailure,
+    TResult? Function(ApiErrorModel apiErrorModel)? getProfilefailure,
   }) {
     return initial?.call();
   }
@@ -149,7 +155,7 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult Function()? initial,
     TResult Function()? getProfileLoading,
     TResult Function(T data)? getProfileSuccess,
-    TResult Function(String error)? getProfilefailure,
+    TResult Function(ApiErrorModel apiErrorModel)? getProfilefailure,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -214,6 +220,9 @@ class __$$GetProfileLoadingImplCopyWithImpl<T, $Res>
   __$$GetProfileLoadingImplCopyWithImpl(_$GetProfileLoadingImpl<T> _value,
       $Res Function(_$GetProfileLoadingImpl<T>) _then)
       : super(_value, _then);
+
+  /// Create a copy of ProfileState
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -242,7 +251,7 @@ class _$GetProfileLoadingImpl<T> implements GetProfileLoading<T> {
     required TResult Function() initial,
     required TResult Function() getProfileLoading,
     required TResult Function(T data) getProfileSuccess,
-    required TResult Function(String error) getProfilefailure,
+    required TResult Function(ApiErrorModel apiErrorModel) getProfilefailure,
   }) {
     return getProfileLoading();
   }
@@ -253,7 +262,7 @@ class _$GetProfileLoadingImpl<T> implements GetProfileLoading<T> {
     TResult? Function()? initial,
     TResult? Function()? getProfileLoading,
     TResult? Function(T data)? getProfileSuccess,
-    TResult? Function(String error)? getProfilefailure,
+    TResult? Function(ApiErrorModel apiErrorModel)? getProfilefailure,
   }) {
     return getProfileLoading?.call();
   }
@@ -264,7 +273,7 @@ class _$GetProfileLoadingImpl<T> implements GetProfileLoading<T> {
     TResult Function()? initial,
     TResult Function()? getProfileLoading,
     TResult Function(T data)? getProfileSuccess,
-    TResult Function(String error)? getProfilefailure,
+    TResult Function(ApiErrorModel apiErrorModel)? getProfilefailure,
     required TResult orElse(),
   }) {
     if (getProfileLoading != null) {
@@ -332,6 +341,8 @@ class __$$GetProfileSuccessImplCopyWithImpl<T, $Res>
       $Res Function(_$GetProfileSuccessImpl<T>) _then)
       : super(_value, _then);
 
+  /// Create a copy of ProfileState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -371,7 +382,9 @@ class _$GetProfileSuccessImpl<T> implements GetProfileSuccess<T> {
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(data));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ProfileState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$GetProfileSuccessImplCopyWith<T, _$GetProfileSuccessImpl<T>>
@@ -385,7 +398,7 @@ class _$GetProfileSuccessImpl<T> implements GetProfileSuccess<T> {
     required TResult Function() initial,
     required TResult Function() getProfileLoading,
     required TResult Function(T data) getProfileSuccess,
-    required TResult Function(String error) getProfilefailure,
+    required TResult Function(ApiErrorModel apiErrorModel) getProfilefailure,
   }) {
     return getProfileSuccess(data);
   }
@@ -396,7 +409,7 @@ class _$GetProfileSuccessImpl<T> implements GetProfileSuccess<T> {
     TResult? Function()? initial,
     TResult? Function()? getProfileLoading,
     TResult? Function(T data)? getProfileSuccess,
-    TResult? Function(String error)? getProfilefailure,
+    TResult? Function(ApiErrorModel apiErrorModel)? getProfilefailure,
   }) {
     return getProfileSuccess?.call(data);
   }
@@ -407,7 +420,7 @@ class _$GetProfileSuccessImpl<T> implements GetProfileSuccess<T> {
     TResult Function()? initial,
     TResult Function()? getProfileLoading,
     TResult Function(T data)? getProfileSuccess,
-    TResult Function(String error)? getProfilefailure,
+    TResult Function(ApiErrorModel apiErrorModel)? getProfilefailure,
     required TResult orElse(),
   }) {
     if (getProfileSuccess != null) {
@@ -458,7 +471,10 @@ abstract class GetProfileSuccess<T> implements ProfileState<T> {
   const factory GetProfileSuccess(final T data) = _$GetProfileSuccessImpl<T>;
 
   T get data;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ProfileState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$GetProfileSuccessImplCopyWith<T, _$GetProfileSuccessImpl<T>>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -469,7 +485,7 @@ abstract class _$$GetProfileErrorImplCopyWith<T, $Res> {
           $Res Function(_$GetProfileErrorImpl<T>) then) =
       __$$GetProfileErrorImplCopyWithImpl<T, $Res>;
   @useResult
-  $Res call({String error});
+  $Res call({ApiErrorModel apiErrorModel});
 }
 
 /// @nodoc
@@ -480,16 +496,18 @@ class __$$GetProfileErrorImplCopyWithImpl<T, $Res>
       $Res Function(_$GetProfileErrorImpl<T>) _then)
       : super(_value, _then);
 
+  /// Create a copy of ProfileState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? error = null,
+    Object? apiErrorModel = null,
   }) {
     return _then(_$GetProfileErrorImpl<T>(
-      error: null == error
-          ? _value.error
-          : error // ignore: cast_nullable_to_non_nullable
-              as String,
+      null == apiErrorModel
+          ? _value.apiErrorModel
+          : apiErrorModel // ignore: cast_nullable_to_non_nullable
+              as ApiErrorModel,
     ));
   }
 }
@@ -497,14 +515,14 @@ class __$$GetProfileErrorImplCopyWithImpl<T, $Res>
 /// @nodoc
 
 class _$GetProfileErrorImpl<T> implements GetProfileError<T> {
-  const _$GetProfileErrorImpl({required this.error});
+  const _$GetProfileErrorImpl(this.apiErrorModel);
 
   @override
-  final String error;
+  final ApiErrorModel apiErrorModel;
 
   @override
   String toString() {
-    return 'ProfileState<$T>.getProfilefailure(error: $error)';
+    return 'ProfileState<$T>.getProfilefailure(apiErrorModel: $apiErrorModel)';
   }
 
   @override
@@ -512,13 +530,16 @@ class _$GetProfileErrorImpl<T> implements GetProfileError<T> {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$GetProfileErrorImpl<T> &&
-            (identical(other.error, error) || other.error == error));
+            (identical(other.apiErrorModel, apiErrorModel) ||
+                other.apiErrorModel == apiErrorModel));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, error);
+  int get hashCode => Object.hash(runtimeType, apiErrorModel);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ProfileState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$GetProfileErrorImplCopyWith<T, _$GetProfileErrorImpl<T>> get copyWith =>
@@ -531,9 +552,9 @@ class _$GetProfileErrorImpl<T> implements GetProfileError<T> {
     required TResult Function() initial,
     required TResult Function() getProfileLoading,
     required TResult Function(T data) getProfileSuccess,
-    required TResult Function(String error) getProfilefailure,
+    required TResult Function(ApiErrorModel apiErrorModel) getProfilefailure,
   }) {
-    return getProfilefailure(error);
+    return getProfilefailure(apiErrorModel);
   }
 
   @override
@@ -542,9 +563,9 @@ class _$GetProfileErrorImpl<T> implements GetProfileError<T> {
     TResult? Function()? initial,
     TResult? Function()? getProfileLoading,
     TResult? Function(T data)? getProfileSuccess,
-    TResult? Function(String error)? getProfilefailure,
+    TResult? Function(ApiErrorModel apiErrorModel)? getProfilefailure,
   }) {
-    return getProfilefailure?.call(error);
+    return getProfilefailure?.call(apiErrorModel);
   }
 
   @override
@@ -553,11 +574,11 @@ class _$GetProfileErrorImpl<T> implements GetProfileError<T> {
     TResult Function()? initial,
     TResult Function()? getProfileLoading,
     TResult Function(T data)? getProfileSuccess,
-    TResult Function(String error)? getProfilefailure,
+    TResult Function(ApiErrorModel apiErrorModel)? getProfilefailure,
     required TResult orElse(),
   }) {
     if (getProfilefailure != null) {
-      return getProfilefailure(error);
+      return getProfilefailure(apiErrorModel);
     }
     return orElse();
   }
@@ -601,11 +622,14 @@ class _$GetProfileErrorImpl<T> implements GetProfileError<T> {
 }
 
 abstract class GetProfileError<T> implements ProfileState<T> {
-  const factory GetProfileError({required final String error}) =
+  const factory GetProfileError(final ApiErrorModel apiErrorModel) =
       _$GetProfileErrorImpl<T>;
 
-  String get error;
-  @JsonKey(ignore: true)
+  ApiErrorModel get apiErrorModel;
+
+  /// Create a copy of ProfileState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$GetProfileErrorImplCopyWith<T, _$GetProfileErrorImpl<T>> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -9,7 +9,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 bool isLoggedInUser = false;
 
-checkIfLoggedIn() async {
+checkIfLoggedIn() async { 
   // Check if user is logged in
   String? userToken =
       await SharedPrefHelper.getString(SharedPrefKeys.userToken);

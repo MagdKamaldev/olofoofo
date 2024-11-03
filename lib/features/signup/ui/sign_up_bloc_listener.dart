@@ -32,7 +32,7 @@ class SignUpBlocListener extends StatelessWidget {
               Navigator.of(context).pushReplacementNamed(Routes.welcome);
             },
             failure: (error) {
-              _setupErrorState(context, error);
+              _setupErrorState(context, error.message!);
             },
           );
         });

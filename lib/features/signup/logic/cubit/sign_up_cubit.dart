@@ -27,13 +27,16 @@ class SignUpCubit extends Cubit<SignUpState> {
         lastName: lastNameController.text));
     response.when(
       success: (data) async {
-        await saveToken(data.token ?? '');
-        await saveUserId(data.userData!.id);
-        DioFactory.setTokenIntoHeaderAfterLogin(data.token ?? "");
+        await saveToken(data.data!.token ?? '');
+        await saveUserId(data.data!.user!.id ?? '');
+        await saveUserProfileImage(data.data!.user!.profileImage ?? '');
+         await saveFirstName(data.data!.user!.firstName);
+        await saveLastName(data.data!.user!.lastName);
+        DioFactory.setTokenIntoHeaderAfterLogin(data.data!.token ?? "");
         emit(SignUpState.success(data));
       },
-      failure: (error) {
-        emit(SignUpState.failure(error: error.apiErrorModel.message ?? ""));
+      failure: (apiErrorModel) {
+        emit(SignUpState.failure(apiErrorModel));
       },
     );
   }
@@ -46,5 +49,17 @@ class SignUpCubit extends Cubit<SignUpState> {
   saveUserId(String? id) async {
     //save user id to shared preferences
     await SharedPrefHelper.setData(SharedPrefKeys.userId, id);
+  }
+
+  saveUserProfileImage(String? image) async {
+    await SharedPrefHelper.setData(SharedPrefKeys.userProfileImage, image);
+  }
+
+    saveFirstName(String? name) async {
+    await SharedPrefHelper.setData(SharedPrefKeys.firstName, name);
+  }
+
+  saveLastName(String? name) async {
+    await SharedPrefHelper.setData(SharedPrefKeys.lastName, name);
   }
 }
