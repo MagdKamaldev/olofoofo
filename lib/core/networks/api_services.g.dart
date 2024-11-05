@@ -14,7 +14,7 @@ class _ApiService implements ApiService {
     this.baseUrl,
     this.errorLogger,
   }) {
-    baseUrl ??= 'http://192.168.89.186:8080/api/v1';
+    baseUrl ??= 'http://192.168.89.188:8080/api/v1/';
   }
 
   final Dio _dio;
@@ -92,7 +92,7 @@ class _ApiService implements ApiService {
   }
 
   @override
-  Future<ProfileResponseModel> getUser(String userId) async {
+  Future<ProfileResponseModel> getUser() async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
@@ -104,7 +104,7 @@ class _ApiService implements ApiService {
     )
         .compose(
           _dio.options,
-          'users/${userId}',
+          'users/me',
           queryParameters: queryParameters,
           data: _data,
         )

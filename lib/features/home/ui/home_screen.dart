@@ -24,8 +24,7 @@ class HomeScreen extends StatelessWidget {
                   current is PostsLoaded ||
                   current is PostsLoading ||
                   current is ChangeScreen,
-              builder: (context, state) {
-                
+              builder: (context, state) {            
                 return state.maybeWhen(
                   postsLoading: () => const SliverToBoxAdapter(
                     child: ShimmerScreen(),

@@ -14,7 +14,7 @@ class _HomeApiService implements HomeApiService {
     this.baseUrl,
     this.errorLogger,
   }) {
-    baseUrl ??= 'http://192.168.89.186:8080/api/v1';
+    baseUrl ??= 'http://192.168.89.188:8080/api/v1/';
   }
 
   final Dio _dio;
@@ -36,7 +36,7 @@ class _HomeApiService implements HomeApiService {
     )
         .compose(
           _dio.options,
-          '/posts',
+          'posts',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -69,7 +69,7 @@ class _HomeApiService implements HomeApiService {
     )
         .compose(
           _dio.options,
-          '/posts/${postId}',
+          'posts/${postId}',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -106,7 +106,7 @@ class _HomeApiService implements HomeApiService {
     )
         .compose(
           _dio.options,
-          '/posts/${postId}',
+          'posts/${postId}',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -139,7 +139,7 @@ class _HomeApiService implements HomeApiService {
     )
         .compose(
           _dio.options,
-          '/posts/${postId}',
+          'posts/${postId}',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -164,7 +164,7 @@ class _HomeApiService implements HomeApiService {
     )
         .compose(
           _dio.options,
-          '/posts/${postId}/like',
+          'posts/${postId}/like',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -189,7 +189,7 @@ class _HomeApiService implements HomeApiService {
     )
         .compose(
           _dio.options,
-          '/posts/${postId}/unlike',
+          'posts/${postId}/unlike',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -218,7 +218,7 @@ class _HomeApiService implements HomeApiService {
     )
         .compose(
           _dio.options,
-          '/posts/${postId}/comments',
+          'posts/${postId}/comments',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -254,7 +254,7 @@ class _HomeApiService implements HomeApiService {
     )
         .compose(
           _dio.options,
-          '/posts/${postId}/comments/${commentId}',
+          'posts/${postId}/comments/${commentId}',
           queryParameters: queryParameters,
           data: _data,
         )

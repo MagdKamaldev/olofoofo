@@ -14,7 +14,7 @@ class _AddPostApiService implements AddPostApiService {
     this.baseUrl,
     this.errorLogger,
   }) {
-    baseUrl ??= 'http://192.168.89.186:8080/api/v1';
+    baseUrl ??= 'http://192.168.89.188:8080/api/v1/';
   }
 
   final Dio _dio;
@@ -38,7 +38,7 @@ class _AddPostApiService implements AddPostApiService {
     )
         .compose(
           _dio.options,
-          '/posts',
+          'posts',
           queryParameters: queryParameters,
           data: _data,
         )
