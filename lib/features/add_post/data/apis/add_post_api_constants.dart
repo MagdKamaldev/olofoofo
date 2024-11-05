@@ -1,3 +1,3 @@
 class AddPostApiConstants {
-  static const String addPost = '/posts';
+  static const String addPost = 'posts';
 }
