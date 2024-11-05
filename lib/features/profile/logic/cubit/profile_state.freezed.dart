@@ -20,7 +20,7 @@ mixin _$ProfileState<T> {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() getProfileLoading,
-    required TResult Function(T data) getProfileSuccess,
+    required TResult Function(ProfileResponseModel data) getProfileSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) getProfilefailure,
   }) =>
       throw _privateConstructorUsedError;
@@ -28,7 +28,7 @@ mixin _$ProfileState<T> {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? getProfileLoading,
-    TResult? Function(T data)? getProfileSuccess,
+    TResult? Function(ProfileResponseModel data)? getProfileSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? getProfilefailure,
   }) =>
       throw _privateConstructorUsedError;
@@ -36,7 +36,7 @@ mixin _$ProfileState<T> {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? getProfileLoading,
-    TResult Function(T data)? getProfileSuccess,
+    TResult Function(ProfileResponseModel data)? getProfileSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? getProfilefailure,
     required TResult orElse(),
   }) =>
@@ -132,7 +132,7 @@ class _$InitialImpl<T> implements _Initial<T> {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() getProfileLoading,
-    required TResult Function(T data) getProfileSuccess,
+    required TResult Function(ProfileResponseModel data) getProfileSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) getProfilefailure,
   }) {
     return initial();
@@ -143,7 +143,7 @@ class _$InitialImpl<T> implements _Initial<T> {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? getProfileLoading,
-    TResult? Function(T data)? getProfileSuccess,
+    TResult? Function(ProfileResponseModel data)? getProfileSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? getProfilefailure,
   }) {
     return initial?.call();
@@ -154,7 +154,7 @@ class _$InitialImpl<T> implements _Initial<T> {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? getProfileLoading,
-    TResult Function(T data)? getProfileSuccess,
+    TResult Function(ProfileResponseModel data)? getProfileSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? getProfilefailure,
     required TResult orElse(),
   }) {
@@ -250,7 +250,7 @@ class _$GetProfileLoadingImpl<T> implements GetProfileLoading<T> {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() getProfileLoading,
-    required TResult Function(T data) getProfileSuccess,
+    required TResult Function(ProfileResponseModel data) getProfileSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) getProfilefailure,
   }) {
     return getProfileLoading();
@@ -261,7 +261,7 @@ class _$GetProfileLoadingImpl<T> implements GetProfileLoading<T> {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? getProfileLoading,
-    TResult? Function(T data)? getProfileSuccess,
+    TResult? Function(ProfileResponseModel data)? getProfileSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? getProfilefailure,
   }) {
     return getProfileLoading?.call();
@@ -272,7 +272,7 @@ class _$GetProfileLoadingImpl<T> implements GetProfileLoading<T> {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? getProfileLoading,
-    TResult Function(T data)? getProfileSuccess,
+    TResult Function(ProfileResponseModel data)? getProfileSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? getProfilefailure,
     required TResult orElse(),
   }) {
@@ -330,7 +330,7 @@ abstract class _$$GetProfileSuccessImplCopyWith<T, $Res> {
           $Res Function(_$GetProfileSuccessImpl<T>) then) =
       __$$GetProfileSuccessImplCopyWithImpl<T, $Res>;
   @useResult
-  $Res call({T data});
+  $Res call({ProfileResponseModel data});
 }
 
 /// @nodoc
@@ -346,13 +346,13 @@ class __$$GetProfileSuccessImplCopyWithImpl<T, $Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? data = freezed,
+    Object? data = null,
   }) {
     return _then(_$GetProfileSuccessImpl<T>(
-      freezed == data
+      null == data
           ? _value.data
           : data // ignore: cast_nullable_to_non_nullable
-              as T,
+              as ProfileResponseModel,
     ));
   }
 }
@@ -363,7 +363,7 @@ class _$GetProfileSuccessImpl<T> implements GetProfileSuccess<T> {
   const _$GetProfileSuccessImpl(this.data);
 
   @override
-  final T data;
+  final ProfileResponseModel data;
 
   @override
   String toString() {
@@ -375,12 +375,11 @@ class _$GetProfileSuccessImpl<T> implements GetProfileSuccess<T> {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$GetProfileSuccessImpl<T> &&
-            const DeepCollectionEquality().equals(other.data, data));
+            (identical(other.data, data) || other.data == data));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(data));
+  int get hashCode => Object.hash(runtimeType, data);
 
   /// Create a copy of ProfileState
   /// with the given fields replaced by the non-null parameter values.
@@ -397,7 +396,7 @@ class _$GetProfileSuccessImpl<T> implements GetProfileSuccess<T> {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() getProfileLoading,
-    required TResult Function(T data) getProfileSuccess,
+    required TResult Function(ProfileResponseModel data) getProfileSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) getProfilefailure,
   }) {
     return getProfileSuccess(data);
@@ -408,7 +407,7 @@ class _$GetProfileSuccessImpl<T> implements GetProfileSuccess<T> {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? getProfileLoading,
-    TResult? Function(T data)? getProfileSuccess,
+    TResult? Function(ProfileResponseModel data)? getProfileSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? getProfilefailure,
   }) {
     return getProfileSuccess?.call(data);
@@ -419,7 +418,7 @@ class _$GetProfileSuccessImpl<T> implements GetProfileSuccess<T> {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? getProfileLoading,
-    TResult Function(T data)? getProfileSuccess,
+    TResult Function(ProfileResponseModel data)? getProfileSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? getProfilefailure,
     required TResult orElse(),
   }) {
@@ -468,9 +467,10 @@ class _$GetProfileSuccessImpl<T> implements GetProfileSuccess<T> {
 }
 
 abstract class GetProfileSuccess<T> implements ProfileState<T> {
-  const factory GetProfileSuccess(final T data) = _$GetProfileSuccessImpl<T>;
+  const factory GetProfileSuccess(final ProfileResponseModel data) =
+      _$GetProfileSuccessImpl<T>;
 
-  T get data;
+  ProfileResponseModel get data;
 
   /// Create a copy of ProfileState
   /// with the given fields replaced by the non-null parameter values.
@@ -551,7 +551,7 @@ class _$GetProfileErrorImpl<T> implements GetProfileError<T> {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() getProfileLoading,
-    required TResult Function(T data) getProfileSuccess,
+    required TResult Function(ProfileResponseModel data) getProfileSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) getProfilefailure,
   }) {
     return getProfilefailure(apiErrorModel);
@@ -562,7 +562,7 @@ class _$GetProfileErrorImpl<T> implements GetProfileError<T> {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? getProfileLoading,
-    TResult? Function(T data)? getProfileSuccess,
+    TResult? Function(ProfileResponseModel data)? getProfileSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? getProfilefailure,
   }) {
     return getProfilefailure?.call(apiErrorModel);
@@ -573,7 +573,7 @@ class _$GetProfileErrorImpl<T> implements GetProfileError<T> {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? getProfileLoading,
-    TResult Function(T data)? getProfileSuccess,
+    TResult Function(ProfileResponseModel data)? getProfileSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? getProfilefailure,
     required TResult orElse(),
   }) {

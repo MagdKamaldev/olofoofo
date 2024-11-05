@@ -19,5 +19,5 @@ abstract class ApiService {
   Future<SignUpResponse> signUp(@Body() SignUpRequestBody signUpRequestBody);
 
  @GET(ApiConstants.getUser)
-  Future<ProfileResponseModel> getUser(@Path("userId") String userId);
+  Future<ProfileResponseModel> getUser();
 }

@@ -7,9 +7,9 @@ class ProfileRepo {
   final ApiService _apiService;
   ProfileRepo(this._apiService);
 
-  Future<ApiResult<ProfileResponseModel>> getProfile(String userId) async {
+  Future<ApiResult<ProfileResponseModel>> getProfile() async {
     try {
-      final response = await _apiService.getUser(userId);
+      final response = await _apiService.getUser();
       return ApiResult.success(response);
     } catch (error) {
       return ApiResult.failure(ApiErrorHandler.handle(error)!);
