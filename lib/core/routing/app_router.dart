@@ -9,9 +9,11 @@ import 'package:circle_sync/features/login/ui/login_screen.dart';
 import 'package:circle_sync/features/on_boarding/UI/on_boarding_2.dart';
 import 'package:circle_sync/features/on_boarding/UI/on_boarding_1.dart';
 import 'package:circle_sync/features/on_boarding/UI/on_boarding_3.dart';
+import 'package:circle_sync/features/profile/data/models/profile_response_model.dart';
 import 'package:circle_sync/features/signup/logic/cubit/sign_up_cubit.dart';
 import 'package:circle_sync/features/signup/ui/signup_screen.dart';
 import 'package:circle_sync/features/signup/ui/welcome_screen.dart';
+import 'package:circle_sync/features/user_porifle/UI/user_profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -74,6 +76,9 @@ class AppRouter {
             child: PostDetails(id: settings.arguments as String),
           ),
         );
+        case Routes.userProfile:
+        return MaterialPageRoute(builder:      
+        (_) => UserProfileScreen(userId:settings.arguments as String,));
       default:
         null;
     }

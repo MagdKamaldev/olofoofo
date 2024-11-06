@@ -5,7 +5,8 @@ import 'package:shimmer/shimmer.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AboveProfileShimmer extends StatelessWidget {
-  const AboveProfileShimmer({super.key});
+  final bool isMine;
+  const AboveProfileShimmer({super.key, required this.isMine});
 
   @override
   Widget build(BuildContext context) {
@@ -19,10 +20,12 @@ class AboveProfileShimmer extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             // Shimmer for the title "My Profile"
+            if(isMine)
             const Text(
               "My Profile",
               style: TextStyles.font18Semibold,
             ),
+            if(isMine)
             SizedBox(height: size.height * 0.02),
 
             // Shimmer for profile row

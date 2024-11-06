@@ -151,7 +151,7 @@ class ProfileScreen extends StatelessWidget {
                       ),
                     ),
                     getProfileLoading: () => const SliverToBoxAdapter(
-                      child: ProfileShimmer(),
+                      child: ProfileShimmer(isMine: true,),
                     ),
                     orElse: () => const SliverToBoxAdapter(
                       child: Center(

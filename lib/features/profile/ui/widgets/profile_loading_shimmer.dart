@@ -5,7 +5,8 @@ import 'package:circle_sync/features/profile/ui/widgets/above_profile_shimmer.da
 import 'package:flutter/material.dart';
 
 class ProfileShimmer extends StatelessWidget {
-  const ProfileShimmer({super.key});
+  final bool isMine;
+  const ProfileShimmer({super.key, required this.isMine});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +14,7 @@ class ProfileShimmer extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const AboveProfileShimmer(),
+            AboveProfileShimmer(isMine: isMine,),
             verticalSpace(16),
             for (int i = 0; i < 3; i++) const PostShimmer(),
           ],
