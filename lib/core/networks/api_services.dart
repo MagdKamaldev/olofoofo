@@ -24,4 +24,13 @@ abstract class ApiService {
 
  @GET(ApiConstants.getUser)
   Future<UserProfileResponseModel> getUser(@Path("userId") String userId);
+
+  @POST(ApiConstants.addFriend)
+  Future<void> addFriend(@Path("userId") String userId);
+
+  @POST(ApiConstants.acceptRequest)
+  Future<void> acceptRequest(@Path("userId") String userId);
+
+  @POST(ApiConstants.rejectRequest)
+  Future<void> rejectRequest(@Path("userId") String userId);
 }

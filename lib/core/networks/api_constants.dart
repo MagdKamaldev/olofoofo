@@ -4,4 +4,7 @@ class ApiConstants {
   static const String login = "auth/login";
   static const String getMyProfile = "users/me";
   static const String getUser = "users/{userId}";
+  static const String addFriend = "users/{userId}/add";
+  static const String acceptRequest = "users/{userId}/accept";
+  static const String rejectRequest = "users/{userId}/reject";
 }

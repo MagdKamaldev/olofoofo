@@ -25,6 +25,7 @@ class UserProfileScreen extends StatefulWidget {
 
 class _UserProfileScreenState extends State<UserProfileScreen> {
   String myId = "";
+  bool isRequestRecieved = false;
   bool isTextExpanded = false;
 
   void getMyId() async {
@@ -63,14 +64,6 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                   builder: (context, state) {
                     return state.maybeWhen(
                       userProfileLoaded: (userModel) {
-                        String freindShipText = "";
-                        if (userModel.data!.user![0].isFriend!) {
-                          freindShipText = "Freinds";
-                        } else if (userModel.data!.user![0].receivedRequest!) {
-                          freindShipText = "Accept";
-                        } else {
-                          freindShipText = "Add";
-                        }
                         return SliverList(
                           delegate: SliverChildListDelegate([
                             Padding(
@@ -97,13 +90,12 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                                           ),
                                         ],
                                       ),
-                                       if (widget.userId != myId)
-                                      const Spacer(),
-                                       if (widget.userId != myId)
-                                      IconButton(
-                                        onPressed: () {},
-                                        icon: const Icon(Icons.more_vert),
-                                      )
+                                      if (widget.userId != myId) const Spacer(),
+                                      if (widget.userId != myId)
+                                        IconButton(
+                                          onPressed: () {},
+                                          icon: const Icon(Icons.more_vert),
+                                        )
                                     ],
                                   ),
                                   verticalSpace(size.height * 0.02),
@@ -146,7 +138,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                                         horizontalSpace(size.width * 0.02),
                                       if (widget.userId != myId)
                                         Container(
-                                          width: 90.sp,
+                                          width: 95.sp,
                                           height: 31.sp,
                                           decoration: BoxDecoration(
                                               border: Border.all(),
@@ -154,9 +146,33 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                                               borderRadius:
                                                   BorderRadius.circular(20)),
                                           child: MaterialButton(
-                                            onPressed: () {},
+                                            onPressed: () {
+                                              if (context
+                                                      .read<UserProfileCubit>()
+                                                      .freindShipStatus ==
+                                                  "Add") {
+                                                context
+                                                    .read<UserProfileCubit>()
+                                                    .addFriend(widget.userId);
+                                                setState(() {
+                                                  context
+                                                      .read<UserProfileCubit>()
+                                                      .freindShipStatus = "Sent";
+                                                });
+                                              } else if (context
+                                                      .read<UserProfileCubit>()
+                                                      .freindShipStatus ==
+                                                  "Recieved") {
+                                                setState(() {
+                                                  isRequestRecieved =
+                                                      !isRequestRecieved;
+                                                });
+                                              }
+                                            },
                                             child: Text(
-                                              freindShipText,
+                                              context
+                                                  .read<UserProfileCubit>()
+                                                  .freindShipStatus,
                                               style: TextStyles.font12Medium
                                                   .copyWith(
                                                       color: Colors.white),
@@ -165,6 +181,53 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                                         ),
                                     ],
                                   ),
+                                  if (isRequestRecieved)
+                                    verticalSpace(size.height * 0.02),
+                                  if (isRequestRecieved)
+                                    SizedBox(
+                                      width: size.width * 0.8,
+                                      child: Row(
+                                        children: [
+                                          Expanded(
+                                            child: AppButton(
+                                              onPressed: () {
+                                                context
+                                                    .read<UserProfileCubit>()
+                                                    .acceptRequest(widget.userId);
+                                                setState(() {
+                                                  isRequestRecieved = false;
+                                                  context
+                                                      .read<UserProfileCubit>()
+                                                      .freindShipStatus = "Freinds";
+                                                });
+                                              },
+                                              text: "Accept",
+                                              isWhite: false,
+                                            ),
+                                          ),
+                                          horizontalSpace(size.width * 0.07),
+                                          Expanded(
+                                            child: AppButton(
+                                              onPressed: () {
+                                                context
+                                                    .read<UserProfileCubit>()
+                                                    .rejectRequest(widget.userId);
+                                                setState(() {
+                                                  isRequestRecieved = false;
+                                                  context
+                                                      .read<UserProfileCubit>()
+                                                      .freindShipStatus = "Add";
+                                                });
+                                              },
+                                              text: "Decline",
+                                              isWhite: true,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  if (isRequestRecieved)
+                                    verticalSpace(size.height * 0.02),
                                   if (widget.userId == myId)
                                     verticalSpace(size.height * 0.03),
                                   if (widget.userId == myId)
