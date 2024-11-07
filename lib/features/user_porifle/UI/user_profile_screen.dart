@@ -28,7 +28,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
   bool isTextExpanded = false;
 
   void getMyId() async {
-    myId = SharedPrefHelper.getString(SharedPrefKeys.userId);
+    myId = await SharedPrefHelper.getString(SharedPrefKeys.userId);
   }
 
   @override
@@ -62,143 +62,157 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                       current is UserProfileLoading,
                   builder: (context, state) {
                     return state.maybeWhen(
-                      userProfileLoaded: (userModel) => SliverList(
-                        delegate: SliverChildListDelegate([
-                          Padding(
-                            padding: const EdgeInsets.all(20.0),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Row(
-                                  children: [
-                                    CircleAvatar(
-                                      radius: 40.sp,
-                                      backgroundImage: NetworkImage(userModel
-                                              .data!.user![0].profileImg ??
-                                          "https://static.vecteezy.com/system/resources/thumbnails/005/129/844/small/profile-user-icon-isolated-on-white-background-eps10-free-vector.jpg"),
-                                    ),
-                                    horizontalSpace(size.width * 0.03),
-                                    Column(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          "${userModel.data!.user![0].firstName!} ${userModel.data!.user![0].lastName!}",
-                                          style: TextStyles.font18Semibold,
-                                        ),
-                                      ],
-                                    ),
-                                    const Spacer(),
-                                    IconButton(
-                                      onPressed: () {},
-                                      icon: const Icon(Icons.more_vert),
-                                    )
-                                  ],
-                                ),
-                                verticalSpace(size.height * 0.02),
-                                Row(
-                                  children: [
-                                    Expanded(
-                                      child: GestureDetector(
-                                        onTap: () {
-                                          setState(() {
-                                            isTextExpanded = !isTextExpanded;
-                                          });
-                                        },
-                                        child: Text(
-                                          "I’m a positive person. I love to travel and eat. Always available for chat",
-                                          maxLines: isTextExpanded ? null : 3,
-                                          overflow: isTextExpanded
-                                              ? TextOverflow.visible
-                                              : TextOverflow.ellipsis,
-                                          style: TextStyles.font12Medium,
-                                        ),
+                      userProfileLoaded: (userModel) {
+                        String freindShipText = "";
+                        if (userModel.data!.user![0].isFriend!) {
+                          freindShipText = "Freinds";
+                        } else if (userModel.data!.user![0].receivedRequest!) {
+                          freindShipText = "Accept";
+                        } else {
+                          freindShipText = "Add";
+                        }
+                        return SliverList(
+                          delegate: SliverChildListDelegate([
+                            Padding(
+                              padding: const EdgeInsets.all(20.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Row(
+                                    children: [
+                                      CircleAvatar(
+                                        radius: 40.sp,
+                                        backgroundImage: NetworkImage(userModel
+                                                .data!.user![0].profileImg ??
+                                            "https://static.vecteezy.com/system/resources/thumbnails/005/129/844/small/profile-user-icon-isolated-on-white-background-eps10-free-vector.jpg"),
                                       ),
-                                    ),
-                                    horizontalSpace(size.width * 0.04),
-                                    Container(
-                                      width: 45.sp,
-                                      height: 31.sp,
-                                      decoration: BoxDecoration(
-                                          border: Border.all(),
-                                          borderRadius:
-                                              BorderRadius.circular(20)),
-                                      child: MaterialButton(
-                                        onPressed: () {},
-                                        child: SvgPicture.asset(
-                                            "assets/images/Chat.svg"),
-                                      ),
-                                    ),
-                                    horizontalSpace(size.width * 0.02),
-                                    Container(
-                                      width: 90.sp,
-                                      height: 31.sp,
-                                      decoration: BoxDecoration(
-                                          border: Border.all(),
-                                          color: ColorManager.primary,
-                                          borderRadius:
-                                              BorderRadius.circular(20)),
-                                      child: MaterialButton(
-                                        onPressed: () {},
-                                        child: Text(
-                                          userModel.data!.user![0].isFriend!
-                                              ? userModel.data!.user![0]
-                                                      .receivedRequest!
-                                                  ? "Sent"
-                                                  : "Freinds"
-                                              : "Add",
-                                          style: TextStyles.font12Medium
-                                              .copyWith(color: Colors.white),
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                                if (widget.userId == myId)
-                                  verticalSpace(size.height * 0.02),
-                                if (widget.userId == myId)
-                                  AppButton(
-                                    onPressed: () {},
-                                    text: "Edit Profile",
-                                    isWhite: false,
-                                  ),
-                                verticalSpace(size.height * 0.03),
-                                Row(
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    Expanded(
-                                      child: Column(
+                                      horizontalSpace(size.width * 0.03),
+                                      Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Text(
-                                            userModel
-                                                .data!.user![0].posts!.length
-                                                .toString(),
-                                            style: TextStyles.font14semiBold,
-                                          ),
-                                          verticalSpace(size.height * 0.01),
-                                          Text(
-                                            "Posts",
-                                            style: TextStyles.font14regular
-                                                .copyWith(
-                                                    color: Colors.black54),
+                                            "${userModel.data!.user![0].firstName!} ${userModel.data!.user![0].lastName!}",
+                                            style: TextStyles.font18Semibold,
                                           ),
                                         ],
                                       ),
+                                       if (widget.userId != myId)
+                                      const Spacer(),
+                                       if (widget.userId != myId)
+                                      IconButton(
+                                        onPressed: () {},
+                                        icon: const Icon(Icons.more_vert),
+                                      )
+                                    ],
+                                  ),
+                                  verticalSpace(size.height * 0.02),
+                                  Row(
+                                    children: [
+                                      Expanded(
+                                        child: GestureDetector(
+                                          onTap: () {
+                                            setState(() {
+                                              isTextExpanded = !isTextExpanded;
+                                            });
+                                          },
+                                          child: Text(
+                                            "I’m a positive person. I love to travel and eat. Always available for chat",
+                                            maxLines: isTextExpanded ? null : 3,
+                                            overflow: isTextExpanded
+                                                ? TextOverflow.visible
+                                                : TextOverflow.ellipsis,
+                                            style: TextStyles.font12Medium,
+                                          ),
+                                        ),
+                                      ),
+                                      if (widget.userId != myId)
+                                        horizontalSpace(size.width * 0.04),
+                                      if (widget.userId != myId)
+                                        Container(
+                                          width: 45.sp,
+                                          height: 31.sp,
+                                          decoration: BoxDecoration(
+                                              border: Border.all(),
+                                              borderRadius:
+                                                  BorderRadius.circular(20)),
+                                          child: MaterialButton(
+                                            onPressed: () {},
+                                            child: SvgPicture.asset(
+                                                "assets/images/Chat.svg"),
+                                          ),
+                                        ),
+                                      if (widget.userId != myId)
+                                        horizontalSpace(size.width * 0.02),
+                                      if (widget.userId != myId)
+                                        Container(
+                                          width: 90.sp,
+                                          height: 31.sp,
+                                          decoration: BoxDecoration(
+                                              border: Border.all(),
+                                              color: ColorManager.primary,
+                                              borderRadius:
+                                                  BorderRadius.circular(20)),
+                                          child: MaterialButton(
+                                            onPressed: () {},
+                                            child: Text(
+                                              freindShipText,
+                                              style: TextStyles.font12Medium
+                                                  .copyWith(
+                                                      color: Colors.white),
+                                            ),
+                                          ),
+                                        ),
+                                    ],
+                                  ),
+                                  if (widget.userId == myId)
+                                    verticalSpace(size.height * 0.03),
+                                  if (widget.userId == myId)
+                                    AppButton(
+                                      onPressed: () {},
+                                      text: "Edit Profile",
+                                      isWhite: false,
                                     ),
-                                  ],
-                                ),
-                              ],
+                                  verticalSpace(size.height * 0.03),
+                                  Row(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    children: [
+                                      Expanded(
+                                        child: Column(
+                                          children: [
+                                            Text(
+                                              userModel
+                                                  .data!.user![0].posts!.length
+                                                  .toString(),
+                                              style: TextStyles.font14semiBold,
+                                            ),
+                                            verticalSpace(size.height * 0.01),
+                                            Text(
+                                              "Posts",
+                                              style: TextStyles.font14regular
+                                                  .copyWith(
+                                                      color: Colors.black54),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
                             ),
-                          ),
-                          verticalSpace(size.height * 0.05),
-                          ProfilePosts(
-                              posts: userModel.data!.user![0].posts!,
-                              id: userModel.data!.user![0].id!,
-                              firstName: userModel.data!.user![0].firstName!,
-                              lastName: userModel.data!.user![0].lastName!,
-                              profileImg: userModel.data!.user![0].profileImg),
-                        ]),
-                      ),
+                            verticalSpace(size.height * 0.05),
+                            ProfilePosts(
+                                posts: userModel.data!.user![0].posts!,
+                                id: userModel.data!.user![0].id!,
+                                firstName: userModel.data!.user![0].firstName!,
+                                lastName: userModel.data!.user![0].lastName!,
+                                profileImg:
+                                    userModel.data!.user![0].profileImg),
+                          ]),
+                        );
+                      },
                       userProfileError: (apiErrorModel) => SliverToBoxAdapter(
                         child: Center(
                           child: Text(apiErrorModel.message.toString()),
