@@ -4,6 +4,7 @@ import 'package:circle_sync/features/login/data/models/login_response.dart';
 import 'package:circle_sync/features/profile/data/models/profile_response_model.dart';
 import 'package:circle_sync/features/signup/data/models/sign_up_request_body.dart';
 import 'package:circle_sync/features/signup/data/models/sign_up_response.dart';
+import 'package:circle_sync/features/user_porifle/data/models/user_profile_response_model.dart';
 import 'package:dio/dio.dart';
 import 'package:retrofit/retrofit.dart';
 part 'api_services.g.dart';
@@ -18,6 +19,18 @@ abstract class ApiService {
   @POST(ApiConstants.signUp)
   Future<SignUpResponse> signUp(@Body() SignUpRequestBody signUpRequestBody);
 
+ @GET(ApiConstants.getMyProfile)
+  Future<ProfileResponseModel> getProfile();
+
  @GET(ApiConstants.getUser)
-  Future<ProfileResponseModel> getUser();
+  Future<UserProfileResponseModel> getUser(@Path("userId") String userId);
+
+  @POST(ApiConstants.addFriend)
+  Future<void> addFriend(@Path("userId") String userId);
+
+  @POST(ApiConstants.acceptRequest)
+  Future<void> acceptRequest(@Path("userId") String userId);
+
+  @POST(ApiConstants.rejectRequest)
+  Future<void> rejectRequest(@Path("userId") String userId);
 }

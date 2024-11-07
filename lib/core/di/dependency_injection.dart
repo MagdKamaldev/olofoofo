@@ -12,6 +12,8 @@ import 'package:circle_sync/features/profile/data/repos/profile_repo.dart';
 import 'package:circle_sync/features/profile/logic/cubit/proflie_cubit.dart';
 import 'package:circle_sync/features/signup/data/repos/sign_up_repo.dart';
 import 'package:circle_sync/features/signup/logic/cubit/sign_up_cubit.dart';
+import 'package:circle_sync/features/user_porifle/data/repos/user_profile_repo.dart';
+import 'package:circle_sync/features/user_porifle/logic/user_profile_cubit.dart';
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
 
@@ -44,6 +46,9 @@ Future<void> setUpGetIt() async {
   getIt.registerLazySingleton<AddPostApiService>(()=>AddPostApiService(dio));
   getIt.registerLazySingleton<CreatePostRepo>(()=>CreatePostRepo(getIt()));
   getIt.registerFactory<AddPostCubit>(()=>AddPostCubit(getIt()));
-  
+
+  //get User Profile
+  getIt.registerLazySingleton<UserProfileRepo>(()=>UserProfileRepo(getIt()));
+  getIt.registerFactory<UserProfileCubit>(()=>UserProfileCubit(getIt()));
   
 }

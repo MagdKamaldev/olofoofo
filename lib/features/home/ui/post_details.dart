@@ -31,11 +31,11 @@ class PostDetailsState extends State<PostDetails> {
   String firstName = "";
   String lastName = "";
   String image = "";
-  String id = "";
+  String myId = "";
 
   
   void getUserValues() async {
-    id = await SharedPrefHelper.getString(
+    myId = await SharedPrefHelper.getString(
       SharedPrefKeys.userId,
     );
     firstName = await SharedPrefHelper.getString(
@@ -107,9 +107,11 @@ class PostDetailsState extends State<PostDetails> {
                             shrinkWrap: true,
                             physics: const NeverScrollableScrollPhysics(),
                             itemCount: comments.length,
-                            itemBuilder: (context, index) {
+                            itemBuilder: (context, index) {            
                               final comment = comments[index];
                               return CommentItem(
+                                myId: myId,
+                                commentUserId: comment.userId?? comment.user?.first.id ?? "",
                                 postId: post.id ?? "",
                                 commentId: comment.id ?? "",
                                 profileImage: comment.user?.first.profileImg,
@@ -176,7 +178,7 @@ class PostDetailsState extends State<PostDetails> {
                                   .comment(widget.id, Comment(
                                     user: [
                                       UserData(
-                                      id: id,
+                                      id: myId,
                                       firstName: firstName,
                                       lastName: lastName,
                                       profileImg: image,
@@ -184,7 +186,7 @@ class PostDetailsState extends State<PostDetails> {
                                     content: commentController.text,
                                     
                                   ),
-                                  firstName,lastName,image,id);
+                                  firstName,lastName,image,myId);
                               commentController.text = "";
                             }
                           },

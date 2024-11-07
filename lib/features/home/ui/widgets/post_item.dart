@@ -120,11 +120,17 @@ class PostItemState extends State<PostItem> {
                     children: [
                       Row(
                         children: [
-                          CircleAvatar(
-                            radius: 23.sp,
-                            backgroundImage: NetworkImage(
-                              widget.profileImage ??
-                                  "https://static.vecteezy.com/system/resources/thumbnails/005/129/844/small/profile-user-icon-isolated-on-white-background-eps10-free-vector.jpg",
+                          GestureDetector(
+                            onTap: () {
+                              context.pushNamed(Routes.userProfile,
+                                  arguments: widget.postUserId);
+                            },
+                            child: CircleAvatar(
+                              radius: 23.sp,
+                              backgroundImage: NetworkImage(
+                                widget.profileImage ??
+                                    "https://static.vecteezy.com/system/resources/thumbnails/005/129/844/small/profile-user-icon-isolated-on-white-background-eps10-free-vector.jpg",
+                              ),
                             ),
                           ),
                           horizontalSpace(15),
