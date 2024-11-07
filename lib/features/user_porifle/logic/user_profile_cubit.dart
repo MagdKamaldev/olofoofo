@@ -4,13 +4,25 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 class UserProfileCubit extends Cubit<UserProfileState> {
   final UserProfileRepo _userProfileRepo;
-  UserProfileCubit(this._userProfileRepo) : super( const UserProfileState.initial());
+  UserProfileCubit(this._userProfileRepo)
+      : super(const UserProfileState.initial());
+
+  String freindShipStatus = "Add";
 
   Future<void> getUserProfile(String userId) async {
     emit(const UserProfileState.userProfileLoading());
     final result = await _userProfileRepo.getUserProfile(userId);
     result.when(
       success: (data) {
+        if (data.data!.user![0].isFriend!) {
+          freindShipStatus = "Freinds";
+        } else if (data.data!.user![0].receivedRequest!) {
+          freindShipStatus = "Recieved";
+        } else if (data.data!.user![0].sentRequest!) {
+          freindShipStatus = "Sent";
+        }else{
+          freindShipStatus = "Add";
+        }
         emit(UserProfileState.userProfileLoaded(data));
       },
       failure: (error) {
@@ -18,5 +30,43 @@ class UserProfileCubit extends Cubit<UserProfileState> {
       },
     );
   }
-  
+
+  Future<void> addFriend(String userId) async {
+    emit(const UserProfileState.addFriendLoading());
+    final result = await _userProfileRepo.addFriend(userId);
+    result.when(
+      success: (_) {
+        emit(const UserProfileState.addFriendLoaded());
+      },
+      failure: (error) {
+        emit(UserProfileState.addFriendError(error));
+      },
+    );
+  }
+
+  Future<void> acceptRequest(String userId) async {
+    emit(const UserProfileState.acceptRequestLoading());
+    final result = await _userProfileRepo.acceptRequest(userId);
+    result.when(
+      success: (_) {
+        emit(const UserProfileState.acceptRequestLoaded());
+      },
+      failure: (error) {
+        emit(UserProfileState.acceptRequestError(error));
+      },
+    );
+  }
+
+  Future<void> rejectRequest(String userId) async {
+    emit(const UserProfileState.rejectRequestLoading());
+    final result = await _userProfileRepo.rejectRequest(userId);
+    result.when(
+      success: (_) {
+        emit(const UserProfileState.rejectRequestLoaded());
+      },
+      failure: (error) {
+        emit(UserProfileState.rejectRequestError(error));
+      },
+    );
+  }
 }

@@ -15,4 +15,33 @@ class UserProfileRepo {
       return ApiResult.failure(ApiErrorHandler.handle(error)!);
     }
   }
+
+  Future<ApiResult<void>> addFriend(String userId) async {
+    try {
+      await _apiService.addFriend(userId);
+      return const ApiResult.success(null);
+    } catch (error) {
+      return ApiResult.failure(ApiErrorHandler.handle(error)!);
+    }
+  }
+
+  Future<ApiResult<void>> acceptRequest(String userId) async {
+    try {
+      await _apiService.acceptRequest(userId);
+      return const ApiResult.success(null);
+    } catch (error) {
+      return ApiResult.failure(ApiErrorHandler.handle(error)!);
+    }
+  }
+
+  Future<ApiResult<void>> rejectRequest(String userId) async {
+    try {
+      await _apiService.rejectRequest(userId);
+      return const ApiResult.success(null);
+    } catch (error) {
+      return ApiResult.failure(ApiErrorHandler.handle(error)!);
+    }
+  }
+
+
 }
