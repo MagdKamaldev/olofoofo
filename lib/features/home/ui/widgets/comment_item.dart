@@ -1,4 +1,6 @@
 import 'package:circle_sync/core/di/dependency_injection.dart';
+import 'package:circle_sync/core/helpers/constants.dart';
+import 'package:circle_sync/core/helpers/shared_pref_helper.dart';
 import 'package:circle_sync/core/helpers/spacing.dart';
 import 'package:circle_sync/core/helpers/time_ago.dart';
 import 'package:circle_sync/core/themes/text_styles/text_styles.dart';
@@ -11,6 +13,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class CommentItem extends StatelessWidget {
+  final String myId;
+  final String commentUserId;
   final String commentId;
   final String postId;
   final String? profileImage;
@@ -28,6 +32,7 @@ class CommentItem extends StatelessWidget {
     required this.commentId,
     required this.postId,
     required this.onCommentDeleted,
+    required this.commentUserId, required this.myId,
   });
 
   @override
@@ -98,70 +103,71 @@ class CommentItem extends StatelessWidget {
                           ),
                         ),
                         horizontalSpace(10),
+                        if (commentUserId == myId)
                         GestureDetector(
-                          onTap: () {                       
-                              showDialog(
-                                context: context,
-                                builder: (BuildContext context) {
-                                  return BlocProvider(
-                                    create: (context) =>
-                                        HomeCubit(getIt<HomeRepo>()),
-                                    child: BlocBuilder<HomeCubit, HomeState>(
-                                      builder: (context, state) {
-                                        return AlertDialog(
-                                          title: const Text(
-                                            "Delete Comment",
-                                            style: TextStyles.font18Semibold,
-                                          ),
-                                          content: const Text(
-                                            "Are you sure you want to delete this comment?",
-                                            style: TextStyles.font14Medium,
-                                          ),
-                                          actions: <Widget>[
-                                            TextButton(
-                                              child: const Text(
-                                                'Cancel',
-                                                style: TextStyles.font14Medium,
-                                              ),
-                                              onPressed: () {
-                                                Navigator.of(context).pop();
-                                              },
+                          onTap: () {
+                              
+                            showDialog(
+                              context: context,
+                              builder: (BuildContext context) {
+                                return BlocProvider(
+                                  create: (context) =>
+                                      HomeCubit(getIt<HomeRepo>()),
+                                  child: BlocBuilder<HomeCubit, HomeState>(
+                                    builder: (context, state) {
+                                      return AlertDialog(
+                                        title: const Text(
+                                          "Delete Comment",
+                                          style: TextStyles.font18Semibold,
+                                        ),
+                                        content: const Text(
+                                          "Are you sure you want to delete this comment?",
+                                          style: TextStyles.font14Medium,
+                                        ),
+                                        actions: <Widget>[
+                                          TextButton(
+                                            child: const Text(
+                                              'Cancel',
+                                              style: TextStyles.font14Medium,
                                             ),
-                                            TextButton(
-                                                child: Text(
-                                                  'Delete',
-                                                  style: TextStyles.font14Medium
-                                                      .copyWith(
-                                                          color: Colors.red),
-                                                ),
-                                                onPressed: () async {
-                                                  Navigator.of(context).pop();
+                                            onPressed: () {
+                                              Navigator.of(context).pop();
+                                            },
+                                          ),
+                                          TextButton(
+                                              child: Text(
+                                                'Delete',
+                                                style: TextStyles.font14Medium
+                                                    .copyWith(
+                                                        color: Colors.red),
+                                              ),
+                                              onPressed: () async {
+                                                Navigator.of(context).pop();
 
-                                                  try {
-                                                    context
-                                                        .read<HomeCubit>()
-                                                        .deleteComment(
-                                                            postId, commentId);
-                                                    onCommentDeleted();
-                                                  } catch (error) {
-                                                  
-                                                    ScaffoldMessenger.of(
-                                                            context)
-                                                        .showSnackBar(
-                                                      SnackBar(
-                                                        content: Text(
-                                                            'Failed to delete comment: $error'),
-                                                      ),
-                                                    );
-                                                  }
-                                                }),
-                                          ],
-                                        );
-                                      },
-                                    ),
-                                  );
-                                },
-                              );
+                                                try {
+                                                  context
+                                                      .read<HomeCubit>()
+                                                      .deleteComment(
+                                                          postId,
+                                                          commentId);
+                                                  onCommentDeleted();
+                                                } catch (error) {
+                                                  ScaffoldMessenger.of(context)
+                                                      .showSnackBar(
+                                                    SnackBar(
+                                                      content: Text(
+                                                          'Failed to delete comment: $error'),
+                                                    ),
+                                                  );
+                                                }
+                                              }),
+                                        ],
+                                      );
+                                    },
+                                  ),
+                                );
+                              },
+                            );
                           },
                           child: SvgPicture.asset("assets/images/Trash.svg"),
                         ),

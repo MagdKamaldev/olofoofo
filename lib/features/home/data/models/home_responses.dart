@@ -93,7 +93,6 @@ class AuthorData {
   String? id;
   String? firstName;
   String? lastName;
-  @JsonKey(name: 'profile_img')
   String? profileImg;
 
   AuthorData({
@@ -113,11 +112,13 @@ class AuthorData {
 class Comment {
   @JsonKey(name: '_id')
   String? id;
+  String ?userId;
+  String? postId;
   List<UserData>? user;
   String? content;
   String? createdAt;
 
-  Comment({this.id, this.user, this.content, this.createdAt});
+  Comment({this.id, this.user, this.content, this.createdAt,this.userId,this.postId});
 
   factory Comment.fromJson(Map<String, dynamic> json) =>
       _$CommentFromJson(json);
@@ -131,7 +132,6 @@ class UserData {
   String? id;
   String? firstName;
   String? lastName;
-  @JsonKey(name: 'profile_img')
   String? profileImg;
 
   UserData({

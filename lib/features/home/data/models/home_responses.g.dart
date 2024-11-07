@@ -89,7 +89,7 @@ AuthorData _$AuthorDataFromJson(Map<String, dynamic> json) => AuthorData(
       id: json['_id'] as String?,
       firstName: json['firstName'] as String?,
       lastName: json['lastName'] as String?,
-      profileImg: json['profile_img'] as String?,
+      profileImg: json['profileImg'] as String?,
     );
 
 Map<String, dynamic> _$AuthorDataToJson(AuthorData instance) =>
@@ -97,7 +97,7 @@ Map<String, dynamic> _$AuthorDataToJson(AuthorData instance) =>
       '_id': instance.id,
       'firstName': instance.firstName,
       'lastName': instance.lastName,
-      'profile_img': instance.profileImg,
+      'profileImg': instance.profileImg,
     };
 
 Comment _$CommentFromJson(Map<String, dynamic> json) => Comment(
@@ -107,10 +107,14 @@ Comment _$CommentFromJson(Map<String, dynamic> json) => Comment(
           .toList(),
       content: json['content'] as String?,
       createdAt: json['createdAt'] as String?,
+      userId: json['userId'] as String?,
+      postId: json['postId'] as String?,
     );
 
 Map<String, dynamic> _$CommentToJson(Comment instance) => <String, dynamic>{
       '_id': instance.id,
+      'userId': instance.userId,
+      'postId': instance.postId,
       'user': instance.user,
       'content': instance.content,
       'createdAt': instance.createdAt,
@@ -120,12 +124,12 @@ UserData _$UserDataFromJson(Map<String, dynamic> json) => UserData(
       id: json['_id'] as String?,
       firstName: json['firstName'] as String?,
       lastName: json['lastName'] as String?,
-      profileImg: json['profile_img'] as String?,
+      profileImg: json['profileImg'] as String?,
     );
 
 Map<String, dynamic> _$UserDataToJson(UserData instance) => <String, dynamic>{
       '_id': instance.id,
       'firstName': instance.firstName,
       'lastName': instance.lastName,
-      'profile_img': instance.profileImg,
+      'profileImg': instance.profileImg,
     };
