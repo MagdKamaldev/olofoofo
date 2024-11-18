@@ -32,6 +32,9 @@ mixin _$UserProfileState {
     required TResult Function() rejectRequestLoading,
     required TResult Function() rejectRequestLoaded,
     required TResult Function(ApiErrorModel apiErrorModel) rejectRequestError,
+    required TResult Function() deleteFriendLoading,
+    required TResult Function() deleteFriendLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteFriendError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -50,6 +53,9 @@ mixin _$UserProfileState {
     TResult? Function()? rejectRequestLoading,
     TResult? Function()? rejectRequestLoaded,
     TResult? Function(ApiErrorModel apiErrorModel)? rejectRequestError,
+    TResult? Function()? deleteFriendLoading,
+    TResult? Function()? deleteFriendLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteFriendError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -68,6 +74,9 @@ mixin _$UserProfileState {
     TResult Function()? rejectRequestLoading,
     TResult Function()? rejectRequestLoaded,
     TResult Function(ApiErrorModel apiErrorModel)? rejectRequestError,
+    TResult Function()? deleteFriendLoading,
+    TResult Function()? deleteFriendLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteFriendError,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -86,6 +95,9 @@ mixin _$UserProfileState {
     required TResult Function(RejectRequestLoading value) rejectRequestLoading,
     required TResult Function(RejectRequestLoaded value) rejectRequestLoaded,
     required TResult Function(RejectRequestError value) rejectRequestError,
+    required TResult Function(DeleteFriendLoading value) deleteFriendLoading,
+    required TResult Function(DeleteFriendLoaded value) deleteFriendLoaded,
+    required TResult Function(DeleteFriendError value) deleteFriendError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -103,6 +115,9 @@ mixin _$UserProfileState {
     TResult? Function(RejectRequestLoading value)? rejectRequestLoading,
     TResult? Function(RejectRequestLoaded value)? rejectRequestLoaded,
     TResult? Function(RejectRequestError value)? rejectRequestError,
+    TResult? Function(DeleteFriendLoading value)? deleteFriendLoading,
+    TResult? Function(DeleteFriendLoaded value)? deleteFriendLoaded,
+    TResult? Function(DeleteFriendError value)? deleteFriendError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -120,6 +135,9 @@ mixin _$UserProfileState {
     TResult Function(RejectRequestLoading value)? rejectRequestLoading,
     TResult Function(RejectRequestLoaded value)? rejectRequestLoaded,
     TResult Function(RejectRequestError value)? rejectRequestError,
+    TResult Function(DeleteFriendLoading value)? deleteFriendLoading,
+    TResult Function(DeleteFriendLoaded value)? deleteFriendLoaded,
+    TResult Function(DeleteFriendError value)? deleteFriendError,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -207,6 +225,9 @@ class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
     required TResult Function() rejectRequestLoading,
     required TResult Function() rejectRequestLoaded,
     required TResult Function(ApiErrorModel apiErrorModel) rejectRequestError,
+    required TResult Function() deleteFriendLoading,
+    required TResult Function() deleteFriendLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteFriendError,
   }) {
     return initial();
   }
@@ -228,6 +249,9 @@ class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
     TResult? Function()? rejectRequestLoading,
     TResult? Function()? rejectRequestLoaded,
     TResult? Function(ApiErrorModel apiErrorModel)? rejectRequestError,
+    TResult? Function()? deleteFriendLoading,
+    TResult? Function()? deleteFriendLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteFriendError,
   }) {
     return initial?.call();
   }
@@ -249,6 +273,9 @@ class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
     TResult Function()? rejectRequestLoading,
     TResult Function()? rejectRequestLoaded,
     TResult Function(ApiErrorModel apiErrorModel)? rejectRequestError,
+    TResult Function()? deleteFriendLoading,
+    TResult Function()? deleteFriendLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteFriendError,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -273,6 +300,9 @@ class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
     required TResult Function(RejectRequestLoading value) rejectRequestLoading,
     required TResult Function(RejectRequestLoaded value) rejectRequestLoaded,
     required TResult Function(RejectRequestError value) rejectRequestError,
+    required TResult Function(DeleteFriendLoading value) deleteFriendLoading,
+    required TResult Function(DeleteFriendLoaded value) deleteFriendLoaded,
+    required TResult Function(DeleteFriendError value) deleteFriendError,
   }) {
     return initial(this);
   }
@@ -293,6 +323,9 @@ class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
     TResult? Function(RejectRequestLoading value)? rejectRequestLoading,
     TResult? Function(RejectRequestLoaded value)? rejectRequestLoaded,
     TResult? Function(RejectRequestError value)? rejectRequestError,
+    TResult? Function(DeleteFriendLoading value)? deleteFriendLoading,
+    TResult? Function(DeleteFriendLoaded value)? deleteFriendLoaded,
+    TResult? Function(DeleteFriendError value)? deleteFriendError,
   }) {
     return initial?.call(this);
   }
@@ -313,6 +346,9 @@ class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
     TResult Function(RejectRequestLoading value)? rejectRequestLoading,
     TResult Function(RejectRequestLoaded value)? rejectRequestLoaded,
     TResult Function(RejectRequestError value)? rejectRequestError,
+    TResult Function(DeleteFriendLoading value)? deleteFriendLoading,
+    TResult Function(DeleteFriendLoaded value)? deleteFriendLoaded,
+    TResult Function(DeleteFriendError value)? deleteFriendError,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -390,6 +426,9 @@ class _$UserProfileLoadingImpl
     required TResult Function() rejectRequestLoading,
     required TResult Function() rejectRequestLoaded,
     required TResult Function(ApiErrorModel apiErrorModel) rejectRequestError,
+    required TResult Function() deleteFriendLoading,
+    required TResult Function() deleteFriendLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteFriendError,
   }) {
     return userProfileLoading();
   }
@@ -411,6 +450,9 @@ class _$UserProfileLoadingImpl
     TResult? Function()? rejectRequestLoading,
     TResult? Function()? rejectRequestLoaded,
     TResult? Function(ApiErrorModel apiErrorModel)? rejectRequestError,
+    TResult? Function()? deleteFriendLoading,
+    TResult? Function()? deleteFriendLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteFriendError,
   }) {
     return userProfileLoading?.call();
   }
@@ -432,6 +474,9 @@ class _$UserProfileLoadingImpl
     TResult Function()? rejectRequestLoading,
     TResult Function()? rejectRequestLoaded,
     TResult Function(ApiErrorModel apiErrorModel)? rejectRequestError,
+    TResult Function()? deleteFriendLoading,
+    TResult Function()? deleteFriendLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteFriendError,
     required TResult orElse(),
   }) {
     if (userProfileLoading != null) {
@@ -456,6 +501,9 @@ class _$UserProfileLoadingImpl
     required TResult Function(RejectRequestLoading value) rejectRequestLoading,
     required TResult Function(RejectRequestLoaded value) rejectRequestLoaded,
     required TResult Function(RejectRequestError value) rejectRequestError,
+    required TResult Function(DeleteFriendLoading value) deleteFriendLoading,
+    required TResult Function(DeleteFriendLoaded value) deleteFriendLoaded,
+    required TResult Function(DeleteFriendError value) deleteFriendError,
   }) {
     return userProfileLoading(this);
   }
@@ -476,6 +524,9 @@ class _$UserProfileLoadingImpl
     TResult? Function(RejectRequestLoading value)? rejectRequestLoading,
     TResult? Function(RejectRequestLoaded value)? rejectRequestLoaded,
     TResult? Function(RejectRequestError value)? rejectRequestError,
+    TResult? Function(DeleteFriendLoading value)? deleteFriendLoading,
+    TResult? Function(DeleteFriendLoaded value)? deleteFriendLoaded,
+    TResult? Function(DeleteFriendError value)? deleteFriendError,
   }) {
     return userProfileLoading?.call(this);
   }
@@ -496,6 +547,9 @@ class _$UserProfileLoadingImpl
     TResult Function(RejectRequestLoading value)? rejectRequestLoading,
     TResult Function(RejectRequestLoaded value)? rejectRequestLoaded,
     TResult Function(RejectRequestError value)? rejectRequestError,
+    TResult Function(DeleteFriendLoading value)? deleteFriendLoading,
+    TResult Function(DeleteFriendLoaded value)? deleteFriendLoaded,
+    TResult Function(DeleteFriendError value)? deleteFriendError,
     required TResult orElse(),
   }) {
     if (userProfileLoading != null) {
@@ -605,6 +659,9 @@ class _$UserProfileLoadedImpl
     required TResult Function() rejectRequestLoading,
     required TResult Function() rejectRequestLoaded,
     required TResult Function(ApiErrorModel apiErrorModel) rejectRequestError,
+    required TResult Function() deleteFriendLoading,
+    required TResult Function() deleteFriendLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteFriendError,
   }) {
     return userProfileLoaded(userProfileResponseModel);
   }
@@ -626,6 +683,9 @@ class _$UserProfileLoadedImpl
     TResult? Function()? rejectRequestLoading,
     TResult? Function()? rejectRequestLoaded,
     TResult? Function(ApiErrorModel apiErrorModel)? rejectRequestError,
+    TResult? Function()? deleteFriendLoading,
+    TResult? Function()? deleteFriendLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteFriendError,
   }) {
     return userProfileLoaded?.call(userProfileResponseModel);
   }
@@ -647,6 +707,9 @@ class _$UserProfileLoadedImpl
     TResult Function()? rejectRequestLoading,
     TResult Function()? rejectRequestLoaded,
     TResult Function(ApiErrorModel apiErrorModel)? rejectRequestError,
+    TResult Function()? deleteFriendLoading,
+    TResult Function()? deleteFriendLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteFriendError,
     required TResult orElse(),
   }) {
     if (userProfileLoaded != null) {
@@ -671,6 +734,9 @@ class _$UserProfileLoadedImpl
     required TResult Function(RejectRequestLoading value) rejectRequestLoading,
     required TResult Function(RejectRequestLoaded value) rejectRequestLoaded,
     required TResult Function(RejectRequestError value) rejectRequestError,
+    required TResult Function(DeleteFriendLoading value) deleteFriendLoading,
+    required TResult Function(DeleteFriendLoaded value) deleteFriendLoaded,
+    required TResult Function(DeleteFriendError value) deleteFriendError,
   }) {
     return userProfileLoaded(this);
   }
@@ -691,6 +757,9 @@ class _$UserProfileLoadedImpl
     TResult? Function(RejectRequestLoading value)? rejectRequestLoading,
     TResult? Function(RejectRequestLoaded value)? rejectRequestLoaded,
     TResult? Function(RejectRequestError value)? rejectRequestError,
+    TResult? Function(DeleteFriendLoading value)? deleteFriendLoading,
+    TResult? Function(DeleteFriendLoaded value)? deleteFriendLoaded,
+    TResult? Function(DeleteFriendError value)? deleteFriendError,
   }) {
     return userProfileLoaded?.call(this);
   }
@@ -711,6 +780,9 @@ class _$UserProfileLoadedImpl
     TResult Function(RejectRequestLoading value)? rejectRequestLoading,
     TResult Function(RejectRequestLoaded value)? rejectRequestLoaded,
     TResult Function(RejectRequestError value)? rejectRequestError,
+    TResult Function(DeleteFriendLoading value)? deleteFriendLoading,
+    TResult Function(DeleteFriendLoaded value)? deleteFriendLoaded,
+    TResult Function(DeleteFriendError value)? deleteFriendError,
     required TResult orElse(),
   }) {
     if (userProfileLoaded != null) {
@@ -828,6 +900,9 @@ class _$UserProfileErrorImpl
     required TResult Function() rejectRequestLoading,
     required TResult Function() rejectRequestLoaded,
     required TResult Function(ApiErrorModel apiErrorModel) rejectRequestError,
+    required TResult Function() deleteFriendLoading,
+    required TResult Function() deleteFriendLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteFriendError,
   }) {
     return userProfileError(apiErrorModel);
   }
@@ -849,6 +924,9 @@ class _$UserProfileErrorImpl
     TResult? Function()? rejectRequestLoading,
     TResult? Function()? rejectRequestLoaded,
     TResult? Function(ApiErrorModel apiErrorModel)? rejectRequestError,
+    TResult? Function()? deleteFriendLoading,
+    TResult? Function()? deleteFriendLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteFriendError,
   }) {
     return userProfileError?.call(apiErrorModel);
   }
@@ -870,6 +948,9 @@ class _$UserProfileErrorImpl
     TResult Function()? rejectRequestLoading,
     TResult Function()? rejectRequestLoaded,
     TResult Function(ApiErrorModel apiErrorModel)? rejectRequestError,
+    TResult Function()? deleteFriendLoading,
+    TResult Function()? deleteFriendLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteFriendError,
     required TResult orElse(),
   }) {
     if (userProfileError != null) {
@@ -894,6 +975,9 @@ class _$UserProfileErrorImpl
     required TResult Function(RejectRequestLoading value) rejectRequestLoading,
     required TResult Function(RejectRequestLoaded value) rejectRequestLoaded,
     required TResult Function(RejectRequestError value) rejectRequestError,
+    required TResult Function(DeleteFriendLoading value) deleteFriendLoading,
+    required TResult Function(DeleteFriendLoaded value) deleteFriendLoaded,
+    required TResult Function(DeleteFriendError value) deleteFriendError,
   }) {
     return userProfileError(this);
   }
@@ -914,6 +998,9 @@ class _$UserProfileErrorImpl
     TResult? Function(RejectRequestLoading value)? rejectRequestLoading,
     TResult? Function(RejectRequestLoaded value)? rejectRequestLoaded,
     TResult? Function(RejectRequestError value)? rejectRequestError,
+    TResult? Function(DeleteFriendLoading value)? deleteFriendLoading,
+    TResult? Function(DeleteFriendLoaded value)? deleteFriendLoaded,
+    TResult? Function(DeleteFriendError value)? deleteFriendError,
   }) {
     return userProfileError?.call(this);
   }
@@ -934,6 +1021,9 @@ class _$UserProfileErrorImpl
     TResult Function(RejectRequestLoading value)? rejectRequestLoading,
     TResult Function(RejectRequestLoaded value)? rejectRequestLoaded,
     TResult Function(RejectRequestError value)? rejectRequestError,
+    TResult Function(DeleteFriendLoading value)? deleteFriendLoading,
+    TResult Function(DeleteFriendLoaded value)? deleteFriendLoaded,
+    TResult Function(DeleteFriendError value)? deleteFriendError,
     required TResult orElse(),
   }) {
     if (userProfileError != null) {
@@ -1020,6 +1110,9 @@ class _$AddFriendLoadingImpl
     required TResult Function() rejectRequestLoading,
     required TResult Function() rejectRequestLoaded,
     required TResult Function(ApiErrorModel apiErrorModel) rejectRequestError,
+    required TResult Function() deleteFriendLoading,
+    required TResult Function() deleteFriendLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteFriendError,
   }) {
     return addFriendLoading();
   }
@@ -1041,6 +1134,9 @@ class _$AddFriendLoadingImpl
     TResult? Function()? rejectRequestLoading,
     TResult? Function()? rejectRequestLoaded,
     TResult? Function(ApiErrorModel apiErrorModel)? rejectRequestError,
+    TResult? Function()? deleteFriendLoading,
+    TResult? Function()? deleteFriendLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteFriendError,
   }) {
     return addFriendLoading?.call();
   }
@@ -1062,6 +1158,9 @@ class _$AddFriendLoadingImpl
     TResult Function()? rejectRequestLoading,
     TResult Function()? rejectRequestLoaded,
     TResult Function(ApiErrorModel apiErrorModel)? rejectRequestError,
+    TResult Function()? deleteFriendLoading,
+    TResult Function()? deleteFriendLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteFriendError,
     required TResult orElse(),
   }) {
     if (addFriendLoading != null) {
@@ -1086,6 +1185,9 @@ class _$AddFriendLoadingImpl
     required TResult Function(RejectRequestLoading value) rejectRequestLoading,
     required TResult Function(RejectRequestLoaded value) rejectRequestLoaded,
     required TResult Function(RejectRequestError value) rejectRequestError,
+    required TResult Function(DeleteFriendLoading value) deleteFriendLoading,
+    required TResult Function(DeleteFriendLoaded value) deleteFriendLoaded,
+    required TResult Function(DeleteFriendError value) deleteFriendError,
   }) {
     return addFriendLoading(this);
   }
@@ -1106,6 +1208,9 @@ class _$AddFriendLoadingImpl
     TResult? Function(RejectRequestLoading value)? rejectRequestLoading,
     TResult? Function(RejectRequestLoaded value)? rejectRequestLoaded,
     TResult? Function(RejectRequestError value)? rejectRequestError,
+    TResult? Function(DeleteFriendLoading value)? deleteFriendLoading,
+    TResult? Function(DeleteFriendLoaded value)? deleteFriendLoaded,
+    TResult? Function(DeleteFriendError value)? deleteFriendError,
   }) {
     return addFriendLoading?.call(this);
   }
@@ -1126,6 +1231,9 @@ class _$AddFriendLoadingImpl
     TResult Function(RejectRequestLoading value)? rejectRequestLoading,
     TResult Function(RejectRequestLoaded value)? rejectRequestLoaded,
     TResult Function(RejectRequestError value)? rejectRequestError,
+    TResult Function(DeleteFriendLoading value)? deleteFriendLoading,
+    TResult Function(DeleteFriendLoaded value)? deleteFriendLoaded,
+    TResult Function(DeleteFriendError value)? deleteFriendError,
     required TResult orElse(),
   }) {
     if (addFriendLoading != null) {
@@ -1203,6 +1311,9 @@ class _$AddFriendLoadedImpl
     required TResult Function() rejectRequestLoading,
     required TResult Function() rejectRequestLoaded,
     required TResult Function(ApiErrorModel apiErrorModel) rejectRequestError,
+    required TResult Function() deleteFriendLoading,
+    required TResult Function() deleteFriendLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteFriendError,
   }) {
     return addFriendLoaded();
   }
@@ -1224,6 +1335,9 @@ class _$AddFriendLoadedImpl
     TResult? Function()? rejectRequestLoading,
     TResult? Function()? rejectRequestLoaded,
     TResult? Function(ApiErrorModel apiErrorModel)? rejectRequestError,
+    TResult? Function()? deleteFriendLoading,
+    TResult? Function()? deleteFriendLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteFriendError,
   }) {
     return addFriendLoaded?.call();
   }
@@ -1245,6 +1359,9 @@ class _$AddFriendLoadedImpl
     TResult Function()? rejectRequestLoading,
     TResult Function()? rejectRequestLoaded,
     TResult Function(ApiErrorModel apiErrorModel)? rejectRequestError,
+    TResult Function()? deleteFriendLoading,
+    TResult Function()? deleteFriendLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteFriendError,
     required TResult orElse(),
   }) {
     if (addFriendLoaded != null) {
@@ -1269,6 +1386,9 @@ class _$AddFriendLoadedImpl
     required TResult Function(RejectRequestLoading value) rejectRequestLoading,
     required TResult Function(RejectRequestLoaded value) rejectRequestLoaded,
     required TResult Function(RejectRequestError value) rejectRequestError,
+    required TResult Function(DeleteFriendLoading value) deleteFriendLoading,
+    required TResult Function(DeleteFriendLoaded value) deleteFriendLoaded,
+    required TResult Function(DeleteFriendError value) deleteFriendError,
   }) {
     return addFriendLoaded(this);
   }
@@ -1289,6 +1409,9 @@ class _$AddFriendLoadedImpl
     TResult? Function(RejectRequestLoading value)? rejectRequestLoading,
     TResult? Function(RejectRequestLoaded value)? rejectRequestLoaded,
     TResult? Function(RejectRequestError value)? rejectRequestError,
+    TResult? Function(DeleteFriendLoading value)? deleteFriendLoading,
+    TResult? Function(DeleteFriendLoaded value)? deleteFriendLoaded,
+    TResult? Function(DeleteFriendError value)? deleteFriendError,
   }) {
     return addFriendLoaded?.call(this);
   }
@@ -1309,6 +1432,9 @@ class _$AddFriendLoadedImpl
     TResult Function(RejectRequestLoading value)? rejectRequestLoading,
     TResult Function(RejectRequestLoaded value)? rejectRequestLoaded,
     TResult Function(RejectRequestError value)? rejectRequestError,
+    TResult Function(DeleteFriendLoading value)? deleteFriendLoading,
+    TResult Function(DeleteFriendLoaded value)? deleteFriendLoaded,
+    TResult Function(DeleteFriendError value)? deleteFriendError,
     required TResult orElse(),
   }) {
     if (addFriendLoaded != null) {
@@ -1416,6 +1542,9 @@ class _$AddFriendErrorImpl
     required TResult Function() rejectRequestLoading,
     required TResult Function() rejectRequestLoaded,
     required TResult Function(ApiErrorModel apiErrorModel) rejectRequestError,
+    required TResult Function() deleteFriendLoading,
+    required TResult Function() deleteFriendLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteFriendError,
   }) {
     return addFriendError(apiErrorModel);
   }
@@ -1437,6 +1566,9 @@ class _$AddFriendErrorImpl
     TResult? Function()? rejectRequestLoading,
     TResult? Function()? rejectRequestLoaded,
     TResult? Function(ApiErrorModel apiErrorModel)? rejectRequestError,
+    TResult? Function()? deleteFriendLoading,
+    TResult? Function()? deleteFriendLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteFriendError,
   }) {
     return addFriendError?.call(apiErrorModel);
   }
@@ -1458,6 +1590,9 @@ class _$AddFriendErrorImpl
     TResult Function()? rejectRequestLoading,
     TResult Function()? rejectRequestLoaded,
     TResult Function(ApiErrorModel apiErrorModel)? rejectRequestError,
+    TResult Function()? deleteFriendLoading,
+    TResult Function()? deleteFriendLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteFriendError,
     required TResult orElse(),
   }) {
     if (addFriendError != null) {
@@ -1482,6 +1617,9 @@ class _$AddFriendErrorImpl
     required TResult Function(RejectRequestLoading value) rejectRequestLoading,
     required TResult Function(RejectRequestLoaded value) rejectRequestLoaded,
     required TResult Function(RejectRequestError value) rejectRequestError,
+    required TResult Function(DeleteFriendLoading value) deleteFriendLoading,
+    required TResult Function(DeleteFriendLoaded value) deleteFriendLoaded,
+    required TResult Function(DeleteFriendError value) deleteFriendError,
   }) {
     return addFriendError(this);
   }
@@ -1502,6 +1640,9 @@ class _$AddFriendErrorImpl
     TResult? Function(RejectRequestLoading value)? rejectRequestLoading,
     TResult? Function(RejectRequestLoaded value)? rejectRequestLoaded,
     TResult? Function(RejectRequestError value)? rejectRequestError,
+    TResult? Function(DeleteFriendLoading value)? deleteFriendLoading,
+    TResult? Function(DeleteFriendLoaded value)? deleteFriendLoaded,
+    TResult? Function(DeleteFriendError value)? deleteFriendError,
   }) {
     return addFriendError?.call(this);
   }
@@ -1522,6 +1663,9 @@ class _$AddFriendErrorImpl
     TResult Function(RejectRequestLoading value)? rejectRequestLoading,
     TResult Function(RejectRequestLoaded value)? rejectRequestLoaded,
     TResult Function(RejectRequestError value)? rejectRequestError,
+    TResult Function(DeleteFriendLoading value)? deleteFriendLoading,
+    TResult Function(DeleteFriendLoaded value)? deleteFriendLoaded,
+    TResult Function(DeleteFriendError value)? deleteFriendError,
     required TResult orElse(),
   }) {
     if (addFriendError != null) {
@@ -1609,6 +1753,9 @@ class _$AcceptRequestLoadingImpl
     required TResult Function() rejectRequestLoading,
     required TResult Function() rejectRequestLoaded,
     required TResult Function(ApiErrorModel apiErrorModel) rejectRequestError,
+    required TResult Function() deleteFriendLoading,
+    required TResult Function() deleteFriendLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteFriendError,
   }) {
     return acceptRequestLoading();
   }
@@ -1630,6 +1777,9 @@ class _$AcceptRequestLoadingImpl
     TResult? Function()? rejectRequestLoading,
     TResult? Function()? rejectRequestLoaded,
     TResult? Function(ApiErrorModel apiErrorModel)? rejectRequestError,
+    TResult? Function()? deleteFriendLoading,
+    TResult? Function()? deleteFriendLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteFriendError,
   }) {
     return acceptRequestLoading?.call();
   }
@@ -1651,6 +1801,9 @@ class _$AcceptRequestLoadingImpl
     TResult Function()? rejectRequestLoading,
     TResult Function()? rejectRequestLoaded,
     TResult Function(ApiErrorModel apiErrorModel)? rejectRequestError,
+    TResult Function()? deleteFriendLoading,
+    TResult Function()? deleteFriendLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteFriendError,
     required TResult orElse(),
   }) {
     if (acceptRequestLoading != null) {
@@ -1675,6 +1828,9 @@ class _$AcceptRequestLoadingImpl
     required TResult Function(RejectRequestLoading value) rejectRequestLoading,
     required TResult Function(RejectRequestLoaded value) rejectRequestLoaded,
     required TResult Function(RejectRequestError value) rejectRequestError,
+    required TResult Function(DeleteFriendLoading value) deleteFriendLoading,
+    required TResult Function(DeleteFriendLoaded value) deleteFriendLoaded,
+    required TResult Function(DeleteFriendError value) deleteFriendError,
   }) {
     return acceptRequestLoading(this);
   }
@@ -1695,6 +1851,9 @@ class _$AcceptRequestLoadingImpl
     TResult? Function(RejectRequestLoading value)? rejectRequestLoading,
     TResult? Function(RejectRequestLoaded value)? rejectRequestLoaded,
     TResult? Function(RejectRequestError value)? rejectRequestError,
+    TResult? Function(DeleteFriendLoading value)? deleteFriendLoading,
+    TResult? Function(DeleteFriendLoaded value)? deleteFriendLoaded,
+    TResult? Function(DeleteFriendError value)? deleteFriendError,
   }) {
     return acceptRequestLoading?.call(this);
   }
@@ -1715,6 +1874,9 @@ class _$AcceptRequestLoadingImpl
     TResult Function(RejectRequestLoading value)? rejectRequestLoading,
     TResult Function(RejectRequestLoaded value)? rejectRequestLoaded,
     TResult Function(RejectRequestError value)? rejectRequestError,
+    TResult Function(DeleteFriendLoading value)? deleteFriendLoading,
+    TResult Function(DeleteFriendLoaded value)? deleteFriendLoaded,
+    TResult Function(DeleteFriendError value)? deleteFriendError,
     required TResult orElse(),
   }) {
     if (acceptRequestLoading != null) {
@@ -1793,6 +1955,9 @@ class _$AcceptRequestLoadedImpl
     required TResult Function() rejectRequestLoading,
     required TResult Function() rejectRequestLoaded,
     required TResult Function(ApiErrorModel apiErrorModel) rejectRequestError,
+    required TResult Function() deleteFriendLoading,
+    required TResult Function() deleteFriendLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteFriendError,
   }) {
     return acceptRequestLoaded();
   }
@@ -1814,6 +1979,9 @@ class _$AcceptRequestLoadedImpl
     TResult? Function()? rejectRequestLoading,
     TResult? Function()? rejectRequestLoaded,
     TResult? Function(ApiErrorModel apiErrorModel)? rejectRequestError,
+    TResult? Function()? deleteFriendLoading,
+    TResult? Function()? deleteFriendLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteFriendError,
   }) {
     return acceptRequestLoaded?.call();
   }
@@ -1835,6 +2003,9 @@ class _$AcceptRequestLoadedImpl
     TResult Function()? rejectRequestLoading,
     TResult Function()? rejectRequestLoaded,
     TResult Function(ApiErrorModel apiErrorModel)? rejectRequestError,
+    TResult Function()? deleteFriendLoading,
+    TResult Function()? deleteFriendLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteFriendError,
     required TResult orElse(),
   }) {
     if (acceptRequestLoaded != null) {
@@ -1859,6 +2030,9 @@ class _$AcceptRequestLoadedImpl
     required TResult Function(RejectRequestLoading value) rejectRequestLoading,
     required TResult Function(RejectRequestLoaded value) rejectRequestLoaded,
     required TResult Function(RejectRequestError value) rejectRequestError,
+    required TResult Function(DeleteFriendLoading value) deleteFriendLoading,
+    required TResult Function(DeleteFriendLoaded value) deleteFriendLoaded,
+    required TResult Function(DeleteFriendError value) deleteFriendError,
   }) {
     return acceptRequestLoaded(this);
   }
@@ -1879,6 +2053,9 @@ class _$AcceptRequestLoadedImpl
     TResult? Function(RejectRequestLoading value)? rejectRequestLoading,
     TResult? Function(RejectRequestLoaded value)? rejectRequestLoaded,
     TResult? Function(RejectRequestError value)? rejectRequestError,
+    TResult? Function(DeleteFriendLoading value)? deleteFriendLoading,
+    TResult? Function(DeleteFriendLoaded value)? deleteFriendLoaded,
+    TResult? Function(DeleteFriendError value)? deleteFriendError,
   }) {
     return acceptRequestLoaded?.call(this);
   }
@@ -1899,6 +2076,9 @@ class _$AcceptRequestLoadedImpl
     TResult Function(RejectRequestLoading value)? rejectRequestLoading,
     TResult Function(RejectRequestLoaded value)? rejectRequestLoaded,
     TResult Function(RejectRequestError value)? rejectRequestError,
+    TResult Function(DeleteFriendLoading value)? deleteFriendLoading,
+    TResult Function(DeleteFriendLoaded value)? deleteFriendLoaded,
+    TResult Function(DeleteFriendError value)? deleteFriendError,
     required TResult orElse(),
   }) {
     if (acceptRequestLoaded != null) {
@@ -2006,6 +2186,9 @@ class _$AcceptRequestErrorImpl
     required TResult Function() rejectRequestLoading,
     required TResult Function() rejectRequestLoaded,
     required TResult Function(ApiErrorModel apiErrorModel) rejectRequestError,
+    required TResult Function() deleteFriendLoading,
+    required TResult Function() deleteFriendLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteFriendError,
   }) {
     return acceptRequestError(apiErrorModel);
   }
@@ -2027,6 +2210,9 @@ class _$AcceptRequestErrorImpl
     TResult? Function()? rejectRequestLoading,
     TResult? Function()? rejectRequestLoaded,
     TResult? Function(ApiErrorModel apiErrorModel)? rejectRequestError,
+    TResult? Function()? deleteFriendLoading,
+    TResult? Function()? deleteFriendLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteFriendError,
   }) {
     return acceptRequestError?.call(apiErrorModel);
   }
@@ -2048,6 +2234,9 @@ class _$AcceptRequestErrorImpl
     TResult Function()? rejectRequestLoading,
     TResult Function()? rejectRequestLoaded,
     TResult Function(ApiErrorModel apiErrorModel)? rejectRequestError,
+    TResult Function()? deleteFriendLoading,
+    TResult Function()? deleteFriendLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteFriendError,
     required TResult orElse(),
   }) {
     if (acceptRequestError != null) {
@@ -2072,6 +2261,9 @@ class _$AcceptRequestErrorImpl
     required TResult Function(RejectRequestLoading value) rejectRequestLoading,
     required TResult Function(RejectRequestLoaded value) rejectRequestLoaded,
     required TResult Function(RejectRequestError value) rejectRequestError,
+    required TResult Function(DeleteFriendLoading value) deleteFriendLoading,
+    required TResult Function(DeleteFriendLoaded value) deleteFriendLoaded,
+    required TResult Function(DeleteFriendError value) deleteFriendError,
   }) {
     return acceptRequestError(this);
   }
@@ -2092,6 +2284,9 @@ class _$AcceptRequestErrorImpl
     TResult? Function(RejectRequestLoading value)? rejectRequestLoading,
     TResult? Function(RejectRequestLoaded value)? rejectRequestLoaded,
     TResult? Function(RejectRequestError value)? rejectRequestError,
+    TResult? Function(DeleteFriendLoading value)? deleteFriendLoading,
+    TResult? Function(DeleteFriendLoaded value)? deleteFriendLoaded,
+    TResult? Function(DeleteFriendError value)? deleteFriendError,
   }) {
     return acceptRequestError?.call(this);
   }
@@ -2112,6 +2307,9 @@ class _$AcceptRequestErrorImpl
     TResult Function(RejectRequestLoading value)? rejectRequestLoading,
     TResult Function(RejectRequestLoaded value)? rejectRequestLoaded,
     TResult Function(RejectRequestError value)? rejectRequestError,
+    TResult Function(DeleteFriendLoading value)? deleteFriendLoading,
+    TResult Function(DeleteFriendLoaded value)? deleteFriendLoaded,
+    TResult Function(DeleteFriendError value)? deleteFriendError,
     required TResult orElse(),
   }) {
     if (acceptRequestError != null) {
@@ -2199,6 +2397,9 @@ class _$RejectRequestLoadingImpl
     required TResult Function() rejectRequestLoading,
     required TResult Function() rejectRequestLoaded,
     required TResult Function(ApiErrorModel apiErrorModel) rejectRequestError,
+    required TResult Function() deleteFriendLoading,
+    required TResult Function() deleteFriendLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteFriendError,
   }) {
     return rejectRequestLoading();
   }
@@ -2220,6 +2421,9 @@ class _$RejectRequestLoadingImpl
     TResult? Function()? rejectRequestLoading,
     TResult? Function()? rejectRequestLoaded,
     TResult? Function(ApiErrorModel apiErrorModel)? rejectRequestError,
+    TResult? Function()? deleteFriendLoading,
+    TResult? Function()? deleteFriendLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteFriendError,
   }) {
     return rejectRequestLoading?.call();
   }
@@ -2241,6 +2445,9 @@ class _$RejectRequestLoadingImpl
     TResult Function()? rejectRequestLoading,
     TResult Function()? rejectRequestLoaded,
     TResult Function(ApiErrorModel apiErrorModel)? rejectRequestError,
+    TResult Function()? deleteFriendLoading,
+    TResult Function()? deleteFriendLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteFriendError,
     required TResult orElse(),
   }) {
     if (rejectRequestLoading != null) {
@@ -2265,6 +2472,9 @@ class _$RejectRequestLoadingImpl
     required TResult Function(RejectRequestLoading value) rejectRequestLoading,
     required TResult Function(RejectRequestLoaded value) rejectRequestLoaded,
     required TResult Function(RejectRequestError value) rejectRequestError,
+    required TResult Function(DeleteFriendLoading value) deleteFriendLoading,
+    required TResult Function(DeleteFriendLoaded value) deleteFriendLoaded,
+    required TResult Function(DeleteFriendError value) deleteFriendError,
   }) {
     return rejectRequestLoading(this);
   }
@@ -2285,6 +2495,9 @@ class _$RejectRequestLoadingImpl
     TResult? Function(RejectRequestLoading value)? rejectRequestLoading,
     TResult? Function(RejectRequestLoaded value)? rejectRequestLoaded,
     TResult? Function(RejectRequestError value)? rejectRequestError,
+    TResult? Function(DeleteFriendLoading value)? deleteFriendLoading,
+    TResult? Function(DeleteFriendLoaded value)? deleteFriendLoaded,
+    TResult? Function(DeleteFriendError value)? deleteFriendError,
   }) {
     return rejectRequestLoading?.call(this);
   }
@@ -2305,6 +2518,9 @@ class _$RejectRequestLoadingImpl
     TResult Function(RejectRequestLoading value)? rejectRequestLoading,
     TResult Function(RejectRequestLoaded value)? rejectRequestLoaded,
     TResult Function(RejectRequestError value)? rejectRequestError,
+    TResult Function(DeleteFriendLoading value)? deleteFriendLoading,
+    TResult Function(DeleteFriendLoaded value)? deleteFriendLoaded,
+    TResult Function(DeleteFriendError value)? deleteFriendError,
     required TResult orElse(),
   }) {
     if (rejectRequestLoading != null) {
@@ -2383,6 +2599,9 @@ class _$RejectRequestLoadedImpl
     required TResult Function() rejectRequestLoading,
     required TResult Function() rejectRequestLoaded,
     required TResult Function(ApiErrorModel apiErrorModel) rejectRequestError,
+    required TResult Function() deleteFriendLoading,
+    required TResult Function() deleteFriendLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteFriendError,
   }) {
     return rejectRequestLoaded();
   }
@@ -2404,6 +2623,9 @@ class _$RejectRequestLoadedImpl
     TResult? Function()? rejectRequestLoading,
     TResult? Function()? rejectRequestLoaded,
     TResult? Function(ApiErrorModel apiErrorModel)? rejectRequestError,
+    TResult? Function()? deleteFriendLoading,
+    TResult? Function()? deleteFriendLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteFriendError,
   }) {
     return rejectRequestLoaded?.call();
   }
@@ -2425,6 +2647,9 @@ class _$RejectRequestLoadedImpl
     TResult Function()? rejectRequestLoading,
     TResult Function()? rejectRequestLoaded,
     TResult Function(ApiErrorModel apiErrorModel)? rejectRequestError,
+    TResult Function()? deleteFriendLoading,
+    TResult Function()? deleteFriendLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteFriendError,
     required TResult orElse(),
   }) {
     if (rejectRequestLoaded != null) {
@@ -2449,6 +2674,9 @@ class _$RejectRequestLoadedImpl
     required TResult Function(RejectRequestLoading value) rejectRequestLoading,
     required TResult Function(RejectRequestLoaded value) rejectRequestLoaded,
     required TResult Function(RejectRequestError value) rejectRequestError,
+    required TResult Function(DeleteFriendLoading value) deleteFriendLoading,
+    required TResult Function(DeleteFriendLoaded value) deleteFriendLoaded,
+    required TResult Function(DeleteFriendError value) deleteFriendError,
   }) {
     return rejectRequestLoaded(this);
   }
@@ -2469,6 +2697,9 @@ class _$RejectRequestLoadedImpl
     TResult? Function(RejectRequestLoading value)? rejectRequestLoading,
     TResult? Function(RejectRequestLoaded value)? rejectRequestLoaded,
     TResult? Function(RejectRequestError value)? rejectRequestError,
+    TResult? Function(DeleteFriendLoading value)? deleteFriendLoading,
+    TResult? Function(DeleteFriendLoaded value)? deleteFriendLoaded,
+    TResult? Function(DeleteFriendError value)? deleteFriendError,
   }) {
     return rejectRequestLoaded?.call(this);
   }
@@ -2489,6 +2720,9 @@ class _$RejectRequestLoadedImpl
     TResult Function(RejectRequestLoading value)? rejectRequestLoading,
     TResult Function(RejectRequestLoaded value)? rejectRequestLoaded,
     TResult Function(RejectRequestError value)? rejectRequestError,
+    TResult Function(DeleteFriendLoading value)? deleteFriendLoading,
+    TResult Function(DeleteFriendLoaded value)? deleteFriendLoaded,
+    TResult Function(DeleteFriendError value)? deleteFriendError,
     required TResult orElse(),
   }) {
     if (rejectRequestLoaded != null) {
@@ -2596,6 +2830,9 @@ class _$RejectRequestErrorImpl
     required TResult Function() rejectRequestLoading,
     required TResult Function() rejectRequestLoaded,
     required TResult Function(ApiErrorModel apiErrorModel) rejectRequestError,
+    required TResult Function() deleteFriendLoading,
+    required TResult Function() deleteFriendLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteFriendError,
   }) {
     return rejectRequestError(apiErrorModel);
   }
@@ -2617,6 +2854,9 @@ class _$RejectRequestErrorImpl
     TResult? Function()? rejectRequestLoading,
     TResult? Function()? rejectRequestLoaded,
     TResult? Function(ApiErrorModel apiErrorModel)? rejectRequestError,
+    TResult? Function()? deleteFriendLoading,
+    TResult? Function()? deleteFriendLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteFriendError,
   }) {
     return rejectRequestError?.call(apiErrorModel);
   }
@@ -2638,6 +2878,9 @@ class _$RejectRequestErrorImpl
     TResult Function()? rejectRequestLoading,
     TResult Function()? rejectRequestLoaded,
     TResult Function(ApiErrorModel apiErrorModel)? rejectRequestError,
+    TResult Function()? deleteFriendLoading,
+    TResult Function()? deleteFriendLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteFriendError,
     required TResult orElse(),
   }) {
     if (rejectRequestError != null) {
@@ -2662,6 +2905,9 @@ class _$RejectRequestErrorImpl
     required TResult Function(RejectRequestLoading value) rejectRequestLoading,
     required TResult Function(RejectRequestLoaded value) rejectRequestLoaded,
     required TResult Function(RejectRequestError value) rejectRequestError,
+    required TResult Function(DeleteFriendLoading value) deleteFriendLoading,
+    required TResult Function(DeleteFriendLoaded value) deleteFriendLoaded,
+    required TResult Function(DeleteFriendError value) deleteFriendError,
   }) {
     return rejectRequestError(this);
   }
@@ -2682,6 +2928,9 @@ class _$RejectRequestErrorImpl
     TResult? Function(RejectRequestLoading value)? rejectRequestLoading,
     TResult? Function(RejectRequestLoaded value)? rejectRequestLoaded,
     TResult? Function(RejectRequestError value)? rejectRequestError,
+    TResult? Function(DeleteFriendLoading value)? deleteFriendLoading,
+    TResult? Function(DeleteFriendLoaded value)? deleteFriendLoaded,
+    TResult? Function(DeleteFriendError value)? deleteFriendError,
   }) {
     return rejectRequestError?.call(this);
   }
@@ -2702,6 +2951,9 @@ class _$RejectRequestErrorImpl
     TResult Function(RejectRequestLoading value)? rejectRequestLoading,
     TResult Function(RejectRequestLoaded value)? rejectRequestLoaded,
     TResult Function(RejectRequestError value)? rejectRequestError,
+    TResult Function(DeleteFriendLoading value)? deleteFriendLoading,
+    TResult Function(DeleteFriendLoaded value)? deleteFriendLoaded,
+    TResult Function(DeleteFriendError value)? deleteFriendError,
     required TResult orElse(),
   }) {
     if (rejectRequestError != null) {
@@ -2721,5 +2973,648 @@ abstract class RejectRequestError implements UserProfileState {
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$RejectRequestErrorImplCopyWith<_$RejectRequestErrorImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$DeleteFriendLoadingImplCopyWith<$Res> {
+  factory _$$DeleteFriendLoadingImplCopyWith(_$DeleteFriendLoadingImpl value,
+          $Res Function(_$DeleteFriendLoadingImpl) then) =
+      __$$DeleteFriendLoadingImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$DeleteFriendLoadingImplCopyWithImpl<$Res>
+    extends _$UserProfileStateCopyWithImpl<$Res, _$DeleteFriendLoadingImpl>
+    implements _$$DeleteFriendLoadingImplCopyWith<$Res> {
+  __$$DeleteFriendLoadingImplCopyWithImpl(_$DeleteFriendLoadingImpl _value,
+      $Res Function(_$DeleteFriendLoadingImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of UserProfileState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$DeleteFriendLoadingImpl
+    with DiagnosticableTreeMixin
+    implements DeleteFriendLoading {
+  const _$DeleteFriendLoadingImpl();
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'UserProfileState.deleteFriendLoading()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties.add(
+        DiagnosticsProperty('type', 'UserProfileState.deleteFriendLoading'));
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$DeleteFriendLoadingImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() userProfileLoading,
+    required TResult Function(UserProfileResponseModel userProfileResponseModel)
+        userProfileLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) userProfileError,
+    required TResult Function() addFriendLoading,
+    required TResult Function() addFriendLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) addFriendError,
+    required TResult Function() acceptRequestLoading,
+    required TResult Function() acceptRequestLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) acceptRequestError,
+    required TResult Function() rejectRequestLoading,
+    required TResult Function() rejectRequestLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) rejectRequestError,
+    required TResult Function() deleteFriendLoading,
+    required TResult Function() deleteFriendLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteFriendError,
+  }) {
+    return deleteFriendLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? userProfileLoading,
+    TResult? Function(UserProfileResponseModel userProfileResponseModel)?
+        userProfileLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? userProfileError,
+    TResult? Function()? addFriendLoading,
+    TResult? Function()? addFriendLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? addFriendError,
+    TResult? Function()? acceptRequestLoading,
+    TResult? Function()? acceptRequestLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? acceptRequestError,
+    TResult? Function()? rejectRequestLoading,
+    TResult? Function()? rejectRequestLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? rejectRequestError,
+    TResult? Function()? deleteFriendLoading,
+    TResult? Function()? deleteFriendLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteFriendError,
+  }) {
+    return deleteFriendLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? userProfileLoading,
+    TResult Function(UserProfileResponseModel userProfileResponseModel)?
+        userProfileLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? userProfileError,
+    TResult Function()? addFriendLoading,
+    TResult Function()? addFriendLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? addFriendError,
+    TResult Function()? acceptRequestLoading,
+    TResult Function()? acceptRequestLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? acceptRequestError,
+    TResult Function()? rejectRequestLoading,
+    TResult Function()? rejectRequestLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? rejectRequestError,
+    TResult Function()? deleteFriendLoading,
+    TResult Function()? deleteFriendLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteFriendError,
+    required TResult orElse(),
+  }) {
+    if (deleteFriendLoading != null) {
+      return deleteFriendLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(UserProfileLoading value) userProfileLoading,
+    required TResult Function(UserProfileLoaded value) userProfileLoaded,
+    required TResult Function(UserProfileError value) userProfileError,
+    required TResult Function(AddFriendLoading value) addFriendLoading,
+    required TResult Function(AddFriendLoaded value) addFriendLoaded,
+    required TResult Function(AddFriendError value) addFriendError,
+    required TResult Function(AcceptRequestLoading value) acceptRequestLoading,
+    required TResult Function(AcceptRequestLoaded value) acceptRequestLoaded,
+    required TResult Function(AcceptRequestError value) acceptRequestError,
+    required TResult Function(RejectRequestLoading value) rejectRequestLoading,
+    required TResult Function(RejectRequestLoaded value) rejectRequestLoaded,
+    required TResult Function(RejectRequestError value) rejectRequestError,
+    required TResult Function(DeleteFriendLoading value) deleteFriendLoading,
+    required TResult Function(DeleteFriendLoaded value) deleteFriendLoaded,
+    required TResult Function(DeleteFriendError value) deleteFriendError,
+  }) {
+    return deleteFriendLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(UserProfileLoading value)? userProfileLoading,
+    TResult? Function(UserProfileLoaded value)? userProfileLoaded,
+    TResult? Function(UserProfileError value)? userProfileError,
+    TResult? Function(AddFriendLoading value)? addFriendLoading,
+    TResult? Function(AddFriendLoaded value)? addFriendLoaded,
+    TResult? Function(AddFriendError value)? addFriendError,
+    TResult? Function(AcceptRequestLoading value)? acceptRequestLoading,
+    TResult? Function(AcceptRequestLoaded value)? acceptRequestLoaded,
+    TResult? Function(AcceptRequestError value)? acceptRequestError,
+    TResult? Function(RejectRequestLoading value)? rejectRequestLoading,
+    TResult? Function(RejectRequestLoaded value)? rejectRequestLoaded,
+    TResult? Function(RejectRequestError value)? rejectRequestError,
+    TResult? Function(DeleteFriendLoading value)? deleteFriendLoading,
+    TResult? Function(DeleteFriendLoaded value)? deleteFriendLoaded,
+    TResult? Function(DeleteFriendError value)? deleteFriendError,
+  }) {
+    return deleteFriendLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(UserProfileLoading value)? userProfileLoading,
+    TResult Function(UserProfileLoaded value)? userProfileLoaded,
+    TResult Function(UserProfileError value)? userProfileError,
+    TResult Function(AddFriendLoading value)? addFriendLoading,
+    TResult Function(AddFriendLoaded value)? addFriendLoaded,
+    TResult Function(AddFriendError value)? addFriendError,
+    TResult Function(AcceptRequestLoading value)? acceptRequestLoading,
+    TResult Function(AcceptRequestLoaded value)? acceptRequestLoaded,
+    TResult Function(AcceptRequestError value)? acceptRequestError,
+    TResult Function(RejectRequestLoading value)? rejectRequestLoading,
+    TResult Function(RejectRequestLoaded value)? rejectRequestLoaded,
+    TResult Function(RejectRequestError value)? rejectRequestError,
+    TResult Function(DeleteFriendLoading value)? deleteFriendLoading,
+    TResult Function(DeleteFriendLoaded value)? deleteFriendLoaded,
+    TResult Function(DeleteFriendError value)? deleteFriendError,
+    required TResult orElse(),
+  }) {
+    if (deleteFriendLoading != null) {
+      return deleteFriendLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class DeleteFriendLoading implements UserProfileState {
+  const factory DeleteFriendLoading() = _$DeleteFriendLoadingImpl;
+}
+
+/// @nodoc
+abstract class _$$DeleteFriendLoadedImplCopyWith<$Res> {
+  factory _$$DeleteFriendLoadedImplCopyWith(_$DeleteFriendLoadedImpl value,
+          $Res Function(_$DeleteFriendLoadedImpl) then) =
+      __$$DeleteFriendLoadedImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$DeleteFriendLoadedImplCopyWithImpl<$Res>
+    extends _$UserProfileStateCopyWithImpl<$Res, _$DeleteFriendLoadedImpl>
+    implements _$$DeleteFriendLoadedImplCopyWith<$Res> {
+  __$$DeleteFriendLoadedImplCopyWithImpl(_$DeleteFriendLoadedImpl _value,
+      $Res Function(_$DeleteFriendLoadedImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of UserProfileState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$DeleteFriendLoadedImpl
+    with DiagnosticableTreeMixin
+    implements DeleteFriendLoaded {
+  const _$DeleteFriendLoadedImpl();
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'UserProfileState.deleteFriendLoaded()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties.add(
+        DiagnosticsProperty('type', 'UserProfileState.deleteFriendLoaded'));
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$DeleteFriendLoadedImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() userProfileLoading,
+    required TResult Function(UserProfileResponseModel userProfileResponseModel)
+        userProfileLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) userProfileError,
+    required TResult Function() addFriendLoading,
+    required TResult Function() addFriendLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) addFriendError,
+    required TResult Function() acceptRequestLoading,
+    required TResult Function() acceptRequestLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) acceptRequestError,
+    required TResult Function() rejectRequestLoading,
+    required TResult Function() rejectRequestLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) rejectRequestError,
+    required TResult Function() deleteFriendLoading,
+    required TResult Function() deleteFriendLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteFriendError,
+  }) {
+    return deleteFriendLoaded();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? userProfileLoading,
+    TResult? Function(UserProfileResponseModel userProfileResponseModel)?
+        userProfileLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? userProfileError,
+    TResult? Function()? addFriendLoading,
+    TResult? Function()? addFriendLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? addFriendError,
+    TResult? Function()? acceptRequestLoading,
+    TResult? Function()? acceptRequestLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? acceptRequestError,
+    TResult? Function()? rejectRequestLoading,
+    TResult? Function()? rejectRequestLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? rejectRequestError,
+    TResult? Function()? deleteFriendLoading,
+    TResult? Function()? deleteFriendLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteFriendError,
+  }) {
+    return deleteFriendLoaded?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? userProfileLoading,
+    TResult Function(UserProfileResponseModel userProfileResponseModel)?
+        userProfileLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? userProfileError,
+    TResult Function()? addFriendLoading,
+    TResult Function()? addFriendLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? addFriendError,
+    TResult Function()? acceptRequestLoading,
+    TResult Function()? acceptRequestLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? acceptRequestError,
+    TResult Function()? rejectRequestLoading,
+    TResult Function()? rejectRequestLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? rejectRequestError,
+    TResult Function()? deleteFriendLoading,
+    TResult Function()? deleteFriendLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteFriendError,
+    required TResult orElse(),
+  }) {
+    if (deleteFriendLoaded != null) {
+      return deleteFriendLoaded();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(UserProfileLoading value) userProfileLoading,
+    required TResult Function(UserProfileLoaded value) userProfileLoaded,
+    required TResult Function(UserProfileError value) userProfileError,
+    required TResult Function(AddFriendLoading value) addFriendLoading,
+    required TResult Function(AddFriendLoaded value) addFriendLoaded,
+    required TResult Function(AddFriendError value) addFriendError,
+    required TResult Function(AcceptRequestLoading value) acceptRequestLoading,
+    required TResult Function(AcceptRequestLoaded value) acceptRequestLoaded,
+    required TResult Function(AcceptRequestError value) acceptRequestError,
+    required TResult Function(RejectRequestLoading value) rejectRequestLoading,
+    required TResult Function(RejectRequestLoaded value) rejectRequestLoaded,
+    required TResult Function(RejectRequestError value) rejectRequestError,
+    required TResult Function(DeleteFriendLoading value) deleteFriendLoading,
+    required TResult Function(DeleteFriendLoaded value) deleteFriendLoaded,
+    required TResult Function(DeleteFriendError value) deleteFriendError,
+  }) {
+    return deleteFriendLoaded(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(UserProfileLoading value)? userProfileLoading,
+    TResult? Function(UserProfileLoaded value)? userProfileLoaded,
+    TResult? Function(UserProfileError value)? userProfileError,
+    TResult? Function(AddFriendLoading value)? addFriendLoading,
+    TResult? Function(AddFriendLoaded value)? addFriendLoaded,
+    TResult? Function(AddFriendError value)? addFriendError,
+    TResult? Function(AcceptRequestLoading value)? acceptRequestLoading,
+    TResult? Function(AcceptRequestLoaded value)? acceptRequestLoaded,
+    TResult? Function(AcceptRequestError value)? acceptRequestError,
+    TResult? Function(RejectRequestLoading value)? rejectRequestLoading,
+    TResult? Function(RejectRequestLoaded value)? rejectRequestLoaded,
+    TResult? Function(RejectRequestError value)? rejectRequestError,
+    TResult? Function(DeleteFriendLoading value)? deleteFriendLoading,
+    TResult? Function(DeleteFriendLoaded value)? deleteFriendLoaded,
+    TResult? Function(DeleteFriendError value)? deleteFriendError,
+  }) {
+    return deleteFriendLoaded?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(UserProfileLoading value)? userProfileLoading,
+    TResult Function(UserProfileLoaded value)? userProfileLoaded,
+    TResult Function(UserProfileError value)? userProfileError,
+    TResult Function(AddFriendLoading value)? addFriendLoading,
+    TResult Function(AddFriendLoaded value)? addFriendLoaded,
+    TResult Function(AddFriendError value)? addFriendError,
+    TResult Function(AcceptRequestLoading value)? acceptRequestLoading,
+    TResult Function(AcceptRequestLoaded value)? acceptRequestLoaded,
+    TResult Function(AcceptRequestError value)? acceptRequestError,
+    TResult Function(RejectRequestLoading value)? rejectRequestLoading,
+    TResult Function(RejectRequestLoaded value)? rejectRequestLoaded,
+    TResult Function(RejectRequestError value)? rejectRequestError,
+    TResult Function(DeleteFriendLoading value)? deleteFriendLoading,
+    TResult Function(DeleteFriendLoaded value)? deleteFriendLoaded,
+    TResult Function(DeleteFriendError value)? deleteFriendError,
+    required TResult orElse(),
+  }) {
+    if (deleteFriendLoaded != null) {
+      return deleteFriendLoaded(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class DeleteFriendLoaded implements UserProfileState {
+  const factory DeleteFriendLoaded() = _$DeleteFriendLoadedImpl;
+}
+
+/// @nodoc
+abstract class _$$DeleteFriendErrorImplCopyWith<$Res> {
+  factory _$$DeleteFriendErrorImplCopyWith(_$DeleteFriendErrorImpl value,
+          $Res Function(_$DeleteFriendErrorImpl) then) =
+      __$$DeleteFriendErrorImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({ApiErrorModel apiErrorModel});
+}
+
+/// @nodoc
+class __$$DeleteFriendErrorImplCopyWithImpl<$Res>
+    extends _$UserProfileStateCopyWithImpl<$Res, _$DeleteFriendErrorImpl>
+    implements _$$DeleteFriendErrorImplCopyWith<$Res> {
+  __$$DeleteFriendErrorImplCopyWithImpl(_$DeleteFriendErrorImpl _value,
+      $Res Function(_$DeleteFriendErrorImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of UserProfileState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? apiErrorModel = null,
+  }) {
+    return _then(_$DeleteFriendErrorImpl(
+      null == apiErrorModel
+          ? _value.apiErrorModel
+          : apiErrorModel // ignore: cast_nullable_to_non_nullable
+              as ApiErrorModel,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$DeleteFriendErrorImpl
+    with DiagnosticableTreeMixin
+    implements DeleteFriendError {
+  const _$DeleteFriendErrorImpl(this.apiErrorModel);
+
+  @override
+  final ApiErrorModel apiErrorModel;
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'UserProfileState.deleteFriendError(apiErrorModel: $apiErrorModel)';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+      ..add(DiagnosticsProperty('type', 'UserProfileState.deleteFriendError'))
+      ..add(DiagnosticsProperty('apiErrorModel', apiErrorModel));
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$DeleteFriendErrorImpl &&
+            (identical(other.apiErrorModel, apiErrorModel) ||
+                other.apiErrorModel == apiErrorModel));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, apiErrorModel);
+
+  /// Create a copy of UserProfileState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$DeleteFriendErrorImplCopyWith<_$DeleteFriendErrorImpl> get copyWith =>
+      __$$DeleteFriendErrorImplCopyWithImpl<_$DeleteFriendErrorImpl>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() userProfileLoading,
+    required TResult Function(UserProfileResponseModel userProfileResponseModel)
+        userProfileLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) userProfileError,
+    required TResult Function() addFriendLoading,
+    required TResult Function() addFriendLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) addFriendError,
+    required TResult Function() acceptRequestLoading,
+    required TResult Function() acceptRequestLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) acceptRequestError,
+    required TResult Function() rejectRequestLoading,
+    required TResult Function() rejectRequestLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) rejectRequestError,
+    required TResult Function() deleteFriendLoading,
+    required TResult Function() deleteFriendLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteFriendError,
+  }) {
+    return deleteFriendError(apiErrorModel);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? userProfileLoading,
+    TResult? Function(UserProfileResponseModel userProfileResponseModel)?
+        userProfileLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? userProfileError,
+    TResult? Function()? addFriendLoading,
+    TResult? Function()? addFriendLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? addFriendError,
+    TResult? Function()? acceptRequestLoading,
+    TResult? Function()? acceptRequestLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? acceptRequestError,
+    TResult? Function()? rejectRequestLoading,
+    TResult? Function()? rejectRequestLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? rejectRequestError,
+    TResult? Function()? deleteFriendLoading,
+    TResult? Function()? deleteFriendLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteFriendError,
+  }) {
+    return deleteFriendError?.call(apiErrorModel);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? userProfileLoading,
+    TResult Function(UserProfileResponseModel userProfileResponseModel)?
+        userProfileLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? userProfileError,
+    TResult Function()? addFriendLoading,
+    TResult Function()? addFriendLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? addFriendError,
+    TResult Function()? acceptRequestLoading,
+    TResult Function()? acceptRequestLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? acceptRequestError,
+    TResult Function()? rejectRequestLoading,
+    TResult Function()? rejectRequestLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? rejectRequestError,
+    TResult Function()? deleteFriendLoading,
+    TResult Function()? deleteFriendLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteFriendError,
+    required TResult orElse(),
+  }) {
+    if (deleteFriendError != null) {
+      return deleteFriendError(apiErrorModel);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(UserProfileLoading value) userProfileLoading,
+    required TResult Function(UserProfileLoaded value) userProfileLoaded,
+    required TResult Function(UserProfileError value) userProfileError,
+    required TResult Function(AddFriendLoading value) addFriendLoading,
+    required TResult Function(AddFriendLoaded value) addFriendLoaded,
+    required TResult Function(AddFriendError value) addFriendError,
+    required TResult Function(AcceptRequestLoading value) acceptRequestLoading,
+    required TResult Function(AcceptRequestLoaded value) acceptRequestLoaded,
+    required TResult Function(AcceptRequestError value) acceptRequestError,
+    required TResult Function(RejectRequestLoading value) rejectRequestLoading,
+    required TResult Function(RejectRequestLoaded value) rejectRequestLoaded,
+    required TResult Function(RejectRequestError value) rejectRequestError,
+    required TResult Function(DeleteFriendLoading value) deleteFriendLoading,
+    required TResult Function(DeleteFriendLoaded value) deleteFriendLoaded,
+    required TResult Function(DeleteFriendError value) deleteFriendError,
+  }) {
+    return deleteFriendError(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(UserProfileLoading value)? userProfileLoading,
+    TResult? Function(UserProfileLoaded value)? userProfileLoaded,
+    TResult? Function(UserProfileError value)? userProfileError,
+    TResult? Function(AddFriendLoading value)? addFriendLoading,
+    TResult? Function(AddFriendLoaded value)? addFriendLoaded,
+    TResult? Function(AddFriendError value)? addFriendError,
+    TResult? Function(AcceptRequestLoading value)? acceptRequestLoading,
+    TResult? Function(AcceptRequestLoaded value)? acceptRequestLoaded,
+    TResult? Function(AcceptRequestError value)? acceptRequestError,
+    TResult? Function(RejectRequestLoading value)? rejectRequestLoading,
+    TResult? Function(RejectRequestLoaded value)? rejectRequestLoaded,
+    TResult? Function(RejectRequestError value)? rejectRequestError,
+    TResult? Function(DeleteFriendLoading value)? deleteFriendLoading,
+    TResult? Function(DeleteFriendLoaded value)? deleteFriendLoaded,
+    TResult? Function(DeleteFriendError value)? deleteFriendError,
+  }) {
+    return deleteFriendError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(UserProfileLoading value)? userProfileLoading,
+    TResult Function(UserProfileLoaded value)? userProfileLoaded,
+    TResult Function(UserProfileError value)? userProfileError,
+    TResult Function(AddFriendLoading value)? addFriendLoading,
+    TResult Function(AddFriendLoaded value)? addFriendLoaded,
+    TResult Function(AddFriendError value)? addFriendError,
+    TResult Function(AcceptRequestLoading value)? acceptRequestLoading,
+    TResult Function(AcceptRequestLoaded value)? acceptRequestLoaded,
+    TResult Function(AcceptRequestError value)? acceptRequestError,
+    TResult Function(RejectRequestLoading value)? rejectRequestLoading,
+    TResult Function(RejectRequestLoaded value)? rejectRequestLoaded,
+    TResult Function(RejectRequestError value)? rejectRequestError,
+    TResult Function(DeleteFriendLoading value)? deleteFriendLoading,
+    TResult Function(DeleteFriendLoaded value)? deleteFriendLoaded,
+    TResult Function(DeleteFriendError value)? deleteFriendError,
+    required TResult orElse(),
+  }) {
+    if (deleteFriendError != null) {
+      return deleteFriendError(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class DeleteFriendError implements UserProfileState {
+  const factory DeleteFriendError(final ApiErrorModel apiErrorModel) =
+      _$DeleteFriendErrorImpl;
+
+  ApiErrorModel get apiErrorModel;
+
+  /// Create a copy of UserProfileState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$DeleteFriendErrorImplCopyWith<_$DeleteFriendErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

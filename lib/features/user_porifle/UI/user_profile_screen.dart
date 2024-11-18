@@ -26,6 +26,7 @@ class UserProfileScreen extends StatefulWidget {
 class _UserProfileScreenState extends State<UserProfileScreen> {
   String myId = "";
   bool isRequestRecieved = false;
+  bool isRemovingFriend = false;
   bool isTextExpanded = false;
 
   void getMyId() async {
@@ -167,7 +168,14 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                                                   isRequestRecieved =
                                                       !isRequestRecieved;
                                                 });
-                                              }
+                                              }else if(context
+                                                      .read<UserProfileCubit>()
+                                                      .freindShipStatus ==
+                                                  "Freinds"){
+                                                    setState(() {
+                                                      isRemovingFriend = ! isRemovingFriend;
+                                                    });
+                                                  }
                                             },
                                             child: Text(
                                               context
@@ -226,7 +234,52 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                                         ],
                                       ),
                                     ),
-                                  if (isRequestRecieved)
+                                  if (isRemovingFriend)
+                                    verticalSpace(size.height * 0.02),
+                                    if(isRemovingFriend)
+                                    Text("Are you Sure you want to remove ${userModel.data!.user![0].firstName} from friends ?",
+                                    style: TextStyles.font16Medium,
+                                    ),
+                                     if (isRemovingFriend)
+                                    verticalSpace(size.height * 0.02),
+                                  if (isRemovingFriend)
+                                    SizedBox(
+                                      width: size.width * 0.8,
+                                      child: Row(
+                                        children: [
+                                          Expanded(
+                                            child: AppButton(
+                                              onPressed: () {
+                                                 context
+                                                    .read<UserProfileCubit>()
+                                                    .deleteFriend(widget.userId);
+                                                setState(() {
+                                                  context
+                                                      .read<UserProfileCubit>()
+                                                      .freindShipStatus = "Add";
+                                                      isRemovingFriend = false;
+                                                });
+                                              },
+                                              text: "Yes",
+                                              isWhite: false,
+                                            ),
+                                          ),
+                                          horizontalSpace(size.width * 0.07),
+                                          Expanded(
+                                            child: AppButton(
+                                              onPressed: () {
+                                                setState(() {
+                                                 isRemovingFriend = !isRemovingFriend;
+                                                });
+                                              },
+                                              text: "Cancel",
+                                              isWhite: true,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  if (isRemovingFriend)
                                     verticalSpace(size.height * 0.02),
                                   if (widget.userId == myId)
                                     verticalSpace(size.height * 0.03),

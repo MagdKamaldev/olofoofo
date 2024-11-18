@@ -69,4 +69,17 @@ class UserProfileCubit extends Cubit<UserProfileState> {
       },
     );
   }
+
+  Future<void> deleteFriend(String userId) async {
+    emit(const UserProfileState.deleteFriendLoading());
+    final result = await _userProfileRepo.deleteFriend(userId);
+    result.when(
+      success: (_) {
+        emit(const UserProfileState.deleteFriendLoaded());
+      },
+      failure: (error) {
+        emit(UserProfileState.deleteFriendError(error));
+      },
+    );
+  }
 }

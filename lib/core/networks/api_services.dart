@@ -33,4 +33,7 @@ abstract class ApiService {
 
   @POST(ApiConstants.rejectRequest)
   Future<void> rejectRequest(@Path("userId") String userId);
+
+  @POST(ApiConstants.deleteFriend)
+  Future<void> deleteFriend(@Path("userId") String userId);
 }
