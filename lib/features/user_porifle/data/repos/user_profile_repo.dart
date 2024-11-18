@@ -25,6 +25,15 @@ class UserProfileRepo {
     }
   }
 
+  Future<ApiResult<void>> deleteFriend(String userId) async {
+    try {
+      await _apiService.deleteFriend(userId);
+      return const ApiResult.success(null);
+    } catch (error) {
+      return ApiResult.failure(ApiErrorHandler.handle(error)!);
+    }
+  }
+
   Future<ApiResult<void>> acceptRequest(String userId) async {
     try {
       await _apiService.acceptRequest(userId);
