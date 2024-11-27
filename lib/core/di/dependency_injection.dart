@@ -8,6 +8,8 @@ import 'package:circle_sync/features/home/data/repos/home_repo.dart';
 import 'package:circle_sync/features/home/logic/home_cubit.dart';
 import 'package:circle_sync/features/login/data/repos/login_repo.dart';
 import 'package:circle_sync/features/login/logic/cubit/login_cubit.dart';
+import 'package:circle_sync/features/notifications/data/repos/notifications_repo.dart';
+import 'package:circle_sync/features/notifications/logic/cubit/notifications_cubit.dart';
 import 'package:circle_sync/features/profile/data/repos/profile_repo.dart';
 import 'package:circle_sync/features/profile/logic/cubit/proflie_cubit.dart';
 import 'package:circle_sync/features/signup/data/repos/sign_up_repo.dart';
@@ -15,6 +17,7 @@ import 'package:circle_sync/features/signup/logic/cubit/sign_up_cubit.dart';
 import 'package:circle_sync/features/user_porifle/data/repos/user_profile_repo.dart';
 import 'package:circle_sync/features/user_porifle/logic/user_profile_cubit.dart';
 import 'package:dio/dio.dart';
+import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 
 final getIt = GetIt.instance;
@@ -50,5 +53,8 @@ Future<void> setUpGetIt() async {
   //get User Profile
   getIt.registerLazySingleton<UserProfileRepo>(()=>UserProfileRepo(getIt()));
   getIt.registerFactory<UserProfileCubit>(()=>UserProfileCubit(getIt()));
+  //notifications
+  getIt.registerLazySingleton<NotificationRepo>(()=>NotificationRepo(getIt()));
+  getIt.registerFactory<NotificationsCubit>(()=>NotificationsCubit(getIt()));
   
 }

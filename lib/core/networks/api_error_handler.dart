@@ -2,8 +2,7 @@
 import 'package:dio/dio.dart';
 import 'api_error_model.dart';
 
-class ApiErrorHandler{
-
+class ApiErrorHandler {
   static ApiErrorModel? handle(dynamic error) {
     if (error is DioException) {
       switch (error.type) {
@@ -21,25 +20,40 @@ class ApiErrorHandler{
           return ApiErrorModel(
               message: "Receive timeout in connection with the server");
         case DioExceptionType.badResponse:
-          return _handleError(error.response?.data,error.response!);
+          return _handleError(error.response?.data, error.response);
         case DioExceptionType.sendTimeout:
           return ApiErrorModel(
               message: "Send timeout in connection with the server");
         default:
           return ApiErrorModel(message: "Something went wrong");
-          }
+      }
     } else {
       return ApiErrorModel(message: "Something went wrong");
     }
   }
 }
 
-ApiErrorModel? _handleError(dynamic data,Response response) {
+ApiErrorModel? _handleError(dynamic data, Response? response) {
+  // Graceful handling of null data
+  if (data == null || response == null) {
+    return ApiErrorModel(
+      code: response?.statusCode,
+      message: "Unexpected error occurred",
+    );
+  }
+
+  // Extract message and errors list
+  final String? message = data['message'] ?? "An error occurred";
+  final List<dynamic>? errorsList = data['errors'];
+
+  // Parse errors into List<ApiErrorDetail>
+  final List<ApiErrorDetail>? parsedErrors = errorsList?.map((error) {
+          return ApiErrorDetail.fromJson(error);
+        }).toList();
 
   return ApiErrorModel(
     code: response.statusCode,
-    message: data['message'],
-    errors: data['errors'][0]["msg"],
+    message: message,
+    errors: parsedErrors,
   );
-  
 }

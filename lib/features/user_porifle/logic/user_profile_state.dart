@@ -33,5 +33,10 @@ class UserProfileState with _$UserProfileState {
   const factory UserProfileState.deleteFriendLoaded() = DeleteFriendLoaded;
   const factory UserProfileState.deleteFriendError(ApiErrorModel apiErrorModel) = DeleteFriendError;
 
+  //cancel friend request
+  const factory UserProfileState.cancelFriendRequestLoading() = CancelFriendRequestLoading;
+  const factory UserProfileState.cancelFriendRequestLoaded() = CancelFriendRequestLoaded;
+  const factory UserProfileState.cancelFriendRequestError(ApiErrorModel apiErrorModel) = CancelFriendRequestError;
+
 }
 
