@@ -1,6 +1,7 @@
 import 'package:circle_sync/core/networks/api_constants.dart';
 import 'package:circle_sync/features/login/data/models/login_request_body.dart';
 import 'package:circle_sync/features/login/data/models/login_response.dart';
+import 'package:circle_sync/features/notifications/data/models/friend_requests_response.dart';
 import 'package:circle_sync/features/profile/data/models/profile_response_model.dart';
 import 'package:circle_sync/features/signup/data/models/sign_up_request_body.dart';
 import 'package:circle_sync/features/signup/data/models/sign_up_response.dart';
@@ -19,21 +20,28 @@ abstract class ApiService {
   @POST(ApiConstants.signUp)
   Future<SignUpResponse> signUp(@Body() SignUpRequestBody signUpRequestBody);
 
- @GET(ApiConstants.getMyProfile)
+  @GET(ApiConstants.getMyProfile)
   Future<ProfileResponseModel> getProfile();
 
- @GET(ApiConstants.getUser)
+  @GET(ApiConstants.getUser)
   Future<UserProfileResponseModel> getUser(@Path("userId") String userId);
 
   @POST(ApiConstants.addFriend)
   Future<void> addFriend(@Path("userId") String userId);
 
-  @POST(ApiConstants.acceptRequest)
+  @PATCH(ApiConstants.acceptRequest)
   Future<void> acceptRequest(@Path("userId") String userId);
 
-  @POST(ApiConstants.rejectRequest)
+  @DELETE(ApiConstants.rejectRequest)
   Future<void> rejectRequest(@Path("userId") String userId);
 
-  @POST(ApiConstants.deleteFriend)
+  @DELETE(ApiConstants.deleteFriend)
   Future<void> deleteFriend(@Path("userId") String userId);
+
+  @DELETE(ApiConstants.cancelFriendRequest)
+  Future<void> cancelFriendRequest(@Path("userId") String userId);
+
+  @GET(ApiConstants.getFriendRequests)
+  Future<FriendRequestsResponse> getFriendRequests();
+  
 }

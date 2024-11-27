@@ -52,5 +52,13 @@ class UserProfileRepo {
     }
   }
 
+  Future<ApiResult<void>> cancelFriendRequest(String userId) async {
+    try {
+      await _apiService.cancelFriendRequest(userId);
+      return const ApiResult.success(null);
+    } catch (error) {
+      return ApiResult.failure(ApiErrorHandler.handle(error)!);
+    }
+  }
 
 }
