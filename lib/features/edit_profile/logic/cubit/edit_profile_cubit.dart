@@ -1,5 +1,7 @@
 import 'dart:io';
 
+import 'package:circle_sync/core/helpers/constants.dart';
+import 'package:circle_sync/core/helpers/shared_pref_helper.dart';
 import 'package:circle_sync/core/themes/text_styles/text_styles.dart';
 import 'package:circle_sync/features/edit_profile/data/repos/edit_profile_repo.dart';
 import 'package:circle_sync/features/edit_profile/logic/cubit/edit_profile_state.dart';
@@ -43,8 +45,7 @@ class EditProfileCubit extends Cubit<EditProfileState> {
                   Navigator.pop(context); // Close the bottom sheet
                   final XFile? cameraImage =
                       await picker.pickImage(source: ImageSource.camera);
-                  if (cameraImage != null) {
-                  
+                  if (cameraImage != null) {        
                       selectedImage = File(cameraImage.path);
                     emit(EditProfileState.imageSelected(selectedImage!));
                   }
@@ -75,6 +76,10 @@ class EditProfileCubit extends Cubit<EditProfileState> {
     final response = await _editProfileRepo.uploadProfileImage(selectedImage!,);
     response.when(
       success: (response) {
+        SharedPrefHelper.setData(
+            SharedPrefKeys.userProfileImage,
+            response.data!.user!.profileImg!,
+          );
         emit(const EditProfileState.uploadProfileImageLoaded());
       },
       failure: (apiErrorModel) {
@@ -93,6 +98,14 @@ class EditProfileCubit extends Cubit<EditProfileState> {
       );
       response.when(
         success: (response) {
+          SharedPrefHelper.setData(
+            SharedPrefKeys.firstName,
+            firstNameController.text,
+          );
+          SharedPrefHelper.setData(
+            SharedPrefKeys.lastName,
+            lastNameController.text,
+          );
           emit(const EditProfileState.updateProfileLoaded());
         },
         failure: (apiErrorModel) {

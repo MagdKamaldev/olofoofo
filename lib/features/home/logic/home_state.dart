@@ -30,6 +30,10 @@ class HomeState with _$HomeState {
   const factory HomeState.commentSuccess() = CommentSuccess;
   const factory HomeState.commentError(ApiErrorModel apiErrorModel) = CommentError;
 
+  const factory HomeState.updateCommentLoading() = UpdateCommentLoading;
+  const factory HomeState.updateCommentSuccess() = UpdateCommentSuccess;
+  const factory HomeState.updateCommentError(ApiErrorModel apiErrorModel) = UpdateCommentError;
+
   const factory HomeState.deleteCommentLoading() = DeleteCommentLoading;
   const factory HomeState.deleteCommentSuccess() = DeleteCommentSuccess;
   const factory HomeState.deleteCommentError(ApiErrorModel apiErrorModel) = DeleteCommentError;

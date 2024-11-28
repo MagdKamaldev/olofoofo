@@ -5,6 +5,7 @@ import 'package:circle_sync/features/edit_profile/ui/edit_profile_screen.dart';
 import 'package:circle_sync/features/home/logic/home_cubit.dart';
 import 'package:circle_sync/features/home/ui/home_layout.dart';
 import 'package:circle_sync/features/home/ui/post_details.dart';
+import 'package:circle_sync/features/home/ui/update_comment_screen.dart';
 import 'package:circle_sync/features/home/ui/update_post.dart';
 import 'package:circle_sync/features/login/logic/cubit/login_cubit.dart';
 import 'package:circle_sync/features/login/ui/login_screen.dart';
@@ -95,6 +96,22 @@ class AppRouter {
                   as Map<String, dynamic>)['profileImage'] as String?,
               bio: (settings.arguments as Map<String, dynamic>)['bio']
                   as String?,
+            ),
+          ),
+        );
+      case Routes.updateComment:
+        return MaterialPageRoute(
+          builder: (_) => BlocProvider(
+            create: (context) => getIt<HomeCubit>(),
+            child: UpdateCommentScreen(
+              cubit: (settings.arguments as Map<String, dynamic>)['cubit']
+                  as HomeCubit,
+              postId: (settings.arguments as Map<String, dynamic>)['postId']
+                  as String,
+              commentId: (settings.arguments as Map<String, dynamic>)['commentId']
+                  as String,
+              content: (settings.arguments as Map<String, dynamic>)['content']
+                  as String,
             ),
           ),
         );

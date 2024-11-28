@@ -14,7 +14,7 @@ class _AddPostApiService implements AddPostApiService {
     this.baseUrl,
     this.errorLogger,
   }) {
-    baseUrl ??= 'http://192.168.89.174:8080/api/v1/';
+    baseUrl ??= 'http://192.168.1.74:8080/api/v1/';
   }
 
   final Dio _dio;

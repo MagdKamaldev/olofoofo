@@ -135,6 +135,22 @@ class HomeCubit extends Cubit<HomeState> {
     );
   }
 
+  GlobalKey<FormState> updateCommentFormKey = GlobalKey<FormState>();
+  TextEditingController updateCommentController = TextEditingController();
+
+  void updateComment(String postId, String commentId, String content) async {
+    emit(const HomeState.updateCommentLoading());
+    final response = await _homeRepo.updateComment(postId, commentId, content);
+    response.when(
+      success: (response) {
+        emit(const HomeState.updateCommentSuccess());
+      },
+      failure: (apiErrorModel) {
+        emit(HomeState.updateCommentError(apiErrorModel));
+      },
+    );
+  }
+
   void deleteComment(String postId, String commentId) async {
     emit(const HomeState.deleteCommentLoading());
     final response = await _homeRepo.deleteComment(postId, commentId);
