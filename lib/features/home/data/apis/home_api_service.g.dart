@@ -14,7 +14,7 @@ class _HomeApiService implements HomeApiService {
     this.baseUrl,
     this.errorLogger,
   }) {
-    baseUrl ??= 'http://192.168.89.174:8080/api/v1/';
+    baseUrl ??= 'http://192.168.1.74:8080/api/v1/';
   }
 
   final Dio _dio;
@@ -219,6 +219,44 @@ class _HomeApiService implements HomeApiService {
         .compose(
           _dio.options,
           'posts/${postId}/comments',
+          queryParameters: queryParameters,
+          data: _data,
+        )
+        .copyWith(
+            baseUrl: _combineBaseUrls(
+          _dio.options.baseUrl,
+          baseUrl,
+        )));
+    final _result = await _dio.fetch<Map<String, dynamic>>(_options);
+    late CommentResponse _value;
+    try {
+      _value = CommentResponse.fromJson(_result.data!);
+    } on Object catch (e, s) {
+      errorLogger?.logError(e, s, _options);
+      rethrow;
+    }
+    return _value;
+  }
+
+  @override
+  Future<CommentResponse> updateComment(
+    String postId,
+    String commentId,
+    CreateCommentRequestBody createCommentRequestBody,
+  ) async {
+    final _extra = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{};
+    final _headers = <String, dynamic>{};
+    final _data = <String, dynamic>{};
+    _data.addAll(createCommentRequestBody.toJson());
+    final _options = _setStreamType<CommentResponse>(Options(
+      method: 'PATCH',
+      headers: _headers,
+      extra: _extra,
+    )
+        .compose(
+          _dio.options,
+          'posts/${postId}/comments/${commentId}',
           queryParameters: queryParameters,
           data: _data,
         )

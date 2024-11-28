@@ -19,6 +19,7 @@ class UploadProfilePictureBlocListener extends StatelessWidget {
           state.whenOrNull(
             uploadProfileImageLoading: () {
               showDialog(
+                barrierDismissible: false,
                 context: context,
                 builder: (context) => const Center(
                   child: CircularProgressIndicator(

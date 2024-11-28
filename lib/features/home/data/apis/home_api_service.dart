@@ -41,7 +41,14 @@ abstract class HomeApiService {
     @Body() CreateCommentRequestBody createCommentRequestBody,
   );
 
-  @DELETE(HomeApiConstants.deleteComment)
+  @PATCH(HomeApiConstants.commentOperations)
+  Future<CommentResponse> updateComment(
+    @Path("postId") String postId,
+    @Path("commentId") String commentId,
+    @Body() CreateCommentRequestBody createCommentRequestBody,
+  );
+
+  @DELETE(HomeApiConstants.commentOperations)
   Future<void> deleteComment(
     @Path("postId") String postId,
     @Path("commentId") String commentId,

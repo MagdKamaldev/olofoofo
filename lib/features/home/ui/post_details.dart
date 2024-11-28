@@ -69,7 +69,14 @@ class PostDetailsState extends State<PostDetails> {
           buildWhen: (previous, current) =>
               current is PostLoading ||
               current is PostLoaded ||
-              current is PostError || current is CommentSuccess || current is CommentError || current is CommentLoading || current is LocalCommentAdded || current is DeleteCommentSuccess || current is DeleteCommentError || current is DeleteCommentLoading,
+              current is PostError || 
+              current is CommentSuccess || 
+              current is CommentError || 
+              current is CommentLoading || 
+              current is LocalCommentAdded || 
+              current is DeleteCommentSuccess || 
+              current is DeleteCommentError || 
+              current is DeleteCommentLoading,
           builder: (context, state) {
             if (state is PostLoading) {
               return const Center(child: PostShimmer());
@@ -78,14 +85,12 @@ class PostDetailsState extends State<PostDetails> {
               // Update the local comments list
               comments = context.read<HomeCubit>().comments;
               localComments = context.read<HomeCubit>().localComments;
-
               return Column(
                 children: [
-                  // The scrollable content area
                   Expanded(
                     child: SingleChildScrollView(
                       padding: const EdgeInsets.only(
-                          bottom: 80), // Extra padding for text field space
+                          bottom: 80),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -110,6 +115,7 @@ class PostDetailsState extends State<PostDetails> {
                             itemBuilder: (context, index) {            
                               final comment = comments[index];
                               return CommentItem(
+                                postAuthorId: post.author?.id ?? "",
                                 myId: myId,
                                 commentUserId: comment.userId?? comment.user?.first.id ?? "",
                                 postId: post.id ?? "",

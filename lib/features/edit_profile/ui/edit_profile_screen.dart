@@ -51,96 +51,98 @@ class EditProfileScreenState extends State<EditProfileScreen> {
               style: TextStyles.font18Semibold,
             ),
           ),
-          body: SafeArea(
-            child: Padding(
-              padding: const EdgeInsets.all(20.0),
-              child: Form(
-                key: cubit.formKey,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    verticalSpace(size.height * 0.02),
-                   UploadProfilePicture(cubit: cubit, profileImage: widget.profileImage),
-                    verticalSpace(size.height * 0.05),
-                    Row(
-                      children: [
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "First Name",
-                              style: TextStyles.font14Medium
-                                  .copyWith(color: Colors.black54),
-                            ),
-                            verticalSpace(20),
-                            AppTextField(
-                              width: size.width * 0.42,
-                              controller: cubit.firstNameController,
-                              keyboardType: TextInputType.text,
-                              isPassword: false,
-                              validator: (value) {
-                                if (cubit.firstNameController.text.isEmpty) {
-                                  return "First name cannot be empty";
-                                }
-                                return null;
-                              },
-                            ),
-                          ],
-                        ),
-                        horizontalSpace(size.width * 0.05),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "Last Name",
-                              style: TextStyles.font14Medium
-                                  .copyWith(color: Colors.black54),
-                            ),
-                            verticalSpace(20),
-                            AppTextField(
-                              width: size.width * 0.42,
-                              controller: cubit.lastNameController,
-                              keyboardType: TextInputType.text,
-                              isPassword: false,
-                              validator: (value) {
-                                if (cubit.lastNameController.text.isEmpty) {
-                                  return "Last name cannot be empty";
-                                }
-                                return null;
-                              },
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                    verticalSpace(size.height * 0.04),
-                    Text(
-                      "Bio",
-                      style:
-                          TextStyles.font14Medium.copyWith(color: Colors.black54),
-                    ),
-                    verticalSpace(20),
-                    AppTextField(
-                      controller: cubit.bioController,
-                      keyboardType: TextInputType.text,
-                      isPassword: false,
-                      validator: (value) {
-                        if (cubit.bioController.text.isEmpty) {
-                          return "Bio cannot be empty";
-                        }
-                        return null;
-                      },
-                    ),
-                    verticalSpace(size.height * 0.25),
-                    AppButton(
-                      onPressed: () {
-                        cubit.updateProfile();
-                      },
-                      text: 'Update',
-                      isWhite: false,
-                    ),
-                    const UpdateProfileBlocListener(),
-                  ],
+          body: SingleChildScrollView(
+            child: SafeArea(
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Form(
+                  key: cubit.formKey,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      verticalSpace(size.height * 0.02),
+                     UploadProfilePicture(cubit: cubit, profileImage: widget.profileImage),
+                      verticalSpace(size.height * 0.05),
+                      Row(
+                        children: [
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "First Name",
+                                style: TextStyles.font14Medium
+                                    .copyWith(color: Colors.black54),
+                              ),
+                              verticalSpace(20),
+                              AppTextField(
+                                width: size.width * 0.42,
+                                controller: cubit.firstNameController,
+                                keyboardType: TextInputType.text,
+                                isPassword: false,
+                                validator: (value) {
+                                  if (cubit.firstNameController.text.isEmpty) {
+                                    return "First name cannot be empty";
+                                  }
+                                  return null;
+                                },
+                              ),
+                            ],
+                          ),
+                          horizontalSpace(size.width * 0.05),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Last Name",
+                                style: TextStyles.font14Medium
+                                    .copyWith(color: Colors.black54),
+                              ),
+                              verticalSpace(20),
+                              AppTextField(
+                                width: size.width * 0.42,
+                                controller: cubit.lastNameController,
+                                keyboardType: TextInputType.text,
+                                isPassword: false,
+                                validator: (value) {
+                                  if (cubit.lastNameController.text.isEmpty) {
+                                    return "Last name cannot be empty";
+                                  }
+                                  return null;
+                                },
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                      verticalSpace(size.height * 0.04),
+                      Text(
+                        "Bio",
+                        style:
+                            TextStyles.font14Medium.copyWith(color: Colors.black54),
+                      ),
+                      verticalSpace(20),
+                      AppTextField(
+                        controller: cubit.bioController,
+                        keyboardType: TextInputType.text,
+                        isPassword: false,
+                        validator: (value) {
+                          if (cubit.bioController.text.isEmpty) {
+                            return "Bio cannot be empty";
+                          }
+                          return null;
+                        },
+                      ),
+                      verticalSpace(size.height * 0.08),
+                      AppButton(
+                        onPressed: () {
+                          cubit.updateProfile();
+                        },
+                        text: 'Update',
+                        isWhite: false,
+                      ),
+                      const UpdateProfileBlocListener(),
+                    ],
+                  ),
                 ),
               ),
             ),
