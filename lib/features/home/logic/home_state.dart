@@ -1,3 +1,4 @@
+// ignore_for_file: depend_on_referenced_packages
 import 'package:circle_sync/core/networks/api_error_model.dart';
 import 'package:circle_sync/features/home/data/models/home_responses.dart';
 import 'package:flutter/foundation.dart';
@@ -28,6 +29,10 @@ class HomeState with _$HomeState {
   const factory HomeState.localCommentAdded(List<Comment> comments) = LocalCommentAdded;
   const factory HomeState.commentSuccess() = CommentSuccess;
   const factory HomeState.commentError(ApiErrorModel apiErrorModel) = CommentError;
+
+  const factory HomeState.updateCommentLoading() = UpdateCommentLoading;
+  const factory HomeState.updateCommentSuccess() = UpdateCommentSuccess;
+  const factory HomeState.updateCommentError(ApiErrorModel apiErrorModel) = UpdateCommentError;
 
   const factory HomeState.deleteCommentLoading() = DeleteCommentLoading;
   const factory HomeState.deleteCommentSuccess() = DeleteCommentSuccess;

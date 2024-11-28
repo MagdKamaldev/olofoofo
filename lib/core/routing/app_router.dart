@@ -1,15 +1,17 @@
 import 'package:circle_sync/core/di/dependency_injection.dart';
 import 'package:circle_sync/core/routing/routes.dart';
+import 'package:circle_sync/features/edit_profile/logic/cubit/edit_profile_cubit.dart';
+import 'package:circle_sync/features/edit_profile/ui/edit_profile_screen.dart';
 import 'package:circle_sync/features/home/logic/home_cubit.dart';
 import 'package:circle_sync/features/home/ui/home_layout.dart';
 import 'package:circle_sync/features/home/ui/post_details.dart';
+import 'package:circle_sync/features/home/ui/update_comment_screen.dart';
 import 'package:circle_sync/features/home/ui/update_post.dart';
 import 'package:circle_sync/features/login/logic/cubit/login_cubit.dart';
 import 'package:circle_sync/features/login/ui/login_screen.dart';
 import 'package:circle_sync/features/on_boarding/UI/on_boarding_2.dart';
 import 'package:circle_sync/features/on_boarding/UI/on_boarding_1.dart';
 import 'package:circle_sync/features/on_boarding/UI/on_boarding_3.dart';
-import 'package:circle_sync/features/profile/data/models/profile_response_model.dart';
 import 'package:circle_sync/features/signup/logic/cubit/sign_up_cubit.dart';
 import 'package:circle_sync/features/signup/ui/signup_screen.dart';
 import 'package:circle_sync/features/signup/ui/welcome_screen.dart';
@@ -76,9 +78,43 @@ class AppRouter {
             child: PostDetails(id: settings.arguments as String),
           ),
         );
-        case Routes.userProfile:
-        return MaterialPageRoute(builder:      
-        (_) => UserProfileScreen(userId:settings.arguments as String,));
+      case Routes.userProfile:
+        return MaterialPageRoute(
+            builder: (_) => UserProfileScreen(
+                  userId: settings.arguments as String,
+                ));
+      case Routes.editProfile:
+        return MaterialPageRoute(
+          builder: (_) => BlocProvider(
+            create: (context) => getIt<EditProfileCubit>(),
+            child: EditProfileScreen(
+              fistName: (settings.arguments
+                  as Map<String, dynamic>)['firstName'] as String,
+              lastName: (settings.arguments as Map<String, dynamic>)['lastName']
+                  as String,
+              profileImage: (settings.arguments
+                  as Map<String, dynamic>)['profileImage'] as String?,
+              bio: (settings.arguments as Map<String, dynamic>)['bio']
+                  as String?,
+            ),
+          ),
+        );
+      case Routes.updateComment:
+        return MaterialPageRoute(
+          builder: (_) => BlocProvider(
+            create: (context) => getIt<HomeCubit>(),
+            child: UpdateCommentScreen(
+              cubit: (settings.arguments as Map<String, dynamic>)['cubit']
+                  as HomeCubit,
+              postId: (settings.arguments as Map<String, dynamic>)['postId']
+                  as String,
+              commentId: (settings.arguments as Map<String, dynamic>)['commentId']
+                  as String,
+              content: (settings.arguments as Map<String, dynamic>)['content']
+                  as String,
+            ),
+          ),
+        );
       default:
         null;
     }

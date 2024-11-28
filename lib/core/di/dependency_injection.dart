@@ -3,11 +3,15 @@ import 'package:circle_sync/core/networks/dio_factory.dart';
 import 'package:circle_sync/features/add_post/data/apis/add_post_api_services.dart';
 import 'package:circle_sync/features/add_post/data/repos/add_post_repo.dart';
 import 'package:circle_sync/features/add_post/logic/cubit/add_post_cubit.dart';
+import 'package:circle_sync/features/edit_profile/data/repos/edit_profile_repo.dart';
+import 'package:circle_sync/features/edit_profile/logic/cubit/edit_profile_cubit.dart';
 import 'package:circle_sync/features/home/data/apis/home_api_service.dart';
 import 'package:circle_sync/features/home/data/repos/home_repo.dart';
 import 'package:circle_sync/features/home/logic/home_cubit.dart';
 import 'package:circle_sync/features/login/data/repos/login_repo.dart';
 import 'package:circle_sync/features/login/logic/cubit/login_cubit.dart';
+import 'package:circle_sync/features/notifications/data/repos/notifications_repo.dart';
+import 'package:circle_sync/features/notifications/logic/cubit/notifications_cubit.dart';
 import 'package:circle_sync/features/profile/data/repos/profile_repo.dart';
 import 'package:circle_sync/features/profile/logic/cubit/proflie_cubit.dart';
 import 'package:circle_sync/features/signup/data/repos/sign_up_repo.dart';
@@ -50,5 +54,11 @@ Future<void> setUpGetIt() async {
   //get User Profile
   getIt.registerLazySingleton<UserProfileRepo>(()=>UserProfileRepo(getIt()));
   getIt.registerFactory<UserProfileCubit>(()=>UserProfileCubit(getIt()));
+  //notifications
+  getIt.registerLazySingleton<NotificationRepo>(()=>NotificationRepo(getIt()));
+  getIt.registerFactory<NotificationsCubit>(()=>NotificationsCubit(getIt()));
+  //edit_profile
+  getIt.registerLazySingleton<EditProfileRepo>(()=>EditProfileRepo(getIt()));
+  getIt.registerFactory<EditProfileCubit>(()=>EditProfileCubit(getIt()));
   
 }

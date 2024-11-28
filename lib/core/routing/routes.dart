@@ -7,6 +7,9 @@
     static const String signUp = '/signUp';
     static const String home = '/home';
     static const String post = '/post';
+    static const String updateComment = '/updateComment';
     static const String updatePost = '/updatePost';
     static const String userProfile = '/userProfile';
+    static const String editProfile = '/editProfile';
+    
   }

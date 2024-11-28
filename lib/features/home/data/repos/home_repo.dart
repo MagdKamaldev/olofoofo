@@ -57,6 +57,15 @@ class HomeRepo {
     }
   }
 
+  Future<ApiResult<CommentResponse>> updateComment(String postId, String commentId, String comment) async {
+    try {
+      final response = await _homeApiService.updateComment(postId, commentId, CreateCommentRequestBody(content: comment));
+      return ApiResult.success(response);
+    } catch (error) {
+      return ApiResult.failure(ApiErrorHandler.handle(error)!);
+    }
+  }
+
   Future<ApiResult<void>> deleteComment(String postId, String commentId) async {
     try {
       await _homeApiService.deleteComment(postId, commentId,);

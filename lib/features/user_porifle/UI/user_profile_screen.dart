@@ -1,7 +1,9 @@
 import 'package:circle_sync/core/di/dependency_injection.dart';
 import 'package:circle_sync/core/helpers/constants.dart';
+import 'package:circle_sync/core/helpers/extensions.dart';
 import 'package:circle_sync/core/helpers/shared_pref_helper.dart';
 import 'package:circle_sync/core/helpers/spacing.dart';
+import 'package:circle_sync/core/routing/routes.dart';
 import 'package:circle_sync/core/themes/colors/colors.dart';
 import 'package:circle_sync/core/themes/text_styles/text_styles.dart';
 import 'package:circle_sync/core/widgets/button.dart';
@@ -26,6 +28,7 @@ class UserProfileScreen extends StatefulWidget {
 class _UserProfileScreenState extends State<UserProfileScreen> {
   String myId = "";
   bool isRequestRecieved = false;
+  bool isRemovingFriend = false;
   bool isTextExpanded = false;
 
   void getMyId() async {
@@ -84,9 +87,13 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                                         crossAxisAlignment:
                                             CrossAxisAlignment.start,
                                         children: [
-                                          Text(
-                                            "${userModel.data!.user![0].firstName!} ${userModel.data!.user![0].lastName!}",
-                                            style: TextStyles.font18Semibold,
+                                          SizedBox(
+                                            width: size.width * 0.5,
+                                            child: Text(
+                                              "${userModel.data!.user![0].firstName!} ${userModel.data!.user![0].lastName!}",
+                                              style: TextStyles.font18Semibold,
+                                              overflow: TextOverflow.ellipsis,
+                                            ),
                                           ),
                                         ],
                                       ),
@@ -109,7 +116,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                                             });
                                           },
                                           child: Text(
-                                            "I’m a positive person. I love to travel and eat. Always available for chat",
+                                            userModel.data!.user![0].bio ?? "",
                                             maxLines: isTextExpanded ? null : 3,
                                             overflow: isTextExpanded
                                                 ? TextOverflow.visible
@@ -167,6 +174,27 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                                                   isRequestRecieved =
                                                       !isRequestRecieved;
                                                 });
+                                              } else if (context
+                                                      .read<UserProfileCubit>()
+                                                      .freindShipStatus ==
+                                                  "Freinds") {
+                                                setState(() {
+                                                  isRemovingFriend =
+                                                      !isRemovingFriend;
+                                                });
+                                              } else if (context
+                                                      .read<UserProfileCubit>()
+                                                      .freindShipStatus ==
+                                                  "Sent") {
+                                                context
+                                                    .read<UserProfileCubit>()
+                                                    .cancelFriendRequest(
+                                                        widget.userId);
+                                                setState(() {
+                                                  context
+                                                      .read<UserProfileCubit>()
+                                                      .freindShipStatus = "Add";
+                                                });
                                               }
                                             },
                                             child: Text(
@@ -193,12 +221,14 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                                               onPressed: () {
                                                 context
                                                     .read<UserProfileCubit>()
-                                                    .acceptRequest(widget.userId);
+                                                    .acceptRequest(
+                                                        widget.userId);
                                                 setState(() {
                                                   isRequestRecieved = false;
                                                   context
-                                                      .read<UserProfileCubit>()
-                                                      .freindShipStatus = "Freinds";
+                                                          .read<UserProfileCubit>()
+                                                          .freindShipStatus =
+                                                      "Freinds";
                                                 });
                                               },
                                               text: "Accept",
@@ -211,7 +241,8 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                                               onPressed: () {
                                                 context
                                                     .read<UserProfileCubit>()
-                                                    .rejectRequest(widget.userId);
+                                                    .rejectRequest(
+                                                        widget.userId);
                                                 setState(() {
                                                   isRequestRecieved = false;
                                                   context
@@ -226,13 +257,63 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                                         ],
                                       ),
                                     ),
-                                  if (isRequestRecieved)
+                                  if (isRemovingFriend)
+                                    verticalSpace(size.height * 0.02),
+                                  if (isRemovingFriend)
+                                    Text(
+                                      "Are you Sure you want to remove ${userModel.data!.user![0].firstName} from friends ?",
+                                      style: TextStyles.font16Medium,
+                                    ),
+                                  if (isRemovingFriend)
+                                    verticalSpace(size.height * 0.02),
+                                  if (isRemovingFriend)
+                                    SizedBox(
+                                      width: size.width * 0.8,
+                                      child: Row(
+                                        children: [
+                                          Expanded(
+                                            child: AppButton(
+                                              onPressed: () {
+                                                context
+                                                    .read<UserProfileCubit>()
+                                                    .deleteFriend(
+                                                        widget.userId);
+                                                setState(() {
+                                                  context
+                                                      .read<UserProfileCubit>()
+                                                      .freindShipStatus = "Add";
+                                                  isRemovingFriend = false;
+                                                });
+                                              },
+                                              text: "Yes",
+                                              isWhite: false,
+                                            ),
+                                          ),
+                                          horizontalSpace(size.width * 0.07),
+                                          Expanded(
+                                            child: AppButton(
+                                              onPressed: () {
+                                                setState(() {
+                                                  isRemovingFriend =
+                                                      !isRemovingFriend;
+                                                });
+                                              },
+                                              text: "Cancel",
+                                              isWhite: true,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  if (isRemovingFriend)
                                     verticalSpace(size.height * 0.02),
                                   if (widget.userId == myId)
                                     verticalSpace(size.height * 0.03),
                                   if (widget.userId == myId)
                                     AppButton(
-                                      onPressed: () {},
+                                      onPressed: () {
+                                         context.pushNamed(Routes.editProfile);
+                                      },
                                       text: "Edit Profile",
                                       isWhite: false,
                                     ),

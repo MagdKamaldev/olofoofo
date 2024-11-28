@@ -6,17 +6,19 @@ class AppButton extends StatelessWidget {
   final Function() onPressed;
   final String text;
   final bool isWhite;
+  final double ? width;
+  
   const AppButton({
     super.key, 
     required this.onPressed, 
     required this.text, 
-    required this.isWhite
+    required this.isWhite, this.width
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: double.infinity,
+      width: width ?? double.infinity,
       height: 49,
       decoration: ShapeDecoration(
         color: isWhite ? Colors.white : ColorManager.primary,
