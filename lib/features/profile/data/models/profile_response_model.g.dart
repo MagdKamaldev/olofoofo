@@ -47,6 +47,7 @@ UserProfile _$UserProfileFromJson(Map<String, dynamic> json) => UserProfile(
       posts: (json['posts'] as List<dynamic>?)
           ?.map((e) => Post.fromJson(e as Map<String, dynamic>))
           .toList(),
+      bio: json['bio'] as String?,
       profileImg: json['profileImg'] as String?,
       createdAt: json['createdAt'] as String?,
       updatedAt: json['updatedAt'] as String?,
@@ -63,6 +64,7 @@ Map<String, dynamic> _$UserProfileToJson(UserProfile instance) =>
       'friends': instance.friends,
       'friendRequests': instance.friendRequests,
       'posts': instance.posts,
+      'bio': instance.bio,
       'profileImg': instance.profileImg,
       'createdAt': instance.createdAt,
       'updatedAt': instance.updatedAt,

@@ -34,6 +34,7 @@ class UserProfile {
   String? id;
   String? firstName;
   String? lastName;
+  String? bio;
   String? createdAt;
   String? updatedAt;
   int? v;
@@ -47,6 +48,7 @@ class UserProfile {
     this.id,
     this.firstName,
     this.lastName,
+    this.bio,
     this.createdAt,
     this.updatedAt,
     this.v,

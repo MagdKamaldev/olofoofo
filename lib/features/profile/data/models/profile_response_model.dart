@@ -39,6 +39,7 @@ class UserProfile {
   List<String>? friends;
   List<String>? friendRequests; // Assuming friend requests as a list of user IDs or similar identifiers
   List<Post>? posts;
+  String? bio;
   String? profileImg;
   String? createdAt;
   String? updatedAt;
@@ -53,6 +54,7 @@ class UserProfile {
     this.friends,
     this.friendRequests,
     this.posts,
+    this.bio,
     this.profileImg,
     this.createdAt,
     this.updatedAt,

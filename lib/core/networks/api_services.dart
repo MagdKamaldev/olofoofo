@@ -1,4 +1,6 @@
 import 'package:circle_sync/core/networks/api_constants.dart';
+import 'package:circle_sync/features/edit_profile/data/models/edit_profile_request_model.dart';
+import 'package:circle_sync/features/edit_profile/data/models/edit_profile_response_model.dart';
 import 'package:circle_sync/features/login/data/models/login_request_body.dart';
 import 'package:circle_sync/features/login/data/models/login_response.dart';
 import 'package:circle_sync/features/notifications/data/models/friend_requests_response.dart';
@@ -20,7 +22,7 @@ abstract class ApiService {
   @POST(ApiConstants.signUp)
   Future<SignUpResponse> signUp(@Body() SignUpRequestBody signUpRequestBody);
 
-  @GET(ApiConstants.getMyProfile)
+  @GET(ApiConstants.profile)
   Future<ProfileResponseModel> getProfile();
 
   @GET(ApiConstants.getUser)
@@ -44,4 +46,11 @@ abstract class ApiService {
   @GET(ApiConstants.getFriendRequests)
   Future<FriendRequestsResponse> getFriendRequests();
   
+  @MultiPart()
+  @PATCH(ApiConstants.uploadProfileImage)
+  Future<void> uploadProfileImage(@Body() FormData formData);
+  
+  @PATCH(ApiConstants.profile)
+  Future<EditProfileResponseModel> updateProfile(@Body() EditProfileRequestModel editProfileRequestModel);
+
 }

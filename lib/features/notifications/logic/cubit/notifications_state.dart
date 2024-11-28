@@ -1,3 +1,4 @@
+// ignore_for_file: depend_on_referenced_packages
 import 'package:circle_sync/core/networks/api_error_model.dart';
 import 'package:circle_sync/features/notifications/data/models/friend_requests_response.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
