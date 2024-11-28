@@ -1,3 +1,4 @@
+// ignore_for_file: depend_on_referenced_packages
 import 'package:circle_sync/core/networks/api_error_model.dart';
 import 'package:circle_sync/features/user_porifle/data/models/user_profile_response_model.dart';
 import 'package:flutter/foundation.dart';

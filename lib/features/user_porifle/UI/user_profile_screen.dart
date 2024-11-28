@@ -1,7 +1,9 @@
 import 'package:circle_sync/core/di/dependency_injection.dart';
 import 'package:circle_sync/core/helpers/constants.dart';
+import 'package:circle_sync/core/helpers/extensions.dart';
 import 'package:circle_sync/core/helpers/shared_pref_helper.dart';
 import 'package:circle_sync/core/helpers/spacing.dart';
+import 'package:circle_sync/core/routing/routes.dart';
 import 'package:circle_sync/core/themes/colors/colors.dart';
 import 'package:circle_sync/core/themes/text_styles/text_styles.dart';
 import 'package:circle_sync/core/widgets/button.dart';
@@ -114,7 +116,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                                             });
                                           },
                                           child: Text(
-                                            "I’m a positive person. I love to travel and eat. Always available for chat",
+                                            userModel.data!.user![0].bio ?? "",
                                             maxLines: isTextExpanded ? null : 3,
                                             overflow: isTextExpanded
                                                 ? TextOverflow.visible
@@ -309,7 +311,9 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                                     verticalSpace(size.height * 0.03),
                                   if (widget.userId == myId)
                                     AppButton(
-                                      onPressed: () {},
+                                      onPressed: () {
+                                         context.pushNamed(Routes.editProfile);
+                                      },
                                       text: "Edit Profile",
                                       isWhite: false,
                                     ),

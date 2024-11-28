@@ -1,6 +1,4 @@
 import 'package:circle_sync/core/di/dependency_injection.dart';
-import 'package:circle_sync/core/helpers/constants.dart';
-import 'package:circle_sync/core/helpers/shared_pref_helper.dart';
 import 'package:circle_sync/core/helpers/spacing.dart';
 import 'package:circle_sync/core/helpers/time_ago.dart';
 import 'package:circle_sync/core/themes/text_styles/text_styles.dart';

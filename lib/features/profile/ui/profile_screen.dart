@@ -1,10 +1,13 @@
 import 'package:circle_sync/core/di/dependency_injection.dart';
+import 'package:circle_sync/core/helpers/extensions.dart';
 import 'package:circle_sync/core/helpers/spacing.dart';
+import 'package:circle_sync/core/routing/routes.dart';
 import 'package:circle_sync/core/themes/text_styles/text_styles.dart';
 import 'package:circle_sync/core/widgets/button.dart';
 import 'package:circle_sync/features/profile/data/repos/profile_repo.dart';
 import 'package:circle_sync/features/profile/logic/cubit/profile_state.dart';
 import 'package:circle_sync/features/profile/logic/cubit/proflie_cubit.dart';
+import 'package:circle_sync/features/profile/ui/widgets/bio_expandable.dart';
 import 'package:circle_sync/features/profile/ui/widgets/profile_loading_shimmer.dart';
 import 'package:circle_sync/features/profile/ui/widgets/profile_posts.dart';
 import 'package:flutter/material.dart';
@@ -32,11 +35,9 @@ class ProfileScreen extends StatelessWidget {
                     current is GetProfileLoading,
                 builder: (context, state) {
                   return state.maybeWhen(
-                    getProfileSuccess: (userModel) =>  
-                    SliverList(delegate: 
-                    SliverChildListDelegate(
-                        [
-                      Padding(
+                    getProfileSuccess: (userModel) => SliverList(
+                      delegate: SliverChildListDelegate([
+                        Padding(
                           padding: const EdgeInsets.all(20.0),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
@@ -56,7 +57,8 @@ class ProfileScreen extends StatelessWidget {
                                   ),
                                   horizontalSpace(size.width * 0.03),
                                   Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     children: [
                                       Text(
                                         "${userModel.data!.users![0].firstName!} ${userModel.data!.users![0].lastName!}",
@@ -77,13 +79,29 @@ class ProfileScreen extends StatelessWidget {
                                 ],
                               ),
                               verticalSpace(size.height * 0.02),
-                              const Text(
-                                "I’m a positive person. I love to travel and eat Always available for chat",
-                                style: TextStyles.font12Medium,
+                              Align(
+                                alignment: Alignment.centerLeft,
+                                child: BioExpandable(
+                                  bio: userModel.data!.users![0].bio ?? "",
+                                  textStyle: TextStyles.font12Medium,
+                                ),
                               ),
                               verticalSpace(size.height * 0.02),
                               AppButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  context.pushNamed(
+                                    Routes.editProfile,
+                                    arguments: {
+                                      'firstName':
+                                          userModel.data!.users![0].firstName!,
+                                      'lastName':
+                                          userModel.data!.users![0].lastName!,
+                                      'profileImage':
+                                          userModel.data!.users![0].profileImg,
+                                      'bio': userModel.data!.users![0].bio,
+                                    },
+                                  );
+                                },
                                 text: "Edit Profile",
                                 isWhite: false,
                               ),
@@ -95,7 +113,8 @@ class ProfileScreen extends StatelessWidget {
                                     child: Column(
                                       children: [
                                         Text(
-                                          userModel.data!.users![0].posts!.length
+                                          userModel
+                                              .data!.users![0].posts!.length
                                               .toString(),
                                           style: TextStyles.font14semiBold,
                                         ),
@@ -117,7 +136,8 @@ class ProfileScreen extends StatelessWidget {
                                     child: Column(
                                       children: [
                                         Text(
-                                          userModel.data!.users![0].friends!.length
+                                          userModel
+                                              .data!.users![0].friends!.length
                                               .toString(),
                                           style: TextStyles.font14semiBold,
                                         ),
@@ -136,22 +156,23 @@ class ProfileScreen extends StatelessWidget {
                           ),
                         ),
                         verticalSpace(size.height * 0.05),
-                        ProfilePosts(posts: userModel.data!.users![0].posts!,
-                        id: userModel.data!.users![0].id!,
-                        firstName: userModel.data!.users![0].firstName!,
-                        lastName: userModel.data!.users![0].lastName!,
-                        profileImg: userModel.data!.users![0].profileImg
-                        ),
-                        ]
+                        ProfilePosts(
+                            posts: userModel.data!.users![0].posts!,
+                            id: userModel.data!.users![0].id!,
+                            firstName: userModel.data!.users![0].firstName!,
+                            lastName: userModel.data!.users![0].lastName!,
+                            profileImg: userModel.data!.users![0].profileImg),
+                      ]),
                     ),
-                      ),
                     getProfilefailure: (apiErrorModel) => SliverToBoxAdapter(
                       child: Center(
                         child: Text(apiErrorModel.message.toString()),
                       ),
                     ),
                     getProfileLoading: () => const SliverToBoxAdapter(
-                      child: ProfileShimmer(isMine: true,),
+                      child: ProfileShimmer(
+                        isMine: true,
+                      ),
                     ),
                     orElse: () => const SliverToBoxAdapter(
                       child: Center(

@@ -8,6 +8,7 @@ class AppTextField extends StatefulWidget {
   final bool isPassword;
   final double? height;
   final Function(String?) validator;
+  final double ? width;
 
   const AppTextField({
     super.key,
@@ -15,7 +16,7 @@ class AppTextField extends StatefulWidget {
     required this.controller,
     required this.keyboardType,
     required this.isPassword,
-    required this.validator,
+    required this.validator, this.width,
   });
 
   @override
@@ -29,7 +30,7 @@ class AppTextFieldState extends State<AppTextField> {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return SizedBox(
-      width: size.width * 0.9,
+      width: widget.width ?? size.width * 0.9,
       child: FormField<String>(
         validator: (value) {
           return widget.validator(value);

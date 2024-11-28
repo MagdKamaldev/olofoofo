@@ -14,7 +14,7 @@ class _HomeApiService implements HomeApiService {
     this.baseUrl,
     this.errorLogger,
   }) {
-    baseUrl ??= 'http://192.168.1.10:8080/api/v1/';
+    baseUrl ??= 'http://192.168.89.174:8080/api/v1/';
   }
 
   final Dio _dio;

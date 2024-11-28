@@ -9,4 +9,5 @@
     static const String post = '/post';
     static const String updatePost = '/updatePost';
     static const String userProfile = '/userProfile';
+    static const String editProfile = '/editProfile';
   }
