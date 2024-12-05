@@ -13,8 +13,14 @@ platform :android do
       android_artifact_path: "../build/app/outputs/flutter-apk/app-production-release.apk",
       testers: "fadyalaa441@gmail.com, fadyalaa2112@gmail.com",
       upload_timeout: 600,
-      release_notes: "1.0.7 version release notes: 
-      -finished friend request logic and accept or reject requests waiting for test review",
+      release_notes: "1.0.9 version release notes: 
+      finished post image and now the user can:
+        -add untill 2 images to any post weather from gallery or camera
+        - delete wrong selections
+        - view images on wall
+        - view images on post details
+        - view images on profile
+      ",
     )
   end
 end 
