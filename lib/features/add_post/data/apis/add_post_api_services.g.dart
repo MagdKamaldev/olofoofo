@@ -24,13 +24,11 @@ class _AddPostApiService implements AddPostApiService {
   final ParseErrorLogger? errorLogger;
 
   @override
-  Future<CreatePostResponse> createPost(
-      CreatePostRequestBody createPostRequestBody) async {
+  Future<CreatePostResponse> createPost(FormData formData) async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
-    final _data = <String, dynamic>{};
-    _data.addAll(createPostRequestBody.toJson());
+    final _data = formData;
     final _options = _setStreamType<CreatePostResponse>(Options(
       method: 'POST',
       headers: _headers,

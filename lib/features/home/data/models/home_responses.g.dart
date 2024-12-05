@@ -61,7 +61,8 @@ Post _$PostFromJson(Map<String, dynamic> json) => Post(
       createdAt: json['createdAt'] as String?,
       updatedAt: json['updatedAt'] as String?,
       isLiked: json['isLiked'] as bool?,
-      media: json['media'] as List<dynamic>?,
+      media:
+          (json['media'] as List<dynamic>?)?.map((e) => e as String).toList(),
       author: json['author'] == null
           ? null
           : AuthorData.fromJson(json['author'] as Map<String, dynamic>),

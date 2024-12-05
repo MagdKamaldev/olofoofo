@@ -7,7 +7,7 @@ part 'edit_profile_state.freezed.dart';
 @freezed
 class EditProfileState with _$EditProfileState {
   const factory EditProfileState.initial() = _Initial;
-  //add image from gallery 
+  //add image
   const factory EditProfileState.imageSelected(File image) = ImageSelected;
   //upload profile image
   const factory EditProfileState.uploadProfileImageLoading() = UploadProfileImageLoading;

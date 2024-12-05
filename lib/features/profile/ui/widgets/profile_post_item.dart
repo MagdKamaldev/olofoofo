@@ -20,7 +20,7 @@ class ProfilePostItem extends StatefulWidget {
   final bool isDetail;
   final String postId;
   final String? profileImage;
-  final String? postImage;
+  final List<String> images;
   final String userName;
   final String postCaption;
   final String time;
@@ -32,7 +32,6 @@ class ProfilePostItem extends StatefulWidget {
   const ProfilePostItem({
     super.key,
     required this.profileImage,
-    this.postImage,
     required this.userName,
     required this.postCaption,
     required this.likes,
@@ -41,7 +40,8 @@ class ProfilePostItem extends StatefulWidget {
     required this.isLiked,
     required this.postId,
     required this.isDetail,
-    required this.postUserId,
+    required this.postUserId, 
+    required this.images,
   });
 
   @override
@@ -96,6 +96,7 @@ class PostItemState extends State<ProfilePostItem> {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return BlocProvider(
         create: (context) => HomeCubit(getIt()),
         child: BlocListener<HomeCubit, HomeState>(
@@ -223,8 +224,9 @@ class PostItemState extends State<ProfilePostItem> {
                                     .copyWith(color: Colors.black54),
                               ),
                       ),
-                      if (widget.postImage != null) verticalSpace(10),
-                      if (widget.postImage != null)
+                      if (widget.images.isNotEmpty) 
+                      verticalSpace(10),
+                      if (widget.images.length == 1)
                         Container(
                           decoration: BoxDecoration(
                             border: Border.all(color: Colors.black),
@@ -233,12 +235,48 @@ class PostItemState extends State<ProfilePostItem> {
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(20),
                             child: Image.network(
-                              widget.postImage!,
+                              widget.images[0],
                               fit: BoxFit.cover,
                               width: double.infinity,
-                              height: 170,
+                              height: size.height * 0.5,
                             ),
                           ),
+                        ),
+                      if (widget.images.length == 2)
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                border: Border.all(color: Colors.black),
+                                borderRadius: BorderRadius.circular(19),
+                              ),
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(20),
+                                child: Image.network(
+                                  widget.images[0],
+                                  fit: BoxFit.cover,
+                                   width: size.width * 0.37,
+                                  height: size.height * 0.3,
+                                ),
+                              ),
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                border: Border.all(color: Colors.black),
+                                borderRadius: BorderRadius.circular(19),
+                              ),
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(20),
+                                child: Image.network(
+                                  widget.images[1],
+                                  fit: BoxFit.cover,
+                                  width: size.width * 0.37,
+                                  height: size.height * 0.3,
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
                       verticalSpace(20),
                       Row(
