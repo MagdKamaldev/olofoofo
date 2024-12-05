@@ -22,6 +22,8 @@ mixin _$AddPostState<T> {
     required TResult Function() loading,
     required TResult Function(CreatePostResponse createPostResponse) success,
     required TResult Function(ApiErrorModel apiErrorModel) failure,
+    required TResult Function(List<File> images) imageSelected,
+    required TResult Function(List<File> images) removeImage,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -30,6 +32,8 @@ mixin _$AddPostState<T> {
     TResult? Function()? loading,
     TResult? Function(CreatePostResponse createPostResponse)? success,
     TResult? Function(ApiErrorModel apiErrorModel)? failure,
+    TResult? Function(List<File> images)? imageSelected,
+    TResult? Function(List<File> images)? removeImage,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -38,6 +42,8 @@ mixin _$AddPostState<T> {
     TResult Function()? loading,
     TResult Function(CreatePostResponse createPostResponse)? success,
     TResult Function(ApiErrorModel apiErrorModel)? failure,
+    TResult Function(List<File> images)? imageSelected,
+    TResult Function(List<File> images)? removeImage,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -47,6 +53,8 @@ mixin _$AddPostState<T> {
     required TResult Function(Loading<T> value) loading,
     required TResult Function(Success<T> value) success,
     required TResult Function(Error<T> value) failure,
+    required TResult Function(ImageSelected<T> value) imageSelected,
+    required TResult Function(RemoveImage<T> value) removeImage,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -55,6 +63,8 @@ mixin _$AddPostState<T> {
     TResult? Function(Loading<T> value)? loading,
     TResult? Function(Success<T> value)? success,
     TResult? Function(Error<T> value)? failure,
+    TResult? Function(ImageSelected<T> value)? imageSelected,
+    TResult? Function(RemoveImage<T> value)? removeImage,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -63,6 +73,8 @@ mixin _$AddPostState<T> {
     TResult Function(Loading<T> value)? loading,
     TResult Function(Success<T> value)? success,
     TResult Function(Error<T> value)? failure,
+    TResult Function(ImageSelected<T> value)? imageSelected,
+    TResult Function(RemoveImage<T> value)? removeImage,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -134,6 +146,8 @@ class _$InitialImpl<T> implements _Initial<T> {
     required TResult Function() loading,
     required TResult Function(CreatePostResponse createPostResponse) success,
     required TResult Function(ApiErrorModel apiErrorModel) failure,
+    required TResult Function(List<File> images) imageSelected,
+    required TResult Function(List<File> images) removeImage,
   }) {
     return initial();
   }
@@ -145,6 +159,8 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult? Function()? loading,
     TResult? Function(CreatePostResponse createPostResponse)? success,
     TResult? Function(ApiErrorModel apiErrorModel)? failure,
+    TResult? Function(List<File> images)? imageSelected,
+    TResult? Function(List<File> images)? removeImage,
   }) {
     return initial?.call();
   }
@@ -156,6 +172,8 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult Function()? loading,
     TResult Function(CreatePostResponse createPostResponse)? success,
     TResult Function(ApiErrorModel apiErrorModel)? failure,
+    TResult Function(List<File> images)? imageSelected,
+    TResult Function(List<File> images)? removeImage,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -171,6 +189,8 @@ class _$InitialImpl<T> implements _Initial<T> {
     required TResult Function(Loading<T> value) loading,
     required TResult Function(Success<T> value) success,
     required TResult Function(Error<T> value) failure,
+    required TResult Function(ImageSelected<T> value) imageSelected,
+    required TResult Function(RemoveImage<T> value) removeImage,
   }) {
     return initial(this);
   }
@@ -182,6 +202,8 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult? Function(Loading<T> value)? loading,
     TResult? Function(Success<T> value)? success,
     TResult? Function(Error<T> value)? failure,
+    TResult? Function(ImageSelected<T> value)? imageSelected,
+    TResult? Function(RemoveImage<T> value)? removeImage,
   }) {
     return initial?.call(this);
   }
@@ -193,6 +215,8 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult Function(Loading<T> value)? loading,
     TResult Function(Success<T> value)? success,
     TResult Function(Error<T> value)? failure,
+    TResult Function(ImageSelected<T> value)? imageSelected,
+    TResult Function(RemoveImage<T> value)? removeImage,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -251,6 +275,8 @@ class _$LoadingImpl<T> implements Loading<T> {
     required TResult Function() loading,
     required TResult Function(CreatePostResponse createPostResponse) success,
     required TResult Function(ApiErrorModel apiErrorModel) failure,
+    required TResult Function(List<File> images) imageSelected,
+    required TResult Function(List<File> images) removeImage,
   }) {
     return loading();
   }
@@ -262,6 +288,8 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult? Function()? loading,
     TResult? Function(CreatePostResponse createPostResponse)? success,
     TResult? Function(ApiErrorModel apiErrorModel)? failure,
+    TResult? Function(List<File> images)? imageSelected,
+    TResult? Function(List<File> images)? removeImage,
   }) {
     return loading?.call();
   }
@@ -273,6 +301,8 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult Function()? loading,
     TResult Function(CreatePostResponse createPostResponse)? success,
     TResult Function(ApiErrorModel apiErrorModel)? failure,
+    TResult Function(List<File> images)? imageSelected,
+    TResult Function(List<File> images)? removeImage,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -288,6 +318,8 @@ class _$LoadingImpl<T> implements Loading<T> {
     required TResult Function(Loading<T> value) loading,
     required TResult Function(Success<T> value) success,
     required TResult Function(Error<T> value) failure,
+    required TResult Function(ImageSelected<T> value) imageSelected,
+    required TResult Function(RemoveImage<T> value) removeImage,
   }) {
     return loading(this);
   }
@@ -299,6 +331,8 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult? Function(Loading<T> value)? loading,
     TResult? Function(Success<T> value)? success,
     TResult? Function(Error<T> value)? failure,
+    TResult? Function(ImageSelected<T> value)? imageSelected,
+    TResult? Function(RemoveImage<T> value)? removeImage,
   }) {
     return loading?.call(this);
   }
@@ -310,6 +344,8 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult Function(Loading<T> value)? loading,
     TResult Function(Success<T> value)? success,
     TResult Function(Error<T> value)? failure,
+    TResult Function(ImageSelected<T> value)? imageSelected,
+    TResult Function(RemoveImage<T> value)? removeImage,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -396,6 +432,8 @@ class _$SuccessImpl<T> implements Success<T> {
     required TResult Function() loading,
     required TResult Function(CreatePostResponse createPostResponse) success,
     required TResult Function(ApiErrorModel apiErrorModel) failure,
+    required TResult Function(List<File> images) imageSelected,
+    required TResult Function(List<File> images) removeImage,
   }) {
     return success(createPostResponse);
   }
@@ -407,6 +445,8 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult? Function()? loading,
     TResult? Function(CreatePostResponse createPostResponse)? success,
     TResult? Function(ApiErrorModel apiErrorModel)? failure,
+    TResult? Function(List<File> images)? imageSelected,
+    TResult? Function(List<File> images)? removeImage,
   }) {
     return success?.call(createPostResponse);
   }
@@ -418,6 +458,8 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult Function()? loading,
     TResult Function(CreatePostResponse createPostResponse)? success,
     TResult Function(ApiErrorModel apiErrorModel)? failure,
+    TResult Function(List<File> images)? imageSelected,
+    TResult Function(List<File> images)? removeImage,
     required TResult orElse(),
   }) {
     if (success != null) {
@@ -433,6 +475,8 @@ class _$SuccessImpl<T> implements Success<T> {
     required TResult Function(Loading<T> value) loading,
     required TResult Function(Success<T> value) success,
     required TResult Function(Error<T> value) failure,
+    required TResult Function(ImageSelected<T> value) imageSelected,
+    required TResult Function(RemoveImage<T> value) removeImage,
   }) {
     return success(this);
   }
@@ -444,6 +488,8 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult? Function(Loading<T> value)? loading,
     TResult? Function(Success<T> value)? success,
     TResult? Function(Error<T> value)? failure,
+    TResult? Function(ImageSelected<T> value)? imageSelected,
+    TResult? Function(RemoveImage<T> value)? removeImage,
   }) {
     return success?.call(this);
   }
@@ -455,6 +501,8 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult Function(Loading<T> value)? loading,
     TResult Function(Success<T> value)? success,
     TResult Function(Error<T> value)? failure,
+    TResult Function(ImageSelected<T> value)? imageSelected,
+    TResult Function(RemoveImage<T> value)? removeImage,
     required TResult orElse(),
   }) {
     if (success != null) {
@@ -550,6 +598,8 @@ class _$ErrorImpl<T> implements Error<T> {
     required TResult Function() loading,
     required TResult Function(CreatePostResponse createPostResponse) success,
     required TResult Function(ApiErrorModel apiErrorModel) failure,
+    required TResult Function(List<File> images) imageSelected,
+    required TResult Function(List<File> images) removeImage,
   }) {
     return failure(apiErrorModel);
   }
@@ -561,6 +611,8 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult? Function()? loading,
     TResult? Function(CreatePostResponse createPostResponse)? success,
     TResult? Function(ApiErrorModel apiErrorModel)? failure,
+    TResult? Function(List<File> images)? imageSelected,
+    TResult? Function(List<File> images)? removeImage,
   }) {
     return failure?.call(apiErrorModel);
   }
@@ -572,6 +624,8 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult Function()? loading,
     TResult Function(CreatePostResponse createPostResponse)? success,
     TResult Function(ApiErrorModel apiErrorModel)? failure,
+    TResult Function(List<File> images)? imageSelected,
+    TResult Function(List<File> images)? removeImage,
     required TResult orElse(),
   }) {
     if (failure != null) {
@@ -587,6 +641,8 @@ class _$ErrorImpl<T> implements Error<T> {
     required TResult Function(Loading<T> value) loading,
     required TResult Function(Success<T> value) success,
     required TResult Function(Error<T> value) failure,
+    required TResult Function(ImageSelected<T> value) imageSelected,
+    required TResult Function(RemoveImage<T> value) removeImage,
   }) {
     return failure(this);
   }
@@ -598,6 +654,8 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult? Function(Loading<T> value)? loading,
     TResult? Function(Success<T> value)? success,
     TResult? Function(Error<T> value)? failure,
+    TResult? Function(ImageSelected<T> value)? imageSelected,
+    TResult? Function(RemoveImage<T> value)? removeImage,
   }) {
     return failure?.call(this);
   }
@@ -609,6 +667,8 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult Function(Loading<T> value)? loading,
     TResult Function(Success<T> value)? success,
     TResult Function(Error<T> value)? failure,
+    TResult Function(ImageSelected<T> value)? imageSelected,
+    TResult Function(RemoveImage<T> value)? removeImage,
     required TResult orElse(),
   }) {
     if (failure != null) {
@@ -627,5 +687,347 @@ abstract class Error<T> implements AddPostState<T> {
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ErrorImplCopyWith<T, _$ErrorImpl<T>> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$ImageSelectedImplCopyWith<T, $Res> {
+  factory _$$ImageSelectedImplCopyWith(_$ImageSelectedImpl<T> value,
+          $Res Function(_$ImageSelectedImpl<T>) then) =
+      __$$ImageSelectedImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({List<File> images});
+}
+
+/// @nodoc
+class __$$ImageSelectedImplCopyWithImpl<T, $Res>
+    extends _$AddPostStateCopyWithImpl<T, $Res, _$ImageSelectedImpl<T>>
+    implements _$$ImageSelectedImplCopyWith<T, $Res> {
+  __$$ImageSelectedImplCopyWithImpl(_$ImageSelectedImpl<T> _value,
+      $Res Function(_$ImageSelectedImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of AddPostState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? images = null,
+  }) {
+    return _then(_$ImageSelectedImpl<T>(
+      null == images
+          ? _value._images
+          : images // ignore: cast_nullable_to_non_nullable
+              as List<File>,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$ImageSelectedImpl<T> implements ImageSelected<T> {
+  const _$ImageSelectedImpl(final List<File> images) : _images = images;
+
+  final List<File> _images;
+  @override
+  List<File> get images {
+    if (_images is EqualUnmodifiableListView) return _images;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_images);
+  }
+
+  @override
+  String toString() {
+    return 'AddPostState<$T>.imageSelected(images: $images)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$ImageSelectedImpl<T> &&
+            const DeepCollectionEquality().equals(other._images, _images));
+  }
+
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(_images));
+
+  /// Create a copy of AddPostState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$ImageSelectedImplCopyWith<T, _$ImageSelectedImpl<T>> get copyWith =>
+      __$$ImageSelectedImplCopyWithImpl<T, _$ImageSelectedImpl<T>>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(CreatePostResponse createPostResponse) success,
+    required TResult Function(ApiErrorModel apiErrorModel) failure,
+    required TResult Function(List<File> images) imageSelected,
+    required TResult Function(List<File> images) removeImage,
+  }) {
+    return imageSelected(images);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(CreatePostResponse createPostResponse)? success,
+    TResult? Function(ApiErrorModel apiErrorModel)? failure,
+    TResult? Function(List<File> images)? imageSelected,
+    TResult? Function(List<File> images)? removeImage,
+  }) {
+    return imageSelected?.call(images);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(CreatePostResponse createPostResponse)? success,
+    TResult Function(ApiErrorModel apiErrorModel)? failure,
+    TResult Function(List<File> images)? imageSelected,
+    TResult Function(List<File> images)? removeImage,
+    required TResult orElse(),
+  }) {
+    if (imageSelected != null) {
+      return imageSelected(images);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(Loading<T> value) loading,
+    required TResult Function(Success<T> value) success,
+    required TResult Function(Error<T> value) failure,
+    required TResult Function(ImageSelected<T> value) imageSelected,
+    required TResult Function(RemoveImage<T> value) removeImage,
+  }) {
+    return imageSelected(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(Loading<T> value)? loading,
+    TResult? Function(Success<T> value)? success,
+    TResult? Function(Error<T> value)? failure,
+    TResult? Function(ImageSelected<T> value)? imageSelected,
+    TResult? Function(RemoveImage<T> value)? removeImage,
+  }) {
+    return imageSelected?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(Loading<T> value)? loading,
+    TResult Function(Success<T> value)? success,
+    TResult Function(Error<T> value)? failure,
+    TResult Function(ImageSelected<T> value)? imageSelected,
+    TResult Function(RemoveImage<T> value)? removeImage,
+    required TResult orElse(),
+  }) {
+    if (imageSelected != null) {
+      return imageSelected(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class ImageSelected<T> implements AddPostState<T> {
+  const factory ImageSelected(final List<File> images) = _$ImageSelectedImpl<T>;
+
+  List<File> get images;
+
+  /// Create a copy of AddPostState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$ImageSelectedImplCopyWith<T, _$ImageSelectedImpl<T>> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$RemoveImageImplCopyWith<T, $Res> {
+  factory _$$RemoveImageImplCopyWith(_$RemoveImageImpl<T> value,
+          $Res Function(_$RemoveImageImpl<T>) then) =
+      __$$RemoveImageImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({List<File> images});
+}
+
+/// @nodoc
+class __$$RemoveImageImplCopyWithImpl<T, $Res>
+    extends _$AddPostStateCopyWithImpl<T, $Res, _$RemoveImageImpl<T>>
+    implements _$$RemoveImageImplCopyWith<T, $Res> {
+  __$$RemoveImageImplCopyWithImpl(
+      _$RemoveImageImpl<T> _value, $Res Function(_$RemoveImageImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of AddPostState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? images = null,
+  }) {
+    return _then(_$RemoveImageImpl<T>(
+      null == images
+          ? _value._images
+          : images // ignore: cast_nullable_to_non_nullable
+              as List<File>,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$RemoveImageImpl<T> implements RemoveImage<T> {
+  const _$RemoveImageImpl(final List<File> images) : _images = images;
+
+  final List<File> _images;
+  @override
+  List<File> get images {
+    if (_images is EqualUnmodifiableListView) return _images;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_images);
+  }
+
+  @override
+  String toString() {
+    return 'AddPostState<$T>.removeImage(images: $images)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$RemoveImageImpl<T> &&
+            const DeepCollectionEquality().equals(other._images, _images));
+  }
+
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(_images));
+
+  /// Create a copy of AddPostState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$RemoveImageImplCopyWith<T, _$RemoveImageImpl<T>> get copyWith =>
+      __$$RemoveImageImplCopyWithImpl<T, _$RemoveImageImpl<T>>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(CreatePostResponse createPostResponse) success,
+    required TResult Function(ApiErrorModel apiErrorModel) failure,
+    required TResult Function(List<File> images) imageSelected,
+    required TResult Function(List<File> images) removeImage,
+  }) {
+    return removeImage(images);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(CreatePostResponse createPostResponse)? success,
+    TResult? Function(ApiErrorModel apiErrorModel)? failure,
+    TResult? Function(List<File> images)? imageSelected,
+    TResult? Function(List<File> images)? removeImage,
+  }) {
+    return removeImage?.call(images);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(CreatePostResponse createPostResponse)? success,
+    TResult Function(ApiErrorModel apiErrorModel)? failure,
+    TResult Function(List<File> images)? imageSelected,
+    TResult Function(List<File> images)? removeImage,
+    required TResult orElse(),
+  }) {
+    if (removeImage != null) {
+      return removeImage(images);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(Loading<T> value) loading,
+    required TResult Function(Success<T> value) success,
+    required TResult Function(Error<T> value) failure,
+    required TResult Function(ImageSelected<T> value) imageSelected,
+    required TResult Function(RemoveImage<T> value) removeImage,
+  }) {
+    return removeImage(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(Loading<T> value)? loading,
+    TResult? Function(Success<T> value)? success,
+    TResult? Function(Error<T> value)? failure,
+    TResult? Function(ImageSelected<T> value)? imageSelected,
+    TResult? Function(RemoveImage<T> value)? removeImage,
+  }) {
+    return removeImage?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(Loading<T> value)? loading,
+    TResult Function(Success<T> value)? success,
+    TResult Function(Error<T> value)? failure,
+    TResult Function(ImageSelected<T> value)? imageSelected,
+    TResult Function(RemoveImage<T> value)? removeImage,
+    required TResult orElse(),
+  }) {
+    if (removeImage != null) {
+      return removeImage(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class RemoveImage<T> implements AddPostState<T> {
+  const factory RemoveImage(final List<File> images) = _$RemoveImageImpl<T>;
+
+  List<File> get images;
+
+  /// Create a copy of AddPostState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$RemoveImageImplCopyWith<T, _$RemoveImageImpl<T>> get copyWith =>
       throw _privateConstructorUsedError;
 }
