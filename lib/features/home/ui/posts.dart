@@ -13,6 +13,7 @@ class Posts extends StatelessWidget {
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
       itemBuilder: (context, index) => PostItem(
+        images: posts[index].media ?? [],
         postUserId: posts[index].author!.id!,
         isDetail: false,
         postId: posts[index].id!,

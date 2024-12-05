@@ -21,7 +21,7 @@ class EditProfileCubit extends Cubit<EditProfileState> {
   GlobalKey<FormState> formKey = GlobalKey<FormState>();
 
 
- File? selectedImage;
+  File? selectedImage;
 
   Future<void> showImagePicker(BuildContext context) async {
     final ImagePicker picker = ImagePicker();

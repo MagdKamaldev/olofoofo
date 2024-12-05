@@ -9,7 +9,8 @@ class CreatePostResponse {
 
   CreatePostResponse({required this.status, required this.data});
 
-  factory CreatePostResponse.fromJson(Map<String, dynamic> json) => _$CreatePostResponseFromJson(json);
+  factory CreatePostResponse.fromJson(Map<String, dynamic> json) =>
+      _$CreatePostResponseFromJson(json);
 
   Map<String, dynamic> toJson() => _$CreatePostResponseToJson(this);
 }
@@ -20,7 +21,8 @@ class PostData {
 
   PostData({required this.post});
 
-  factory PostData.fromJson(Map<String, dynamic> json) => _$PostDataFromJson(json);
+  factory PostData.fromJson(Map<String, dynamic> json) =>
+      _$PostDataFromJson(json);
 
   Map<String, dynamic> toJson() => _$PostDataToJson(this);
 }
@@ -31,8 +33,9 @@ class Post {
   final String author;
   final int likesCount;
   final int commentsCount;
-  final List<dynamic> media; // Change to specific type if needed
-  final String id; // This maps to the "id" field in JSON
+  final List<String> media; // Changed to List<String> for specific typing
+  @JsonKey(name: '_id') // Map the `_id` field to Dart's `id` property
+  final String id;
   final String createdAt;
   final String updatedAt;
 

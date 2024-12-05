@@ -17,6 +17,7 @@ class ProfilePosts extends StatelessWidget {
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
       itemBuilder: (context, index) => ProfilePostItem(
+        images: posts[index].media ?? [],
         postUserId: id,
         isDetail: false,
         postId: posts[index].id!,
