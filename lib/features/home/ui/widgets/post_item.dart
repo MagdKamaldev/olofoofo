@@ -1,8 +1,6 @@
 // ignore_for_file: deprecated_member_use
 import 'package:circle_sync/core/di/dependency_injection.dart';
-import 'package:circle_sync/core/helpers/constants.dart';
 import 'package:circle_sync/core/helpers/extensions.dart';
-import 'package:circle_sync/core/helpers/shared_pref_helper.dart';
 import 'package:circle_sync/core/helpers/spacing.dart';
 import 'package:circle_sync/core/helpers/time_ago.dart';
 import 'package:circle_sync/core/routing/routes.dart';
@@ -49,54 +47,20 @@ class PostItem extends StatefulWidget {
 }
 
 class PostItemState extends State<PostItem> {
-  bool _isExpanded = false;
-  late bool _isLiked;
-  late int _likes;
-  String userId = "";
-
-  void getUserId() async {
-    String id = await SharedPrefHelper.getString(SharedPrefKeys.userId);
-    setState(() {
-      userId = id;
-    });
-  }
 
   @override
   void initState() {
+    HomeCubit cubit = context.read<HomeCubit>();
     super.initState();
-    _isLiked = widget.isLiked;
-    _likes = widget.likes;
-    getUserId();
-  }
-
-  void _toggleLike() {
-    setState(() {
-      _isLiked = !_isLiked;
-      _isLiked ? _likes++ : _likes--;
-    });
-
-    _updateLikeStatusOnServer(context, _isLiked);
-  }
-
-  Future<void> _updateLikeStatusOnServer(
-      BuildContext context, bool isLiked) async {
-    try {
-      if (isLiked) {
-        context.read<HomeCubit>().likePost(widget.postId);
-      } else {
-        context.read<HomeCubit>().unlikePost(widget.postId);
-      }
-    } catch (error) {
-      setState(() {
-        _isLiked = !_isLiked;
-        _isLiked ? _likes++ : _likes--;
-      });
-    }
+    cubit.isLiked = widget.isLiked;
+    cubit.likes = widget.likes;
+    cubit.getUserId();
   }
 
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
+     HomeCubit cubit = context.read<HomeCubit>();
     return BlocProvider(
         create: (context) => HomeCubit(getIt()),
         child: BlocListener<HomeCubit, HomeState>(
@@ -149,7 +113,7 @@ class PostItemState extends State<PostItem> {
                             ],
                           ),
                           const Spacer(),
-                          if (userId == widget.postUserId)
+                          if (cubit.userId == widget.postUserId)
                             PopupMenuButton<String>(
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10),
@@ -202,21 +166,19 @@ class PostItemState extends State<PostItem> {
                       verticalSpace(20),
                       GestureDetector(
                         onTap: () {
-                          setState(() {
-                            _isExpanded = !_isExpanded;
-                          });
+                          cubit.toggleExpand();
                         },
                         child: widget.postCaption.length > 100
                             ? RichText(
                                 text: TextSpan(
-                                  text: _isExpanded
+                                  text: cubit.isExpanded
                                       ? widget.postCaption
                                       : widget.postCaption.substring(0, 100),
                                   style: TextStyles.font12regular
                                       .copyWith(color: Colors.black54),
                                   children: [
                                     if (widget.postCaption.length > 100 &&
-                                        !_isExpanded)
+                                        !cubit.isExpanded)
                                       const TextSpan(
                                         text: '... See More',
                                         style: TextStyles.font12Medium,
@@ -289,9 +251,11 @@ class PostItemState extends State<PostItem> {
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
                           GestureDetector(
-                            onTap: _toggleLike,
+                            onTap: (){
+                              cubit.toggleLike;
+                            },
                             child: SvgPicture.asset(
-                              _isLiked
+                              cubit.isLiked
                                   ? "assets/images/Heart_filled.svg"
                                   : "assets/images/Heart.svg",
                               height: 20.h,
@@ -301,7 +265,7 @@ class PostItemState extends State<PostItem> {
                           ),
                           horizontalSpace(10),
                           Text(
-                            _likes.toString(),
+                            cubit.likes.toString(),
                             style: TextStyles.font12Medium,
                           ),
                           horizontalSpace(30),
