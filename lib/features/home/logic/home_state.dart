@@ -46,4 +46,15 @@ class HomeState with _$HomeState {
   const factory HomeState.deletePostSuccess() = DeletePostSuccess;
   const factory HomeState.deletePostError(ApiErrorModel apiErrorModel) = DeletePostError;
 
+  const factory HomeState.toggleLike() = ToggleLike;
+
+  const factory HomeState.toggleExpanded() = ToggleExpanded;
+
+  const factory HomeState.getUserId() = GetUserId;
+
+  const factory HomeState.updateLikeStatusOnServer() = UpdateLikeStatusOnServer;
+
+
+
+
 }

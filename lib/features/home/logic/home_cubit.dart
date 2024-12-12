@@ -1,4 +1,6 @@
+import 'package:circle_sync/core/helpers/constants.dart';
 import 'package:circle_sync/core/helpers/extensions.dart';
+import 'package:circle_sync/core/helpers/shared_pref_helper.dart';
 import 'package:circle_sync/core/routing/routes.dart';
 import 'package:circle_sync/features/add_post/ui/add_post_screen.dart';
 import 'package:circle_sync/features/chats/ui/chats_screen.dart';
@@ -192,5 +194,46 @@ class HomeCubit extends Cubit<HomeState> {
         emit(HomeState.deletePostError(apiErrorModel));
       },
     );
+  }
+
+  bool isExpanded = false;
+  late bool isLiked;
+  late int likes;
+  String userId = "";
+
+  void toggleExpand() {
+    isExpanded = !isExpanded;
+    emit(const HomeState.toggleExpanded());
+  }
+
+
+  void toggleLike(BuildContext context, String postId) {
+    isLiked = !isLiked;
+    isLiked ? likes++ : likes--;
+    emit(const HomeState.toggleLike());
+    updateLikeStatusOnServer(context, isLiked,postId);
+  }
+
+  void getUserId() async {
+    String id = await SharedPrefHelper.getString(SharedPrefKeys.userId);
+   
+      userId = id;
+     emit(const HomeState.getUserId());
+  }
+
+  Future<void> updateLikeStatusOnServer(
+      BuildContext context, bool isLiked , String postId) async {
+    try {
+      if (isLiked) {
+        context.read<HomeCubit>().likePost(postId);
+      } else {
+        context.read<HomeCubit>().unlikePost(postId);
+      }
+    } catch (error) {
+     
+        isLiked = ! isLiked;
+        isLiked ? likes++ : likes--;
+      emit(const HomeState.updateLikeStatusOnServer());
+    }
   }
 }

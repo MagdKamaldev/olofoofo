@@ -3,10 +3,10 @@ import 'package:circle_sync/core/helpers/spacing.dart';
 import 'package:circle_sync/features/home/logic/home_cubit.dart';
 import 'package:circle_sync/features/home/logic/home_state.dart';
 import 'package:circle_sync/features/home/ui/posts.dart';
-import 'package:circle_sync/features/home/ui/stories.dart';
 import 'package:circle_sync/features/home/ui/widgets/loading_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -32,9 +32,10 @@ class HomeScreen extends StatelessWidget {
                   postsLoaded: (posts) => SliverList(
                     delegate: SliverChildListDelegate(
                       [
-                        const Padding(
-                          padding: EdgeInsets.only(top: 20.0),
-                          child: Stories(),
+                        verticalSpace(20),
+                        SvgPicture.asset(
+                          'assets/images/logo.svg',
+                          height: 50,
                         ),
                         verticalSpace(20),
                         Posts(posts: posts),
