@@ -9,6 +9,14 @@
         "args": ["--flavor", "Development", "--target", "lib/main_development.dart" ]
       },
       {
+        "name": "profile",
+        "request": "launch",
+        "type": "dart",
+        "program": "lib/main_development.dart",
+        "flutterMode": "profile",
+        "args": ["--flavor", "Development", "--target", "lib/main_development.dart" ]
+      },
+      {
         "name": "Olofoofo",
         "request": "launch",
         "type": "dart",

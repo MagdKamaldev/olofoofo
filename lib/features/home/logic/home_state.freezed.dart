@@ -48,6 +48,10 @@ mixin _$HomeState {
     required TResult Function() deletePostLoading,
     required TResult Function() deletePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -82,6 +86,10 @@ mixin _$HomeState {
     TResult? Function()? deletePostLoading,
     TResult? Function()? deletePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -116,6 +124,10 @@ mixin _$HomeState {
     TResult Function()? deletePostLoading,
     TResult Function()? deletePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -151,6 +163,11 @@ mixin _$HomeState {
     required TResult Function(DeletePostLoading value) deletePostLoading,
     required TResult Function(DeletePostSuccess value) deletePostSuccess,
     required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -185,6 +202,10 @@ mixin _$HomeState {
     TResult? Function(DeletePostLoading value)? deletePostLoading,
     TResult? Function(DeletePostSuccess value)? deletePostSuccess,
     TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -219,6 +240,10 @@ mixin _$HomeState {
     TResult Function(DeletePostLoading value)? deletePostLoading,
     TResult Function(DeletePostSuccess value)? deletePostSuccess,
     TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -321,6 +346,10 @@ class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
     required TResult Function() deletePostLoading,
     required TResult Function() deletePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
   }) {
     return initial();
   }
@@ -358,6 +387,10 @@ class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
     TResult? Function()? deletePostLoading,
     TResult? Function()? deletePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
   }) {
     return initial?.call();
   }
@@ -395,6 +428,10 @@ class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
     TResult Function()? deletePostLoading,
     TResult Function()? deletePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -436,6 +473,11 @@ class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
     required TResult Function(DeletePostLoading value) deletePostLoading,
     required TResult Function(DeletePostSuccess value) deletePostSuccess,
     required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
   }) {
     return initial(this);
   }
@@ -473,6 +515,10 @@ class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
     TResult? Function(DeletePostLoading value)? deletePostLoading,
     TResult? Function(DeletePostSuccess value)? deletePostSuccess,
     TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
   }) {
     return initial?.call(this);
   }
@@ -510,6 +556,10 @@ class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
     TResult Function(DeletePostLoading value)? deletePostLoading,
     TResult Function(DeletePostSuccess value)? deletePostSuccess,
     TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -600,6 +650,10 @@ class _$PostsLoadingImpl with DiagnosticableTreeMixin implements PostsLoading {
     required TResult Function() deletePostLoading,
     required TResult Function() deletePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
   }) {
     return postsLoading();
   }
@@ -637,6 +691,10 @@ class _$PostsLoadingImpl with DiagnosticableTreeMixin implements PostsLoading {
     TResult? Function()? deletePostLoading,
     TResult? Function()? deletePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
   }) {
     return postsLoading?.call();
   }
@@ -674,6 +732,10 @@ class _$PostsLoadingImpl with DiagnosticableTreeMixin implements PostsLoading {
     TResult Function()? deletePostLoading,
     TResult Function()? deletePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (postsLoading != null) {
@@ -715,6 +777,11 @@ class _$PostsLoadingImpl with DiagnosticableTreeMixin implements PostsLoading {
     required TResult Function(DeletePostLoading value) deletePostLoading,
     required TResult Function(DeletePostSuccess value) deletePostSuccess,
     required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
   }) {
     return postsLoading(this);
   }
@@ -752,6 +819,10 @@ class _$PostsLoadingImpl with DiagnosticableTreeMixin implements PostsLoading {
     TResult? Function(DeletePostLoading value)? deletePostLoading,
     TResult? Function(DeletePostSuccess value)? deletePostSuccess,
     TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
   }) {
     return postsLoading?.call(this);
   }
@@ -789,6 +860,10 @@ class _$PostsLoadingImpl with DiagnosticableTreeMixin implements PostsLoading {
     TResult Function(DeletePostLoading value)? deletePostLoading,
     TResult Function(DeletePostSuccess value)? deletePostSuccess,
     TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (postsLoading != null) {
@@ -914,6 +989,10 @@ class _$PostsLoadedImpl with DiagnosticableTreeMixin implements PostsLoaded {
     required TResult Function() deletePostLoading,
     required TResult Function() deletePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
   }) {
     return postsLoaded(posts);
   }
@@ -951,6 +1030,10 @@ class _$PostsLoadedImpl with DiagnosticableTreeMixin implements PostsLoaded {
     TResult? Function()? deletePostLoading,
     TResult? Function()? deletePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
   }) {
     return postsLoaded?.call(posts);
   }
@@ -988,6 +1071,10 @@ class _$PostsLoadedImpl with DiagnosticableTreeMixin implements PostsLoaded {
     TResult Function()? deletePostLoading,
     TResult Function()? deletePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (postsLoaded != null) {
@@ -1029,6 +1116,11 @@ class _$PostsLoadedImpl with DiagnosticableTreeMixin implements PostsLoaded {
     required TResult Function(DeletePostLoading value) deletePostLoading,
     required TResult Function(DeletePostSuccess value) deletePostSuccess,
     required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
   }) {
     return postsLoaded(this);
   }
@@ -1066,6 +1158,10 @@ class _$PostsLoadedImpl with DiagnosticableTreeMixin implements PostsLoaded {
     TResult? Function(DeletePostLoading value)? deletePostLoading,
     TResult? Function(DeletePostSuccess value)? deletePostSuccess,
     TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
   }) {
     return postsLoaded?.call(this);
   }
@@ -1103,6 +1199,10 @@ class _$PostsLoadedImpl with DiagnosticableTreeMixin implements PostsLoaded {
     TResult Function(DeletePostLoading value)? deletePostLoading,
     TResult Function(DeletePostSuccess value)? deletePostSuccess,
     TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (postsLoaded != null) {
@@ -1231,6 +1331,10 @@ class _$PostsErrorImpl with DiagnosticableTreeMixin implements PostsError {
     required TResult Function() deletePostLoading,
     required TResult Function() deletePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
   }) {
     return postsError(apiErrorModel);
   }
@@ -1268,6 +1372,10 @@ class _$PostsErrorImpl with DiagnosticableTreeMixin implements PostsError {
     TResult? Function()? deletePostLoading,
     TResult? Function()? deletePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
   }) {
     return postsError?.call(apiErrorModel);
   }
@@ -1305,6 +1413,10 @@ class _$PostsErrorImpl with DiagnosticableTreeMixin implements PostsError {
     TResult Function()? deletePostLoading,
     TResult Function()? deletePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (postsError != null) {
@@ -1346,6 +1458,11 @@ class _$PostsErrorImpl with DiagnosticableTreeMixin implements PostsError {
     required TResult Function(DeletePostLoading value) deletePostLoading,
     required TResult Function(DeletePostSuccess value) deletePostSuccess,
     required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
   }) {
     return postsError(this);
   }
@@ -1383,6 +1500,10 @@ class _$PostsErrorImpl with DiagnosticableTreeMixin implements PostsError {
     TResult? Function(DeletePostLoading value)? deletePostLoading,
     TResult? Function(DeletePostSuccess value)? deletePostSuccess,
     TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
   }) {
     return postsError?.call(this);
   }
@@ -1420,6 +1541,10 @@ class _$PostsErrorImpl with DiagnosticableTreeMixin implements PostsError {
     TResult Function(DeletePostLoading value)? deletePostLoading,
     TResult Function(DeletePostSuccess value)? deletePostSuccess,
     TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (postsError != null) {
@@ -1548,6 +1673,10 @@ class _$ChangeScreenImpl with DiagnosticableTreeMixin implements ChangeScreen {
     required TResult Function() deletePostLoading,
     required TResult Function() deletePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
   }) {
     return changeScreen(index);
   }
@@ -1585,6 +1714,10 @@ class _$ChangeScreenImpl with DiagnosticableTreeMixin implements ChangeScreen {
     TResult? Function()? deletePostLoading,
     TResult? Function()? deletePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
   }) {
     return changeScreen?.call(index);
   }
@@ -1622,6 +1755,10 @@ class _$ChangeScreenImpl with DiagnosticableTreeMixin implements ChangeScreen {
     TResult Function()? deletePostLoading,
     TResult Function()? deletePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (changeScreen != null) {
@@ -1663,6 +1800,11 @@ class _$ChangeScreenImpl with DiagnosticableTreeMixin implements ChangeScreen {
     required TResult Function(DeletePostLoading value) deletePostLoading,
     required TResult Function(DeletePostSuccess value) deletePostSuccess,
     required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
   }) {
     return changeScreen(this);
   }
@@ -1700,6 +1842,10 @@ class _$ChangeScreenImpl with DiagnosticableTreeMixin implements ChangeScreen {
     TResult? Function(DeletePostLoading value)? deletePostLoading,
     TResult? Function(DeletePostSuccess value)? deletePostSuccess,
     TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
   }) {
     return changeScreen?.call(this);
   }
@@ -1737,6 +1883,10 @@ class _$ChangeScreenImpl with DiagnosticableTreeMixin implements ChangeScreen {
     TResult Function(DeletePostLoading value)? deletePostLoading,
     TResult Function(DeletePostSuccess value)? deletePostSuccess,
     TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (changeScreen != null) {
@@ -1835,6 +1985,10 @@ class _$PostLoadingImpl with DiagnosticableTreeMixin implements PostLoading {
     required TResult Function() deletePostLoading,
     required TResult Function() deletePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
   }) {
     return postLoading();
   }
@@ -1872,6 +2026,10 @@ class _$PostLoadingImpl with DiagnosticableTreeMixin implements PostLoading {
     TResult? Function()? deletePostLoading,
     TResult? Function()? deletePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
   }) {
     return postLoading?.call();
   }
@@ -1909,6 +2067,10 @@ class _$PostLoadingImpl with DiagnosticableTreeMixin implements PostLoading {
     TResult Function()? deletePostLoading,
     TResult Function()? deletePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (postLoading != null) {
@@ -1950,6 +2112,11 @@ class _$PostLoadingImpl with DiagnosticableTreeMixin implements PostLoading {
     required TResult Function(DeletePostLoading value) deletePostLoading,
     required TResult Function(DeletePostSuccess value) deletePostSuccess,
     required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
   }) {
     return postLoading(this);
   }
@@ -1987,6 +2154,10 @@ class _$PostLoadingImpl with DiagnosticableTreeMixin implements PostLoading {
     TResult? Function(DeletePostLoading value)? deletePostLoading,
     TResult? Function(DeletePostSuccess value)? deletePostSuccess,
     TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
   }) {
     return postLoading?.call(this);
   }
@@ -2024,6 +2195,10 @@ class _$PostLoadingImpl with DiagnosticableTreeMixin implements PostLoading {
     TResult Function(DeletePostLoading value)? deletePostLoading,
     TResult Function(DeletePostSuccess value)? deletePostSuccess,
     TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (postLoading != null) {
@@ -2143,6 +2318,10 @@ class _$PostLoadedImpl with DiagnosticableTreeMixin implements PostLoaded {
     required TResult Function() deletePostLoading,
     required TResult Function() deletePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
   }) {
     return postLoaded(post);
   }
@@ -2180,6 +2359,10 @@ class _$PostLoadedImpl with DiagnosticableTreeMixin implements PostLoaded {
     TResult? Function()? deletePostLoading,
     TResult? Function()? deletePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
   }) {
     return postLoaded?.call(post);
   }
@@ -2217,6 +2400,10 @@ class _$PostLoadedImpl with DiagnosticableTreeMixin implements PostLoaded {
     TResult Function()? deletePostLoading,
     TResult Function()? deletePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (postLoaded != null) {
@@ -2258,6 +2445,11 @@ class _$PostLoadedImpl with DiagnosticableTreeMixin implements PostLoaded {
     required TResult Function(DeletePostLoading value) deletePostLoading,
     required TResult Function(DeletePostSuccess value) deletePostSuccess,
     required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
   }) {
     return postLoaded(this);
   }
@@ -2295,6 +2487,10 @@ class _$PostLoadedImpl with DiagnosticableTreeMixin implements PostLoaded {
     TResult? Function(DeletePostLoading value)? deletePostLoading,
     TResult? Function(DeletePostSuccess value)? deletePostSuccess,
     TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
   }) {
     return postLoaded?.call(this);
   }
@@ -2332,6 +2528,10 @@ class _$PostLoadedImpl with DiagnosticableTreeMixin implements PostLoaded {
     TResult Function(DeletePostLoading value)? deletePostLoading,
     TResult Function(DeletePostSuccess value)? deletePostSuccess,
     TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (postLoaded != null) {
@@ -2460,6 +2660,10 @@ class _$PostErrorImpl with DiagnosticableTreeMixin implements PostError {
     required TResult Function() deletePostLoading,
     required TResult Function() deletePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
   }) {
     return postError(apiErrorModel);
   }
@@ -2497,6 +2701,10 @@ class _$PostErrorImpl with DiagnosticableTreeMixin implements PostError {
     TResult? Function()? deletePostLoading,
     TResult? Function()? deletePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
   }) {
     return postError?.call(apiErrorModel);
   }
@@ -2534,6 +2742,10 @@ class _$PostErrorImpl with DiagnosticableTreeMixin implements PostError {
     TResult Function()? deletePostLoading,
     TResult Function()? deletePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (postError != null) {
@@ -2575,6 +2787,11 @@ class _$PostErrorImpl with DiagnosticableTreeMixin implements PostError {
     required TResult Function(DeletePostLoading value) deletePostLoading,
     required TResult Function(DeletePostSuccess value) deletePostSuccess,
     required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
   }) {
     return postError(this);
   }
@@ -2612,6 +2829,10 @@ class _$PostErrorImpl with DiagnosticableTreeMixin implements PostError {
     TResult? Function(DeletePostLoading value)? deletePostLoading,
     TResult? Function(DeletePostSuccess value)? deletePostSuccess,
     TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
   }) {
     return postError?.call(this);
   }
@@ -2649,6 +2870,10 @@ class _$PostErrorImpl with DiagnosticableTreeMixin implements PostError {
     TResult Function(DeletePostLoading value)? deletePostLoading,
     TResult Function(DeletePostSuccess value)? deletePostSuccess,
     TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (postError != null) {
@@ -2749,6 +2974,10 @@ class _$LikePostLoadingImpl
     required TResult Function() deletePostLoading,
     required TResult Function() deletePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
   }) {
     return likePostLoading();
   }
@@ -2786,6 +3015,10 @@ class _$LikePostLoadingImpl
     TResult? Function()? deletePostLoading,
     TResult? Function()? deletePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
   }) {
     return likePostLoading?.call();
   }
@@ -2823,6 +3056,10 @@ class _$LikePostLoadingImpl
     TResult Function()? deletePostLoading,
     TResult Function()? deletePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (likePostLoading != null) {
@@ -2864,6 +3101,11 @@ class _$LikePostLoadingImpl
     required TResult Function(DeletePostLoading value) deletePostLoading,
     required TResult Function(DeletePostSuccess value) deletePostSuccess,
     required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
   }) {
     return likePostLoading(this);
   }
@@ -2901,6 +3143,10 @@ class _$LikePostLoadingImpl
     TResult? Function(DeletePostLoading value)? deletePostLoading,
     TResult? Function(DeletePostSuccess value)? deletePostSuccess,
     TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
   }) {
     return likePostLoading?.call(this);
   }
@@ -2938,6 +3184,10 @@ class _$LikePostLoadingImpl
     TResult Function(DeletePostLoading value)? deletePostLoading,
     TResult Function(DeletePostSuccess value)? deletePostSuccess,
     TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (likePostLoading != null) {
@@ -3030,6 +3280,10 @@ class _$LikePostSuccessImpl
     required TResult Function() deletePostLoading,
     required TResult Function() deletePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
   }) {
     return likePostSuccess();
   }
@@ -3067,6 +3321,10 @@ class _$LikePostSuccessImpl
     TResult? Function()? deletePostLoading,
     TResult? Function()? deletePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
   }) {
     return likePostSuccess?.call();
   }
@@ -3104,6 +3362,10 @@ class _$LikePostSuccessImpl
     TResult Function()? deletePostLoading,
     TResult Function()? deletePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (likePostSuccess != null) {
@@ -3145,6 +3407,11 @@ class _$LikePostSuccessImpl
     required TResult Function(DeletePostLoading value) deletePostLoading,
     required TResult Function(DeletePostSuccess value) deletePostSuccess,
     required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
   }) {
     return likePostSuccess(this);
   }
@@ -3182,6 +3449,10 @@ class _$LikePostSuccessImpl
     TResult? Function(DeletePostLoading value)? deletePostLoading,
     TResult? Function(DeletePostSuccess value)? deletePostSuccess,
     TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
   }) {
     return likePostSuccess?.call(this);
   }
@@ -3219,6 +3490,10 @@ class _$LikePostSuccessImpl
     TResult Function(DeletePostLoading value)? deletePostLoading,
     TResult Function(DeletePostSuccess value)? deletePostSuccess,
     TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (likePostSuccess != null) {
@@ -3341,6 +3616,10 @@ class _$LikePostErrorImpl
     required TResult Function() deletePostLoading,
     required TResult Function() deletePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
   }) {
     return likePostError(apiErrorModel);
   }
@@ -3378,6 +3657,10 @@ class _$LikePostErrorImpl
     TResult? Function()? deletePostLoading,
     TResult? Function()? deletePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
   }) {
     return likePostError?.call(apiErrorModel);
   }
@@ -3415,6 +3698,10 @@ class _$LikePostErrorImpl
     TResult Function()? deletePostLoading,
     TResult Function()? deletePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (likePostError != null) {
@@ -3456,6 +3743,11 @@ class _$LikePostErrorImpl
     required TResult Function(DeletePostLoading value) deletePostLoading,
     required TResult Function(DeletePostSuccess value) deletePostSuccess,
     required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
   }) {
     return likePostError(this);
   }
@@ -3493,6 +3785,10 @@ class _$LikePostErrorImpl
     TResult? Function(DeletePostLoading value)? deletePostLoading,
     TResult? Function(DeletePostSuccess value)? deletePostSuccess,
     TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
   }) {
     return likePostError?.call(this);
   }
@@ -3530,6 +3826,10 @@ class _$LikePostErrorImpl
     TResult Function(DeletePostLoading value)? deletePostLoading,
     TResult Function(DeletePostSuccess value)? deletePostSuccess,
     TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (likePostError != null) {
@@ -3631,6 +3931,10 @@ class _$UnlikePostLoadingImpl
     required TResult Function() deletePostLoading,
     required TResult Function() deletePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
   }) {
     return unlikePostLoading();
   }
@@ -3668,6 +3972,10 @@ class _$UnlikePostLoadingImpl
     TResult? Function()? deletePostLoading,
     TResult? Function()? deletePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
   }) {
     return unlikePostLoading?.call();
   }
@@ -3705,6 +4013,10 @@ class _$UnlikePostLoadingImpl
     TResult Function()? deletePostLoading,
     TResult Function()? deletePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (unlikePostLoading != null) {
@@ -3746,6 +4058,11 @@ class _$UnlikePostLoadingImpl
     required TResult Function(DeletePostLoading value) deletePostLoading,
     required TResult Function(DeletePostSuccess value) deletePostSuccess,
     required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
   }) {
     return unlikePostLoading(this);
   }
@@ -3783,6 +4100,10 @@ class _$UnlikePostLoadingImpl
     TResult? Function(DeletePostLoading value)? deletePostLoading,
     TResult? Function(DeletePostSuccess value)? deletePostSuccess,
     TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
   }) {
     return unlikePostLoading?.call(this);
   }
@@ -3820,6 +4141,10 @@ class _$UnlikePostLoadingImpl
     TResult Function(DeletePostLoading value)? deletePostLoading,
     TResult Function(DeletePostSuccess value)? deletePostSuccess,
     TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (unlikePostLoading != null) {
@@ -3912,6 +4237,10 @@ class _$UnlikePostSuccessImpl
     required TResult Function() deletePostLoading,
     required TResult Function() deletePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
   }) {
     return unlikePostSuccess();
   }
@@ -3949,6 +4278,10 @@ class _$UnlikePostSuccessImpl
     TResult? Function()? deletePostLoading,
     TResult? Function()? deletePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
   }) {
     return unlikePostSuccess?.call();
   }
@@ -3986,6 +4319,10 @@ class _$UnlikePostSuccessImpl
     TResult Function()? deletePostLoading,
     TResult Function()? deletePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (unlikePostSuccess != null) {
@@ -4027,6 +4364,11 @@ class _$UnlikePostSuccessImpl
     required TResult Function(DeletePostLoading value) deletePostLoading,
     required TResult Function(DeletePostSuccess value) deletePostSuccess,
     required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
   }) {
     return unlikePostSuccess(this);
   }
@@ -4064,6 +4406,10 @@ class _$UnlikePostSuccessImpl
     TResult? Function(DeletePostLoading value)? deletePostLoading,
     TResult? Function(DeletePostSuccess value)? deletePostSuccess,
     TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
   }) {
     return unlikePostSuccess?.call(this);
   }
@@ -4101,6 +4447,10 @@ class _$UnlikePostSuccessImpl
     TResult Function(DeletePostLoading value)? deletePostLoading,
     TResult Function(DeletePostSuccess value)? deletePostSuccess,
     TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (unlikePostSuccess != null) {
@@ -4224,6 +4574,10 @@ class _$UnlikePostErrorImpl
     required TResult Function() deletePostLoading,
     required TResult Function() deletePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
   }) {
     return unlikePostError(apiErrorModel);
   }
@@ -4261,6 +4615,10 @@ class _$UnlikePostErrorImpl
     TResult? Function()? deletePostLoading,
     TResult? Function()? deletePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
   }) {
     return unlikePostError?.call(apiErrorModel);
   }
@@ -4298,6 +4656,10 @@ class _$UnlikePostErrorImpl
     TResult Function()? deletePostLoading,
     TResult Function()? deletePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (unlikePostError != null) {
@@ -4339,6 +4701,11 @@ class _$UnlikePostErrorImpl
     required TResult Function(DeletePostLoading value) deletePostLoading,
     required TResult Function(DeletePostSuccess value) deletePostSuccess,
     required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
   }) {
     return unlikePostError(this);
   }
@@ -4376,6 +4743,10 @@ class _$UnlikePostErrorImpl
     TResult? Function(DeletePostLoading value)? deletePostLoading,
     TResult? Function(DeletePostSuccess value)? deletePostSuccess,
     TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
   }) {
     return unlikePostError?.call(this);
   }
@@ -4413,6 +4784,10 @@ class _$UnlikePostErrorImpl
     TResult Function(DeletePostLoading value)? deletePostLoading,
     TResult Function(DeletePostSuccess value)? deletePostSuccess,
     TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (unlikePostError != null) {
@@ -4514,6 +4889,10 @@ class _$CommentLoadingImpl
     required TResult Function() deletePostLoading,
     required TResult Function() deletePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
   }) {
     return commentLoading();
   }
@@ -4551,6 +4930,10 @@ class _$CommentLoadingImpl
     TResult? Function()? deletePostLoading,
     TResult? Function()? deletePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
   }) {
     return commentLoading?.call();
   }
@@ -4588,6 +4971,10 @@ class _$CommentLoadingImpl
     TResult Function()? deletePostLoading,
     TResult Function()? deletePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (commentLoading != null) {
@@ -4629,6 +5016,11 @@ class _$CommentLoadingImpl
     required TResult Function(DeletePostLoading value) deletePostLoading,
     required TResult Function(DeletePostSuccess value) deletePostSuccess,
     required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
   }) {
     return commentLoading(this);
   }
@@ -4666,6 +5058,10 @@ class _$CommentLoadingImpl
     TResult? Function(DeletePostLoading value)? deletePostLoading,
     TResult? Function(DeletePostSuccess value)? deletePostSuccess,
     TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
   }) {
     return commentLoading?.call(this);
   }
@@ -4703,6 +5099,10 @@ class _$CommentLoadingImpl
     TResult Function(DeletePostLoading value)? deletePostLoading,
     TResult Function(DeletePostSuccess value)? deletePostSuccess,
     TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (commentLoading != null) {
@@ -4832,6 +5232,10 @@ class _$LocalCommentAddedImpl
     required TResult Function() deletePostLoading,
     required TResult Function() deletePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
   }) {
     return localCommentAdded(comments);
   }
@@ -4869,6 +5273,10 @@ class _$LocalCommentAddedImpl
     TResult? Function()? deletePostLoading,
     TResult? Function()? deletePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
   }) {
     return localCommentAdded?.call(comments);
   }
@@ -4906,6 +5314,10 @@ class _$LocalCommentAddedImpl
     TResult Function()? deletePostLoading,
     TResult Function()? deletePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (localCommentAdded != null) {
@@ -4947,6 +5359,11 @@ class _$LocalCommentAddedImpl
     required TResult Function(DeletePostLoading value) deletePostLoading,
     required TResult Function(DeletePostSuccess value) deletePostSuccess,
     required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
   }) {
     return localCommentAdded(this);
   }
@@ -4984,6 +5401,10 @@ class _$LocalCommentAddedImpl
     TResult? Function(DeletePostLoading value)? deletePostLoading,
     TResult? Function(DeletePostSuccess value)? deletePostSuccess,
     TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
   }) {
     return localCommentAdded?.call(this);
   }
@@ -5021,6 +5442,10 @@ class _$LocalCommentAddedImpl
     TResult Function(DeletePostLoading value)? deletePostLoading,
     TResult Function(DeletePostSuccess value)? deletePostSuccess,
     TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (localCommentAdded != null) {
@@ -5122,6 +5547,10 @@ class _$CommentSuccessImpl
     required TResult Function() deletePostLoading,
     required TResult Function() deletePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
   }) {
     return commentSuccess();
   }
@@ -5159,6 +5588,10 @@ class _$CommentSuccessImpl
     TResult? Function()? deletePostLoading,
     TResult? Function()? deletePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
   }) {
     return commentSuccess?.call();
   }
@@ -5196,6 +5629,10 @@ class _$CommentSuccessImpl
     TResult Function()? deletePostLoading,
     TResult Function()? deletePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (commentSuccess != null) {
@@ -5237,6 +5674,11 @@ class _$CommentSuccessImpl
     required TResult Function(DeletePostLoading value) deletePostLoading,
     required TResult Function(DeletePostSuccess value) deletePostSuccess,
     required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
   }) {
     return commentSuccess(this);
   }
@@ -5274,6 +5716,10 @@ class _$CommentSuccessImpl
     TResult? Function(DeletePostLoading value)? deletePostLoading,
     TResult? Function(DeletePostSuccess value)? deletePostSuccess,
     TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
   }) {
     return commentSuccess?.call(this);
   }
@@ -5311,6 +5757,10 @@ class _$CommentSuccessImpl
     TResult Function(DeletePostLoading value)? deletePostLoading,
     TResult Function(DeletePostSuccess value)? deletePostSuccess,
     TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (commentSuccess != null) {
@@ -5431,6 +5881,10 @@ class _$CommentErrorImpl with DiagnosticableTreeMixin implements CommentError {
     required TResult Function() deletePostLoading,
     required TResult Function() deletePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
   }) {
     return commentError(apiErrorModel);
   }
@@ -5468,6 +5922,10 @@ class _$CommentErrorImpl with DiagnosticableTreeMixin implements CommentError {
     TResult? Function()? deletePostLoading,
     TResult? Function()? deletePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
   }) {
     return commentError?.call(apiErrorModel);
   }
@@ -5505,6 +5963,10 @@ class _$CommentErrorImpl with DiagnosticableTreeMixin implements CommentError {
     TResult Function()? deletePostLoading,
     TResult Function()? deletePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (commentError != null) {
@@ -5546,6 +6008,11 @@ class _$CommentErrorImpl with DiagnosticableTreeMixin implements CommentError {
     required TResult Function(DeletePostLoading value) deletePostLoading,
     required TResult Function(DeletePostSuccess value) deletePostSuccess,
     required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
   }) {
     return commentError(this);
   }
@@ -5583,6 +6050,10 @@ class _$CommentErrorImpl with DiagnosticableTreeMixin implements CommentError {
     TResult? Function(DeletePostLoading value)? deletePostLoading,
     TResult? Function(DeletePostSuccess value)? deletePostSuccess,
     TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
   }) {
     return commentError?.call(this);
   }
@@ -5620,6 +6091,10 @@ class _$CommentErrorImpl with DiagnosticableTreeMixin implements CommentError {
     TResult Function(DeletePostLoading value)? deletePostLoading,
     TResult Function(DeletePostSuccess value)? deletePostSuccess,
     TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (commentError != null) {
@@ -5723,6 +6198,10 @@ class _$UpdateCommentLoadingImpl
     required TResult Function() deletePostLoading,
     required TResult Function() deletePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
   }) {
     return updateCommentLoading();
   }
@@ -5760,6 +6239,10 @@ class _$UpdateCommentLoadingImpl
     TResult? Function()? deletePostLoading,
     TResult? Function()? deletePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
   }) {
     return updateCommentLoading?.call();
   }
@@ -5797,6 +6280,10 @@ class _$UpdateCommentLoadingImpl
     TResult Function()? deletePostLoading,
     TResult Function()? deletePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (updateCommentLoading != null) {
@@ -5838,6 +6325,11 @@ class _$UpdateCommentLoadingImpl
     required TResult Function(DeletePostLoading value) deletePostLoading,
     required TResult Function(DeletePostSuccess value) deletePostSuccess,
     required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
   }) {
     return updateCommentLoading(this);
   }
@@ -5875,6 +6367,10 @@ class _$UpdateCommentLoadingImpl
     TResult? Function(DeletePostLoading value)? deletePostLoading,
     TResult? Function(DeletePostSuccess value)? deletePostSuccess,
     TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
   }) {
     return updateCommentLoading?.call(this);
   }
@@ -5912,6 +6408,10 @@ class _$UpdateCommentLoadingImpl
     TResult Function(DeletePostLoading value)? deletePostLoading,
     TResult Function(DeletePostSuccess value)? deletePostSuccess,
     TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (updateCommentLoading != null) {
@@ -6006,6 +6506,10 @@ class _$UpdateCommentSuccessImpl
     required TResult Function() deletePostLoading,
     required TResult Function() deletePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
   }) {
     return updateCommentSuccess();
   }
@@ -6043,6 +6547,10 @@ class _$UpdateCommentSuccessImpl
     TResult? Function()? deletePostLoading,
     TResult? Function()? deletePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
   }) {
     return updateCommentSuccess?.call();
   }
@@ -6080,6 +6588,10 @@ class _$UpdateCommentSuccessImpl
     TResult Function()? deletePostLoading,
     TResult Function()? deletePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (updateCommentSuccess != null) {
@@ -6121,6 +6633,11 @@ class _$UpdateCommentSuccessImpl
     required TResult Function(DeletePostLoading value) deletePostLoading,
     required TResult Function(DeletePostSuccess value) deletePostSuccess,
     required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
   }) {
     return updateCommentSuccess(this);
   }
@@ -6158,6 +6675,10 @@ class _$UpdateCommentSuccessImpl
     TResult? Function(DeletePostLoading value)? deletePostLoading,
     TResult? Function(DeletePostSuccess value)? deletePostSuccess,
     TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
   }) {
     return updateCommentSuccess?.call(this);
   }
@@ -6195,6 +6716,10 @@ class _$UpdateCommentSuccessImpl
     TResult Function(DeletePostLoading value)? deletePostLoading,
     TResult Function(DeletePostSuccess value)? deletePostSuccess,
     TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (updateCommentSuccess != null) {
@@ -6318,6 +6843,10 @@ class _$UpdateCommentErrorImpl
     required TResult Function() deletePostLoading,
     required TResult Function() deletePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
   }) {
     return updateCommentError(apiErrorModel);
   }
@@ -6355,6 +6884,10 @@ class _$UpdateCommentErrorImpl
     TResult? Function()? deletePostLoading,
     TResult? Function()? deletePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
   }) {
     return updateCommentError?.call(apiErrorModel);
   }
@@ -6392,6 +6925,10 @@ class _$UpdateCommentErrorImpl
     TResult Function()? deletePostLoading,
     TResult Function()? deletePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (updateCommentError != null) {
@@ -6433,6 +6970,11 @@ class _$UpdateCommentErrorImpl
     required TResult Function(DeletePostLoading value) deletePostLoading,
     required TResult Function(DeletePostSuccess value) deletePostSuccess,
     required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
   }) {
     return updateCommentError(this);
   }
@@ -6470,6 +7012,10 @@ class _$UpdateCommentErrorImpl
     TResult? Function(DeletePostLoading value)? deletePostLoading,
     TResult? Function(DeletePostSuccess value)? deletePostSuccess,
     TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
   }) {
     return updateCommentError?.call(this);
   }
@@ -6507,6 +7053,10 @@ class _$UpdateCommentErrorImpl
     TResult Function(DeletePostLoading value)? deletePostLoading,
     TResult Function(DeletePostSuccess value)? deletePostSuccess,
     TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (updateCommentError != null) {
@@ -6610,6 +7160,10 @@ class _$DeleteCommentLoadingImpl
     required TResult Function() deletePostLoading,
     required TResult Function() deletePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
   }) {
     return deleteCommentLoading();
   }
@@ -6647,6 +7201,10 @@ class _$DeleteCommentLoadingImpl
     TResult? Function()? deletePostLoading,
     TResult? Function()? deletePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
   }) {
     return deleteCommentLoading?.call();
   }
@@ -6684,6 +7242,10 @@ class _$DeleteCommentLoadingImpl
     TResult Function()? deletePostLoading,
     TResult Function()? deletePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (deleteCommentLoading != null) {
@@ -6725,6 +7287,11 @@ class _$DeleteCommentLoadingImpl
     required TResult Function(DeletePostLoading value) deletePostLoading,
     required TResult Function(DeletePostSuccess value) deletePostSuccess,
     required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
   }) {
     return deleteCommentLoading(this);
   }
@@ -6762,6 +7329,10 @@ class _$DeleteCommentLoadingImpl
     TResult? Function(DeletePostLoading value)? deletePostLoading,
     TResult? Function(DeletePostSuccess value)? deletePostSuccess,
     TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
   }) {
     return deleteCommentLoading?.call(this);
   }
@@ -6799,6 +7370,10 @@ class _$DeleteCommentLoadingImpl
     TResult Function(DeletePostLoading value)? deletePostLoading,
     TResult Function(DeletePostSuccess value)? deletePostSuccess,
     TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (deleteCommentLoading != null) {
@@ -6893,6 +7468,10 @@ class _$DeleteCommentSuccessImpl
     required TResult Function() deletePostLoading,
     required TResult Function() deletePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
   }) {
     return deleteCommentSuccess();
   }
@@ -6930,6 +7509,10 @@ class _$DeleteCommentSuccessImpl
     TResult? Function()? deletePostLoading,
     TResult? Function()? deletePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
   }) {
     return deleteCommentSuccess?.call();
   }
@@ -6967,6 +7550,10 @@ class _$DeleteCommentSuccessImpl
     TResult Function()? deletePostLoading,
     TResult Function()? deletePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (deleteCommentSuccess != null) {
@@ -7008,6 +7595,11 @@ class _$DeleteCommentSuccessImpl
     required TResult Function(DeletePostLoading value) deletePostLoading,
     required TResult Function(DeletePostSuccess value) deletePostSuccess,
     required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
   }) {
     return deleteCommentSuccess(this);
   }
@@ -7045,6 +7637,10 @@ class _$DeleteCommentSuccessImpl
     TResult? Function(DeletePostLoading value)? deletePostLoading,
     TResult? Function(DeletePostSuccess value)? deletePostSuccess,
     TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
   }) {
     return deleteCommentSuccess?.call(this);
   }
@@ -7082,6 +7678,10 @@ class _$DeleteCommentSuccessImpl
     TResult Function(DeletePostLoading value)? deletePostLoading,
     TResult Function(DeletePostSuccess value)? deletePostSuccess,
     TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (deleteCommentSuccess != null) {
@@ -7205,6 +7805,10 @@ class _$DeleteCommentErrorImpl
     required TResult Function() deletePostLoading,
     required TResult Function() deletePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
   }) {
     return deleteCommentError(apiErrorModel);
   }
@@ -7242,6 +7846,10 @@ class _$DeleteCommentErrorImpl
     TResult? Function()? deletePostLoading,
     TResult? Function()? deletePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
   }) {
     return deleteCommentError?.call(apiErrorModel);
   }
@@ -7279,6 +7887,10 @@ class _$DeleteCommentErrorImpl
     TResult Function()? deletePostLoading,
     TResult Function()? deletePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (deleteCommentError != null) {
@@ -7320,6 +7932,11 @@ class _$DeleteCommentErrorImpl
     required TResult Function(DeletePostLoading value) deletePostLoading,
     required TResult Function(DeletePostSuccess value) deletePostSuccess,
     required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
   }) {
     return deleteCommentError(this);
   }
@@ -7357,6 +7974,10 @@ class _$DeleteCommentErrorImpl
     TResult? Function(DeletePostLoading value)? deletePostLoading,
     TResult? Function(DeletePostSuccess value)? deletePostSuccess,
     TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
   }) {
     return deleteCommentError?.call(this);
   }
@@ -7394,6 +8015,10 @@ class _$DeleteCommentErrorImpl
     TResult Function(DeletePostLoading value)? deletePostLoading,
     TResult Function(DeletePostSuccess value)? deletePostSuccess,
     TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (deleteCommentError != null) {
@@ -7495,6 +8120,10 @@ class _$UpdatePostLoadingImpl
     required TResult Function() deletePostLoading,
     required TResult Function() deletePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
   }) {
     return updatePostLoading();
   }
@@ -7532,6 +8161,10 @@ class _$UpdatePostLoadingImpl
     TResult? Function()? deletePostLoading,
     TResult? Function()? deletePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
   }) {
     return updatePostLoading?.call();
   }
@@ -7569,6 +8202,10 @@ class _$UpdatePostLoadingImpl
     TResult Function()? deletePostLoading,
     TResult Function()? deletePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (updatePostLoading != null) {
@@ -7610,6 +8247,11 @@ class _$UpdatePostLoadingImpl
     required TResult Function(DeletePostLoading value) deletePostLoading,
     required TResult Function(DeletePostSuccess value) deletePostSuccess,
     required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
   }) {
     return updatePostLoading(this);
   }
@@ -7647,6 +8289,10 @@ class _$UpdatePostLoadingImpl
     TResult? Function(DeletePostLoading value)? deletePostLoading,
     TResult? Function(DeletePostSuccess value)? deletePostSuccess,
     TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
   }) {
     return updatePostLoading?.call(this);
   }
@@ -7684,6 +8330,10 @@ class _$UpdatePostLoadingImpl
     TResult Function(DeletePostLoading value)? deletePostLoading,
     TResult Function(DeletePostSuccess value)? deletePostSuccess,
     TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (updatePostLoading != null) {
@@ -7776,6 +8426,10 @@ class _$UpdatePostSuccessImpl
     required TResult Function() deletePostLoading,
     required TResult Function() deletePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
   }) {
     return updatePostSuccess();
   }
@@ -7813,6 +8467,10 @@ class _$UpdatePostSuccessImpl
     TResult? Function()? deletePostLoading,
     TResult? Function()? deletePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
   }) {
     return updatePostSuccess?.call();
   }
@@ -7850,6 +8508,10 @@ class _$UpdatePostSuccessImpl
     TResult Function()? deletePostLoading,
     TResult Function()? deletePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (updatePostSuccess != null) {
@@ -7891,6 +8553,11 @@ class _$UpdatePostSuccessImpl
     required TResult Function(DeletePostLoading value) deletePostLoading,
     required TResult Function(DeletePostSuccess value) deletePostSuccess,
     required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
   }) {
     return updatePostSuccess(this);
   }
@@ -7928,6 +8595,10 @@ class _$UpdatePostSuccessImpl
     TResult? Function(DeletePostLoading value)? deletePostLoading,
     TResult? Function(DeletePostSuccess value)? deletePostSuccess,
     TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
   }) {
     return updatePostSuccess?.call(this);
   }
@@ -7965,6 +8636,10 @@ class _$UpdatePostSuccessImpl
     TResult Function(DeletePostLoading value)? deletePostLoading,
     TResult Function(DeletePostSuccess value)? deletePostSuccess,
     TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (updatePostSuccess != null) {
@@ -8088,6 +8763,10 @@ class _$UpdatePostErrorImpl
     required TResult Function() deletePostLoading,
     required TResult Function() deletePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
   }) {
     return updatePostError(apiErrorModel);
   }
@@ -8125,6 +8804,10 @@ class _$UpdatePostErrorImpl
     TResult? Function()? deletePostLoading,
     TResult? Function()? deletePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
   }) {
     return updatePostError?.call(apiErrorModel);
   }
@@ -8162,6 +8845,10 @@ class _$UpdatePostErrorImpl
     TResult Function()? deletePostLoading,
     TResult Function()? deletePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (updatePostError != null) {
@@ -8203,6 +8890,11 @@ class _$UpdatePostErrorImpl
     required TResult Function(DeletePostLoading value) deletePostLoading,
     required TResult Function(DeletePostSuccess value) deletePostSuccess,
     required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
   }) {
     return updatePostError(this);
   }
@@ -8240,6 +8932,10 @@ class _$UpdatePostErrorImpl
     TResult? Function(DeletePostLoading value)? deletePostLoading,
     TResult? Function(DeletePostSuccess value)? deletePostSuccess,
     TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
   }) {
     return updatePostError?.call(this);
   }
@@ -8277,6 +8973,10 @@ class _$UpdatePostErrorImpl
     TResult Function(DeletePostLoading value)? deletePostLoading,
     TResult Function(DeletePostSuccess value)? deletePostSuccess,
     TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (updatePostError != null) {
@@ -8378,6 +9078,10 @@ class _$DeletePostLoadingImpl
     required TResult Function() deletePostLoading,
     required TResult Function() deletePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
   }) {
     return deletePostLoading();
   }
@@ -8415,6 +9119,10 @@ class _$DeletePostLoadingImpl
     TResult? Function()? deletePostLoading,
     TResult? Function()? deletePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
   }) {
     return deletePostLoading?.call();
   }
@@ -8452,6 +9160,10 @@ class _$DeletePostLoadingImpl
     TResult Function()? deletePostLoading,
     TResult Function()? deletePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (deletePostLoading != null) {
@@ -8493,6 +9205,11 @@ class _$DeletePostLoadingImpl
     required TResult Function(DeletePostLoading value) deletePostLoading,
     required TResult Function(DeletePostSuccess value) deletePostSuccess,
     required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
   }) {
     return deletePostLoading(this);
   }
@@ -8530,6 +9247,10 @@ class _$DeletePostLoadingImpl
     TResult? Function(DeletePostLoading value)? deletePostLoading,
     TResult? Function(DeletePostSuccess value)? deletePostSuccess,
     TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
   }) {
     return deletePostLoading?.call(this);
   }
@@ -8567,6 +9288,10 @@ class _$DeletePostLoadingImpl
     TResult Function(DeletePostLoading value)? deletePostLoading,
     TResult Function(DeletePostSuccess value)? deletePostSuccess,
     TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (deletePostLoading != null) {
@@ -8659,6 +9384,10 @@ class _$DeletePostSuccessImpl
     required TResult Function() deletePostLoading,
     required TResult Function() deletePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
   }) {
     return deletePostSuccess();
   }
@@ -8696,6 +9425,10 @@ class _$DeletePostSuccessImpl
     TResult? Function()? deletePostLoading,
     TResult? Function()? deletePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
   }) {
     return deletePostSuccess?.call();
   }
@@ -8733,6 +9466,10 @@ class _$DeletePostSuccessImpl
     TResult Function()? deletePostLoading,
     TResult Function()? deletePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (deletePostSuccess != null) {
@@ -8774,6 +9511,11 @@ class _$DeletePostSuccessImpl
     required TResult Function(DeletePostLoading value) deletePostLoading,
     required TResult Function(DeletePostSuccess value) deletePostSuccess,
     required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
   }) {
     return deletePostSuccess(this);
   }
@@ -8811,6 +9553,10 @@ class _$DeletePostSuccessImpl
     TResult? Function(DeletePostLoading value)? deletePostLoading,
     TResult? Function(DeletePostSuccess value)? deletePostSuccess,
     TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
   }) {
     return deletePostSuccess?.call(this);
   }
@@ -8848,6 +9594,10 @@ class _$DeletePostSuccessImpl
     TResult Function(DeletePostLoading value)? deletePostLoading,
     TResult Function(DeletePostSuccess value)? deletePostSuccess,
     TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (deletePostSuccess != null) {
@@ -8971,6 +9721,10 @@ class _$DeletePostErrorImpl
     required TResult Function() deletePostLoading,
     required TResult Function() deletePostSuccess,
     required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
   }) {
     return deletePostError(apiErrorModel);
   }
@@ -9008,6 +9762,10 @@ class _$DeletePostErrorImpl
     TResult? Function()? deletePostLoading,
     TResult? Function()? deletePostSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
   }) {
     return deletePostError?.call(apiErrorModel);
   }
@@ -9045,6 +9803,10 @@ class _$DeletePostErrorImpl
     TResult Function()? deletePostLoading,
     TResult Function()? deletePostSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (deletePostError != null) {
@@ -9086,6 +9848,11 @@ class _$DeletePostErrorImpl
     required TResult Function(DeletePostLoading value) deletePostLoading,
     required TResult Function(DeletePostSuccess value) deletePostSuccess,
     required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
   }) {
     return deletePostError(this);
   }
@@ -9123,6 +9890,10 @@ class _$DeletePostErrorImpl
     TResult? Function(DeletePostLoading value)? deletePostLoading,
     TResult? Function(DeletePostSuccess value)? deletePostSuccess,
     TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
   }) {
     return deletePostError?.call(this);
   }
@@ -9160,6 +9931,10 @@ class _$DeletePostErrorImpl
     TResult Function(DeletePostLoading value)? deletePostLoading,
     TResult Function(DeletePostSuccess value)? deletePostSuccess,
     TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
     required TResult orElse(),
   }) {
     if (deletePostError != null) {
@@ -9180,4 +9955,1228 @@ abstract class DeletePostError implements HomeState {
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$DeletePostErrorImplCopyWith<_$DeletePostErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$ToggleLikeImplCopyWith<$Res> {
+  factory _$$ToggleLikeImplCopyWith(
+          _$ToggleLikeImpl value, $Res Function(_$ToggleLikeImpl) then) =
+      __$$ToggleLikeImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$ToggleLikeImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$ToggleLikeImpl>
+    implements _$$ToggleLikeImplCopyWith<$Res> {
+  __$$ToggleLikeImplCopyWithImpl(
+      _$ToggleLikeImpl _value, $Res Function(_$ToggleLikeImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$ToggleLikeImpl with DiagnosticableTreeMixin implements ToggleLike {
+  const _$ToggleLikeImpl();
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'HomeState.toggleLike()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties.add(DiagnosticsProperty('type', 'HomeState.toggleLike'));
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$ToggleLikeImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() postsLoading,
+    required TResult Function(List<Post> posts) postsLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) postsError,
+    required TResult Function(int index) changeScreen,
+    required TResult Function() postLoading,
+    required TResult Function(Post post) postLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) postError,
+    required TResult Function() likePostLoading,
+    required TResult Function() likePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) likePostError,
+    required TResult Function() unlikePostLoading,
+    required TResult Function() unlikePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) unlikePostError,
+    required TResult Function() commentLoading,
+    required TResult Function(List<Comment> comments) localCommentAdded,
+    required TResult Function() commentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) commentError,
+    required TResult Function() updateCommentLoading,
+    required TResult Function() updateCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updateCommentError,
+    required TResult Function() deleteCommentLoading,
+    required TResult Function() deleteCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+    required TResult Function() updatePostLoading,
+    required TResult Function() updatePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updatePostError,
+    required TResult Function() deletePostLoading,
+    required TResult Function() deletePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
+  }) {
+    return toggleLike();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? postsLoading,
+    TResult? Function(List<Post> posts)? postsLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? postsError,
+    TResult? Function(int index)? changeScreen,
+    TResult? Function()? postLoading,
+    TResult? Function(Post post)? postLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? postError,
+    TResult? Function()? likePostLoading,
+    TResult? Function()? likePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? likePostError,
+    TResult? Function()? unlikePostLoading,
+    TResult? Function()? unlikePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult? Function()? commentLoading,
+    TResult? Function(List<Comment> comments)? localCommentAdded,
+    TResult? Function()? commentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult? Function()? updateCommentLoading,
+    TResult? Function()? updateCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updateCommentError,
+    TResult? Function()? deleteCommentLoading,
+    TResult? Function()? deleteCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult? Function()? updatePostLoading,
+    TResult? Function()? updatePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult? Function()? deletePostLoading,
+    TResult? Function()? deletePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
+  }) {
+    return toggleLike?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? postsLoading,
+    TResult Function(List<Post> posts)? postsLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? postsError,
+    TResult Function(int index)? changeScreen,
+    TResult Function()? postLoading,
+    TResult Function(Post post)? postLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? postError,
+    TResult Function()? likePostLoading,
+    TResult Function()? likePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? likePostError,
+    TResult Function()? unlikePostLoading,
+    TResult Function()? unlikePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult Function()? commentLoading,
+    TResult Function(List<Comment> comments)? localCommentAdded,
+    TResult Function()? commentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult Function()? updateCommentLoading,
+    TResult Function()? updateCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updateCommentError,
+    TResult Function()? deleteCommentLoading,
+    TResult Function()? deleteCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult Function()? updatePostLoading,
+    TResult Function()? updatePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult Function()? deletePostLoading,
+    TResult Function()? deletePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
+    required TResult orElse(),
+  }) {
+    if (toggleLike != null) {
+      return toggleLike();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(PostsLoading value) postsLoading,
+    required TResult Function(PostsLoaded value) postsLoaded,
+    required TResult Function(PostsError value) postsError,
+    required TResult Function(ChangeScreen value) changeScreen,
+    required TResult Function(PostLoading value) postLoading,
+    required TResult Function(PostLoaded value) postLoaded,
+    required TResult Function(PostError value) postError,
+    required TResult Function(LikePostLoading value) likePostLoading,
+    required TResult Function(LikePostSuccess value) likePostSuccess,
+    required TResult Function(LikePostError value) likePostError,
+    required TResult Function(UnlikePostLoading value) unlikePostLoading,
+    required TResult Function(UnlikePostSuccess value) unlikePostSuccess,
+    required TResult Function(UnlikePostError value) unlikePostError,
+    required TResult Function(CommentLoading value) commentLoading,
+    required TResult Function(LocalCommentAdded value) localCommentAdded,
+    required TResult Function(CommentSuccess value) commentSuccess,
+    required TResult Function(CommentError value) commentError,
+    required TResult Function(UpdateCommentLoading value) updateCommentLoading,
+    required TResult Function(UpdateCommentSuccess value) updateCommentSuccess,
+    required TResult Function(UpdateCommentError value) updateCommentError,
+    required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
+    required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
+    required TResult Function(DeleteCommentError value) deleteCommentError,
+    required TResult Function(UpdatePostLoading value) updatePostLoading,
+    required TResult Function(UpdatePostSuccess value) updatePostSuccess,
+    required TResult Function(UpdatePostError value) updatePostError,
+    required TResult Function(DeletePostLoading value) deletePostLoading,
+    required TResult Function(DeletePostSuccess value) deletePostSuccess,
+    required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
+  }) {
+    return toggleLike(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(PostsLoading value)? postsLoading,
+    TResult? Function(PostsLoaded value)? postsLoaded,
+    TResult? Function(PostsError value)? postsError,
+    TResult? Function(ChangeScreen value)? changeScreen,
+    TResult? Function(PostLoading value)? postLoading,
+    TResult? Function(PostLoaded value)? postLoaded,
+    TResult? Function(PostError value)? postError,
+    TResult? Function(LikePostLoading value)? likePostLoading,
+    TResult? Function(LikePostSuccess value)? likePostSuccess,
+    TResult? Function(LikePostError value)? likePostError,
+    TResult? Function(UnlikePostLoading value)? unlikePostLoading,
+    TResult? Function(UnlikePostSuccess value)? unlikePostSuccess,
+    TResult? Function(UnlikePostError value)? unlikePostError,
+    TResult? Function(CommentLoading value)? commentLoading,
+    TResult? Function(LocalCommentAdded value)? localCommentAdded,
+    TResult? Function(CommentSuccess value)? commentSuccess,
+    TResult? Function(CommentError value)? commentError,
+    TResult? Function(UpdateCommentLoading value)? updateCommentLoading,
+    TResult? Function(UpdateCommentSuccess value)? updateCommentSuccess,
+    TResult? Function(UpdateCommentError value)? updateCommentError,
+    TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult? Function(DeleteCommentError value)? deleteCommentError,
+    TResult? Function(UpdatePostLoading value)? updatePostLoading,
+    TResult? Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult? Function(UpdatePostError value)? updatePostError,
+    TResult? Function(DeletePostLoading value)? deletePostLoading,
+    TResult? Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
+  }) {
+    return toggleLike?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(PostsLoading value)? postsLoading,
+    TResult Function(PostsLoaded value)? postsLoaded,
+    TResult Function(PostsError value)? postsError,
+    TResult Function(ChangeScreen value)? changeScreen,
+    TResult Function(PostLoading value)? postLoading,
+    TResult Function(PostLoaded value)? postLoaded,
+    TResult Function(PostError value)? postError,
+    TResult Function(LikePostLoading value)? likePostLoading,
+    TResult Function(LikePostSuccess value)? likePostSuccess,
+    TResult Function(LikePostError value)? likePostError,
+    TResult Function(UnlikePostLoading value)? unlikePostLoading,
+    TResult Function(UnlikePostSuccess value)? unlikePostSuccess,
+    TResult Function(UnlikePostError value)? unlikePostError,
+    TResult Function(CommentLoading value)? commentLoading,
+    TResult Function(LocalCommentAdded value)? localCommentAdded,
+    TResult Function(CommentSuccess value)? commentSuccess,
+    TResult Function(CommentError value)? commentError,
+    TResult Function(UpdateCommentLoading value)? updateCommentLoading,
+    TResult Function(UpdateCommentSuccess value)? updateCommentSuccess,
+    TResult Function(UpdateCommentError value)? updateCommentError,
+    TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult Function(DeleteCommentError value)? deleteCommentError,
+    TResult Function(UpdatePostLoading value)? updatePostLoading,
+    TResult Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult Function(UpdatePostError value)? updatePostError,
+    TResult Function(DeletePostLoading value)? deletePostLoading,
+    TResult Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
+    required TResult orElse(),
+  }) {
+    if (toggleLike != null) {
+      return toggleLike(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class ToggleLike implements HomeState {
+  const factory ToggleLike() = _$ToggleLikeImpl;
+}
+
+/// @nodoc
+abstract class _$$ToggleExpandedImplCopyWith<$Res> {
+  factory _$$ToggleExpandedImplCopyWith(_$ToggleExpandedImpl value,
+          $Res Function(_$ToggleExpandedImpl) then) =
+      __$$ToggleExpandedImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$ToggleExpandedImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$ToggleExpandedImpl>
+    implements _$$ToggleExpandedImplCopyWith<$Res> {
+  __$$ToggleExpandedImplCopyWithImpl(
+      _$ToggleExpandedImpl _value, $Res Function(_$ToggleExpandedImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$ToggleExpandedImpl
+    with DiagnosticableTreeMixin
+    implements ToggleExpanded {
+  const _$ToggleExpandedImpl();
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'HomeState.toggleExpanded()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties.add(DiagnosticsProperty('type', 'HomeState.toggleExpanded'));
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$ToggleExpandedImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() postsLoading,
+    required TResult Function(List<Post> posts) postsLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) postsError,
+    required TResult Function(int index) changeScreen,
+    required TResult Function() postLoading,
+    required TResult Function(Post post) postLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) postError,
+    required TResult Function() likePostLoading,
+    required TResult Function() likePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) likePostError,
+    required TResult Function() unlikePostLoading,
+    required TResult Function() unlikePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) unlikePostError,
+    required TResult Function() commentLoading,
+    required TResult Function(List<Comment> comments) localCommentAdded,
+    required TResult Function() commentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) commentError,
+    required TResult Function() updateCommentLoading,
+    required TResult Function() updateCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updateCommentError,
+    required TResult Function() deleteCommentLoading,
+    required TResult Function() deleteCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+    required TResult Function() updatePostLoading,
+    required TResult Function() updatePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updatePostError,
+    required TResult Function() deletePostLoading,
+    required TResult Function() deletePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
+  }) {
+    return toggleExpanded();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? postsLoading,
+    TResult? Function(List<Post> posts)? postsLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? postsError,
+    TResult? Function(int index)? changeScreen,
+    TResult? Function()? postLoading,
+    TResult? Function(Post post)? postLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? postError,
+    TResult? Function()? likePostLoading,
+    TResult? Function()? likePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? likePostError,
+    TResult? Function()? unlikePostLoading,
+    TResult? Function()? unlikePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult? Function()? commentLoading,
+    TResult? Function(List<Comment> comments)? localCommentAdded,
+    TResult? Function()? commentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult? Function()? updateCommentLoading,
+    TResult? Function()? updateCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updateCommentError,
+    TResult? Function()? deleteCommentLoading,
+    TResult? Function()? deleteCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult? Function()? updatePostLoading,
+    TResult? Function()? updatePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult? Function()? deletePostLoading,
+    TResult? Function()? deletePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
+  }) {
+    return toggleExpanded?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? postsLoading,
+    TResult Function(List<Post> posts)? postsLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? postsError,
+    TResult Function(int index)? changeScreen,
+    TResult Function()? postLoading,
+    TResult Function(Post post)? postLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? postError,
+    TResult Function()? likePostLoading,
+    TResult Function()? likePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? likePostError,
+    TResult Function()? unlikePostLoading,
+    TResult Function()? unlikePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult Function()? commentLoading,
+    TResult Function(List<Comment> comments)? localCommentAdded,
+    TResult Function()? commentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult Function()? updateCommentLoading,
+    TResult Function()? updateCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updateCommentError,
+    TResult Function()? deleteCommentLoading,
+    TResult Function()? deleteCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult Function()? updatePostLoading,
+    TResult Function()? updatePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult Function()? deletePostLoading,
+    TResult Function()? deletePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
+    required TResult orElse(),
+  }) {
+    if (toggleExpanded != null) {
+      return toggleExpanded();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(PostsLoading value) postsLoading,
+    required TResult Function(PostsLoaded value) postsLoaded,
+    required TResult Function(PostsError value) postsError,
+    required TResult Function(ChangeScreen value) changeScreen,
+    required TResult Function(PostLoading value) postLoading,
+    required TResult Function(PostLoaded value) postLoaded,
+    required TResult Function(PostError value) postError,
+    required TResult Function(LikePostLoading value) likePostLoading,
+    required TResult Function(LikePostSuccess value) likePostSuccess,
+    required TResult Function(LikePostError value) likePostError,
+    required TResult Function(UnlikePostLoading value) unlikePostLoading,
+    required TResult Function(UnlikePostSuccess value) unlikePostSuccess,
+    required TResult Function(UnlikePostError value) unlikePostError,
+    required TResult Function(CommentLoading value) commentLoading,
+    required TResult Function(LocalCommentAdded value) localCommentAdded,
+    required TResult Function(CommentSuccess value) commentSuccess,
+    required TResult Function(CommentError value) commentError,
+    required TResult Function(UpdateCommentLoading value) updateCommentLoading,
+    required TResult Function(UpdateCommentSuccess value) updateCommentSuccess,
+    required TResult Function(UpdateCommentError value) updateCommentError,
+    required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
+    required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
+    required TResult Function(DeleteCommentError value) deleteCommentError,
+    required TResult Function(UpdatePostLoading value) updatePostLoading,
+    required TResult Function(UpdatePostSuccess value) updatePostSuccess,
+    required TResult Function(UpdatePostError value) updatePostError,
+    required TResult Function(DeletePostLoading value) deletePostLoading,
+    required TResult Function(DeletePostSuccess value) deletePostSuccess,
+    required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
+  }) {
+    return toggleExpanded(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(PostsLoading value)? postsLoading,
+    TResult? Function(PostsLoaded value)? postsLoaded,
+    TResult? Function(PostsError value)? postsError,
+    TResult? Function(ChangeScreen value)? changeScreen,
+    TResult? Function(PostLoading value)? postLoading,
+    TResult? Function(PostLoaded value)? postLoaded,
+    TResult? Function(PostError value)? postError,
+    TResult? Function(LikePostLoading value)? likePostLoading,
+    TResult? Function(LikePostSuccess value)? likePostSuccess,
+    TResult? Function(LikePostError value)? likePostError,
+    TResult? Function(UnlikePostLoading value)? unlikePostLoading,
+    TResult? Function(UnlikePostSuccess value)? unlikePostSuccess,
+    TResult? Function(UnlikePostError value)? unlikePostError,
+    TResult? Function(CommentLoading value)? commentLoading,
+    TResult? Function(LocalCommentAdded value)? localCommentAdded,
+    TResult? Function(CommentSuccess value)? commentSuccess,
+    TResult? Function(CommentError value)? commentError,
+    TResult? Function(UpdateCommentLoading value)? updateCommentLoading,
+    TResult? Function(UpdateCommentSuccess value)? updateCommentSuccess,
+    TResult? Function(UpdateCommentError value)? updateCommentError,
+    TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult? Function(DeleteCommentError value)? deleteCommentError,
+    TResult? Function(UpdatePostLoading value)? updatePostLoading,
+    TResult? Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult? Function(UpdatePostError value)? updatePostError,
+    TResult? Function(DeletePostLoading value)? deletePostLoading,
+    TResult? Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
+  }) {
+    return toggleExpanded?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(PostsLoading value)? postsLoading,
+    TResult Function(PostsLoaded value)? postsLoaded,
+    TResult Function(PostsError value)? postsError,
+    TResult Function(ChangeScreen value)? changeScreen,
+    TResult Function(PostLoading value)? postLoading,
+    TResult Function(PostLoaded value)? postLoaded,
+    TResult Function(PostError value)? postError,
+    TResult Function(LikePostLoading value)? likePostLoading,
+    TResult Function(LikePostSuccess value)? likePostSuccess,
+    TResult Function(LikePostError value)? likePostError,
+    TResult Function(UnlikePostLoading value)? unlikePostLoading,
+    TResult Function(UnlikePostSuccess value)? unlikePostSuccess,
+    TResult Function(UnlikePostError value)? unlikePostError,
+    TResult Function(CommentLoading value)? commentLoading,
+    TResult Function(LocalCommentAdded value)? localCommentAdded,
+    TResult Function(CommentSuccess value)? commentSuccess,
+    TResult Function(CommentError value)? commentError,
+    TResult Function(UpdateCommentLoading value)? updateCommentLoading,
+    TResult Function(UpdateCommentSuccess value)? updateCommentSuccess,
+    TResult Function(UpdateCommentError value)? updateCommentError,
+    TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult Function(DeleteCommentError value)? deleteCommentError,
+    TResult Function(UpdatePostLoading value)? updatePostLoading,
+    TResult Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult Function(UpdatePostError value)? updatePostError,
+    TResult Function(DeletePostLoading value)? deletePostLoading,
+    TResult Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
+    required TResult orElse(),
+  }) {
+    if (toggleExpanded != null) {
+      return toggleExpanded(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class ToggleExpanded implements HomeState {
+  const factory ToggleExpanded() = _$ToggleExpandedImpl;
+}
+
+/// @nodoc
+abstract class _$$GetUserIdImplCopyWith<$Res> {
+  factory _$$GetUserIdImplCopyWith(
+          _$GetUserIdImpl value, $Res Function(_$GetUserIdImpl) then) =
+      __$$GetUserIdImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$GetUserIdImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$GetUserIdImpl>
+    implements _$$GetUserIdImplCopyWith<$Res> {
+  __$$GetUserIdImplCopyWithImpl(
+      _$GetUserIdImpl _value, $Res Function(_$GetUserIdImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$GetUserIdImpl with DiagnosticableTreeMixin implements GetUserId {
+  const _$GetUserIdImpl();
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'HomeState.getUserId()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties.add(DiagnosticsProperty('type', 'HomeState.getUserId'));
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$GetUserIdImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() postsLoading,
+    required TResult Function(List<Post> posts) postsLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) postsError,
+    required TResult Function(int index) changeScreen,
+    required TResult Function() postLoading,
+    required TResult Function(Post post) postLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) postError,
+    required TResult Function() likePostLoading,
+    required TResult Function() likePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) likePostError,
+    required TResult Function() unlikePostLoading,
+    required TResult Function() unlikePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) unlikePostError,
+    required TResult Function() commentLoading,
+    required TResult Function(List<Comment> comments) localCommentAdded,
+    required TResult Function() commentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) commentError,
+    required TResult Function() updateCommentLoading,
+    required TResult Function() updateCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updateCommentError,
+    required TResult Function() deleteCommentLoading,
+    required TResult Function() deleteCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+    required TResult Function() updatePostLoading,
+    required TResult Function() updatePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updatePostError,
+    required TResult Function() deletePostLoading,
+    required TResult Function() deletePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
+  }) {
+    return getUserId();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? postsLoading,
+    TResult? Function(List<Post> posts)? postsLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? postsError,
+    TResult? Function(int index)? changeScreen,
+    TResult? Function()? postLoading,
+    TResult? Function(Post post)? postLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? postError,
+    TResult? Function()? likePostLoading,
+    TResult? Function()? likePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? likePostError,
+    TResult? Function()? unlikePostLoading,
+    TResult? Function()? unlikePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult? Function()? commentLoading,
+    TResult? Function(List<Comment> comments)? localCommentAdded,
+    TResult? Function()? commentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult? Function()? updateCommentLoading,
+    TResult? Function()? updateCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updateCommentError,
+    TResult? Function()? deleteCommentLoading,
+    TResult? Function()? deleteCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult? Function()? updatePostLoading,
+    TResult? Function()? updatePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult? Function()? deletePostLoading,
+    TResult? Function()? deletePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
+  }) {
+    return getUserId?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? postsLoading,
+    TResult Function(List<Post> posts)? postsLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? postsError,
+    TResult Function(int index)? changeScreen,
+    TResult Function()? postLoading,
+    TResult Function(Post post)? postLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? postError,
+    TResult Function()? likePostLoading,
+    TResult Function()? likePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? likePostError,
+    TResult Function()? unlikePostLoading,
+    TResult Function()? unlikePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult Function()? commentLoading,
+    TResult Function(List<Comment> comments)? localCommentAdded,
+    TResult Function()? commentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult Function()? updateCommentLoading,
+    TResult Function()? updateCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updateCommentError,
+    TResult Function()? deleteCommentLoading,
+    TResult Function()? deleteCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult Function()? updatePostLoading,
+    TResult Function()? updatePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult Function()? deletePostLoading,
+    TResult Function()? deletePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
+    required TResult orElse(),
+  }) {
+    if (getUserId != null) {
+      return getUserId();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(PostsLoading value) postsLoading,
+    required TResult Function(PostsLoaded value) postsLoaded,
+    required TResult Function(PostsError value) postsError,
+    required TResult Function(ChangeScreen value) changeScreen,
+    required TResult Function(PostLoading value) postLoading,
+    required TResult Function(PostLoaded value) postLoaded,
+    required TResult Function(PostError value) postError,
+    required TResult Function(LikePostLoading value) likePostLoading,
+    required TResult Function(LikePostSuccess value) likePostSuccess,
+    required TResult Function(LikePostError value) likePostError,
+    required TResult Function(UnlikePostLoading value) unlikePostLoading,
+    required TResult Function(UnlikePostSuccess value) unlikePostSuccess,
+    required TResult Function(UnlikePostError value) unlikePostError,
+    required TResult Function(CommentLoading value) commentLoading,
+    required TResult Function(LocalCommentAdded value) localCommentAdded,
+    required TResult Function(CommentSuccess value) commentSuccess,
+    required TResult Function(CommentError value) commentError,
+    required TResult Function(UpdateCommentLoading value) updateCommentLoading,
+    required TResult Function(UpdateCommentSuccess value) updateCommentSuccess,
+    required TResult Function(UpdateCommentError value) updateCommentError,
+    required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
+    required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
+    required TResult Function(DeleteCommentError value) deleteCommentError,
+    required TResult Function(UpdatePostLoading value) updatePostLoading,
+    required TResult Function(UpdatePostSuccess value) updatePostSuccess,
+    required TResult Function(UpdatePostError value) updatePostError,
+    required TResult Function(DeletePostLoading value) deletePostLoading,
+    required TResult Function(DeletePostSuccess value) deletePostSuccess,
+    required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
+  }) {
+    return getUserId(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(PostsLoading value)? postsLoading,
+    TResult? Function(PostsLoaded value)? postsLoaded,
+    TResult? Function(PostsError value)? postsError,
+    TResult? Function(ChangeScreen value)? changeScreen,
+    TResult? Function(PostLoading value)? postLoading,
+    TResult? Function(PostLoaded value)? postLoaded,
+    TResult? Function(PostError value)? postError,
+    TResult? Function(LikePostLoading value)? likePostLoading,
+    TResult? Function(LikePostSuccess value)? likePostSuccess,
+    TResult? Function(LikePostError value)? likePostError,
+    TResult? Function(UnlikePostLoading value)? unlikePostLoading,
+    TResult? Function(UnlikePostSuccess value)? unlikePostSuccess,
+    TResult? Function(UnlikePostError value)? unlikePostError,
+    TResult? Function(CommentLoading value)? commentLoading,
+    TResult? Function(LocalCommentAdded value)? localCommentAdded,
+    TResult? Function(CommentSuccess value)? commentSuccess,
+    TResult? Function(CommentError value)? commentError,
+    TResult? Function(UpdateCommentLoading value)? updateCommentLoading,
+    TResult? Function(UpdateCommentSuccess value)? updateCommentSuccess,
+    TResult? Function(UpdateCommentError value)? updateCommentError,
+    TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult? Function(DeleteCommentError value)? deleteCommentError,
+    TResult? Function(UpdatePostLoading value)? updatePostLoading,
+    TResult? Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult? Function(UpdatePostError value)? updatePostError,
+    TResult? Function(DeletePostLoading value)? deletePostLoading,
+    TResult? Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
+  }) {
+    return getUserId?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(PostsLoading value)? postsLoading,
+    TResult Function(PostsLoaded value)? postsLoaded,
+    TResult Function(PostsError value)? postsError,
+    TResult Function(ChangeScreen value)? changeScreen,
+    TResult Function(PostLoading value)? postLoading,
+    TResult Function(PostLoaded value)? postLoaded,
+    TResult Function(PostError value)? postError,
+    TResult Function(LikePostLoading value)? likePostLoading,
+    TResult Function(LikePostSuccess value)? likePostSuccess,
+    TResult Function(LikePostError value)? likePostError,
+    TResult Function(UnlikePostLoading value)? unlikePostLoading,
+    TResult Function(UnlikePostSuccess value)? unlikePostSuccess,
+    TResult Function(UnlikePostError value)? unlikePostError,
+    TResult Function(CommentLoading value)? commentLoading,
+    TResult Function(LocalCommentAdded value)? localCommentAdded,
+    TResult Function(CommentSuccess value)? commentSuccess,
+    TResult Function(CommentError value)? commentError,
+    TResult Function(UpdateCommentLoading value)? updateCommentLoading,
+    TResult Function(UpdateCommentSuccess value)? updateCommentSuccess,
+    TResult Function(UpdateCommentError value)? updateCommentError,
+    TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult Function(DeleteCommentError value)? deleteCommentError,
+    TResult Function(UpdatePostLoading value)? updatePostLoading,
+    TResult Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult Function(UpdatePostError value)? updatePostError,
+    TResult Function(DeletePostLoading value)? deletePostLoading,
+    TResult Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
+    required TResult orElse(),
+  }) {
+    if (getUserId != null) {
+      return getUserId(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class GetUserId implements HomeState {
+  const factory GetUserId() = _$GetUserIdImpl;
+}
+
+/// @nodoc
+abstract class _$$UpdateLikeStatusOnServerImplCopyWith<$Res> {
+  factory _$$UpdateLikeStatusOnServerImplCopyWith(
+          _$UpdateLikeStatusOnServerImpl value,
+          $Res Function(_$UpdateLikeStatusOnServerImpl) then) =
+      __$$UpdateLikeStatusOnServerImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$UpdateLikeStatusOnServerImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$UpdateLikeStatusOnServerImpl>
+    implements _$$UpdateLikeStatusOnServerImplCopyWith<$Res> {
+  __$$UpdateLikeStatusOnServerImplCopyWithImpl(
+      _$UpdateLikeStatusOnServerImpl _value,
+      $Res Function(_$UpdateLikeStatusOnServerImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$UpdateLikeStatusOnServerImpl
+    with DiagnosticableTreeMixin
+    implements UpdateLikeStatusOnServer {
+  const _$UpdateLikeStatusOnServerImpl();
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'HomeState.updateLikeStatusOnServer()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+        .add(DiagnosticsProperty('type', 'HomeState.updateLikeStatusOnServer'));
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$UpdateLikeStatusOnServerImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() postsLoading,
+    required TResult Function(List<Post> posts) postsLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) postsError,
+    required TResult Function(int index) changeScreen,
+    required TResult Function() postLoading,
+    required TResult Function(Post post) postLoaded,
+    required TResult Function(ApiErrorModel apiErrorModel) postError,
+    required TResult Function() likePostLoading,
+    required TResult Function() likePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) likePostError,
+    required TResult Function() unlikePostLoading,
+    required TResult Function() unlikePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) unlikePostError,
+    required TResult Function() commentLoading,
+    required TResult Function(List<Comment> comments) localCommentAdded,
+    required TResult Function() commentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) commentError,
+    required TResult Function() updateCommentLoading,
+    required TResult Function() updateCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updateCommentError,
+    required TResult Function() deleteCommentLoading,
+    required TResult Function() deleteCommentSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deleteCommentError,
+    required TResult Function() updatePostLoading,
+    required TResult Function() updatePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) updatePostError,
+    required TResult Function() deletePostLoading,
+    required TResult Function() deletePostSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel) deletePostError,
+    required TResult Function() toggleLike,
+    required TResult Function() toggleExpanded,
+    required TResult Function() getUserId,
+    required TResult Function() updateLikeStatusOnServer,
+  }) {
+    return updateLikeStatusOnServer();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? postsLoading,
+    TResult? Function(List<Post> posts)? postsLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? postsError,
+    TResult? Function(int index)? changeScreen,
+    TResult? Function()? postLoading,
+    TResult? Function(Post post)? postLoaded,
+    TResult? Function(ApiErrorModel apiErrorModel)? postError,
+    TResult? Function()? likePostLoading,
+    TResult? Function()? likePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? likePostError,
+    TResult? Function()? unlikePostLoading,
+    TResult? Function()? unlikePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult? Function()? commentLoading,
+    TResult? Function(List<Comment> comments)? localCommentAdded,
+    TResult? Function()? commentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult? Function()? updateCommentLoading,
+    TResult? Function()? updateCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updateCommentError,
+    TResult? Function()? deleteCommentLoading,
+    TResult? Function()? deleteCommentSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult? Function()? updatePostLoading,
+    TResult? Function()? updatePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult? Function()? deletePostLoading,
+    TResult? Function()? deletePostSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult? Function()? toggleLike,
+    TResult? Function()? toggleExpanded,
+    TResult? Function()? getUserId,
+    TResult? Function()? updateLikeStatusOnServer,
+  }) {
+    return updateLikeStatusOnServer?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? postsLoading,
+    TResult Function(List<Post> posts)? postsLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? postsError,
+    TResult Function(int index)? changeScreen,
+    TResult Function()? postLoading,
+    TResult Function(Post post)? postLoaded,
+    TResult Function(ApiErrorModel apiErrorModel)? postError,
+    TResult Function()? likePostLoading,
+    TResult Function()? likePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? likePostError,
+    TResult Function()? unlikePostLoading,
+    TResult Function()? unlikePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? unlikePostError,
+    TResult Function()? commentLoading,
+    TResult Function(List<Comment> comments)? localCommentAdded,
+    TResult Function()? commentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? commentError,
+    TResult Function()? updateCommentLoading,
+    TResult Function()? updateCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updateCommentError,
+    TResult Function()? deleteCommentLoading,
+    TResult Function()? deleteCommentSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deleteCommentError,
+    TResult Function()? updatePostLoading,
+    TResult Function()? updatePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? updatePostError,
+    TResult Function()? deletePostLoading,
+    TResult Function()? deletePostSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? deletePostError,
+    TResult Function()? toggleLike,
+    TResult Function()? toggleExpanded,
+    TResult Function()? getUserId,
+    TResult Function()? updateLikeStatusOnServer,
+    required TResult orElse(),
+  }) {
+    if (updateLikeStatusOnServer != null) {
+      return updateLikeStatusOnServer();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(PostsLoading value) postsLoading,
+    required TResult Function(PostsLoaded value) postsLoaded,
+    required TResult Function(PostsError value) postsError,
+    required TResult Function(ChangeScreen value) changeScreen,
+    required TResult Function(PostLoading value) postLoading,
+    required TResult Function(PostLoaded value) postLoaded,
+    required TResult Function(PostError value) postError,
+    required TResult Function(LikePostLoading value) likePostLoading,
+    required TResult Function(LikePostSuccess value) likePostSuccess,
+    required TResult Function(LikePostError value) likePostError,
+    required TResult Function(UnlikePostLoading value) unlikePostLoading,
+    required TResult Function(UnlikePostSuccess value) unlikePostSuccess,
+    required TResult Function(UnlikePostError value) unlikePostError,
+    required TResult Function(CommentLoading value) commentLoading,
+    required TResult Function(LocalCommentAdded value) localCommentAdded,
+    required TResult Function(CommentSuccess value) commentSuccess,
+    required TResult Function(CommentError value) commentError,
+    required TResult Function(UpdateCommentLoading value) updateCommentLoading,
+    required TResult Function(UpdateCommentSuccess value) updateCommentSuccess,
+    required TResult Function(UpdateCommentError value) updateCommentError,
+    required TResult Function(DeleteCommentLoading value) deleteCommentLoading,
+    required TResult Function(DeleteCommentSuccess value) deleteCommentSuccess,
+    required TResult Function(DeleteCommentError value) deleteCommentError,
+    required TResult Function(UpdatePostLoading value) updatePostLoading,
+    required TResult Function(UpdatePostSuccess value) updatePostSuccess,
+    required TResult Function(UpdatePostError value) updatePostError,
+    required TResult Function(DeletePostLoading value) deletePostLoading,
+    required TResult Function(DeletePostSuccess value) deletePostSuccess,
+    required TResult Function(DeletePostError value) deletePostError,
+    required TResult Function(ToggleLike value) toggleLike,
+    required TResult Function(ToggleExpanded value) toggleExpanded,
+    required TResult Function(GetUserId value) getUserId,
+    required TResult Function(UpdateLikeStatusOnServer value)
+        updateLikeStatusOnServer,
+  }) {
+    return updateLikeStatusOnServer(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(PostsLoading value)? postsLoading,
+    TResult? Function(PostsLoaded value)? postsLoaded,
+    TResult? Function(PostsError value)? postsError,
+    TResult? Function(ChangeScreen value)? changeScreen,
+    TResult? Function(PostLoading value)? postLoading,
+    TResult? Function(PostLoaded value)? postLoaded,
+    TResult? Function(PostError value)? postError,
+    TResult? Function(LikePostLoading value)? likePostLoading,
+    TResult? Function(LikePostSuccess value)? likePostSuccess,
+    TResult? Function(LikePostError value)? likePostError,
+    TResult? Function(UnlikePostLoading value)? unlikePostLoading,
+    TResult? Function(UnlikePostSuccess value)? unlikePostSuccess,
+    TResult? Function(UnlikePostError value)? unlikePostError,
+    TResult? Function(CommentLoading value)? commentLoading,
+    TResult? Function(LocalCommentAdded value)? localCommentAdded,
+    TResult? Function(CommentSuccess value)? commentSuccess,
+    TResult? Function(CommentError value)? commentError,
+    TResult? Function(UpdateCommentLoading value)? updateCommentLoading,
+    TResult? Function(UpdateCommentSuccess value)? updateCommentSuccess,
+    TResult? Function(UpdateCommentError value)? updateCommentError,
+    TResult? Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult? Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult? Function(DeleteCommentError value)? deleteCommentError,
+    TResult? Function(UpdatePostLoading value)? updatePostLoading,
+    TResult? Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult? Function(UpdatePostError value)? updatePostError,
+    TResult? Function(DeletePostLoading value)? deletePostLoading,
+    TResult? Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult? Function(DeletePostError value)? deletePostError,
+    TResult? Function(ToggleLike value)? toggleLike,
+    TResult? Function(ToggleExpanded value)? toggleExpanded,
+    TResult? Function(GetUserId value)? getUserId,
+    TResult? Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
+  }) {
+    return updateLikeStatusOnServer?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(PostsLoading value)? postsLoading,
+    TResult Function(PostsLoaded value)? postsLoaded,
+    TResult Function(PostsError value)? postsError,
+    TResult Function(ChangeScreen value)? changeScreen,
+    TResult Function(PostLoading value)? postLoading,
+    TResult Function(PostLoaded value)? postLoaded,
+    TResult Function(PostError value)? postError,
+    TResult Function(LikePostLoading value)? likePostLoading,
+    TResult Function(LikePostSuccess value)? likePostSuccess,
+    TResult Function(LikePostError value)? likePostError,
+    TResult Function(UnlikePostLoading value)? unlikePostLoading,
+    TResult Function(UnlikePostSuccess value)? unlikePostSuccess,
+    TResult Function(UnlikePostError value)? unlikePostError,
+    TResult Function(CommentLoading value)? commentLoading,
+    TResult Function(LocalCommentAdded value)? localCommentAdded,
+    TResult Function(CommentSuccess value)? commentSuccess,
+    TResult Function(CommentError value)? commentError,
+    TResult Function(UpdateCommentLoading value)? updateCommentLoading,
+    TResult Function(UpdateCommentSuccess value)? updateCommentSuccess,
+    TResult Function(UpdateCommentError value)? updateCommentError,
+    TResult Function(DeleteCommentLoading value)? deleteCommentLoading,
+    TResult Function(DeleteCommentSuccess value)? deleteCommentSuccess,
+    TResult Function(DeleteCommentError value)? deleteCommentError,
+    TResult Function(UpdatePostLoading value)? updatePostLoading,
+    TResult Function(UpdatePostSuccess value)? updatePostSuccess,
+    TResult Function(UpdatePostError value)? updatePostError,
+    TResult Function(DeletePostLoading value)? deletePostLoading,
+    TResult Function(DeletePostSuccess value)? deletePostSuccess,
+    TResult Function(DeletePostError value)? deletePostError,
+    TResult Function(ToggleLike value)? toggleLike,
+    TResult Function(ToggleExpanded value)? toggleExpanded,
+    TResult Function(GetUserId value)? getUserId,
+    TResult Function(UpdateLikeStatusOnServer value)? updateLikeStatusOnServer,
+    required TResult orElse(),
+  }) {
+    if (updateLikeStatusOnServer != null) {
+      return updateLikeStatusOnServer(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class UpdateLikeStatusOnServer implements HomeState {
+  const factory UpdateLikeStatusOnServer() = _$UpdateLikeStatusOnServerImpl;
 }
